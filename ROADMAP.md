@@ -7,7 +7,7 @@ Status: **CONJECTURAL ROADMAP EXCEPT WHERE A RUNG IS EXPLICITLY MARKED EARNED OR
 ```text
 RIL-1  one-function leverage                         EARNED / CLOSED
 RIL-2  frozen-family transfer                        EARNED / CLOSED
-RIL-3  provenance-separated target transfer          PREREGISTERED ONLY
+RIL-3  provenance-separated target transfer          PREREGISTERED / APPARATUS FROZEN / TARGETS UNREVEALED
 RIL-4  resource-boundary amplification               NOT OPENED
 RIL-5  broad effective generality on constrained HW  NOT OPENED
 ```
@@ -30,14 +30,27 @@ The scientific difference is provenance:
 Q_test frozen
 -> I_shared whitelist frozen
 -> R0/R1 frozen
--> held-out targets do not yet exist
+-> generic apparatus frozen
+-> pre-reveal audit PASS
+-> held-out targets still do not exist
+```
+
+Scientific anchors:
+
+```text
+preregistration freeze   c5acae018aec09afc9ceece152bb9cdc7a39e112
+implementation freeze    f54d9e1a4d8ef35404824d2172ace173af387a96
+pre-reveal audit         013435145d7d93985cd056926cfad710dd63e662
+entropy target time      2026-08-26T12:00:00.000Z
 ```
 
 The held-out generator is intentionally broader than RIL-2 selection. It uses only the shared 3-input Boolean schema, all-variable essentiality, and exact exclusion of the 25 already-tested targets. It does not use M0/M1 membership, exact ceiling, canonical-program complexity, prior leverage, or predicted representation cost.
 
-The actual 24 targets will later be instantiated from a frozen 193-target eligible universe using one precommitted future public randomness pulse and deterministic SHA-256 ranking.
+The future 24 targets will be instantiated exactly once from the frozen 193-target eligible universe using the preregistered future public randomness pulse and deterministic SHA-256 ranking. No target manifest exists yet.
 
-The maximum positive claim is:
+The frozen apparatus contains no Beacon network client and cannot materialize the target manifest before the frozen timestamp. It inherits the exact RIL-001 AST/SEM8 machinery and may not be modified under RIL-003 after the implementation freeze.
+
+The maximum positive claim remains:
 
 ```text
 PROVENANCE_SEPARATED_REPRESENTATION_INDUCED_TRANSFER
