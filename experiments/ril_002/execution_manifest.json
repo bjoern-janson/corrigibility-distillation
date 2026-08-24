@@ -1,0 +1,31 @@
+{
+  "affinity": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "assay": "RIL-002",
+  "cpu_count": 5,
+  "family_members_sha256": "d51b9b51e37f82a316dfcbd1461b766b52f34941283d1af3d1189c2546b472b1",
+  "inherited_blobs": {
+    "algorithm.py": "e64d5b08e69330cdc08dd0cc8ea85f238ae04593",
+    "audit.py": "eddf91309839c4bc38cec3f6c1b48528a4ab5a02",
+    "contract.py": "2f4b18721cddaabfb0ea118adada2ea0161659de",
+    "instrument.py": "ac8bf7b728bc3ad25847e597770fbc97dbc0c613"
+  },
+  "inherited_ril001_implementation_commit": "a0f8f795a805e8f579fd608fbcaa83dcfa6ef60f",
+  "machine": "x86_64",
+  "parent_commit": "2f4ca824e02b89df0c23d64de312c4f93a4c8a41",
+  "parent_repository": "bjoern-janson/future-sufficiency",
+  "parent_ril001_result_commit": "a8dfb2aa7e72b5f28c497bbe071408c9be0113a3",
+  "parent_source_git_blob": "f74d85f5f9d0c7842dc50e34ae2718699108fff6",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "preregistration_commit": "d35d998eea7e9b06ae0516dbcb9019955052ef6f",
+  "processor": "",
+  "python_executable": "/opt/pyvenv/bin/python",
+  "python_implementation": "CPython",
+  "python_version": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "timing": "not a primary RIL-002 measure"
+}
