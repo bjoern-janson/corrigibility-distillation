@@ -134,7 +134,58 @@ PROVENANCE_SEPARATED_REPRESENTATION_INDUCED_TRANSFER
 
 It cannot by itself establish representation-induced generality.
 
-## Next legal scientific action
+## RG-001 — F_LCC + CASE FAMILY FROZEN / REFERENCE AUDIT PASS / NOT PREREGISTERED
+
+RG-001 is a new parallel experimental lane. It does not reopen the closed Corpus Distillation or CGP lanes and does not modify or wait on RIL-003.
+
+Frozen semantic object:
+
+```text
+F_LCC = localized corrective contraction
+LCC-1 implicated contraction
+LCC-2 dependency-selective contraction
+LCC-3 independent preservation
+LCC-4 refutation cannot authorize replacement
+LCC-5 independent successor evidence can re-enter
+```
+
+Support semantics are externally constituted as finite acyclic sufficient-support sets. Structural dependency is not identified with effective contraction.
+
+Frozen case-family state:
+
+```text
+semantic constitution       FROZEN
+case family                 FROZEN: 8 cases
+expected semantic labels    NOT HAND-AUTHORED
+reference evaluator         IMPLEMENTED
+matched C04/C05 death test  PASS
+permutation checks          256 / 256 PASS
+reference unit tests        6 / 6 PASS at authoring-time audit
+candidate realizers         NOT YET ADAPTED
+RG-001 preregistration      NOT YET FROZEN
+A_trans^RG                  NOT RUN
+V_F                         NOT MEASURED
+C_F                         NOT MEASURED
+B_F                         NOT MEASURED
+A_F                         NA for RG-001
+```
+
+The matched C04/C05 pair has identical flattened pairwise support incidence but different sufficient-support grouping and therefore different post-challenge semantics. An adapter that collapses support-set grouping is inadmissible by construction.
+
+Current RG-001 ceiling:
+
+```text
+F_LCC constituted           YES
+external challenge geometry YES
+cross-realizer equivalence  NOT ESTABLISHED
+realization geometry theory NOT ESTABLISHED
+```
+
+## Next legal scientific actions
+
+The lanes proceed independently.
+
+### RIL-003
 
 Before the frozen entropy boundary, no target-specific operation is authorized.
 
@@ -150,3 +201,20 @@ validate pulse package
 ```
 
 No apparatus change, representation adaptation, target redraw, or pre-manifest execution is permitted under RIL-003.
+
+### RG-001
+
+The next legal scientific object is realizer admission and adapter constitution under the already frozen function and case family.
+
+```text
+admit candidate realizers
+-> freeze realizer-specific adapters
+-> audit adapter information noninterference
+-> run A_trans^RG
+-> only if both pass, test V_F
+-> only if common validity is established, measure C_F
+-> derive B_F only from the frozen RG001 challenge family
+-> STOP
+```
+
+No RG case, support relation, or semantic obligation may be changed to accommodate a realizer under RG-001 v0.1.
