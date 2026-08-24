@@ -1,0 +1,49 @@
+{
+  "assay": "RIL-002",
+  "derived_family_facts": {
+    "all_members_m0_exact_ceiling": 0.875,
+    "all_members_m1_exact_ceiling": 1.0,
+    "member_count": 24,
+    "selection_used_ril002_cost_results": false
+  },
+  "inclusion_rule_K": {
+    "K1": "truth table is a key of frozen FANOUT_PROGRAMS",
+    "K2": "truth table is not a key of frozen READ_ONCE_PROGRAMS",
+    "K3": "x, y, and z are each essential variables",
+    "K4": "truth table is not the RIL-001 target 0x17"
+  },
+  "members": [
+    {"canonical_m1_program":"and(or(not(z),y),or(x,z))","canonical_m1_size":8,"essential_vars":["x","y","z"],"hex":"0x1B","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_1B","truth_table":"00011011"},
+    {"canonical_m1_program":"and(or(not(y),z),or(x,y))","canonical_m1_size":8,"essential_vars":["x","y","z"],"hex":"0x1D","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_1D","truth_table":"00011101"},
+    {"canonical_m1_program":"and(or(not(z),x),or(y,z))","canonical_m1_size":8,"essential_vars":["x","y","z"],"hex":"0x27","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_27","truth_table":"00100111"},
+    {"canonical_m1_program":"and(not(and(y,z)),or(x,y))","canonical_m1_size":8,"essential_vars":["x","y","z"],"hex":"0x2E","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_2E","truth_table":"00101110"},
+    {"canonical_m1_program":"and(or(not(x),z),or(x,y))","canonical_m1_size":8,"essential_vars":["x","y","z"],"hex":"0x35","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_35","truth_table":"00110101"},
+    {"canonical_m1_program":"and(not(and(x,z)),or(x,y))","canonical_m1_size":8,"essential_vars":["x","y","z"],"hex":"0x3A","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_3A","truth_table":"00111010"},
+    {"canonical_m1_program":"and(or(not(y),x),or(y,z))","canonical_m1_size":8,"essential_vars":["x","y","z"],"hex":"0x47","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_47","truth_table":"01000111"},
+    {"canonical_m1_program":"and(not(and(y,z)),or(x,z))","canonical_m1_size":8,"essential_vars":["x","y","z"],"hex":"0x4E","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_4E","truth_table":"01001110"},
+    {"canonical_m1_program":"and(or(not(x),y),or(x,z))","canonical_m1_size":8,"essential_vars":["x","y","z"],"hex":"0x53","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_53","truth_table":"01010011"},
+    {"canonical_m1_program":"and(not(and(x,y)),or(x,z))","canonical_m1_size":8,"essential_vars":["x","y","z"],"hex":"0x5C","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_5C","truth_table":"01011100"},
+    {"canonical_m1_program":"and(not(and(x,z)),or(y,z))","canonical_m1_size":8,"essential_vars":["x","y","z"],"hex":"0x72","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_72","truth_table":"01110010"},
+    {"canonical_m1_program":"and(not(and(x,y)),or(y,z))","canonical_m1_size":8,"essential_vars":["x","y","z"],"hex":"0x74","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_74","truth_table":"01110100"},
+    {"canonical_m1_program":"or(and(x,y),not(or(y,z)))","canonical_m1_size":8,"essential_vars":["x","y","z"],"hex":"0x8B","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_8B","truth_table":"10001011"},
+    {"canonical_m1_program":"or(and(x,z),not(or(y,z)))","canonical_m1_size":8,"essential_vars":["x","y","z"],"hex":"0x8D","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_8D","truth_table":"10001101"},
+    {"canonical_m1_program":"or(and(x,y),not(or(x,z)))","canonical_m1_size":8,"essential_vars":["x","y","z"],"hex":"0xA3","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_A3","truth_table":"10100011"},
+    {"canonical_m1_program":"and(not(and(x,y)),or(not(z),x))","canonical_m1_size":9,"essential_vars":["x","y","z"],"hex":"0xAC","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_AC","truth_table":"10101100"},
+    {"canonical_m1_program":"or(and(y,z),not(or(x,z)))","canonical_m1_size":8,"essential_vars":["x","y","z"],"hex":"0xB1","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_B1","truth_table":"10110001"},
+    {"canonical_m1_program":"and(not(and(x,y)),or(not(z),y))","canonical_m1_size":9,"essential_vars":["x","y","z"],"hex":"0xB8","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_B8","truth_table":"10111000"},
+    {"canonical_m1_program":"or(and(x,z),not(or(x,y)))","canonical_m1_size":8,"essential_vars":["x","y","z"],"hex":"0xC5","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_C5","truth_table":"11000101"},
+    {"canonical_m1_program":"and(not(and(x,z)),or(not(y),x))","canonical_m1_size":9,"essential_vars":["x","y","z"],"hex":"0xCA","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_CA","truth_table":"11001010"},
+    {"canonical_m1_program":"or(and(y,z),not(or(x,y)))","canonical_m1_size":8,"essential_vars":["x","y","z"],"hex":"0xD1","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_D1","truth_table":"11010001"},
+    {"canonical_m1_program":"and(not(and(x,z)),or(not(y),z))","canonical_m1_size":9,"essential_vars":["x","y","z"],"hex":"0xD8","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_D8","truth_table":"11011000"},
+    {"canonical_m1_program":"and(not(and(y,z)),or(not(x),y))","canonical_m1_size":9,"essential_vars":["x","y","z"],"hex":"0xE2","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_E2","truth_table":"11100010"},
+    {"canonical_m1_program":"and(not(and(y,z)),or(not(x),z))","canonical_m1_size":9,"essential_vars":["x","y","z"],"hex":"0xE4","m0_exact_ceiling":0.875,"m1_exact_ceiling":1.0,"member_id":"TT_E4","truth_table":"11100100"}
+  ],
+  "members_sha256_canonical_json": "d51b9b51e37f82a316dfcbd1461b766b52f34941283d1af3d1189c2546b472b1",
+  "parent_ril001_result_commit": "a8dfb2aa7e72b5f28c497bbe071408c9be0113a3",
+  "representations": {"R0":"R0_AST","R1":"R1_SEM8"},
+  "ril001_excluded_target": {"hex_id":"0x17","name":"NEEDS_FANOUT majority","truth_table":"00010111"},
+  "rung": "RIL-2 family transfer",
+  "source_parent": {"blob":"f74d85f5f9d0c7842dc50e34ae2718699108fff6","commit":"2f4ca824e02b89df0c23d64de312c4f93a4c8a41","path":"experiments/meta_language_repair.py","repository":"bjoern-janson/future-sufficiency"},
+  "status": "FROZEN FAMILY; NO RIL-002 LEVERAGE RESULTS EXIST AT FREEZE",
+  "truth_table_encoding": {"bitstring_role":"target outputs in pattern_order; first output is the most-significant bit of hex_id","pattern_order":["000","001","010","011","100","101","110","111"]}
+}
