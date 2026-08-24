@@ -6,24 +6,28 @@ on:
       - '.github/workflows/rd001-capture-beacon-v2.yml'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   capture:
     runs-on: ubuntu-latest
     steps:
-      - name: Fetch preselected immutable drand round
+      - name: Fetch and commit preselected immutable drand round
         shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           PRIMARY='https://api.drand.sh/8990e7a9aaed2ffed73dbd7092123d6f289930540d7651336225dc172e51b2ce/public/6405789'
           SECONDARY='https://drand.cloudflare.com/8990e7a9aaed2ffed73dbd7092123d6f289930540d7651336225dc172e51b2ce/public/6405789'
-          curl --fail --silent --show-error "$PRIMARY" -o primary.json
-          curl --fail --silent --show-error "$SECONDARY" -o secondary.json
+          git clone "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" repo
+          cd repo
+          curl --fail --silent --show-error "$PRIMARY" -o /tmp/primary.json
+          curl --fail --silent --show-error "$SECONDARY" -o /tmp/secondary.json
           python3 - <<'PY'
-          import base64, hashlib, json
-          p_raw=open('primary.json','rb').read()
-          s_raw=open('secondary.json','rb').read()
+          import base64, hashlib, json, os
+          p_raw=open('/tmp/primary.json','rb').read()
+          s_raw=open('/tmp/secondary.json','rb').read()
           p=json.loads(p_raw)
           s=json.loads(s_raw)
           assert p['round']==6405789, p['round']
@@ -31,12 +35,32 @@ jobs:
           assert p==s, 'relay JSON objects differ'
           calc=hashlib.sha256(bytes.fromhex(p['signature'])).hexdigest()
           assert calc==p['randomness'], (calc,p['randomness'])
+          out={
+            'experiment':'RD-001',
+            'phase':'V2_CALIBRATION_BEACON_CUSTODY',
+            'selected_round':6405789,
+            'scheduled_time':'2026-08-24T20:51:30Z',
+            'chain_hash':'8990e7a9aaed2ffed73dbd7092123d6f289930540d7651336225dc172e51b2ce',
+            'trigger_commit':os.environ['GITHUB_SHA'],
+            'primary_url':'https://api.drand.sh/8990e7a9aaed2ffed73dbd7092123d6f289930540d7651336225dc172e51b2ce/public/6405789',
+            'secondary_url':'https://drand.cloudflare.com/8990e7a9aaed2ffed73dbd7092123d6f289930540d7651336225dc172e51b2ce/public/6405789',
+            'relay_object_agreement':True,
+            'randomness_signature_hash_consistency':True,
+            'primary_raw_sha256':hashlib.sha256(p_raw).hexdigest(),
+            'secondary_raw_sha256':hashlib.sha256(s_raw).hexdigest(),
+            'primary_raw_base64':base64.b64encode(p_raw).decode(),
+            'secondary_raw_base64':base64.b64encode(s_raw).decode(),
+            'beacon':p,
+          }
+          with open('RD001_CALIBRATION_BEACON_RAW_V2.json','w') as f:
+            json.dump(out,f,indent=2,sort_keys=True);f.write('\n')
           print('RD001_BEACON_ROUND=6405789')
           print('RD001_RELAY_OBJECT_AGREEMENT=PASS')
           print('RD001_RANDOMNESS_SIGNATURE_HASH=PASS')
-          print('RD001_PRIMARY_RAW_SHA256='+hashlib.sha256(p_raw).hexdigest())
-          print('RD001_SECONDARY_RAW_SHA256='+hashlib.sha256(s_raw).hexdigest())
-          print('RD001_PRIMARY_RAW_BASE64='+base64.b64encode(p_raw).decode())
-          print('RD001_SECONDARY_RAW_BASE64='+base64.b64encode(s_raw).decode())
-          print('RD001_CANONICAL_JSON='+json.dumps(p,sort_keys=True,separators=(',',':')))
+          print('RD001_RANDOMNESS='+p['randomness'])
           PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add RD001_CALIBRATION_BEACON_RAW_V2.json
+          git commit -m 'Capture RD-001 v2 calibration beacon round 6405789'
+          git push origin HEAD:main
