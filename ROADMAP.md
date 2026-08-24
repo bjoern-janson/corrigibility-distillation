@@ -1,6 +1,6 @@
 # Roadmap — Representation, Provenance, Resource Boundaries, and Realization Geometry
 
-Status: **CONJECTURAL ROADMAP EXCEPT WHERE A RUNG IS EXPLICITLY MARKED EARNED, FROZEN, OR PREREGISTERED**
+Status: **CONJECTURAL ROADMAP EXCEPT WHERE A RUNG IS EXPLICITLY MARKED EARNED, FROZEN, PREREGISTERED, OR CLOSED**
 
 ## Earned / active ladder state
 
@@ -11,16 +11,16 @@ RIL-3  provenance-separated target transfer          PREREGISTERED / APPARATUS F
 RIL-4  resource-boundary amplification               NOT OPENED
 RIL-5  broad effective generality on constrained HW  NOT OPENED
 
-RG-001 F_LCC semantic constitution                   FROZEN
-RG-001 realizer-blind case geometry                  FROZEN / REFERENCE AUDIT PASS
-RG-001 realizer admission + A_trans^RG               NEXT
-RG-001 V_F / C_F / B_F                               NOT MEASURED
-RG-002+ main-line numbering                          NOT OPENED
+main-line RG-001 F_LCC semantic constitution         FROZEN
+main-line RG-001 case geometry + oracle              FROZEN / AUDIT PASS
+main-line RG-001 realizer admission                  FAIL / CLOSED
+main-line RG-001 preregistration                     NEVER OPENED
+main-line RG-002+                                    NOT OPENED
 ```
 
 RIL and RG are parallel lanes. Neither inherits unearned authority from the other.
 
-A separate historical parity calibration branch independently used the identifiers `RG-001/RG-002`; see `RG_NAMESPACE_NOTE.md` and `archive/rg_parity_calibration/`. Those identifiers do not alter the active main-line RG numbering above.
+A separate historical parity calibration branch independently used the identifiers `RG-001/RG-002`; see `RG_NAMESPACE_NOTE.md` and `archive/rg_parity_calibration/`. Those identifiers do not alter the main-line numbering above.
 
 ## RIL-1 — earned existence witness
 
@@ -54,174 +54,110 @@ pre-reveal audit         013435145d7d93985cd056926cfad710dd63e662
 entropy target time      2026-08-26T12:00:00.000Z
 ```
 
-The held-out generator is intentionally broader than RIL-2 selection. It uses only the shared 3-input Boolean schema, all-variable essentiality, and exact exclusion of the 25 already-tested targets. It does not use M0/M1 membership, exact ceiling, canonical-program complexity, prior leverage, or predicted representation cost.
-
 The future 24 targets will be instantiated exactly once from the frozen 193-target eligible universe using the preregistered future public randomness pulse and deterministic SHA-256 ranking. No target manifest exists yet.
 
-The frozen apparatus contains no Beacon network client and cannot materialize the target manifest before the frozen timestamp. It inherits the exact RIL-001 AST/SEM8 machinery and may not be modified under RIL-003 after the implementation freeze.
-
-The maximum positive claim remains:
+The maximum possible positive claim remains:
 
 ```text
 PROVENANCE_SEPARATED_REPRESENTATION_INDUCED_TRANSFER
 ```
 
-A single positive RIL-003 regime is still insufficient to establish representation-induced generality. That phrase would require repeated success across independently constituted held-out regimes.
+A single positive RIL-003 regime would still be insufficient to establish representation-induced generality.
 
 ## Candidate affordance object — still not universal theory
 
-A useful provisional object remains:
+The provisional realization coordinate remains:
 
 \[
-\mathcal A(R)=(\Omega_R,\tau_R,c_R,\mathcal C_R).
+\Gamma_F(r)=(V_F,C_F,B_F,A_F).
 \]
 
-A resource-bounded effective repertoire can be written provisionally as:
+It is a coordinate system for generating discriminating experiments, not a validated universal theory.
 
-\[
-\Omega_{\mathrm{eff}}(R;B)
-=
-\{\omega:\tau_R(\omega)\text{ is valid and }c_R(\omega)\le B\}.
-\]
+The archived parity calibration provides one bounded witness that cost and robustness need not be monotonically aligned, but no general law follows.
 
-These remain roadmap notation, not universal results established by RIL-001/002 or an unexecuted RIL-003.
+## Main-line RG-001 — terminal admission null
 
-## RIL-4 — future resource-boundary test
+RG-001 asked whether two structurally different systems could first be admitted as realizers of the same independently constituted localized-corrective-contraction function.
 
-Only after provenance-separated transfer is independently supported should the RIL lane test whether representation leverage changes effective capability most strongly near a resource boundary:
+The scientific object was frozen before either candidate entered:
 
 ```text
-c_R0(omega) > B >= c_R1(omega)
+F_LCC semantic constitution
+-> eight-case sufficient-support geometry
+-> reference closure oracle
+-> realizer-admission contract
 ```
 
-This requires explicit manipulation of budget `B`; it cannot be inferred merely from speedup on an unconstrained machine.
-
-## RIL-5 — broad effective generality
-
-The maximal conjecture remains:
-
-> A representation may place a surprisingly broad class of valid transformations below the practical resource boundary of a fixed constrained substrate.
-
-This is far beyond current evidence.
-
-## Representation payback horizon
-
-Representation construction/learning cost remains part of any later total-resource story:
+The decisive case pair is:
 
 \[
-C_{\mathrm{total}}(R,n)
-=
-C_{\mathrm{learn}}(R)+\sum_{i=1}^{n}c_R(F_i).
+C04:\mathcal Q(H)=\{\{G,w_a\}\}
+\qquad\text{vs}\qquad
+C05:\mathcal Q(H)=\{\{G\},\{w_a\}\}.
 \]
 
-A future payback horizon may be defined as:
+It forces preservation of sufficient-support hyperedge grouping rather than pairwise incidence alone.
 
-\[
-n^*=\min\{n:C_{\mathrm{total}}(R_1,n)<C_{\mathrm{total}}(R_0,n)\}.
-\]
-
-This is not tested by RIL-003.
-
-## RG-001 — cross-realizer existence assay
-
-The new RG lane asks a different question from RIL:
-
-> Can structurally different computational systems realize the same independently constituted function while differing in realization cost and/or the subset of an externally frozen semantic challenge space they preserve?
-
-The provisional realization object is:
-
-\[
-\boxed{
-\Gamma_F(r)=
-\left(
-V_F(r),
-\mathbf C_F(r),
-\mathcal B_F(r),
-A_F(r)
-\right).
-}
-\]
-
-For RG-001:
+### Admission freeze
 
 ```text
-A_F = NA
+contract freeze  426062c5baa32ea192b99b9a1c8de574eff6eb1e
+result freeze    049a2e088c4ab55bf42668607e84f13235e15e18
 ```
 
-No autonomy comparison is constituted.
-
-The frozen function is localized corrective contraction, `F_LCC`, with five obligations:
+Candidate surfaces were fixed before adjudication:
 
 ```text
-LCC-1 implicated contraction
-LCC-2 dependency-selective contraction
-LCC-3 independent preservation
-LCC-4 no replacement authority from refutation
-LCC-5 independent successor evidence can re-enter
+SSI-CALC v0.1
+  bjoern-janson/ssi@362594d4337a1c72556b501b6477ff624db919e1
+
+OpenCore Nano V0
+  bjoern-janson/opencore@d85aac9fa35ea4ba21afebc73b9cb8970c2a1dbf
 ```
 
-The function is defined outside all candidate realizers using externally supplied sufficient-support sets.
-
-The frozen challenge space is:
-
-\[
-\mathcal G_{\mathrm{RG001}}=\{X_1,\ldots,X_8\}.
-\]
-
-It is not yet a realization boundary. For a later admitted realizer:
-
-\[
-\mathcal B_F(r)
-=
-\{X\in\mathcal G_{\mathrm{RG001}}:V_F(r\mid X)=1\}.
-\]
-
-Thus:
-
-\[
-\boxed{
-\mathcal G_{\mathrm{RG001}}
-\neq
-\mathcal B_F(r).
-}
-\]
-
-The case family includes a matched conjunction-vs-alternative support pair that aliases if sufficient-set grouping is erased. The reference closure evaluator passes the current authoring-time self-test and 256 deterministic opaque-label permutation checks.
-
-Current legal sequence:
+Both fail the first decisive native-semantics gate:
 
 ```text
-F_LCC semantic constitution  FROZEN
--> external case geometry    FROZEN
--> reference audit           PASS
--> realizer admission        NEXT
--> adapter freeze
--> A_trans^RG
--> V_F
--> C_F only if common V_F=1
--> B_F derived only from frozen case geometry
--> STOP
+A6_NATIVE_DEPENDENCY_CONSEQUENCE = FAIL
+A8_ALTERNATIVE_ROUTE_NON_ALIASING = FAIL witness
+A14_NO_SEMANTIC_INVENTION = FAIL if repaired in adapter/kernel
 ```
 
-The strongest possible RG-001 positive claim is only a bounded existence result:
+SSI-CALC's frozen R1-R11 checker is a one-request/one-certificate authority-transfer adjudicator. It has no native arbitrary OR-of-sufficient-support-routes standing-validity operation.
+
+Nano V0 natively supports conjunctive precondition ancestry and recursive revocation, but one current standing has one current producing receipt; it has no native multi-provenance/OR-of-receipts effective standing or automatic alternative-route failover.
+
+Therefore:
 
 \[
-\exists F,r_0,r_1:
-V_F(r_0)=V_F(r_1)=1
+A_{trans}^{RG}(SSI\!\mbox{-}CALC)=FAIL,
+\qquad
+A_{trans}^{RG}(Nano)=FAIL.
 \]
 
-with a registered realization-coordinate difference.
+Terminal:
 
-It would not establish a universal realization geometry theory or completeness of `Gamma_F`.
+```text
+FUNCTION_EQUIVALENCE_NOT_CONSTITUTED
+RG-001 preregistration  NOT OPENED
+V_F                     NOT RUN
+C_F                     NOT RUN
+B_F                     NOT RUN
+A_F                     NA
+```
+
+This is not `V_F=0`. The experiment terminated one layer earlier because the common function could not be constituted across the frozen native surfaces without semantic invention in the adapter.
+
+No in-place repair is legal. A future attempt that changes a native surface, adds a closure layer, weakens `F_LCC`, or changes the adapter ceiling requires a new assay identifier and a new freeze.
 
 ## Archived parity calibration — bounded historical evidence
 
-The branch `rg-001-realization-geometry` independently froze a 12-bit parity calibration and used the original internal identifiers `RG-001` and `RG-002`. Because those identifiers collide with the active main-line `RG-001`, the branch artifacts are archived byte-for-byte under `archive/rg_parity_calibration/` rather than renumbered retroactively.
-
-The first branch-local assay terminated `NOT_EVALUABLE` when its preregistered opcode tracer failed to count the construction region. The repaired branch-local assay was explicitly not an independent replication and terminated:
+The historical parity branch terminated:
 
 ```text
-COST_ROBUSTNESS_TRADEOFF
+parity RG-001  NOT_EVALUABLE
+parity RG-002  COST_ROBUSTNESS_TRADEOFF
 ```
 
 with:
@@ -240,26 +176,32 @@ B0 preserved faults   512 / 512
 B1 preserved faults   448 / 512
 ```
 
-Therefore the calibration establishes only that, under one exact function/substrate/fault contract, lower counted cost need not imply a larger robustness region:
+This remains a deliberately constructed calibration witness, not evidence for the main-line `F_LCC` assay, autonomy, biology, or RIL-003.
 
-\[
-C\downarrow\;\not\Rightarrow\;B\uparrow.
-\]
+## RIL-4 / RIL-5
 
-The robustness separation was deliberately constructed. No universal geometry, autonomy, biological internalization, or RIL-003 claim follows.
+Remain unopened. Resource-boundary amplification and broad constrained-hardware generality require future explicit experiments and cannot be inferred from RIL-001/002 speedup alone.
 
-## RG-002+ — main-line numbering
+## Future main-line RG
 
-Not opened.
+No successor is currently open.
 
-This statement refers only to the active `F_LCC` RG numbering. It does not erase or rename the archived parity branch's original `RG-002` result.
+A future main-line RG assay would need to state exactly which object changes relative to RG-001 before any implementation:
 
-Possible later questions — third realizers, autonomy, broader function classes, biological realizers, or theory induction — remain outside main-line RG-001 and receive no authority from either the current F_LCC freeze or the archived parity calibration.
+```text
+candidate realizer surface
+or
+adapter ceiling
+or
+F_LCC / case geometry
+```
+
+Changing any of these is new science, not repair of RG-001.
 
 ## Working maxims
 
 > **RIL:** First show leverage. Then transfer. Then separate provenance. Only after that ask what happens at the hardware boundary.
 
-> **RG:** Freeze the function and challenge geometry first. Adapt the realizer to the function; never adapt the function to the realizer.
+> **RG:** Constitute the function first; admit the realizers second. If admission fails, stop before comparison.
 
 > **Calibration:** Same function. Different realizer. Different geometry.
