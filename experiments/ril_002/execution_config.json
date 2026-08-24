@@ -1,0 +1,9 @@
+{
+  "assay": "RIL-002",
+  "family_members": 24,
+  "representations": ["R0_AST", "R1_SEM8"],
+  "primary_compute_measure": "CPython sys.monitoring INSTRUCTION events inherited from RIL-001",
+  "memory_gate": "peak incremental tracemalloc bytes inherited from RIL-001",
+  "timing": "not a primary RIL-002 measure",
+  "result_order": "member preservation before leverage interpretation"
+}
