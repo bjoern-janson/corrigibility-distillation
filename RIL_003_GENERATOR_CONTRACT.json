@@ -1,0 +1,152 @@
+{
+  "I_shared_whitelist": [
+    "three ordered Boolean input coordinates x,y,z",
+    "complete input domain {0,1}^3",
+    "canonical pattern order 000,001,010,011,100,101,110,111",
+    "Boolean output type",
+    "deterministic total 8-entry truth-table target schema",
+    "all generated targets require x,y,z essential",
+    "held-out sample size n=24",
+    "exact Q_test eligibility and sampling rule",
+    "exact prior-target exclusion set for exclusion only",
+    "frozen FS007 candidate languages and canonical candidate identities/order",
+    "frozen exhaustive search, tie-break, gain, value and update semantics",
+    "frozen repair cost, horizon, task/probe/held-out sizes and data-generation seeds",
+    "frozen authority/scope boundary",
+    "frozen CPython instruction-event accounting regions and memory non-regression gate",
+    "historical fact of positive RIL-001 and RIL-002 results",
+    "exact frozen R0_AST and R1_SEM8 definitions"
+  ],
+  "I_target_test_forbidden_before_representation_freeze": [
+    "future Beacon outputValue",
+    "sampled target IDs",
+    "sampled truth tables",
+    "target-specific probe labels",
+    "target-specific held-out labels or predictions",
+    "target membership in M0 or M1",
+    "target-specific exact M0/M1 ceilings",
+    "target-specific canonical best program",
+    "target-specific minimal AST/program size",
+    "target-specific repair gain/value/decision",
+    "target-specific expected AST or SEM8 cost",
+    "target-specific opcode/memory/timing results",
+    "target-derived clustering/features/similarity/expected leverage",
+    "target-derived cache/index/compilation/code path"
+  ],
+  "Q_test": {
+    "eligibility": {
+      "all_three_variables_essential": true,
+      "expected_all_essential_count": 218,
+      "expected_eligible_count_after_exclusion": 193,
+      "prior_target_exact_exclusion_only": [
+        "0x17",
+        "0x1B",
+        "0x1D",
+        "0x27",
+        "0x2E",
+        "0x35",
+        "0x3A",
+        "0x47",
+        "0x4E",
+        "0x53",
+        "0x5C",
+        "0x72",
+        "0x74",
+        "0x8B",
+        "0x8D",
+        "0xA3",
+        "0xAC",
+        "0xB1",
+        "0xB8",
+        "0xC5",
+        "0xCA",
+        "0xD1",
+        "0xD8",
+        "0xE2",
+        "0xE4"
+      ],
+      "uses_M0_membership_filter": false,
+      "uses_M1_membership_filter": false,
+      "uses_prior_leverage_filter": false,
+      "uses_program_size_filter": false
+    },
+    "entropy": {
+      "fallback_entropy_source": null,
+      "provider": "NIST Randomness Beacon 2.0",
+      "pulse_rule": "first Beacon 2.0 pulse with timestamp >= target_time_utc",
+      "seed_decode": "hex -> exactly 64 bytes",
+      "seed_field": "outputValue",
+      "substitution_forbidden": true,
+      "target_time_utc": "2026-08-26T12:00:00.000Z"
+    },
+    "object_schema": {
+      "coordinates": [
+        "x",
+        "y",
+        "z"
+      ],
+      "function_type": "{0,1}^3 -> {0,1}",
+      "pattern_order": [
+        "000",
+        "001",
+        "010",
+        "011",
+        "100",
+        "101",
+        "110",
+        "111"
+      ],
+      "stateful": false,
+      "truth_table_bits": 8
+    },
+    "ranking": {
+      "digest": "SHA256(b'RIL-003|TARGET-RANK|' + beacon_output_bytes + b'|' + target_id_ascii)",
+      "sort": "lexicographic digest ascending; tie-break target ID ascending",
+      "take_first": 24,
+      "target_id_format": "TT_XX uppercase two-digit hex"
+    },
+    "reveal_manifest_required_before_execution": true,
+    "sample_size": 24,
+    "sampling_without_replacement": true
+  },
+  "assay": "RIL-003",
+  "immediate_stop": [
+    "Q_test frozen",
+    "I_shared frozen",
+    "R0/R1 frozen",
+    "STOP"
+  ],
+  "max_positive_claim": "PROVENANCE_SEPARATED_REPRESENTATION_INDUCED_TRANSFER",
+  "member_gate": "G_i=(A_fixed_i,P_i,Lambda_i)",
+  "not_earned": [
+    "representation-induced generality",
+    "resource-boundary amplification",
+    "broad effective generality",
+    "universal affordance geometry",
+    "general constrained-hardware capability amplification"
+  ],
+  "parents": {
+    "current_state_before_ril003": "c8b30e63e7c7650d4e08dd1e9755a144ca903b69",
+    "fs007_commit": "2f4ca824e02b89df0c23d64de312c4f93a4c8a41",
+    "fs007_repository": "bjoern-janson/future-sufficiency",
+    "fs007_source_blob": "f74d85f5f9d0c7842dc50e34ae2718699108fff6",
+    "ril001_terminal": "a8dfb2aa7e72b5f28c497bbe071408c9be0113a3",
+    "ril002_family_freeze": "d35d998eea7e9b06ae0516dbcb9019955052ef6f",
+    "ril002_terminal": "e0d43408ed2a07c3cc6bca181f433ab819c0577f"
+  },
+  "primary_result": "ordered 24-member record plus Lambda vector; NA where A_fixed or P fails",
+  "representations": {
+    "R0": {
+      "name": "R0_AST",
+      "prediction": "program.evaluate_local((x,y,z))"
+    },
+    "R1": {
+      "name": "R1_SEM8",
+      "prediction": "semantic_tuple[4*x + 2*y + z]"
+    },
+    "post_reveal_modification_forbidden": true,
+    "selection_rule": "constant inherited pair; no new representation search"
+  },
+  "rung": "RIL-3 provenance-separated transfer",
+  "status": "PREREGISTERED ONLY; Q_test / I_shared / R0-R1 FROZEN; NO TARGET INSTANCES; NO IMPLEMENTATION; NO EXECUTION"
+}
