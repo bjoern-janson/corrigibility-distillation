@@ -1,0 +1,11 @@
+{
+  "assay": "RG-001",
+  "domain_size": 4096,
+  "memory_bytes": 64,
+  "fault_count": 512,
+  "cost_metric": "CPython opcode events via sys.settrace",
+  "r0": "LOOP12",
+  "r1": "LUT6",
+  "robustness_fault": "one bit flip in shared 64-byte auxiliary memory",
+  "ril003_interaction": "forbidden"
+}

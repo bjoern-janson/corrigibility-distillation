@@ -1,0 +1,108 @@
+{
+  "assay": "RG-001",
+  "branch": "rg-001-realization-geometry",
+  "parent_branch_point": "fd30d9996db5b82652c208a0d29ab9fff0aca523",
+  "purpose": "bounded realization-geometry cost/robustness existence assay",
+  "function": {
+    "name": "PARITY12",
+    "domain": "integers 0..4095",
+    "reference": "x.bit_count() & 1",
+    "full_domain_required": true
+  },
+  "shared_substrate": {
+    "reserved_aux_memory_bytes": 64,
+    "memory_type": "bytearray",
+    "parallelism": false,
+    "vectorization": false,
+    "jit": false,
+    "external_libraries_for_realizer": false
+  },
+  "realizers": {
+    "r0": {
+      "name": "LOOP12",
+      "construction": "allocate zeroed bytearray(64)",
+      "prediction": "12-iteration explicit parity loop; auxiliary memory ignored"
+    },
+    "r1": {
+      "name": "LUT6",
+      "construction": "allocate bytearray(64); fill each entry with explicit six-iteration parity loop",
+      "prediction": "(memory[x & 0x3F] & 1) ^ (memory[(x >> 6) & 0x3F] & 1)"
+    }
+  },
+  "validity": {
+    "criterion": "prediction equals reference for every x in 0..4095",
+    "noncompensatory": true
+  },
+  "cost": {
+    "primary_metric": "executed CPython bytecode instructions internal to realizer",
+    "instrumentation": "sys.settrace opcode events",
+    "counted": [
+      "one construction",
+      "one exhaustive ascending prediction sweep over 0..4095"
+    ],
+    "excluded": [
+      "shared harness loop",
+      "reference function",
+      "tracer implementation",
+      "serialization",
+      "robustness execution"
+    ],
+    "contrast": "Lambda_C = C0 / C1",
+    "success_condition": "V0=V1=1 and C1<C0"
+  },
+  "robustness": {
+    "fault_space": "all 512 single-bit flips (j,b), j in 0..63, b in 0..7, in reserved auxiliary memory",
+    "procedure": "clean build -> one bit flip -> exhaustive 4096-input validity check -> no repair",
+    "canonical_order": "j ascending, then b ascending",
+    "object": "B_F(r_i) exact set of faults preserving full-domain validity",
+    "strict_loss": "B1 proper subset of B0",
+    "probability_interpretation_forbidden": true
+  },
+  "primary_object": "(V0,C0,B0;V1,C1,B1) plus exact 512-bit robustness vectors",
+  "outcomes": [
+    "NOT_EVALUABLE",
+    "INVALID_REALIZER",
+    "NO_COST_SEPARATION",
+    "COST_ONLY",
+    "COST_ROBUSTNESS_TRADEOFF"
+  ],
+  "max_positive_claim": "bounded cost/robustness separation between two valid realizations of the same fixed function under the exact frozen CPython opcode and one-bit auxiliary-memory fault contracts",
+  "not_earned": [
+    "realization geometry as a general theory",
+    "representation-induced generality",
+    "biological affordance migration",
+    "environmental autonomy",
+    "natural evolutionary tradeoffs",
+    "hardware-independent cost relations",
+    "robustness outside the frozen fault model",
+    "any RIL-003 result"
+  ],
+  "execution_order": [
+    "preregistration freeze",
+    "implementation",
+    "implementation freeze",
+    "pre-execution audit",
+    "validity",
+    "cost",
+    "robustness",
+    "result",
+    "final audit",
+    "STOP"
+  ],
+  "lane_firewall": {
+    "forbidden_inputs": [
+      "RIL-003 Beacon pulse",
+      "RIL-003 target IDs or truth tables",
+      "RIL-003 target manifest",
+      "RIL-003 preservation or cost results"
+    ],
+    "forbidden_modifications": [
+      "RIL_003_PREREGISTRATION.md",
+      "RIL_003_GENERATOR_CONTRACT.json",
+      "experiments/ril_003/*",
+      "RIL-003 target selection",
+      "RIL-003 interpretation criteria"
+    ]
+  },
+  "status": "PREREGISTRATION ONLY; NO IMPLEMENTATION; NO RESULT"
+}
