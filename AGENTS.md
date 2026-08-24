@@ -4,125 +4,262 @@
 
 This repository is for **Corrigibility Distillation**.
 
-Phase 1 is **reconstructive inventory only**: describe what already exists across the prior research corpus.
+Phase 1 is complete.
 
-The phase-1 deliverable is:
+Phase 2 is **comparison only** over the fixed 14-row Phase-1 inventory.
+
+The active question is:
+
+> Which existing things can actually replace other existing things?
+
+Do not design a final system.
+
+## Phase 2 input
+
+Use only the completed Phase-1 inventory:
 
 | Repo | Mechanisms | Functions | Invariants | Claim Ceiling | Dependency Limit |
 |---|---|---|---|---|---|
 
+Treat those 14 rows as the complete and immutable Phase-2 evidence base.
+
+Do not add new mechanisms, functions, invariants, claims, dependencies, repositories, or theoretical objects during comparison.
+
+Do **not** reread source repositories to add, correct, strengthen, or reinterpret Phase-1 entries. If an inventory row appears incomplete or ambiguous, record the limitation rather than repairing it from source material during Phase 2.
+
+Source repositories may be consulted only to verify an existing citation or reference. They do not become a new Phase-2 evidence stream.
+
+## Phase 2 deliverable
+
+Use:
+
+| Repo A | Repo B | Mechanism overlap | Function overlap | Invariant overlap | Claim/dependency conflict | Substitutability |
+|---|---|---|---|---|---|---|
+
+`Substitutability` must be one of:
+
+- `YES`
+- `NO`
+- `PARTIAL`
+
 ## Hard boundary
 
-Do **not** invent, propose, infer, or synthesize a corrective architecture during Phase 1.
+Phase 2 may relate existing inventory entries.
 
-Do not create:
-- candidate substrates
+It may not create new corpus elements.
+
+Do not introduce:
+
+- candidate architectures
+- distilled substrates
 - missing components
 - new mechanisms
-- new invariants
 - new functions
-- unearned theory
-- cross-repository abstractions presented as established facts
+- new invariants
+- new operation signatures
+- new theories
+- optimization targets
+- proposed final systems
 
-A component may enter the inventory only when it is concretely instantiated or demonstrably earned by the source repository.
+Do not reinterpret comparison as synthesis.
 
-## Extraction rule
+## Comparison rules
 
-For each repository, record only:
+Preserve:
 
-**Mechanisms**
-What was actually implemented, constructed, or experimentally exercised.
+\[
+\text{mechanism overlap}
+\neq
+\text{mechanism equivalence}
+\]
 
-**Functions**
-What transformation or capability the mechanism actually performed.
+\[
+\text{function overlap}
+\neq
+\text{substitutability}
+\]
 
-**Invariants**
-Properties or distinctions actually preserved, demonstrated, or formally earned.
+\[
+\text{invariant overlap}
+\neq
+\text{shared mechanism}
+\]
 
-**Claim Ceiling**
-The strongest claim justified by the repository's evidence.
+\[
+\text{shared vocabulary}
+\neq
+\text{shared evidence}
+\]
 
-**Dependency Limit**
-Conditions, assumptions, oracle requirements, fixed families, horizons, budgets, interfaces, or other restrictions without which the claim does not hold.
+Similarity of language is not evidence of substitutability.
 
-Do not silently strengthen any claim.
+## Substitutability rule
+
+Treat substitutability as **directional**.
+
+\[
+R_A \rightsquigarrow R_B
+\]
+
+does not imply:
+
+\[
+R_B \rightsquigarrow R_A.
+\]
+
+If the two directions differ, record them separately.
+
+A substitution may be marked `YES` only when the relevant demonstrated functions and invariants of the replaced item survive under the replacement without requiring a stronger unavailable dependency or exceeding the replacement's earned claim ceiling.
+
+`PARTIAL` means a specific, explicitly identified function, invariant, or scope is substitutable, while the repository or mechanism as a whole is not shown substitutable.
+
+Otherwise mark it `NO`.
+
+Do not infer repository-level substitution from a local substitution.
+
+## Typed substitution
+
+Every substitution judgment is implicitly relative to:
+
+\[
+(F_R,I_R,\Omega,D)
+\]
+
+where applicable.
+
+Do not generalize a substitution beyond the exact function, invariant, operation family, scope, and dependency conditions supported by the inventory.
+
+Do not infer transitivity.
+
+\[
+R_A\rightsquigarrow R_B
+\quad\land\quad
+R_B\rightsquigarrow R_C
+\]
+
+does not establish:
+
+\[
+R_A\rightsquigarrow R_C.
+\]
+
+Check each relation directly.
+
+## Claim and dependency discipline
+
+A replacement is not valid merely because it appears more capable.
+
+Check both:
+
+**Claim Ceiling**  
+Does the replacement's earned evidence justify the exact function or invariant being substituted?
+
+For a valid directional substitution:
+
+\[
+R_A\rightsquigarrow R_B
+\Rightarrow
+C_B \succeq C_A
+\]
+
+only for the substituted claim and under the same stated conditions.
+
+The replacement does **not** need a globally stronger evidence record. It needs an earned claim ceiling sufficient for the exact thing being replaced.
+
+**Dependency Limit**  
+Does the replacement require assumptions, oracles, interfaces, fixed families, budgets, horizons, supplied structures, or other conditions that make the proposed substitution invalid?
+
+Do not silently strengthen either repository's claim.
+
+Do not erase dependency differences to manufacture equivalence.
 
 ## Evidence discipline
 
-Preserve the distinction between:
-- implemented vs proposed
-- measured vs inferred
-- demonstrated vs assumed
-- independently rediscovered vs inherited
-- positive result vs negative result
-- scientific result vs apparatus result
+Preserve the Phase-1 distinctions between:
 
-A failed experiment is still evidence when its failure boundary is informative.
+- proposed vs implemented
+- implemented vs demonstrated
+- formal vs empirical
+- positive vs negative/null evidence
+- apparatus result vs scientific result
+- inherited distinction vs independently earned result
 
-Do not reinterpret a negative result as support for a preferred theory.
+A proposed mechanism cannot substitute for an empirically demonstrated mechanism merely because their descriptions align.
 
-## Repository parsing
+A formal result cannot automatically substitute for an empirical mechanism.
 
-Read repositories in chronological order where possible.
+A negative result cannot be converted into a positive capability claim.
 
-Use the repository's actual:
-- source
-- experiment specifications
-- executable code
-- audits
-- results
-- frozen commits
+## Overlap discipline
 
-as the primary evidence.
+Record overlap only when the Phase-1 inventory actually supports it.
 
-Do not rely on memory or summaries when the source repository is available.
+Prefer narrow descriptions.
 
-## Claim compression
+For example:
 
-Compress descriptions, but do not remove distinctions that would change the earned claim.
+> both perform bounded candidate filtering
 
-The goal is a compact inventory, not a chronological transcript.
+is preferable to:
 
-## No distillation yet
+> both implement corrective search
 
-Phase 1 ends with the inventory.
+unless the broader relation is explicitly earned.
 
-Only after the inventory is complete may the project proceed to:
+Do not normalize terminology merely to increase apparent overlap.
 
-1. compare mechanisms/functions/invariants;
-2. test substitutability and redundancy;
-3. construct a minimal faithful realization.
+## Redundancy boundary
 
-If a supposedly necessary component is absent from the corpus, do **not** add it.
+Do not call anything redundant merely because overlap exists.
 
-Instead record:
+Redundancy is not earned until substitutability is demonstrated.
 
-> Distillation gap: unsupported by current corpus.
+\[
+\text{overlap}
+\not\Rightarrow
+\text{redundancy}.
+\]
 
-That becomes a future research question.
+A `NO` result is fully admissible.
+
+A corpus with recurring functions or invariants but no valid substitutions is a valid Phase-2 outcome.
+
+## Minimization remains closed
+
+Do not:
+
+- minimize the corpus
+- choose preferred mechanisms
+- remove repositories
+- propose a minimal faithful realization
+- optimize complexity
+- design the student
+- infer the final corrigibility substrate
+
+Those operations occur only after Phase 2 is complete and redundancy has been earned.
+
+## Phase 2 sequence
+
+\[
+\text{existing inventory}
+\rightarrow
+\text{overlap}
+\rightarrow
+\text{substitutability}
+\rightarrow
+\text{earned redundancy}
+\]
+
+Do not reverse this order.
 
 ## Null result
 
-The following is a valid outcome:
+The following is a valid Phase-2 conclusion:
 
-> No materially smaller faithful realization exists.
+> Shared functions and recurring invariants were observed, but no meaningful mechanism-level substitutability was demonstrated.
 
-Do not force a unifying structure merely because one is aesthetically appealing.
-
-## Governing sequence
-
-\[
-\text{extract}
-\rightarrow
-\text{compare}
-\rightarrow
-\text{test substitutability}
-\rightarrow
-\text{minimize}
-\]
-
-Never reverse this order.
+Do not force substitutions merely to make later distillation possible.
 
 ## Final rule
 
-**Distill what already exists. Do not invent what seems necessary.**
+**Compare what already exists. Replace only what the evidence permits. Minimize nothing yet.**
