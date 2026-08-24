@@ -1,0 +1,13 @@
+{
+  "assay": "RIL-003",
+  "preregistration_commit": "c5acae018aec09afc9ceece152bb9cdc7a39e112",
+  "target_time_utc": "2026-08-26T12:00:00.000Z",
+  "target_manifest": "RIL_003_TARGET_MANIFEST.json",
+  "network_fetch_in_apparatus": false,
+  "pre_reveal_allowed_modes": ["pre-reveal-audit", "execution-manifest"],
+  "reveal_mode": "reveal-targets; requires externally captured Beacon package and wall-clock >= target time",
+  "post_reveal_modes": ["preservation", "opcode", "memory"],
+  "representations": {"R0": "R0_AST", "R1": "R1_SEM8"},
+  "held_out_sample_size": 24,
+  "expected_eligible_universe": 193
+}
