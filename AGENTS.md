@@ -9,7 +9,7 @@ Corpus Distillation  CLOSED
 CGP-001              CLOSED / NOT EVALUABLE
 RIL-001              CLOSED / REPRESENTATION_INDUCED_LEVERAGE
 RIL-002              CLOSED / FAMILY_WIDE_LEVERAGE
-RIL-003              PREREGISTERED / TARGETS UNREVEALED / NOT IMPLEMENTED
+RIL-003              IMPLEMENTATION FROZEN / PRE-REVEAL AUDIT PASS / TARGETS UNREVEALED
 RIL-4+               NOT OPENED
 ```
 
@@ -36,13 +36,22 @@ RIL_002_RESULT.*
 RIL_002_FINAL_AUDIT.md
 RIL_003_PREREGISTRATION.md
 RIL_003_GENERATOR_CONTRACT.json
+experiments/ril_003/* at f54d9e1a...
+RIL_003_PRE_REVEAL_AUDIT.md
 ```
 
 Mutable narrative files may summarize later state but may not silently strengthen these records.
 
-## RIL-003 preregistration boundary
+## RIL-003 frozen provenance boundary
 
-RIL-003 is open **only** at the preregistration layer.
+Scientific anchors:
+
+```text
+preregistration freeze   c5acae018aec09afc9ceece152bb9cdc7a39e112
+implementation freeze    f54d9e1a4d8ef35404824d2172ace173af387a96
+pre-reveal audit         013435145d7d93985cd056926cfad710dd63e662
+entropy target time      2026-08-26T12:00:00.000Z
+```
 
 Frozen now:
 
@@ -54,30 +63,45 @@ R0 = R0_AST
 R1 = R1_SEM8
 future public entropy rule
 held-out family size n=24
+generic execution apparatus
 member gate G_i=(A_fixed_i,P_i,Lambda_i)
 claim ceiling
 ```
 
-Not present now:
+Still absent:
 
 ```text
 held-out target IDs
 held-out truth tables
-implementation
 target reveal manifest
-preservation output
-opcode/memory/timing output
+member preservation output
+opcode/memory output
 Lambda vector
 scientific verdict
 ```
 
-Do not instantiate or infer target identities before the target-reveal phase.
+## Pre-reveal apparatus discipline
+
+The implementation is immutable under RIL-003 after `f54d9e1a...`.
+
+It must retain these properties:
+
+```text
+exact inherited RIL-001 contract/algorithm/instrument/audit blobs
+no Beacon network client
+reveal requires externally captured pulse package
+wall-clock reveal gate at 2026-08-26T12:00:00.000Z
+Q_test eligible count = 193
+sample size = 24
+manifest selection recomputed from recorded outputValue
+no representation-specific branch outside inherited AST/SEM8 predictor primitive
+```
+
+Do not modify the frozen apparatus after observing any future Beacon or target information. Any such change requires a new assay identifier.
 
 ## Q_test discipline
 
 Eligible targets are all 3-input Boolean truth tables for which x,y,z are all essential, excluding exactly the 25 previously tested RIL-001/RIL-002 truth tables.
-
-Expected counts:
 
 ```text
 all-essential targets  218
@@ -94,50 +118,20 @@ The later target sample is determined only by the preregistered future NIST Rand
 
 Shared schema/interface information is allowed because the test must remain well-typed. The exact whitelist is in `RIL_003_PREREGISTRATION.md` and `RIL_003_GENERATOR_CONTRACT.json`.
 
-Held-out target-specific information is forbidden from representation selection/construction, including:
+Held-out target-specific information remains forbidden from representation selection/construction, including target IDs/truth tables, labels, M0/M1 status, exact ceilings, best programs, repair outcomes, expected/observed costs, target-derived features, and target-specific caches or compilation.
+
+## Next legal transition
+
+Before the frozen entropy boundary, do not perform any target-specific operation.
+
+After the first admissible future Beacon pulse is captured:
 
 ```text
-actual target IDs/truth tables
-target labels
-target M0/M1 status
-exact target ceilings
-best/canonical target programs
-repair outcomes
-expected or observed target costs
-target-derived features/clusters/similarity
-any target-specific cache/index/compilation/code path
-```
-
-## Representation freeze
-
-RIL-003 performs no new representation search.
-
-```text
-R0_AST:
-    candidate payload = frozen canonical Program AST
-    prediction = program.evaluate_local((x,y,z))
-
-R1_SEM8:
-    candidate payload = frozen exact 8-pattern semantic tuple
-    prediction = semantic_tuple[4*x + 2*y + z]
-```
-
-No tuning, new features, indexing changes, target-specific lookup/cache, JIT, vectorization, batching asymmetry, pruning, early stopping, candidate reordering, tie-break change, or “minor adaptation” is permitted after this freeze.
-
-## Next legal phase — not yet authorized by this file
-
-A later explicit instruction may begin **generic implementation without target reveal**.
-
-If opened, the intended order is:
-
-```text
-implement generic frozen apparatus
--> implementation freeze
--> pre-reveal source/A_fixed/instrumentation audit
--> wait until frozen future Beacon pulse exists
--> instantiate F_test exactly once
--> freeze target reveal manifest
--> execute member preservation gates
+validate pulse package
+-> materialize F_test exactly once from frozen Q_test
+-> commit RIL_003_TARGET_MANIFEST.json
+-> audit pulse/manifest provenance
+-> only then execute member preservation
 -> interpret Lambda only where P_i=1
 -> publish ordered Lambda vector
 -> final audit
@@ -158,4 +152,4 @@ It cannot by itself establish representation-induced generality, resource-bounda
 
 ## Final rule
 
-**Freeze the territory generator. Whitelist shared information. Freeze the coordinates. Do not let held-out target-specific information exist before the protocol says it may exist.**
+**Freeze the territory generator. Whitelist shared information. Freeze the coordinates and apparatus. Do not let held-out target-specific information enter until the protocol says it may exist.**
