@@ -1,0 +1,61 @@
+{
+  "object": "RG001_REALIZER_ADMISSION_AUDIT_V0.1",
+  "status": "FAIL_FUNCTION_EQUIVALENCE_NOT_CONSTITUTED",
+  "admission_contract": {
+    "commit": "426062c5baa32ea192b99b9a1c8de574eff6eb1e",
+    "file": "RG001_REALIZER_ADMISSION_CONTRACT.md",
+    "blob": "3b8e732c2cc0f7a656efa57ddec21963a6baa2c3"
+  },
+  "decisive_semantic_witness": {
+    "C04": "Q(H)={{G,w_a}}",
+    "C05": "Q(H)={{G},{w_a}}",
+    "required_native_distinction": "conjunctive_route_vs_alternative_sufficient_routes"
+  },
+  "candidates": {
+    "SSI_CALC_V0_1": {
+      "repository": "bjoern-janson/ssi",
+      "commit": "362594d4337a1c72556b501b6477ff624db919e1",
+      "native_blob": "293d373d13bd68b40ed2e5b0f8754146638981d6",
+      "A_trans_RG": "FAIL",
+      "terminal": "FUNCTION_EQUIVALENCE_NOT_CONSTITUTED",
+      "first_failed_gate": "A6_NATIVE_DEPENDENCY_CONSEQUENCE",
+      "specific_failed_gates": [
+        "A6_NATIVE_DEPENDENCY_CONSEQUENCE",
+        "A8_ALTERNATIVE_ROUTE_NON_ALIASING",
+        "A14_NO_SEMANTIC_INVENTION"
+      ],
+      "reason": "Frozen R1-R11 checker emits one request certificate and has no native arbitrary OR-of-sufficient-support-routes standing-validity operation; obtaining C05 consequence would require decoder/adaptor closure, challenge-selected rescue, derived validity outside kernel, or new rule."
+    },
+    "OPENCORE_NANO_V0": {
+      "repository": "bjoern-janson/opencore",
+      "commit": "d85aac9fa35ea4ba21afebc73b9cb8970c2a1dbf",
+      "native_blob": "d31dacaf893a58a8280c01704fe666a404c1f56c",
+      "A_trans_RG": "FAIL",
+      "terminal": "FUNCTION_EQUIVALENCE_NOT_CONSTITUTED",
+      "first_failed_gate": "A6_NATIVE_DEPENDENCY_CONSEQUENCE",
+      "specific_failed_gates": [
+        "A6_NATIVE_DEPENDENCY_CONSEQUENCE",
+        "A8_ALTERNATIVE_ROUTE_NON_ALIASING",
+        "A14_NO_SEMANTIC_INVENTION"
+      ],
+      "reason": "Frozen Nano V0 has conjunctive precondition ancestry and one current receipt per StandingKey, but no native multi-provenance/OR-of-receipts effective standing or automatic alternative-route failover."
+    }
+  },
+  "gate_summary": {
+    "A1_SOURCE_IDENTITY": {"SSI_CALC_V0_1":"PASS","OPENCORE_NANO_V0":"PASS"},
+    "A2_TOTAL_STRUCTURAL_TRANSPORT": {"SSI_CALC_V0_1":"PASS","OPENCORE_NANO_V0":"PASS"},
+    "A3_NO_SEMANTIC_MUTATION": {"SSI_CALC_V0_1":"PASS","OPENCORE_NANO_V0":"PASS"},
+    "A4_HYPEREDGE_PRESERVATION": {"SSI_CALC_V0_1":"PASS","OPENCORE_NANO_V0":"PASS"},
+    "A5_CHALLENGE_LOCALITY": {"SSI_CALC_V0_1":"PASS","OPENCORE_NANO_V0":"PASS"},
+    "A6_NATIVE_DEPENDENCY_CONSEQUENCE": {"SSI_CALC_V0_1":"FAIL","OPENCORE_NANO_V0":"FAIL"},
+    "A7_TO_A13": {"SSI_CALC_V0_1":"NOT_REACHED","OPENCORE_NANO_V0":"NOT_REACHED"},
+    "A14_NO_SEMANTIC_INVENTION": {"SSI_CALC_V0_1":"FAIL","OPENCORE_NANO_V0":"FAIL"}
+  },
+  "rg001_preregistration": "NOT_OPENED",
+  "V_F": "NOT_RUN",
+  "C_F": "NOT_RUN",
+  "B_F": "NOT_RUN",
+  "A_F": "NA",
+  "adapter_repair_under_rg001_v0_1": "FORBIDDEN",
+  "ril_003": "UNCHANGED_PRE_REVEAL"
+}
