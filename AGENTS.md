@@ -2,77 +2,60 @@
 
 ## Purpose
 
-This repository preserves one closed corpus-distillation program and two downstream prospective experimental lanes.
-
-Scientific history must remain append-only at the level of frozen claims. Do not rewrite a frozen artifact merely because a later experiment changes the surrounding interpretation.
+This repository preserves a closed corpus-distillation program and completed downstream prospective assays. Scientific history is append-only at the level of frozen claims.
 
 ## Current lane state
 
 ### Corpus Distillation
 
-```text
-CLOSED
-```
+`CLOSED`.
 
-Frozen summary:
-
-```text
-Phase 1 inventory                        COMPLETE
-Phase 2 substitutability                 0/182
-L4 full mechanism interfaces             0
-L4' bounded evidence/provenance handoff  1
-local necessity                          3 NECESSARY
-                                         5 NOT DEMONSTRATED
-                                         1 DISCONFIRMED
-necessity relations                      0 DEPENDENT
-                                         0 INDEPENDENT
-                                         2 NOT COMPARABLE
-                                         1 NOT DEMONSTRATED
-common core                              NOT EARNED
-minimization                             CLOSED
-L5 / L6                                  CLOSED
-```
-
-Do not reopen the corpus lane unless explicitly instructed to create new evidence. New downstream experiments never alter historical L3/L4/L5/L6 counts.
+Do not alter the frozen corpus, necessity counts, L3/L4/L5/L6 record, common-core conclusion, or minimization closure through later experiments.
 
 ### CGP-001
 
-```text
-CLOSED / NOT EVALUABLE
-```
-
-Frozen terminal state:
+`CLOSED / NOT EVALUABLE`.
 
 ```text
-A_trans              FAIL
-failed criteria      [8, 9]
-primary execution    NOT AUTHORIZED / NOT RUN
-L0-L3                 NOT REACHED
-H_CG                  NOT TESTED
+A_trans           FAIL
+failed criteria   [8,9]
+primary execution NOT RUN
+H_CG              NOT TESTED
 ```
 
-Do not repair, rerun, reinterpret, or score CGP-001. Any repaired corridor requires a new prospective identifier such as `CGP-002`.
-
-The recovered apparatus under `experiments/cgp_001/` is historical apparatus, not an invitation to run the primary arms.
+Do not repair, rerun, score, or reinterpret CGP-001. Any new corridor requires a new preregistration.
 
 ### RIL-001
 
-```text
-PREREGISTERED / NOT IMPLEMENTED / NOT EXECUTED
-```
+`CLOSED / REPRESENTATION_INDUCED_LEVERAGE`.
 
-Frozen preregistration:
+Anchors:
 
 ```text
-RIL_001_PREREGISTRATION.md
-anchor = 204fe919159145ac9c29f1becfb92b0c511af02b
+preregistration       204fe919159145ac9c29f1becfb92b0c511af02b
+implementation freeze a0f8f795a805e8f579fd608fbcaa83dcfa6ef60f
+pre-execution audit   6b3b865f3fce07fe835e169d80ec8f72f192f4bf
 ```
 
-Do not change its scientific content.
+Terminal bounded result:
 
-## Frozen artifacts
+```text
+P1-P9                  PASS
+c_search equality      PASS
+c_update equality      PASS
+C_op R0                9,825,003
+C_op R1                4,094,613
+Lambda_F^op            2.399494897320
+peak memory R0         206,757 bytes
+peak memory R1         206,757 bytes
+terminal status        REPRESENTATION_INDUCED_LEVERAGE
+```
 
-Treat the following as scientific records, not editable design drafts:
+Do not optimize, repair, rerun as a primary assay, change instrumentation, or strengthen its claim under `RIL-001`.
+
+## Frozen scientific records
+
+Treat these as immutable scientific records:
 
 ```text
 CORPUS.md
@@ -81,13 +64,18 @@ CGP_001_PREREGISTRATION.md
 CGP_001_TRANSLATION_AUDIT.md
 experiments/cgp_001/*
 RIL_001_PREREGISTRATION.md
+RIL_001_PRE_EXECUTION_AUDIT.md
+experiments/ril_001/ implementation files at a0f8f795...
+RIL_001_RESULT.md
+RIL_001_RESULT.json
+RIL_001_FINAL_AUDIT.md
 ```
 
-`README.md`, `STATUS.md`, `ROADMAP.md`, `AGENTS.md`, and provenance notes may be updated to reflect later state, but may not contradict or silently strengthen frozen evidence.
+Mutable narrative files (`README.md`, `STATUS.md`, `ROADMAP.md`, `AGENTS.md`) may summarize later state but may not change frozen evidence.
 
-## Governing evidence rules
+## Governing evidence distinctions
 
-Preserve these distinctions:
+Preserve:
 
 ```text
 mechanism != function != invariant
@@ -98,157 +86,50 @@ serialization compatibility != interface compatibility
 candidate != oracle != evaluator
 possibility != authority
 search allocation != repair/adoption authority
-adapter correctness != evidence for the predicted corridor
+adapter correctness != corridor evidence
 cheapness != semantic preservation
 formal possibility != empirical leverage
+single-function leverage != family leverage
+family leverage != held-out generality
 ```
 
-On contradiction or failure:
+On failure or contradiction, revise the shallowest supported layer and preserve every unaffected null or positive result.
 
-1. generate competing explanations;
-2. discriminate with independent evidence where possible;
-3. revise only the shallowest supported layer;
-4. preserve unaffected frozen structure;
-5. retest only under a new authorized prospective object when the old protocol forbids repair;
-6. keep nulls and `NOT EVALUABLE` outcomes visible.
+## RIL-001 claim ceiling
 
-## RIL-001 scientific object
+The earned claim is exactly bounded to the frozen FS007 low-cost `NEEDS_FANOUT` function, condition, candidate languages, CPython 3.13.5 implementation, and AST-vs-existing-SEM8 representation pair.
 
-The sole question is:
-
-> Can changing only the operative representation reduce computational cost for one already-demonstrated FS007 corrective transformation while preserving transformation identity, scope, authority, and required operations?
-
-Frozen intervention:
+RIL-001 does not establish:
 
 ```text
-A                  fixed
-F                  fixed
-D                  fixed
-Omega_req          fixed
-authority ceiling  fixed
-R                  varied
-```
-
-Representations:
-
-```text
-R0_AST
-    parent canonical Program AST
-    prediction = program.evaluate_local((x,y,z))
-
-R1_SEM8
-    parent exact 8-pattern semantic tuple
-    prediction = semantic_tuple[4*x + 2*y + z]
-```
-
-Do not add target-dependent caches, JITs, vectorization, pruning, candidate reordering, different precision, altered candidate sets, unequal batching, or representation-specific search logic.
-
-## RIL-001 implementation sequence
-
-Do not begin implementation unless explicitly instructed.
-
-Once opened, follow exactly:
-
-```text
-1. verify frozen parent source / constants
-2. implement one shared algorithm with representation-specific prediction only
-3. freeze implementation before reading the primary leverage verdict
-4. establish A_fixed / instrumentation validity
-5. run preservation predicate P
-6. if P fails -> DISQUALIFIED_PRESERVATION_FAILURE -> STOP
-7. if A_fixed/instrumentation fails -> NOT_EVALUABLE -> STOP
-8. only after gates pass, reveal and score frozen primary cost
-9. write RIL_001_RESULT.md
-10. write independent RIL_001_AUDIT.md
-11. STOP
-```
-
-No observed result may motivate a scientific change inside `RIL-001`; use `RIL-002` for repairs or extensions.
-
-## RIL-001 preservation gate
-
-All preregistered preservation items are noncompensatory.
-
-At minimum verify exact identity of:
-
-```text
-M0/M1 candidate sets and order
-candidate semantics on all 8 local patterns
-per-candidate probe scores
-M0/M1 winners and canonical identity
-gain / estimated value / repair decision
-fanout_enabled state
-selected semantic function
-held-out predictions and aggregate transfer
-D / seeds / precision / criteria
-goal and authority flags
-required-operation coverage
-```
-
-A cheaper arm with `P=0` is not partial leverage.
-
-## RIL-001 cost interpretation
-
-Primary computational cost is the preregistered opcode accounting, including applicable representation construction/translation overhead.
-
-Do not hide work in setup, preprocessing, caching, translation, or shared state.
-
-Memory is a co-primary non-regression gate. Wall-clock timing is confirmatory only.
-
-Terminal classes are exactly:
-
-```text
-NOT_EVALUABLE
-DISQUALIFIED_PRESERVATION_FAILURE
-NO_DEMONSTRATED_LEVERAGE
-COMPUTE_FOR_MEMORY_TRADEOFF
-REPRESENTATION_INDUCED_LEVERAGE
-```
-
-Do not invent an intermediate positive class after seeing results.
-
-## Larger RIL roadmap
-
-`ROADMAP.md` contains conjectural future rungs:
-
-```text
-RIL-1 single earned function
-RIL-2 function family
-RIL-3 held-out functions
-RIL-4 resource-boundary amplification
-RIL-5 broad effective generality on constrained substrate
-```
-
-Only RIL-1 currently has a preregistered assay.
-
-Objects such as:
-
-```text
-A(R) = (Omega_R, tau_R, c_R, C_R)
-Omega_eff(R;B)
-representation payback horizon n*
-```
-
-are candidate notation / roadmap concepts. They are not earned theory and must not be cited as a result of the closed corpus, CGP-001, or an unexecuted RIL-001.
-
-## Claim ceiling
-
-A positive RIL-001 result can establish only a bounded statement of this form:
-
-> Under the exact frozen FS007 condition and cost model, `R1_SEM8` realizes the same preregistered corrective transformation with lower measured computational work than `R0_AST` while satisfying the frozen preservation and memory gates.
-
-It cannot establish:
-
-```text
-representation-induced generality
+representation-induced family leverage
+held-out representation-induced generality
 resource-boundary amplification
 universal affordance geometry
 intelligence = representation
-common corrigibility architecture
 general hardware-capability amplification
+common corrigibility architecture
 ```
 
-Those require separate prospective evidence.
+## Future RIL work
+
+`ROADMAP.md` contains conjectural rungs RIL-2 through RIL-5. They are **not opened by default**.
+
+Any future experiment must:
+
+1. receive a new identifier and prospective preregistration;
+2. state exactly which RIL-001 fact is used as prior evidence;
+3. freeze its own `F`, `D`, representation choice/learning procedure, preservation predicate, budget/cost vector, and null;
+4. prevent training/representation selection from seeing held-out transformation outcomes where held-out generality is tested;
+5. count representation construction/learning cost where applicable;
+6. preserve authority/scope identity before interpreting cost;
+7. stop at its own claim ceiling.
+
+Do not turn the roadmap objects `A(R)`, `Omega_eff(R;B)`, or payback horizon `n*` into established theory merely because RIL-001 is positive.
+
+## No currently authorized experiment
+
+At the present repository state there is no automatically authorized RIL-002, RIL-2, CGP-002, composition study, or theory-expansion task. A new lane begins only by explicit prospective instruction.
 
 ## Final rule
 

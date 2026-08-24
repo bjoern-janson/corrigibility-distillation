@@ -1,0 +1,80 @@
+{
+  "assay": "RIL-001",
+  "claim_ceiling": "Under the exact frozen FS007 low-cost NEEDS_FANOUT function, condition, candidate languages, CPython implementation, and AST-vs-SEM8 representation pair, SEM8 realizes the same preserved corrective transformation with lower counted computational work and no increase in the frozen peak-memory metric.",
+  "confirmatory_wall_clock": {
+    "R0_AST_ns": [47143892,56874906,44181936,49020420,49275008,48388399,45357636,48193346,45259321,47018912,46814168,49608171,50973833,46681157,49431379],
+    "R0_mean_ns": 48281498.93333333,
+    "R0_median_ns": 48193346,
+    "R1_SEM8_ns": [26568574,20706743,19174704,19712040,18948229,20003432,18438854,20095088,19040005,23168378,22606136,18523900,18138310,18033785,20097430],
+    "R1_mean_ns": 20217040.533333335,
+    "R1_median_ns": 19712040,
+    "median_speedup_R0_over_R1": 2.4448685169064186,
+    "repetitions_per_arm": 15,
+    "role": "confirmatory only"
+  },
+  "environment": {
+    "affinity": [0,1,2,3,4],
+    "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+    "machine": "x86_64",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+    "power_performance_mode": "not observable through available cpufreq sysfs in this environment",
+    "python": "CPython 3.13.5",
+    "visible_cpu_count": 5
+  },
+  "gates": {
+    "A_fixed_dynamic_search_equal": true,
+    "A_fixed_dynamic_update_equal": true,
+    "A_fixed_static": "PASS",
+    "P_items": {
+      "P1_candidate_set_identity": true,
+      "P2_exhaustive_semantic_equivalence": true,
+      "P3_per_candidate_scoring_identity": true,
+      "P4_search_result_identity": true,
+      "P5_repair_decision_identity": true,
+      "P6_heldout_identity": true,
+      "P7_scope_identity": true,
+      "P8_authority_identity": true,
+      "P9_required_operation_coverage": true
+    },
+    "P_passed": true,
+    "memory_nonregression": true,
+    "parent_positive_control": "PASS",
+    "source_integrity": "PASS"
+  },
+  "implementation_freeze": "a0f8f795a805e8f579fd608fbcaa83dcfa6ef60f",
+  "memory": {"R0_AST":206757,"R1_SEM8":206757,"delta_R1_minus_R0":0,"unit":"peak incremental tracemalloc bytes"},
+  "not_established": ["representation-induced family leverage","held-out representation-induced generality","resource-boundary amplification","a universal affordance geometry","a common corrigibility architecture","RIL-2 or any later rung"],
+  "parent": {"commit":"2f4ca824e02b89df0c23d64de312c4f93a4c8a41","method_git_blob":"9ac2883c797e99af27fd092b262f5cb6ce8ece70","repository":"bjoern-janson/future-sufficiency","source_git_blob":"f74d85f5f9d0c7842dc50e34ae2718699108fff6"},
+  "pre_execution_audit": "6b3b865f3fce07fe835e169d80ec8f72f192f4bf",
+  "preregistration_commit": "204fe919159145ac9c29f1becfb92b0c511af02b",
+  "primary_opcode": {
+    "R0_AST": {"C_op":9825003,"counts":{"eval":6485600,"search":3274609,"translation":64727,"update":67}},
+    "R1_SEM8": {"C_op":4094613,"counts":{"eval":755200,"search":3274609,"translation":64737,"update":67}},
+    "R1_fraction_of_R0": 0.41675437656354913,
+    "R1_op_reduction_fraction": 0.5832456234364509,
+    "delta_C_op_R0_minus_R1": 5730390,
+    "eval_ratio_R0_over_R1": 8.587923728813559,
+    "lambda_F_op_R0_over_R1": 2.3994948973199666,
+    "unit": "CPython 3.13.5 sys.monitoring INSTRUCTION events"
+  },
+  "scientific_identity": {
+    "authority_expanded": false,
+    "base_accuracy": 0.89,
+    "construction_rule_after": "fanout_allowed",
+    "estimated_repair_value": 10.999999999999998,
+    "fanout_accuracy": 1.0,
+    "gain": 0.10999999999999999,
+    "goal_rule_mutated": false,
+    "heldout_prediction_count": 3000,
+    "heldout_prediction_sha256": "50bc66ed6fa692f9a0736de2f4b28792f89075caad3cf3820cf0c49bae0ae383",
+    "heldout_transfer_accuracy": 1.0,
+    "repair_cost": 5.0,
+    "repaired": true,
+    "selected_candidate_id": "M1:126",
+    "selected_canonical_name": "and(or(and(x,y),z),or(x,y))",
+    "selected_canonical_size": 9,
+    "selected_semantic_tuple": [0,0,0,1,0,1,1,1],
+    "work_stats": {"heldout_predictions":3000,"m0_candidate_visits":94,"m1_candidate_visits":127,"probe_score_comparisons":44200}
+  },
+  "terminal_status": "REPRESENTATION_INDUCED_LEVERAGE"
+}

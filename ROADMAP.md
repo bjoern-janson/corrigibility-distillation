@@ -2,199 +2,156 @@
 
 Status: **CONJECTURAL ROADMAP — NOT PART OF THE FROZEN RIL-001 SCIENTIFIC CONTRACT**
 
-This document records the larger rabbit hole without leaking it into RIL-001. Nothing here changes `RIL_001_PREREGISTRATION.md`, the frozen corpus results, or CGP-001.
+RIL-001 has now supplied one bounded positive single-function witness. Nothing in this document is thereby promoted to universal theory.
 
-## 1. Candidate affordance object
+## 1. Current empirical foothold
 
-A representation may be described provisionally by:
+RIL-001 established, under its exact frozen scope:
+
+```text
+same corrective transformation
+same exhaustive algorithm
+same scope and authority
+R0_AST -> R1_SEM8
+C_op: 9,825,003 -> 4,094,613
+Lambda_F^op = 2.399494897320
+peak memory: 206,757 -> 206,757 bytes
+```
+
+This earns **RIL-1 for one bounded assay only**.
+
+It does not by itself establish that one representation gives leverage across a family, on unseen transformations, near resource boundaries, or on constrained hardware.
+
+## 2. Candidate affordance object
+
+Provisional notation:
 
 \[
 \mathcal A(R)=(\Omega_R,\tau_R,c_R,\mathcal C_R),
 \]
 
-where:
+where `Omega_R` denotes transformations available under `R`, `tau_R` their semantic/type signatures, `c_R` realization cost, and `C_R` constraints on legal transformation space.
 
-- `Omega_R` — transformations available under `R`;
-- `tau_R` — semantic/type signatures of those transformations;
-- `c_R(omega)` — resource cost of realizing `omega`;
-- `C_R` — constraints defining the legal transformation region.
+This remains a research convenience, not an earned ontology.
 
-This notation is a research convenience, not an earned ontology.
+## 3. Resource-bounded effective repertoire
 
-## 2. Resource-bounded effective repertoire
-
-For fixed substrate and resource budget `B`, define the candidate object:
+Candidate object:
 
 \[
-\Omega_{\mathrm{eff}}(R;B)
-=
-\{\omega:\tau_R(\omega)\text{ is valid and }c_R(\omega)\le B\}.
+\Omega_{\mathrm{eff}}(R;B)=\{\omega:\tau_R(\omega)\text{ is valid and }c_R(\omega)\le B\}.
 \]
 
-The disciplined conjecture is:
+Conjecture:
 
 > **Changing representation may enlarge the practically reachable typed transformation repertoire of a fixed substrate by moving useful transformations below a resource boundary.**
 
-This does **not** mean representation changes formal computability or creates new physical primitives.
+This says nothing about changing formal computability or creating new physical primitives.
 
-A useful distinction is:
-
-```text
-C_raw   physical compute / memory / primitive substrate resources
-C_repr  transformations exposed or supported by a representation
-C_eff   transformations that are valid and realizable within the operative budget
-```
-
-The research target is `C_eff`, not magical creation of `C_raw`.
-
-## 3. RIL ladder
+## 4. RIL ladder
 
 ### RIL-1 — single-function leverage
 
-Question:
+**Status: one bounded positive witness (`RIL-001`).**
 
-```text
-Can one already-earned transformation become cheaper under R1 than R0
-while preserving F, D, Omega_req, authority, and algorithm?
-```
-
-This is the only rung currently preregistered: `RIL-001`.
+The result is local to one FS007 correction and one representation pair.
 
 ### RIL-2 — family leverage
 
-Freeze one representation and test whether its leverage survives across a preregistered family of already-valid transformations.
+**Status: NOT OPENED.**
 
-A positive result would require preservation for every family member. It would not yet establish generality.
+Future question: freeze one representation choice and test a prospectively specified family of already-valid transformations, requiring preservation for every member and counting any representation construction cost.
+
+A positive family result would still not establish held-out generality.
 
 ### RIL-3 — held-out transformation leverage
 
-Choose/learn the representation using `F_train`, freeze it, then test disjoint `F_test`.
+**Status: NOT OPENED.**
+
+Choose or learn the representation from `F_train`, freeze it, then test disjoint `F_test`:
 
 ```text
 F_train intersection F_test = empty
 ```
 
-The interesting signal is prospective cost reduction on held-out transformations without semantic or authority drift.
-
-This is the first rung where the phrase **representation-induced generality** could begin to earn evidence.
+This is the first rung at which “representation-induced generality” could begin to acquire prospective evidence.
 
 ### RIL-4 — resource-boundary amplification
 
-For fixed representation `R` and budget `B`:
+**Status: NOT OPENED.**
 
-```text
-omega is practically reachable iff c_R(omega) <= B
-```
-
-The conjecture is that representational improvements have the largest *effective-capability consequence* when tasks lie near the resource boundary:
+Explicitly manipulate budget `B` and test the predicted region:
 
 ```text
 c_R0(omega) > B >= c_R1(omega)
 ```
 
-With abundant resources, both representations may succeed and the same leverage ratio may have little behavioral consequence.
-
-A future assay should therefore manipulate the resource budget explicitly rather than infer boundary effects from one powerful machine.
+The claim would concern effective-capability consequence near a budget boundary, not merely a cost ratio on abundant hardware.
 
 ### RIL-5 — broad effective generality on constrained substrate
 
-The maximal conjecture is:
+**Status: NOT OPENED.**
 
-> **A sufficiently useful representation may place a surprisingly broad class of typed transformations below the practical resource boundary of an otherwise constrained substrate.**
+Maximal conjecture:
 
-This is intentionally far beyond current evidence.
+> A useful representation may place a surprisingly broad class of typed transformations below the practical resource boundary of a constrained substrate.
 
-## 4. Representation payback horizon
+This remains far beyond current evidence.
 
-Representation construction/learning is not free.
+## 5. Representation payback horizon
 
-For repeated transformations:
-
-\[
-C_{\mathrm{total}}(R,n)
-=
-C_{\mathrm{learn}}(R)
-+
-\sum_{i=1}^{n}c_R(F_i).
-\]
-
-Define the candidate payback horizon:
+Representation discovery/learning is not free. Candidate total-cost object:
 
 \[
-n^*
-=
-\min\left\{
- n:
- C_{\mathrm{total}}(R_1,n)
- <
- C_{\mathrm{total}}(R_0,n)
-\right\}.
+C_{\mathrm{total}}(R,n)=C_{\mathrm{learn}}(R)+\sum_{i=1}^{n}c_R(F_i).
 \]
 
-This separates:
+Candidate payback horizon:
 
-```text
-cheap execution after expensive representation discovery
-```
+\[
+n^*=\min\{n:C_{\mathrm{total}}(R_1,n)<C_{\mathrm{total}}(R_0,n)\}.
+\]
 
-from:
+RIL-001 does not estimate this quantity because both coordinate systems were already present in the frozen parent library and the assay measured only its preregistered representation-view construction boundary.
 
-```text
-genuine total-resource advantage over a reuse horizon.
-```
-
-A future learning study could treat representation repair as an investment that changes the cost landscape of later transformations.
-
-## 5. Failure taxonomy to preserve
-
-The broader conjecture currently distinguishes at least three failure modes:
+## 6. Failure taxonomy to preserve
 
 ```text
 distinction failure
     required states collapse under R
 
 typing failure
-    required transformations cannot compose under the semantic signatures
+    required transformations cannot legally compose
 
 leverage failure
-    the required transformation remains valid but is too expensive under R
+    transformation remains valid but realization cost is unfavorable
 ```
 
-These are not claimed to be exhaustive or manifestations of one proven theory.
+These are not claimed to be exhaustive or one proven theory.
 
-Examples that motivated the distinction remain evidentially separate:
+Motivating exemplars remain evidentially separate:
 
 ```text
-SRE       formal distinction / quotient-operation constraints
-CGP-001   prospective semantic typing failure in an attempted interface
-FS007     bounded evidence/value-conditioned representation-generator repair
-Quake     external engineering analogy for representation-induced computational leverage
+SRE       formal quotient-operation constraints
+CGP-001   prospective semantic/interface typing failure
+FS007     bounded representation-generator repair
+RIL-001   bounded representation-induced leverage witness
+Quake     external engineering analogy only
 ```
 
-Do not convert analogy into evidence.
-
-## 6. What would count as real escalation
-
-The ladder may advance only through new prospective evidence:
+## 7. Escalation discipline
 
 ```text
-RIL-1 positive
-!= family leverage
-
-family leverage
-!= held-out leverage
-
-held-out leverage
-!= resource-boundary amplification
-
-resource-boundary amplification
-!= broad generality
+RIL-001 positive != family leverage
+family leverage != held-out leverage
+held-out leverage != resource-boundary amplification
+resource-boundary amplification != broad generality
 ```
 
-Every rung needs its own frozen scope, preservation predicate, resource accounting, and null.
+Every rung requires its own frozen scope, preservation predicate, resource accounting, leakage firewall, and null.
 
 ## Working maxim
 
 > **Observed capability may be the subset of a substrate's valid transformation repertoire that its current representation places below its operative resource boundary.**
 
-For now, that is a conjecture with a ladder—not a theory.
+After RIL-001 this remains a conjecture with one microscopic empirical foothold—not a theory.
