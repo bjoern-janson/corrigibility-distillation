@@ -1,0 +1,3880 @@
+{
+  "instances": [
+    {
+      "candidate": 0,
+      "desc": [
+        "1011",
+        "0111",
+        "1000",
+        "1110",
+        "1010"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 5
+        },
+        {
+          "label": "B0=1",
+          "u": 2,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 6
+        },
+        {
+          "label": "B1=1",
+          "u": 5,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 8,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 8,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 8,
+          "v": 4
+        }
+      ],
+      "goals": [
+        0,
+        1,
+        2,
+        5,
+        6
+      ],
+      "ids": [
+        "CAL-000-T1",
+        "CAL-000-T2",
+        "CAL-000-T3",
+        "CAL-000-T4",
+        "CAL-000-T5"
+      ],
+      "index": 0,
+      "initial": [
+        7,
+        3,
+        8,
+        4,
+        0
+      ],
+      "k": 5,
+      "layout_hash": "cc61f223f85277fd12044d6053ca682198ecc56ee1a9143fad1e2ad8a1be8226",
+      "n": 9,
+      "oracle": {
+        "J": [
+          0,
+          1
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 6,
+          "j": 0,
+          "spare": 4,
+          "src": 2,
+          "state_a": [
+            2,
+            0,
+            4,
+            1,
+            3
+          ],
+          "state_b": [
+            4,
+            0,
+            2,
+            1,
+            3
+          ],
+          "value": 1
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 1,
+      "desc": [
+        "0100",
+        "0010",
+        "1101",
+        "0010"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 6
+        },
+        {
+          "label": "B0=0",
+          "u": 1,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 8
+        },
+        {
+          "label": "B3=0",
+          "u": 8,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 8,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 8,
+          "v": 7
+        }
+      ],
+      "goals": [
+        3,
+        4,
+        7,
+        8
+      ],
+      "ids": [
+        "CAL-001-T1",
+        "CAL-001-T2",
+        "CAL-001-T3",
+        "CAL-001-T4"
+      ],
+      "index": 1,
+      "initial": [
+        2,
+        5,
+        0,
+        6
+      ],
+      "k": 4,
+      "layout_hash": "e1c4c9a802c4d75af444b9adcd0b7c99adcc648026ebfcb995bff6a091204efc",
+      "n": 9,
+      "oracle": {
+        "J": [
+          0,
+          3
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 0,
+          "j": 0,
+          "spare": 3,
+          "src": 1,
+          "state_a": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "state_b": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "value": 0
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 2,
+      "desc": [
+        "1001",
+        "1110",
+        "0001"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 6
+        },
+        {
+          "label": "B3=1",
+          "u": 5,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 8,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 8,
+          "v": 3
+        }
+      ],
+      "goals": [
+        0,
+        3,
+        4
+      ],
+      "ids": [
+        "CAL-002-T1",
+        "CAL-002-T2",
+        "CAL-002-T3"
+      ],
+      "index": 2,
+      "initial": [
+        2,
+        7,
+        6
+      ],
+      "k": 3,
+      "layout_hash": "17c5fb03dafc3a93011298811f519be5b194a3b68d49ca2b7d902234cf866490",
+      "n": 9,
+      "oracle": {
+        "J": [
+          3
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 8,
+          "j": 3,
+          "spare": 2,
+          "src": 5,
+          "state_a": [
+            5,
+            0,
+            2
+          ],
+          "state_b": [
+            2,
+            0,
+            5
+          ],
+          "value": 1
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 3,
+      "desc": [
+        "1010",
+        "1101",
+        "0010",
+        "1110"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 7
+        },
+        {
+          "label": "B3=1",
+          "u": 4,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 8,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 8,
+          "v": 4
+        }
+      ],
+      "goals": [
+        0,
+        3,
+        4,
+        8
+      ],
+      "ids": [
+        "CAL-003-T1",
+        "CAL-003-T2",
+        "CAL-003-T3",
+        "CAL-003-T4"
+      ],
+      "index": 3,
+      "initial": [
+        6,
+        5,
+        7,
+        1
+      ],
+      "k": 4,
+      "layout_hash": "0726e61c510da9a41589689030759d03e3e6ca5e980987b583fdb5977f1c57d7",
+      "n": 9,
+      "oracle": {
+        "J": [
+          3
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 2,
+          "j": 3,
+          "spare": 0,
+          "src": 4,
+          "state_a": [
+            4,
+            1,
+            0,
+            3
+          ],
+          "state_b": [
+            0,
+            1,
+            4,
+            3
+          ],
+          "value": 1
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 4,
+      "desc": [
+        "0011",
+        "1010",
+        "0101"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 4
+        },
+        {
+          "label": "B1=1",
+          "u": 6,
+          "v": 5
+        },
+        {
+          "label": "B2=0",
+          "u": 7,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 5
+        }
+      ],
+      "goals": [
+        4,
+        5,
+        7
+      ],
+      "ids": [
+        "CAL-004-T1",
+        "CAL-004-T2",
+        "CAL-004-T3"
+      ],
+      "index": 4,
+      "initial": [
+        3,
+        0,
+        2
+      ],
+      "k": 3,
+      "layout_hash": "687300879ef9e026c0772e086f72eadcb5cf58a358ec338e0142ef1aaa6ef834",
+      "n": 8,
+      "oracle": {
+        "J": [
+          1,
+          2
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 5,
+          "j": 1,
+          "spare": 3,
+          "src": 6,
+          "state_a": [
+            6,
+            0,
+            3
+          ],
+          "state_b": [
+            3,
+            0,
+            6
+          ],
+          "value": 1
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 5,
+      "desc": [
+        "0011",
+        "1110",
+        "0001"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 7
+        },
+        {
+          "label": "B1=1",
+          "u": 1,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 5
+        }
+      ],
+      "goals": [
+        2,
+        3,
+        6
+      ],
+      "ids": [
+        "CAL-005-T1",
+        "CAL-005-T2",
+        "CAL-005-T3"
+      ],
+      "index": 5,
+      "initial": [
+        7,
+        0,
+        4
+      ],
+      "k": 3,
+      "layout_hash": "a334eb43628985a43fc6366c476252e853de7248f36eb0be7b8da955f12c7ac6",
+      "n": 8,
+      "oracle": {
+        "J": [
+          1
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 0,
+          "j": 1,
+          "spare": 2,
+          "src": 1,
+          "state_a": [
+            1,
+            3,
+            2
+          ],
+          "state_b": [
+            2,
+            3,
+            1
+          ],
+          "value": 1
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 6,
+      "desc": [
+        "0001",
+        "0100",
+        "1011"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 5
+        },
+        {
+          "label": "B1=0",
+          "u": 1,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 2
+        },
+        {
+          "label": "B3=0",
+          "u": 6,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 3
+        }
+      ],
+      "goals": [
+        1,
+        3,
+        6
+      ],
+      "ids": [
+        "CAL-006-T1",
+        "CAL-006-T2",
+        "CAL-006-T3"
+      ],
+      "index": 6,
+      "initial": [
+        0,
+        5,
+        2
+      ],
+      "k": 3,
+      "layout_hash": "175869f6f9869ff5aea6810469d21d6a2d09b0f369bd911acc82f0d769c574ef",
+      "n": 7,
+      "oracle": {
+        "J": [
+          1,
+          3
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 0,
+          "j": 1,
+          "spare": 2,
+          "src": 1,
+          "state_a": [
+            1,
+            3,
+            2
+          ],
+          "state_b": [
+            2,
+            3,
+            1
+          ],
+          "value": 0
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 7,
+      "desc": [
+        "1101",
+        "1011",
+        "0100",
+        "0110"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 7
+        },
+        {
+          "label": "B3=1",
+          "u": 5,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 3
+        },
+        {
+          "label": "B0=1",
+          "u": 5,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 6
+        }
+      ],
+      "goals": [
+        2,
+        5,
+        6,
+        7
+      ],
+      "ids": [
+        "CAL-007-T1",
+        "CAL-007-T2",
+        "CAL-007-T3",
+        "CAL-007-T4"
+      ],
+      "index": 7,
+      "initial": [
+        4,
+        1,
+        0,
+        3
+      ],
+      "k": 4,
+      "layout_hash": "d3bada3f7b62f4a5dfcf843089ac48081bf3ad043d61f0dc7723dfff806976ed",
+      "n": 8,
+      "oracle": {
+        "J": [
+          0,
+          3
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 6,
+          "j": 0,
+          "spare": 1,
+          "src": 5,
+          "state_a": [
+            5,
+            0,
+            1,
+            2
+          ],
+          "state_b": [
+            1,
+            0,
+            5,
+            2
+          ],
+          "value": 1
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 8,
+      "desc": [
+        "1100",
+        "1111",
+        "0000",
+        "0010"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 3
+        },
+        {
+          "label": "B2=1",
+          "u": 1,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 2
+        },
+        {
+          "label": "B3=1",
+          "u": 5,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 6
+        }
+      ],
+      "goals": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "ids": [
+        "CAL-008-T1",
+        "CAL-008-T2",
+        "CAL-008-T3",
+        "CAL-008-T4"
+      ],
+      "index": 8,
+      "initial": [
+        2,
+        4,
+        3,
+        7
+      ],
+      "k": 4,
+      "layout_hash": "d051cc79e0df526c50fb876d3d0aa620a8834cb72f92ff8d40ef6b07ef9c1f61",
+      "n": 8,
+      "oracle": {
+        "J": [
+          2,
+          3
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 5,
+          "j": 2,
+          "spare": 7,
+          "src": 1,
+          "state_a": [
+            1,
+            0,
+            7,
+            2
+          ],
+          "state_b": [
+            7,
+            0,
+            1,
+            2
+          ],
+          "value": 1
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 9,
+      "desc": [
+        "0010",
+        "1110",
+        "0001"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 0
+        },
+        {
+          "label": "B1=1",
+          "u": 2,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 0
+        },
+        {
+          "label": "B0=0",
+          "u": 6,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 5
+        }
+      ],
+      "goals": [
+        0,
+        3,
+        6
+      ],
+      "ids": [
+        "CAL-009-T1",
+        "CAL-009-T2",
+        "CAL-009-T3"
+      ],
+      "index": 9,
+      "initial": [
+        7,
+        5,
+        4
+      ],
+      "k": 3,
+      "layout_hash": "cf89e5c060fbaafb6d46d686cc9281d25bc2ddf04711e5a05cd3b10ec5c810ee",
+      "n": 8,
+      "oracle": {
+        "J": [
+          0,
+          1
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 2,
+          "j": 0,
+          "spare": 0,
+          "src": 6,
+          "state_a": [
+            6,
+            1,
+            0
+          ],
+          "state_b": [
+            0,
+            1,
+            6
+          ],
+          "value": 0
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 10,
+      "desc": [
+        "1000",
+        "0011",
+        "1100",
+        "1011"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 6
+        },
+        {
+          "label": "B2=0",
+          "u": 5,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 4
+        }
+      ],
+      "goals": [
+        0,
+        4,
+        5,
+        6
+      ],
+      "ids": [
+        "CAL-010-T1",
+        "CAL-010-T2",
+        "CAL-010-T3",
+        "CAL-010-T4"
+      ],
+      "index": 10,
+      "initial": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "k": 4,
+      "layout_hash": "0d874b99e23db17a7ebc3e1a2103d6b737d683dd3aed02a234e03b14b122ba82",
+      "n": 7,
+      "oracle": {
+        "J": [
+          2
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 1,
+          "j": 2,
+          "spare": 3,
+          "src": 5,
+          "state_a": [
+            5,
+            0,
+            3,
+            2
+          ],
+          "state_b": [
+            3,
+            0,
+            5,
+            2
+          ],
+          "value": 0
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 11,
+      "desc": [
+        "1011",
+        "0110",
+        "1001"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 2
+        },
+        {
+          "label": "B1=1",
+          "u": 0,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 8,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 8,
+          "v": 7
+        }
+      ],
+      "goals": [
+        1,
+        3,
+        8
+      ],
+      "ids": [
+        "CAL-011-T1",
+        "CAL-011-T2",
+        "CAL-011-T3"
+      ],
+      "index": 11,
+      "initial": [
+        6,
+        5,
+        2
+      ],
+      "k": 3,
+      "layout_hash": "ff0bcf70cd89e16c24ce9bd967bb3878b94cd287f20bf0d052255f8ec19062a7",
+      "n": 9,
+      "oracle": {
+        "J": [
+          1
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 3,
+          "j": 1,
+          "spare": 1,
+          "src": 0,
+          "state_a": [
+            0,
+            2,
+            1
+          ],
+          "state_b": [
+            1,
+            2,
+            0
+          ],
+          "value": 1
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 12,
+      "desc": [
+        "0111",
+        "0001",
+        "1110",
+        "1001"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 2
+        },
+        {
+          "label": "B3=0",
+          "u": 1,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 2
+        },
+        {
+          "label": "B0=1",
+          "u": 6,
+          "v": 5
+        }
+      ],
+      "goals": [
+        0,
+        1,
+        2,
+        6
+      ],
+      "ids": [
+        "CAL-012-T1",
+        "CAL-012-T2",
+        "CAL-012-T3",
+        "CAL-012-T4"
+      ],
+      "index": 12,
+      "initial": [
+        3,
+        5,
+        4,
+        2
+      ],
+      "k": 4,
+      "layout_hash": "a72f4b646bb831885b82b5cd72902b1f4d94c70b95614bc500e910dd5c9dde73",
+      "n": 7,
+      "oracle": {
+        "J": [
+          0,
+          3
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 5,
+          "j": 0,
+          "spare": 4,
+          "src": 6,
+          "state_a": [
+            6,
+            0,
+            4,
+            1
+          ],
+          "state_b": [
+            4,
+            0,
+            6,
+            1
+          ],
+          "value": 1
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 13,
+      "desc": [
+        "1100",
+        "0000",
+        "1111"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 6
+        },
+        {
+          "label": "B0=0",
+          "u": 1,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 0
+        },
+        {
+          "label": "B1=0",
+          "u": 3,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 2
+        }
+      ],
+      "goals": [
+        0,
+        3,
+        5
+      ],
+      "ids": [
+        "CAL-013-T1",
+        "CAL-013-T2",
+        "CAL-013-T3"
+      ],
+      "index": 13,
+      "initial": [
+        6,
+        2,
+        4
+      ],
+      "k": 3,
+      "layout_hash": "7647c484f3d958e897d9090f4b663984f338452800631d27d0f684dbb2116f2b",
+      "n": 7,
+      "oracle": {
+        "J": [
+          0,
+          1
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 4,
+          "j": 0,
+          "spare": 3,
+          "src": 1,
+          "state_a": [
+            1,
+            0,
+            3
+          ],
+          "state_b": [
+            3,
+            0,
+            1
+          ],
+          "value": 0
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 14,
+      "desc": [
+        "0100",
+        "1111",
+        "0000",
+        "0100"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 2
+        },
+        {
+          "label": "B2=1",
+          "u": 7,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 8,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 8,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 8,
+          "v": 7
+        }
+      ],
+      "goals": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "ids": [
+        "CAL-014-T1",
+        "CAL-014-T2",
+        "CAL-014-T3",
+        "CAL-014-T4"
+      ],
+      "index": 14,
+      "initial": [
+        8,
+        4,
+        0,
+        5
+      ],
+      "k": 4,
+      "layout_hash": "8aa0f227dca2716fbcd089de3bb4bc41e8929152ce2c292de7f9c45cee0c05f5",
+      "n": 9,
+      "oracle": {
+        "J": [
+          2
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 5,
+          "j": 2,
+          "spare": 2,
+          "src": 7,
+          "state_a": [
+            7,
+            0,
+            2,
+            1
+          ],
+          "state_b": [
+            2,
+            0,
+            7,
+            1
+          ],
+          "value": 1
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 15,
+      "desc": [
+        "1101",
+        "1000",
+        "0111",
+        "0110"
+      ],
+      "edges": [
+        {
+          "label": "B3=1",
+          "u": 0,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 6
+        },
+        {
+          "label": "B1=0",
+          "u": 1,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 3
+        }
+      ],
+      "goals": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "ids": [
+        "CAL-015-T1",
+        "CAL-015-T2",
+        "CAL-015-T3",
+        "CAL-015-T4"
+      ],
+      "index": 15,
+      "initial": [
+        6,
+        2,
+        5,
+        3
+      ],
+      "k": 4,
+      "layout_hash": "58dab0d86fc654d38b21e79b43ee6281af3aaedb27c2c9981727fd0cdd927ab8",
+      "n": 7,
+      "oracle": {
+        "J": [
+          1,
+          3
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 2,
+          "j": 1,
+          "spare": 3,
+          "src": 1,
+          "state_a": [
+            1,
+            0,
+            3,
+            4
+          ],
+          "state_b": [
+            3,
+            0,
+            1,
+            4
+          ],
+          "value": 0
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 16,
+      "desc": [
+        "1101",
+        "0001",
+        "1110"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 1
+        },
+        {
+          "label": "B1=0",
+          "u": 5,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 6
+        },
+        {
+          "label": "B0=1",
+          "u": 6,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 5
+        }
+      ],
+      "goals": [
+        4,
+        5,
+        6
+      ],
+      "ids": [
+        "CAL-016-T1",
+        "CAL-016-T2",
+        "CAL-016-T3"
+      ],
+      "index": 16,
+      "initial": [
+        0,
+        2,
+        1
+      ],
+      "k": 3,
+      "layout_hash": "8c2e45f5bec3b11a6e12fbf06e6c742b87d6d4b88b106608cb4271577384fac1",
+      "n": 7,
+      "oracle": {
+        "J": [
+          0,
+          1
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 3,
+          "j": 0,
+          "spare": 1,
+          "src": 6,
+          "state_a": [
+            6,
+            0,
+            1
+          ],
+          "state_b": [
+            1,
+            0,
+            6
+          ],
+          "value": 1
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 17,
+      "desc": [
+        "0110",
+        "1011",
+        "0100"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 4
+        },
+        {
+          "label": "B1=1",
+          "u": 3,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 5
+        }
+      ],
+      "goals": [
+        1,
+        5,
+        6
+      ],
+      "ids": [
+        "CAL-017-T1",
+        "CAL-017-T2",
+        "CAL-017-T3"
+      ],
+      "index": 17,
+      "initial": [
+        4,
+        2,
+        0
+      ],
+      "k": 3,
+      "layout_hash": "38e001be0460a75cd9de3a0396d90c666fa9c7efeabe507626664807614aac44",
+      "n": 7,
+      "oracle": {
+        "J": [
+          1
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 6,
+          "j": 1,
+          "spare": 4,
+          "src": 3,
+          "state_a": [
+            3,
+            0,
+            4
+          ],
+          "state_b": [
+            4,
+            0,
+            3
+          ],
+          "value": 1
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 18,
+      "desc": [
+        "1110",
+        "0111",
+        "1000"
+      ],
+      "edges": [
+        {
+          "label": "B2=1",
+          "u": 0,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 7
+        },
+        {
+          "label": "B1=1",
+          "u": 1,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 8,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 8,
+          "v": 5
+        }
+      ],
+      "goals": [
+        0,
+        2,
+        4
+      ],
+      "ids": [
+        "CAL-018-T1",
+        "CAL-018-T2",
+        "CAL-018-T3"
+      ],
+      "index": 18,
+      "initial": [
+        8,
+        5,
+        3
+      ],
+      "k": 3,
+      "layout_hash": "bf7f73c0fffbc1001886fd0841dcf4d7dae4bda75c45836f650a67f741a73e07",
+      "n": 9,
+      "oracle": {
+        "J": [
+          1,
+          2
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 2,
+          "j": 1,
+          "spare": 8,
+          "src": 1,
+          "state_a": [
+            1,
+            0,
+            8
+          ],
+          "state_b": [
+            8,
+            0,
+            1
+          ],
+          "value": 1
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 19,
+      "desc": [
+        "0010",
+        "1001",
+        "0110",
+        "0010"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 3
+        },
+        {
+          "label": "B2=0",
+          "u": 6,
+          "v": 4
+        }
+      ],
+      "goals": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "ids": [
+        "CAL-019-T1",
+        "CAL-019-T2",
+        "CAL-019-T3",
+        "CAL-019-T4"
+      ],
+      "index": 19,
+      "initial": [
+        3,
+        1,
+        4,
+        5
+      ],
+      "k": 4,
+      "layout_hash": "0875dd411bc2044bc31e50b5df9b6f837127e9023b4251a846fa420e4f02cd0b",
+      "n": 7,
+      "oracle": {
+        "J": [
+          2
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 4,
+          "j": 2,
+          "spare": 3,
+          "src": 6,
+          "state_a": [
+            6,
+            0,
+            3,
+            1
+          ],
+          "state_b": [
+            3,
+            0,
+            6,
+            1
+          ],
+          "value": 0
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 20,
+      "desc": [
+        "0100",
+        "1101",
+        "0010"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 2
+        },
+        {
+          "label": "B2=1",
+          "u": 1,
+          "v": 3
+        },
+        {
+          "label": "B1=0",
+          "u": 1,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 1
+        }
+      ],
+      "goals": [
+        2,
+        3,
+        5
+      ],
+      "ids": [
+        "CAL-020-T1",
+        "CAL-020-T2",
+        "CAL-020-T3"
+      ],
+      "index": 20,
+      "initial": [
+        6,
+        0,
+        7
+      ],
+      "k": 3,
+      "layout_hash": "4594991d9a4793f1fa409195da945ecbac631134e23b55be14d3c2f31fddc968",
+      "n": 8,
+      "oracle": {
+        "J": [
+          1,
+          2
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 5,
+          "j": 1,
+          "spare": 7,
+          "src": 1,
+          "state_a": [
+            1,
+            0,
+            7
+          ],
+          "state_b": [
+            7,
+            0,
+            1
+          ],
+          "value": 0
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 21,
+      "desc": [
+        "0011",
+        "1010",
+        "0101",
+        "0011",
+        "1100"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 0
+        },
+        {
+          "label": "B1=1",
+          "u": 3,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 4
+        },
+        {
+          "label": "B2=0",
+          "u": 3,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 5
+        }
+      ],
+      "goals": [
+        0,
+        1,
+        3,
+        4,
+        6
+      ],
+      "ids": [
+        "CAL-021-T1",
+        "CAL-021-T2",
+        "CAL-021-T3",
+        "CAL-021-T4",
+        "CAL-021-T5"
+      ],
+      "index": 21,
+      "initial": [
+        0,
+        2,
+        5,
+        6,
+        1
+      ],
+      "k": 5,
+      "layout_hash": "4f432f280a0ec8200dc04980b9e3c8188db99f1498573dd4eff9fce3bf260b95",
+      "n": 7,
+      "oracle": {
+        "J": [
+          1,
+          2
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 2,
+          "j": 1,
+          "spare": 0,
+          "src": 3,
+          "state_a": [
+            3,
+            1,
+            0,
+            4,
+            5
+          ],
+          "state_b": [
+            0,
+            1,
+            3,
+            4,
+            5
+          ],
+          "value": 1
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 22,
+      "desc": [
+        "0101",
+        "0010",
+        "1101"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 2
+        },
+        {
+          "label": "B3=0",
+          "u": 5,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 8
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 8,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 8,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 8,
+          "v": 5
+        }
+      ],
+      "goals": [
+        3,
+        6,
+        7
+      ],
+      "ids": [
+        "CAL-022-T1",
+        "CAL-022-T2",
+        "CAL-022-T3"
+      ],
+      "index": 22,
+      "initial": [
+        0,
+        1,
+        8
+      ],
+      "k": 3,
+      "layout_hash": "5c4ae6a19719d366c9e3898c7694a69484b6c767ecb0934f4f1474c0c216796e",
+      "n": 9,
+      "oracle": {
+        "J": [
+          3
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 4,
+          "j": 3,
+          "spare": 8,
+          "src": 5,
+          "state_a": [
+            5,
+            0,
+            8
+          ],
+          "state_b": [
+            8,
+            0,
+            5
+          ],
+          "value": 0
+        }
+      },
+      "role": "CAL"
+    },
+    {
+      "candidate": 23,
+      "desc": [
+        "0100",
+        "1111",
+        "0000",
+        "1001",
+        "1000"
+      ],
+      "edges": [
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 0,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 1,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 2,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 3,
+          "v": 7
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 0
+        },
+        {
+          "label": "FREE",
+          "u": 4,
+          "v": 6
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 2
+        },
+        {
+          "label": "FREE",
+          "u": 5,
+          "v": 6
+        },
+        {
+          "label": "B2=1",
+          "u": 6,
+          "v": 3
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 4
+        },
+        {
+          "label": "FREE",
+          "u": 6,
+          "v": 5
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 1
+        },
+        {
+          "label": "FREE",
+          "u": 7,
+          "v": 3
+        }
+      ],
+      "goals": [
+        0,
+        2,
+        4,
+        5,
+        6
+      ],
+      "ids": [
+        "CAL-023-T1",
+        "CAL-023-T2",
+        "CAL-023-T3",
+        "CAL-023-T4",
+        "CAL-023-T5"
+      ],
+      "index": 23,
+      "initial": [
+        0,
+        3,
+        7,
+        1,
+        2
+      ],
+      "k": 5,
+      "layout_hash": "33229185b4234f7e048d31819fb8e227f56d76d3979a2b523fc61a8b21b368c5",
+      "n": 8,
+      "oracle": {
+        "J": [
+          2
+        ],
+        "trap": {
+          "a": 0,
+          "b": 2,
+          "dst": 3,
+          "j": 2,
+          "spare": 0,
+          "src": 6,
+          "state_a": [
+            6,
+            1,
+            0,
+            2,
+            4
+          ],
+          "state_b": [
+            0,
+            1,
+            6,
+            2,
+            4
+          ],
+          "value": 1
+        }
+      },
+      "role": "CAL"
+    }
+  ],
+  "role": "CAL"
+}
