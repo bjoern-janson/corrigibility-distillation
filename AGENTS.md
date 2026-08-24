@@ -1,20 +1,22 @@
 # Research Execution Instructions
 
-Scientific history is append-only at the level of frozen claims.
+## Purpose
 
-## Lane state
+Scientific history in this repository is append-only at the level of frozen claims. Later positive results do not rewrite earlier nulls, and later conjectures do not become historical evidence.
+
+## Current lane state
 
 ```text
-Corpus Distillation   CLOSED
-CGP-001               CLOSED / NOT EVALUABLE
-RIL-001               CLOSED / REPRESENTATION_INDUCED_LEVERAGE
-RIL-002               FAMILY FROZEN / NOT IMPLEMENTED / NOT EXECUTED
-RIL-3+                NOT OPENED
+Corpus Distillation  CLOSED
+CGP-001              CLOSED / NOT EVALUABLE
+RIL-001              CLOSED / REPRESENTATION_INDUCED_LEVERAGE
+RIL-002              CLOSED / FAMILY_WIDE_LEVERAGE
+RIL-3                NOT OPENED
 ```
 
-## Frozen records
+## Immutable scientific records
 
-Do not rewrite:
+Treat as frozen records:
 
 ```text
 CORPUS.md
@@ -24,140 +26,135 @@ CGP_001_TRANSLATION_AUDIT.md
 experiments/cgp_001/*
 RIL_001_PREREGISTRATION.md
 RIL_001_PRE_EXECUTION_AUDIT.md
+experiments/ril_001/* at implementation freeze a0f8f795...
 RIL_001_RESULT.md
 RIL_001_RESULT.json
 RIL_001_FINAL_AUDIT.md
-experiments/ril_001/* at implementation freeze a0f8f795...
 RIL_002_PREREGISTRATION.md
 RIL_002_FAMILY.json
+RIL_002_PRE_EXECUTION_AUDIT.md
+experiments/ril_002/* at implementation freeze d46dffe2...
+RIL_002_RESULT.md
+RIL_002_RESULT.json
+RIL_002_FINAL_AUDIT.md
 ```
 
-Mutable narrative files may summarize later state but may not silently strengthen frozen evidence.
+Mutable narrative files (`README.md`, `STATUS.md`, `ROADMAP.md`, `AGENTS.md`) may summarize later state but may not silently strengthen frozen evidence.
 
-## RIL-001 ceiling
+## Evidence distinctions
 
-RIL-001 earned one bounded existence witness:
+Preserve:
 
 ```text
-P1-P9              PASS
-C_op R0            9,825,003
-C_op R1            4,094,613
-Lambda_F^op        2.399494897320
-memory R0/R1       206,757 / 206,757 bytes
-status              REPRESENTATION_INDUCED_LEVERAGE
+mechanism != function != invariant
+recurrence != necessity
+local necessity != universal necessity
+same abstract lesson != shared semantic type
+serialization compatibility != interface compatibility
+possibility != authority
+cheapness != semantic preservation
+single-function leverage != family transfer
+family transfer != provenance-separated generalization
+held-out name difference != selection-information separation
+resource speedup != resource-boundary amplification
 ```
 
-It does not establish family leverage or generality.
+On failure or contradiction, revise the shallowest supported layer and preserve unaffected records.
 
-## RIL-002 scientific object
+## Closed CGP-001
 
-RIL-002 is a **family-transfer** assay.
-
-The representation pair is inherited and immutable:
+Do not repair, rerun, score, or reinterpret CGP-001. Its terminal state is:
 
 ```text
-R0 = R0_AST
-R1 = R1_SEM8
+A_trans          FAIL
+failed criteria  [8, 9]
+primary arms     NOT RUN
+H_CG             NOT TESTED
 ```
 
-The family-freeze anchor is:
+Any repaired cross-mechanism corridor needs a new prospective identifier.
+
+## Closed RIL-001
+
+RIL-001 established one bounded existence witness:
 
 ```text
-d35d998eea7e9b06ae0516dbcb9019955052ef6f
+same frozen correction
+same algorithm
+same scope / authority
+R0_AST -> R1_SEM8
+C_op 9,825,003 -> 4,094,613
+Lambda_F^op = 2.399495
+memory non-regression PASS
 ```
 
-The family is exactly the 24 members in `RIL_002_FAMILY.json`.
+Do not optimize or rerun the frozen apparatus under `RIL-001`.
 
-Inclusion rule:
+## Closed RIL-002
+
+RIL-002 tested **transfer**, not new representation design. It inherited the exact RIL-001 pair and froze an exhaustive 24-member family before any new leverage results.
+
+Terminal result:
 
 ```text
-K1  in frozen FANOUT_PROGRAMS semantics
-K2  not in frozen READ_ONCE_PROGRAMS semantics
-K3  x,y,z all essential
-K4  exclude RIL-001 target 0x17
+P_i                              PASS 24/24
+A_fixed dynamic equality         PASS 24/24
+Lambda_i^op > 1                  PASS 24/24
+memory non-regression            PASS 24/24
+held-out transfer = 1.0          PASS 24/24
+family status                    FAMILY_WIDE_LEVERAGE
+kappa_F^op                       1.0
+full_RIL_coverage                1.0
 ```
 
-No member may be added, removed, replaced, or selected based on expected/observed leverage.
+The claim ceiling is bounded family transfer. Do not relabel it as `representation-induced generality` or `RIL-3`.
 
-## RIL-002 implementation firewall
+No member may be removed after the fact and no new member may be added to strengthen or weaken the closed RIL-002 claim.
 
-Do not implement unless explicitly instructed.
+## RIL-3 is not opened
 
-If opened, the implementation must:
+A future provenance-separated generalization experiment must receive a new prospective identifier and freeze an information firewall before any held-out result.
 
-1. reuse the frozen RIL-001 representation pair without redesign;
-2. preserve one shared algorithm for both arms;
-3. use the same task split, probe seed, held-out seed, repair cost, horizon, candidate languages, tie-break, precision, authority, and cost regions;
-4. instantiate family labels only as `truth_table[4*x + 2*y + z]`;
-5. freeze implementation before any RIL-002 leverage result is read;
-6. audit source integrity / `A_fixed` / instrumentation before primary execution;
-7. execute all 24 members without replacement;
-8. adjudicate each `P_i` before interpreting `Lambda_i`;
-9. publish the ordered leverage vector and member statuses before any aggregate;
-10. stop after the final audit.
-
-Any representation change motivated by this family requires a new assay identifier.
-
-## RIL-002 member adjudication
-
-For every member:
+At minimum it must define:
 
 ```text
-G_i = (A_fixed^(i), P_i, Lambda_i)
+I_select(R)     all information allowed to influence representation selection/construction
+I_test          held-out correction information
+selection rule  g such that R = g(I_select)
+freeze point    R becomes immutable before I_test is revealed to the selection process
+F_train / F_test or equivalent test objects
+preservation predicate per test object
+cost / memory accounting
+null and terminal taxonomy
+claim ceiling
 ```
 
-Preservation is noncompensatory. A cheaper member with `P_i=0` is not leverage.
-
-Inherited member classes:
+The intended firewall is stronger than different function names:
 
 ```text
-NOT_EVALUABLE
-PRESERVATION_FAILURE
-NO_DEMONSTRATED_LEVERAGE
-COMPUTE_FOR_MEMORY_TRADEOFF
-REPRESENTATION_INDUCED_LEVERAGE
+I_select(R) ∩ I_test = empty
 ```
 
-Family summaries may not erase these member records.
+or an operationally equivalent causal/provenance separation established prospectively.
 
-## Aggregation discipline
+Do not use RIL-002 member outcomes to redesign a representation and then call the same family held out.
 
-The primary object is:
+## Larger roadmap
+
+RIL-4 and RIL-5 remain conjectural. Objects such as:
 
 ```text
-Lambda_vector = (Lambda_1, ..., Lambda_24)
+A(R) = (Omega_R, tau_R, c_R, C_R)
+Omega_eff(R;B)
+representation payback horizon n*
 ```
 
-Do not replace it by a mean.
+are research notation, not established universal theory.
 
-Finite-family coverage may be reported descriptively, but:
+## No currently authorized experiment
 
-```text
-coverage != population probability
-family members != independent statistical samples
-RIL-2 transfer != RIL-3 provenance-separated generality
-```
-
-## Claim ceiling
-
-Even a family-wide positive result can establish only transfer of this already-selected representation pair across this exact bounded family under the frozen FS007-derived setup.
-
-It cannot establish:
-
-```text
-provenance-separated representation-induced generality
-resource-boundary amplification
-universal affordance geometry
-broad constrained-hardware generality
-intelligence = representation
-```
-
-## Current next legal action
-
-There is no remaining family-selection work under RIL-002.
-
-The next legal scientific event, only if explicitly opened, is implementation against the frozen family.
+There is no automatically authorized `RIL-3`, `RIL-003`, `CGP-002`, resource-boundary assay, or theory-expansion task. New work begins only by explicit prospective instruction.
 
 ## Final rule
 
-**Freeze the species before counting the rabbits.**
+**Change the coordinates only when the experiment says coordinates may change. Hold the scientific object fixed. Count every cost. Preserve every null. Never promote transfer into generalization without a provenance firewall.**

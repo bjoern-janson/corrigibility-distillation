@@ -1,23 +1,22 @@
 # Corrigibility Distillation
 
-A provenance-preserving research repository for extracting bounded claims about corrective systems, preserving nulls, and opening new experiments only after the previous evidence ceiling is explicit.
+A provenance-preserving research repository for extracting bounded claims about corrective systems, preserving nulls, and opening new experiments only after the prior evidence ceiling has been frozen.
 
 ## Current state
 
-| Lane | Status | Strongest earned / frozen object |
+| Lane | Status | Strongest earned result |
 |---|---|---|
-| Corpus Distillation | **CLOSED** | Recurring corrective constraints and 3 local necessities; no common reducible core, mechanism substitutability, or full cross-repository interface. |
+| Corpus Distillation | **CLOSED** | Recurring corrective constraints and three local necessities; no common reducible core, substitutability, or full cross-repository mechanism interface was demonstrated. |
 | CGP-001 | **CLOSED / NOT EVALUABLE** | The attempted NSS→FS corridor failed before composition because the bridge was not semantically well-typed. `H_CG` was not tested. |
-| RIL-001 | **CLOSED / POSITIVE** | One frozen FS007 corrective transformation used 58.325% fewer counted instruction events under `R1_SEM8` than `R0_AST` with preservation and memory gates intact. |
-| RIL-002 | **FAMILY FROZEN / NOT EXECUTED** | A complete 24-member transfer family is prospectively frozen under rule `K`; no RIL-002 leverage result has been inspected. |
+| RIL-001 | **CLOSED / REPRESENTATION_INDUCED_LEVERAGE** | For one frozen FS007 correction, AST→SEM8 reduced counted computational work while preserving semantic identity, scope, authority, required operations, and memory. |
+| RIL-002 | **CLOSED / FAMILY_WIDE_LEVERAGE** | The unchanged RIL-001 representation pair transferred full leverage across every member of a prospectively frozen 24-member family. |
+| RIL-3 | **NOT OPENED** | Provenance-separated generalization remains untested. |
 
-See [`STATUS.md`](STATUS.md) for the exact ledger and [`ROADMAP.md`](ROADMAP.md) for the unearned larger ladder.
-
----
+See [`STATUS.md`](STATUS.md) for the exact ledger, [`ROADMAP.md`](ROADMAP.md) for unearned future rungs, and [`AGENTS.md`](AGENTS.md) for execution discipline.
 
 ## Frozen corpus result
 
-The canonical 14-repository boundary is [`CORPUS.md`](CORPUS.md). The closed distillation record remains:
+The canonical 14-repository boundary is [`CORPUS.md`](CORPUS.md). The closed distillation lane established:
 
 ```text
 Phase 1 inventory                 COMPLETE
@@ -32,183 +31,129 @@ necessity relations               0 DEPENDENT
                                   2 NOT COMPARABLE
                                   1 NOT DEMONSTRATED
 common reducible core             NOT EARNED
-global minimization / L5 / L6     CLOSED
+global minimization               CLOSED
+L5 / L6                           CLOSED
 ```
 
-Durable conclusion:
+Nothing downstream rewrites this record.
 
-> **The corpus contains recurring corrective constraints and several locally indispensable distinctions, but the frozen evidence does not show that those necessities are interchangeable, composable, or instances of one smaller common object.**
+## CGP-001 — pre-composition null
 
-Nothing downstream rewrites that result.
-
----
-
-## CGP-001 — existence/typing boundary
-
-CGP-001 prospectively attempted:
-
-```text
-Negative-Space Search search allocation
--> Future Sufficiency Experiment 007 repair search
-```
-
-Terminal state:
+CGP-001 attempted a prospective NSS→FS corridor. The independent translation audit found:
 
 ```text
 A_trans = FAIL
-failed criteria = [8,9]
+failed criteria = [8, 9]
 CGP-001 = NOT EVALUABLE
-H_CG = NOT TESTED
 primary arms = NOT RUN
+H_CG = NOT TESTED
 ```
 
-The bridge failed because:
+The two failures were semantic-role mismatch and search-scope mismatch. The attempted corridor was never faithfully constituted. See [`CGP_001_PREREGISTRATION.md`](CGP_001_PREREGISTRATION.md) and [`CGP_001_TRANSLATION_AUDIT.md`](CGP_001_TRANSLATION_AUDIT.md).
+
+## RIL-001 — single-function leverage
+
+RIL-001 held fixed the correction, algorithm, scope, required operations, and authority while varying only representation:
 
 ```text
-FS target/scoring output != NSS resolving-probe identity
-NSS per-signature expansion != global FS repair-search opportunity
+R0 = canonical Program AST
+R1 = existing exact 8-pattern semantic tuple (SEM8)
 ```
 
-So the attempted transformation was never faithfully constituted.
-
----
-
-## RIL-001 — one-function representation-induced leverage
-
-RIL-001 deliberately began inside an already-valid transformation and varied only representation:
+All preservation gates passed. Counted work fell from `9,825,003` to `4,094,613` instruction events:
 
 ```text
-A fixed
-F fixed
-D fixed
-Omega_req fixed
-authority fixed
-R0_AST -> R1_SEM8
+Lambda_F^op = 2.399495
 ```
 
-Preservation passed completely and the primary counted cost was:
-
-```text
-R0_AST   9,825,003 instruction events
-R1_SEM8  4,094,613 instruction events
-Lambda   2.399495
-reduction 58.325%
-```
-
-Shared search/update work was exactly equal and peak incremental traced memory was identical at `206,757` bytes.
-
-Earned claim:
-
-> **For one exact frozen FS007 correction and scope, changing only the operative representation reduced counted computational work without changing the correction's semantic identity, required operations, scope, authority, or preregistered memory bound.**
-
-This is an existence witness, not a generality result.
-
-See [`RIL_001_RESULT.md`](RIL_001_RESULT.md).
-
----
+with equal search/update work and no peak-memory increase. See [`RIL_001_RESULT.md`](RIL_001_RESULT.md).
 
 ## RIL-002 — family transfer
 
-RIL-002 asks a different question:
+RIL-002 did **not** redesign the representation. It inherited the exact RIL-001 AST/SEM8 pair and prospectively froze the family before any new leverage results.
 
-> **Does the same already-frozen `R1_SEM8` leverage transfer across a prospectively fixed family without new representation engineering?**
-
-The family was frozen before any RIL-002 leverage measurement at:
+The inclusion rule selected every full-support 3-input Boolean target that:
 
 ```text
-d35d998eea7e9b06ae0516dbcb9019955052ef6f
+is exactly representable in frozen M1/fanout
+is not exactly representable in frozen M0/read-once
+uses x, y, and z essentially
+is not the RIL-001 majority target
 ```
 
-The inclusion rule is:
+This yields exactly 24 members. See [`RIL_002_PREREGISTRATION.md`](RIL_002_PREREGISTRATION.md) and [`RIL_002_FAMILY.json`](RIL_002_FAMILY.json).
+
+Terminal result:
 
 ```text
-K1  f is a semantic key of frozen FANOUT_PROGRAMS
-K2  f is not a semantic key of frozen READ_ONCE_PROGRAMS
-K3  x, y, z are all essential for f
-K4  f is not the RIL-001 target 0x17
+P_i                                  PASS 24/24
+A_fixed dynamic equality             PASS 24/24
+Lambda_i^op > 1                      PASS 24/24
+memory non-regression                PASS 24/24
+held-out transfer accuracy = 1.0     PASS 24/24
+family status                        FAMILY_WIDE_LEVERAGE
+kappa_F^op                           1.0
+full_RIL_coverage                    1.0
+Lambda range                         2.376157 .. 2.393112
 ```
 
-Exhaustive application of `K` yields **24** transfer targets. Every member has the same exact parent-language ceiling profile:
+See [`RIL_002_RESULT.md`](RIL_002_RESULT.md) and [`RIL_002_FINAL_AUDIT.md`](RIL_002_FINAL_AUDIT.md).
+
+The earned claim is **bounded family transfer of representation-induced computational leverage**. It is not provenance-separated generalization.
+
+## Current empirical separation
+
+The downstream assays now supply one bounded example on each side of an important distinction:
 
 ```text
-M0/read-once = 0.875
-M1/fanout    = 1.000
+Constraint / existence question:
+    can the proposed transformation be constituted with valid semantic typing?
+    CGP-001: attempted corridor failed here.
+
+Affordance / cost question:
+    once a transformation is already valid, can representation change its cost?
+    RIL-001: yes for one function.
+    RIL-002: yes across the frozen related family.
 ```
 
-The authoritative records are:
+This is an empirical program structure, not a universal theory.
+
+## Claim ceiling
+
+RIL-002 does **not** establish:
 
 ```text
-RIL_002_PREREGISTRATION.md
-RIL_002_FAMILY.json
+provenance-separated representation-induced generalization
+resource-boundary amplification
+broad effective generality on constrained hardware
+universal affordance geometry
+intelligence = representation
+a common corrigibility architecture
 ```
 
-No member may now be added, removed, or replaced.
+Those require new prospective experiments.
 
-Each member will eventually be adjudicated independently:
+## Repository map
 
 ```text
-G_i = (A_fixed^(i), P_i, Lambda_i)
+CORPUS.md                         frozen corpus boundary
+NECESSITY_AUDIT.md                frozen local-necessity record
+CGP_001_*                         closed CGP-001 preregistration/null/provenance
+RIL_001_PREREGISTRATION.md        frozen single-function contract
+RIL_001_PRE_EXECUTION_AUDIT.md    frozen pre-cost audit
+RIL_001_RESULT.*                  terminal RIL-001 result
+RIL_001_FINAL_AUDIT.md            terminal RIL-001 audit
+RIL_002_PREREGISTRATION.md        frozen family-transfer contract
+RIL_002_FAMILY.json               frozen 24-member family
+RIL_002_PRE_EXECUTION_AUDIT.md    frozen pre-execution audit
+RIL_002_RESULT.*                  terminal family-transfer result
+RIL_002_FINAL_AUDIT.md            terminal RIL-002 audit
+experiments/                      frozen apparatus
+STATUS.md                         mutable current ledger
+ROADMAP.md                        conjectural future ladder
+AGENTS.md                         execution rules
 ```
 
-and the primary family object is the full ordered leverage vector, not a mean.
+## Governing rule
 
-**RIL-002 currently has no implementation and no result.**
-
----
-
-## Empirical separation now in hand
-
-The program has separated two questions:
-
-```text
-Constraint / existence geometry:
-    Can the transformation be semantically constituted at all?
-
-Affordance / cost geometry:
-    Once valid, can the same transformation be made cheaper?
-```
-
-CGP-001 hit the first boundary.
-
-RIL-001 produced one positive instance of the second.
-
-RIL-002 now tests transfer of that positive representation across a bounded family.
-
-This is still not a universal theory.
-
----
-
-## Research ladder
-
-```text
-RIL-1  single earned function                         POSITIVE / CLOSED
-RIL-2  frozen-family transfer                         FAMILY FROZEN / UNEXECUTED
-RIL-3  provenance-separated held-out generalization   NOT OPENED
-RIL-4  resource-boundary amplification                NOT OPENED
-RIL-5  broad effective generality                     NOT OPENED
-```
-
-Candidate objects such as
-
-\[
-\mathcal A(R)=(\Omega_R,\tau_R,c_R,\mathcal C_R)
-\]
-
-and
-
-\[
-\Omega_{\mathrm{eff}}(R;B)
-\]
-
-remain roadmap notation, not established theory.
-
-## Governing discipline
-
-- semantic typing before composition;
-- preservation before cheapness;
-- member-level results before aggregates;
-- family freeze before transfer measurement;
-- representation-selection provenance before generality claims;
-- every null remains visible.
-
-> **Freeze the species before counting the rabbits.**
+> **Preserve the scientific identity of the transformation before claiming anything about making it cheaper. Preserve every null and every claim ceiling.**

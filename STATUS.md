@@ -2,7 +2,7 @@
 
 Last reconciled: **2026-08-24**
 
-This is the mutable current-state ledger. Frozen scientific artifacts keep their own anchors and are never rewritten to match this summary.
+This is the mutable current-state ledger. Frozen scientific artifacts retain their original anchors and may not be rewritten to match later interpretation.
 
 ## 1. Corpus Distillation — CLOSED
 
@@ -19,8 +19,9 @@ necessity relations                      0 DEPENDENT
                                          0 INDEPENDENT
                                          2 NOT COMPARABLE
                                          1 NOT DEMONSTRATED
-common core                              NOT EARNED
-minimization / L5 / L6                   CLOSED
+common reducible core                    NOT EARNED
+minimization                             CLOSED
+L5 / L6                                  CLOSED
 ```
 
 Frozen conclusion: recurring corrective structure exists and some distinctions are locally indispensable, but no common reducible core was earned.
@@ -28,16 +29,17 @@ Frozen conclusion: recurring corrective structure exists and some distinctions a
 ## 2. CGP-001 — CLOSED / NOT EVALUABLE
 
 ```text
+preregistration      669a94aac6c07484323dde3b0fb64df5b9ec4bca
 A_trans              FAIL
-failed criteria      [8,9]
-primary execution    NOT RUN
+failed criteria      [8, 9]
+primary execution    NOT AUTHORIZED / NOT RUN
 L0-L3                 NOT REACHED
 H_CG                  NOT TESTED
 ```
 
-The attempted NSS→FS corridor failed before composition at semantic/interface typing. It remains a clean null.
+The attempted cross-mechanism corridor failed before composition at semantic typing/search-scope constitution. No repair is permitted under `CGP-001`.
 
-## 3. RIL-001 — CLOSED / POSITIVE
+## 3. RIL-001 — CLOSED / REPRESENTATION_INDUCED_LEVERAGE
 
 Anchors:
 
@@ -48,130 +50,99 @@ pre-execution audit   6b3b865f3fce07fe835e169d80ec8f72f192f4bf
 terminal result       a8dfb2aa7e72b5f28c497bbe071408c9be0113a3
 ```
 
-Earned bounded result:
+Terminal bounded result:
 
 ```text
-P1-P9             PASS
-C_op R0_AST       9,825,003
-C_op R1_SEM8      4,094,613
-Lambda_F^op       2.399494897320
-peak memory R0    206,757 bytes
-peak memory R1    206,757 bytes
-status            REPRESENTATION_INDUCED_LEVERAGE
+P1-P9              PASS
+C_op R0            9,825,003
+C_op R1            4,094,613
+Lambda_F^op        2.399495
+peak memory R0     206,757 bytes
+peak memory R1     206,757 bytes
+status             REPRESENTATION_INDUCED_LEVERAGE
 ```
 
-This establishes one existence witness only.
+Earned only for the exact frozen FS007 low-cost `NEEDS_FANOUT` correction and AST/SEM8 pair.
 
-## 4. RIL-002 — FAMILY FROZEN / NOT IMPLEMENTED / NOT EXECUTED
+## 4. RIL-002 — CLOSED / FAMILY_WIDE_LEVERAGE
 
-Rung:
+Scientific object: family transfer of the unchanged RIL-001 representation pair.
+
+Anchors:
 
 ```text
-RIL-2 = family transfer
+family/preregistration freeze  d35d998eea7e9b06ae0516dbcb9019955052ef6f
+implementation freeze          d46dffe2b76c910470223d7f49c6e983ee39b873
+pre-execution audit            8cd6b830f82f93717b4b6f42f768135a2e8f816d
+terminal result                e0d43408ed2a07c3cc6bca181f433ab819c0577f
 ```
 
-Family-freeze anchor:
+Frozen family:
 
 ```text
-d35d998eea7e9b06ae0516dbcb9019955052ef6f
+member count        24
+selection rule K    M1-exact AND not-M0-exact AND full support AND not RIL-001 target
+family hash         d51b9b51e37f82a316dfcbd1461b766b52f34941283d1af3d1189c2546b472b1
+R0                  R0_AST
+R1                  R1_SEM8
 ```
 
-Frozen artifacts:
+Terminal gates:
 
 ```text
-RIL_002_PREREGISTRATION.md
-RIL_002_FAMILY.json
+global A_fixed/source/instrumentation audit  PASS
+P_i                                           PASS 24/24
+dynamic search equality                       PASS 24/24
+dynamic update equality                       PASS 24/24
+Lambda_i^op > 1                               PASS 24/24
+memory non-regression                         PASS 24/24
+canonical target identity                     PASS 24/24
+held-out transfer accuracy = 1.0              PASS 24/24
 ```
 
-Representation pair is inherited unchanged:
+Family record:
 
 ```text
-R0 = R0_AST
-R1 = R1_SEM8
+family status        FAMILY_WIDE_LEVERAGE
+kappa_F^op           1.0
+full_RIL_coverage    1.0
+min Lambda           2.376157006839
+median Lambda        2.380536173943
+max Lambda           2.393111810401
+peak memory R0/R1    206,709 / 206,709 bytes for every member
 ```
 
-Family-inclusion rule:
+Earned claim:
+
+> The exact representation pair that produced RIL-001 transferred representation-induced computational leverage across every member of the exact prospectively frozen 24-member RIL-002 family under the inherited correction, scope, authority, preservation, and cost rules.
+
+This is **family transfer**, not provenance-separated generalization.
+
+## 5. RIL-3 — NOT OPENED
+
+No RIL-3 preregistration, family/test set, representation-selection firewall, implementation, or result exists.
+
+The next rung would have to separate information used to select/construct a representation from the held-out correction information used to test it. Different function names alone are insufficient.
+
+No RIL-3 work is authorized merely because RIL-002 is positive.
+
+## 6. Larger roadmap — NOT CURRENT EVIDENCE
+
+Candidate future objects remain conjectural:
 
 ```text
-K1  semantic key exists in frozen FANOUT_PROGRAMS
-K2  semantic key does not exist in frozen READ_ONCE_PROGRAMS
-K3  x, y, z are all essential variables
-K4  exclude the RIL-001 majority target 0x17
+RIL-3  provenance-separated generalization
+RIL-4  resource-boundary amplification
+RIL-5  broad effective generality on constrained substrate
+A(R) = (Omega_R, tau_R, c_R, C_R)
+Omega_eff(R;B)
+representation payback horizon n*
 ```
 
-Exhaustive result under `K`:
+RIL-001 and RIL-002 do not promote these into established general theory.
 
-```text
-family size                  24
-all M0 exact ceilings        0.875
-all M1 exact ceilings        1.000
-RIL-002 leverage inspected   NO
-family member hash           d51b9b51e37f82a316dfcbd1461b766b52f34941283d1af3d1189c2546b472b1
-```
+## 7. Current legal scientific action
 
-Current state:
+There is **no automatically authorized next experiment**.
 
-```text
-K                         FROZEN
-family                    FROZEN
-implementation            DOES NOT EXIST
-primary execution         NOT RUN
-leverage vector           DOES NOT EXIST
-family verdict            NONE
-RIL-3                     NOT OPENED
-```
-
-The primary future scientific object is the per-member record
-
-```text
-G_i = (A_fixed^(i), P_i, Lambda_i)
-```
-
-and the ordered leverage vector. No mean may replace member-level outcomes.
-
-## 5. Current empirical separation
-
-```text
-Constraint / existence question:
-    CGP-001 showed that a proposed transformation may fail before composition
-    because its semantic types do not align.
-
-Affordance / cost question:
-    RIL-001 showed that one already-valid transformation can become cheaper
-    under a different representation without changing its identity.
-
-Transfer question:
-    RIL-002 is now prospectively frozen to test whether the same R1 transfers
-    across a complete bounded family selected before any new leverage result.
-```
-
-These are bounded results/questions, not one established universal theory.
-
-## 6. RIL ladder
-
-```text
-RIL-1  one-function existence witness              POSITIVE / CLOSED
-RIL-2  family transfer                             FAMILY FROZEN / UNEXECUTED
-RIL-3  provenance-separated held-out generality    NOT OPENED
-RIL-4  resource-boundary amplification             NOT OPENED
-RIL-5  broad effective generality                  NOT OPENED
-```
-
-## 7. Next legal action
-
-No new family selection is allowed under RIL-002.
-
-If explicitly opened, the next legal sequence is:
-
-```text
-implement exactly against frozen K + family
--> freeze implementation
--> pre-execution source/A_fixed/instrumentation audit
--> execute all 24 members without replacement
--> evaluate each P_i before interpreting Lambda_i
--> publish full leverage vector and finite-family coverage
--> final audit
--> STOP
-```
-
-No RIL-002 result may be used to alter its representation pair or family.
+If a new rung is explicitly opened, it must receive a new prospective identifier and freeze its own information firewall, function/test set, representation selection rule, preservation predicate, cost accounting, null, and claim ceiling before any relevant result is inspected.
