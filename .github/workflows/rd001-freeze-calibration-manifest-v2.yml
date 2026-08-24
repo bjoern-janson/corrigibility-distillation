@@ -1,0 +1,49 @@
+name: RD001 Freeze Calibration Manifest V2
+
+on:
+  push:
+    paths:
+      - '.github/workflows/rd001-freeze-calibration-manifest-v2.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  freeze-manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Regenerate and commit frozen CAL manifest only
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git clone "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" repo
+          cd repo
+          SOURCE='experiments/rd_001/rd001.py'
+          EXPECTED_SOURCE_SHA='08cc82e528b400617c72e768811748b936315e3195c0658e374d3262799c95e2'
+          ACTUAL_SOURCE_SHA="$(sha256sum "$SOURCE" | awk '{print $1}')"
+          test "$ACTUAL_SOURCE_SHA" = "$EXPECTED_SOURCE_SHA"
+          python "$SOURCE" generate \
+            --seed 1ee66660adc596f5d0104e3310f4dedb3602b4f5379eda13011c5519a3a17b6f \
+            --role CAL \
+            --count 24 \
+            --out RD001_CALIBRATION_MANIFEST_V2.json
+          EXPECTED_MANIFEST_SHA='01f0211272291ad9c553a5cd7ff31128f981cd0e5892a97dc18484549b562d86'
+          ACTUAL_MANIFEST_SHA="$(sha256sum RD001_CALIBRATION_MANIFEST_V2.json | awk '{print $1}')"
+          test "$ACTUAL_MANIFEST_SHA" = "$EXPECTED_MANIFEST_SHA"
+          python - <<'PY'
+          import json
+          d=json.load(open('RD001_CALIBRATION_MANIFEST_V2.json'))
+          assert d['role']=='CAL'
+          assert len(d['instances'])==24
+          assert len({x['layout_hash'] for x in d['instances']})==24
+          print('RD001_MANIFEST_COUNT=24')
+          print('RD001_MANIFEST_UNIQUE_LAYOUTS=24')
+          print('RD001_MANIFEST_SHA256=01f0211272291ad9c553a5cd7ff31128f981cd0e5892a97dc18484549b562d86')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add RD001_CALIBRATION_MANIFEST_V2.json
+          git commit -m 'Freeze RD-001 v2 calibration manifest'
+          git push origin HEAD:main
