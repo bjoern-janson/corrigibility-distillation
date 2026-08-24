@@ -1,0 +1,24 @@
+{
+  "affinity": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cpu_count": 5,
+  "machine": "x86_64",
+  "parent_commit": "2f4ca824e02b89df0c23d64de312c4f93a4c8a41",
+  "parent_method_git_blob": "9ac2883c797e99af27fd092b262f5cb6ce8ece70",
+  "parent_repository": "bjoern-janson/future-sufficiency",
+  "parent_source_git_blob": "f74d85f5f9d0c7842dc50e34ae2718699108fff6",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "preregistration_commit": "204fe919159145ac9c29f1becfb92b0c511af02b",
+  "processor": "",
+  "python_executable": "/opt/pyvenv/bin/python",
+  "python_implementation": "CPython",
+  "python_version": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "timing_order": "alternating by repetition: even R0_AST->R1_SEM8; odd R1_SEM8->R0_AST",
+  "timing_repetitions": 15,
+  "timing_warmup_policy": "none; every measured arm runs in a fresh process"
+}
