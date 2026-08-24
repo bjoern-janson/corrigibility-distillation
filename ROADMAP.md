@@ -1,6 +1,6 @@
-# Roadmap — Representation, Provenance, and Resource Boundaries
+# Roadmap — Representation, Provenance, Resource Boundaries, and Realization Geometry
 
-Status: **CONJECTURAL ROADMAP EXCEPT WHERE A RUNG IS EXPLICITLY MARKED EARNED OR PREREGISTERED**
+Status: **CONJECTURAL ROADMAP EXCEPT WHERE A RUNG IS EXPLICITLY MARKED EARNED, FROZEN, OR PREREGISTERED**
 
 ## Earned / active ladder state
 
@@ -10,7 +10,15 @@ RIL-2  frozen-family transfer                        EARNED / CLOSED
 RIL-3  provenance-separated target transfer          PREREGISTERED / APPARATUS FROZEN / TARGETS UNREVEALED
 RIL-4  resource-boundary amplification               NOT OPENED
 RIL-5  broad effective generality on constrained HW  NOT OPENED
+
+RG-001 F_LCC semantic constitution                   FROZEN
+RG-001 realizer-blind case geometry                  FROZEN / REFERENCE AUDIT PASS
+RG-001 realizer admission + A_trans^RG               NEXT
+RG-001 V_F / C_F / B_F                               NOT MEASURED
+RG-002+                                              NOT OPENED
 ```
+
+RIL and RG are parallel lanes. Neither inherits unearned authority from the other.
 
 ## RIL-1 — earned existence witness
 
@@ -78,7 +86,7 @@ These remain roadmap notation, not universal results established by RIL-001/002 
 
 ## RIL-4 — future resource-boundary test
 
-Only after provenance-separated transfer is independently supported should the program test whether representation leverage changes effective capability most strongly near a resource boundary:
+Only after provenance-separated transfer is independently supported should the RIL lane test whether representation leverage changes effective capability most strongly near a resource boundary:
 
 ```text
 c_R0(omega) > B >= c_R1(omega)
@@ -112,6 +120,106 @@ n^*=\min\{n:C_{\mathrm{total}}(R_1,n)<C_{\mathrm{total}}(R_0,n)\}.
 
 This is not tested by RIL-003.
 
-## Working maxim
+## RG-001 — cross-realizer existence assay
 
-> **First show leverage. Then transfer. Then separate provenance. Only after that ask what happens at the hardware boundary.**
+The new RG lane asks a different question from RIL:
+
+> Can structurally different computational systems realize the same independently constituted function while differing in realization cost and/or the subset of an externally frozen semantic challenge space they preserve?
+
+The provisional realization object is:
+
+\[
+\boxed{
+\Gamma_F(r)=
+\left(
+V_F(r),
+\mathbf C_F(r),
+\mathcal B_F(r),
+A_F(r)
+\right).
+}
+\]
+
+For RG-001:
+
+```text
+A_F = NA
+```
+
+No autonomy comparison is constituted.
+
+The frozen function is localized corrective contraction, `F_LCC`, with five obligations:
+
+```text
+LCC-1 implicated contraction
+LCC-2 dependency-selective contraction
+LCC-3 independent preservation
+LCC-4 no replacement authority from refutation
+LCC-5 independent successor evidence can re-enter
+```
+
+The function is defined outside all candidate realizers using externally supplied sufficient-support sets.
+
+The frozen challenge space is:
+
+\[
+\mathcal G_{\mathrm{RG001}}=\{X_1,\ldots,X_8\}.
+\]
+
+It is not yet a realization boundary. For a later admitted realizer:
+
+\[
+\mathcal B_F(r)
+=
+\{X\in\mathcal G_{\mathrm{RG001}}:V_F(r\mid X)=1\}.
+\]
+
+Thus:
+
+\[
+\boxed{
+\mathcal G_{\mathrm{RG001}}
+\neq
+\mathcal B_F(r).
+}
+\]
+
+The case family includes a matched conjunction-vs-alternative support pair that aliases if sufficient-set grouping is erased. The reference closure evaluator passes the current authoring-time self-test and 256 deterministic opaque-label permutation checks.
+
+Current legal sequence:
+
+```text
+F_LCC semantic constitution  FROZEN
+-> external case geometry    FROZEN
+-> reference audit           PASS
+-> realizer admission        NEXT
+-> adapter freeze
+-> A_trans^RG
+-> V_F
+-> C_F only if common V_F=1
+-> B_F derived only from frozen case geometry
+-> STOP
+```
+
+The strongest possible RG-001 positive claim is only a bounded existence result:
+
+\[
+\exists F,r_0,r_1:
+V_F(r_0)=V_F(r_1)=1
+\]
+
+with a registered realization-coordinate difference.
+
+It would not establish a universal realization geometry theory or completeness of `Gamma_F`.
+
+## RG-002+
+
+Not opened.
+
+Possible later questions — third realizers, autonomy, broader function classes, biological realizers, or theory induction — remain outside RG-001 and receive no authority from the current freeze.
+
+## Working maxims
+
+> **RIL:** First show leverage. Then transfer. Then separate provenance. Only after that ask what happens at the hardware boundary.
+
+> **RG:** Freeze the function and challenge geometry first. Adapt the realizer to the function; never adapt the function to the realizer.
