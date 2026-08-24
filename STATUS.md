@@ -181,6 +181,38 @@ cross-realizer equivalence  NOT ESTABLISHED
 realization geometry theory NOT ESTABLISHED
 ```
 
+## Archived parity RG calibration — TERMINAL / DISAMBIGUATED
+
+A separate branch, `rg-001-realization-geometry`, independently used `RG-001`/`RG-002` for a 12-bit parity calibration. Its frozen artifacts are preserved byte-for-byte under `archive/rg_parity_calibration/`; see `RG_NAMESPACE_NOTE.md`.
+
+Original branch terminal states:
+
+```text
+RG-001  CLOSED / NOT_EVALUABLE
+RG-002  CLOSED / COST_ROBUSTNESS_TRADEOFF
+```
+
+Bounded repaired-assay result:
+
+```text
+V0                              1
+V1                              1
+C0 total opcodes                634886
+C1 total opcodes                104141
+Lambda_C                        6.0964077548708
+B0 preserved faults             512 / 512
+B1 preserved faults             448 / 512
+B1 proper subset B0             PASS
+```
+
+Thus, for that exact calibration assay only:
+
+\[
+C\downarrow\;\not\Rightarrow\;B\uparrow.
+\]
+
+The first branch-local assay was a measurement null, not a scientific negative. The repaired assay was not an independent replication. The result does not establish universal realization geometry, environmental autonomy, natural evolutionary tradeoffs, or any RIL-003 claim.
+
 ## Next legal scientific actions
 
 The lanes proceed independently.
@@ -202,7 +234,7 @@ validate pulse package
 
 No apparatus change, representation adaptation, target redraw, or pre-manifest execution is permitted under RIL-003.
 
-### RG-001
+### Main-line RG-001
 
 The next legal scientific object is realizer admission and adapter constitution under the already frozen function and case family.
 
@@ -217,4 +249,4 @@ admit candidate realizers
 -> STOP
 ```
 
-No RG case, support relation, or semantic obligation may be changed to accommodate a realizer under RG-001 v0.1.
+No RG case, support relation, or semantic obligation may be changed to accommodate a realizer under RG-001 v0.1. The archived parity calibration does not modify this sequence.

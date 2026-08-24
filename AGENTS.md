@@ -46,9 +46,42 @@ RG001_CASE_FAMILY.json
 RG001_CASE_FAMILY_AUDIT.md
 experiments/rg_001/reference_evaluator.py
 experiments/rg_001/test_reference_evaluator.py
+RG_NAMESPACE_NOTE.md
+archive/rg_parity_calibration/*
 ```
 
 Mutable narrative files may summarize later state but may not silently strengthen these records.
+
+## RG identifier discipline
+
+Two independently developed lineages used `RG-001` for different scientific objects. `RG_NAMESPACE_NOTE.md` is authoritative for disambiguation.
+
+The active main-line RG-001 object is `F_LCC`. The archived parity calibration branch is not a continuation, replication, or substitute for it.
+
+When referring to the archived result from `main`, use a disambiguating phrase such as `parity RG calibration / original branch RG-002`.
+
+The archived parity lineage retains its original internal terminal states:
+
+```text
+RG-001  CLOSED / NOT_EVALUABLE
+RG-002  CLOSED / COST_ROBUSTNESS_TRADEOFF
+```
+
+Its bounded repaired-assay result is:
+
+\[
+V_0=V_1=1,\qquad C_1<C_0,\qquad B_1\subsetneq B_0.
+\]
+
+with `C0=634886`, `C1=104141`, `Lambda_C=6.0964077548708`, `|B0|=512`, and `|B1|=448`.
+
+Permitted inference for that exact calibration assay:
+
+\[
+C\downarrow\;\not\Rightarrow\;B\uparrow.
+\]
+
+Do not promote this to a universal realization-geometry law, environmental autonomy result, biological affordance-migration result, natural Pareto claim, or RIL-003 evidence. The robustness separation was deliberately constructed. The repaired assay was not an independent replication.
 
 ## RIL-003 frozen provenance boundary
 
@@ -165,6 +198,8 @@ The RG-001 governing rule is:
 
 Do not change `F_LCC`, the support semantics, or `RG001_CASE_FAMILY.json` in response to a candidate realizer's limitations. A changed scientific object requires a new assay identifier.
 
+The archived parity calibration does not modify the F_LCC function, family, adapter criteria, or next legal transition.
+
 ## Next legal transitions
 
 ### RIL-003
@@ -187,7 +222,7 @@ validate pulse package
 
 No target execution may precede the reveal-manifest freeze.
 
-### RG-001
+### Main-line RG-001
 
 The next legal object is realizer admission and adapter constitution.
 
@@ -202,22 +237,20 @@ admit candidate realizers without changing F_LCC or the case family
 -> STOP
 ```
 
-No cost result may rescue translation or validity failure. `A_F=NA` for RG-001.
+No cost result may rescue translation or validity failure. `A_F=NA` for main-line RG-001.
 
 ## Claim ceilings
 
-A positive RIL-003 result can earn only:
+A positive RIL-003 result can earn only `PROVENANCE_SEPARATED_REPRESENTATION_INDUCED_TRANSFER`.
 
-```text
-PROVENANCE_SEPARATED_REPRESENTATION_INDUCED_TRANSFER
-```
+A maximal positive main-line RG-001 result can earn only a bounded cross-realizer existence claim under the frozen F_LCC contract.
 
-It cannot by itself establish representation-induced generality, resource-boundary amplification, broad constrained-hardware generality, or universal affordance geometry.
-
-A maximal positive RG-001 result can earn only a bounded cross-realizer existence claim: two structurally distinct realizers satisfied the same frozen function while differing on one or more registered realization coordinates. It cannot establish a universal realization geometry theory or completeness of `Gamma_F`.
+The archived parity calibration earns only its bounded cost/robustness separation under its exact assay.
 
 ## Final rules
 
 **RIL-003:** Freeze the territory generator. Whitelist shared information. Freeze the coordinates and apparatus. Do not let held-out target-specific information enter until the protocol says it may exist.
 
-**RG-001:** Freeze the function and external semantic geometry first. Adapt the realizer to the function; never adapt the function to the realizer.
+**Main-line RG-001:** Freeze the function and external semantic geometry first. Adapt the realizer to the function; never adapt the function to the realizer.
+
+**Parity calibration:** Same function. Different realizer. Different geometry.

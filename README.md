@@ -154,9 +154,23 @@ For RG-001, `A_F = NA`.
 
 > **Adapt the realizer to F. Never adapt F to the realizer.**
 
+## Archived parity calibration lineage
+
+A separate branch, `rg-001-realization-geometry`, independently used the internal identifiers `RG-001` and `RG-002` for a 12-bit parity calibration assay. Because that collides with the active main-line `RG-001` identifier, its frozen artifacts are preserved byte-for-byte under [`archive/rg_parity_calibration/`](archive/rg_parity_calibration/) and disambiguated in [`RG_NAMESPACE_NOTE.md`](RG_NAMESPACE_NOTE.md).
+
+Its terminal branch result was:
+
+\[
+V_0=V_1=1,\qquad C_1<C_0,\qquad B_1\subsetneq B_0,
+\]
+
+with `C0=634886`, `C1=104141`, `Lambda_C=6.0964077548708`, `|B0|=512`, and `|B1|=448` under the exact frozen CPython opcode and one-bit auxiliary-memory contracts. The first branch-local RG-001 assay was `NOT_EVALUABLE`; the repaired branch-local RG-002 assay was `COST_ROBUSTNESS_TRADEOFF`.
+
+This is a bounded calibration witness that cost reduction does not safely imply robustness improvement under those registered coordinates. It is **not** the active F_LCC RG-001 lane, not an independent replication, not a universal realization-geometry result, and not RIL-003 evidence.
+
 ## Frozen history remains intact
 
-Nothing in RIL-003 or RG-001 rewrites:
+Nothing in RIL-003 or either RG lineage rewrites:
 
 ```text
 Corpus Distillation  CLOSED
@@ -170,3 +184,5 @@ RIL-002              FAMILY_WIDE_LEVERAGE / CLOSED
 > **RIL-003:** Freeze the territory generator, freeze what the representation may know, freeze the coordinates and apparatus, and only then let the territory exist.
 
 > **RG-001:** Freeze the function and external semantic geometry first. Adapt the realizer to the function; never adapt the function to the realizer.
+
+> **Calibration:** Same function. Different realizer. Different geometry.

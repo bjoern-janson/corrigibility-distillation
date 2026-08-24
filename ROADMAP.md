@@ -15,10 +15,12 @@ RG-001 F_LCC semantic constitution                   FROZEN
 RG-001 realizer-blind case geometry                  FROZEN / REFERENCE AUDIT PASS
 RG-001 realizer admission + A_trans^RG               NEXT
 RG-001 V_F / C_F / B_F                               NOT MEASURED
-RG-002+                                              NOT OPENED
+RG-002+ main-line numbering                          NOT OPENED
 ```
 
 RIL and RG are parallel lanes. Neither inherits unearned authority from the other.
+
+A separate historical parity calibration branch independently used the identifiers `RG-001/RG-002`; see `RG_NAMESPACE_NOTE.md` and `archive/rg_parity_calibration/`. Those identifiers do not alter the active main-line RG numbering above.
 
 ## RIL-1 — earned existence witness
 
@@ -212,14 +214,52 @@ with a registered realization-coordinate difference.
 
 It would not establish a universal realization geometry theory or completeness of `Gamma_F`.
 
-## RG-002+
+## Archived parity calibration — bounded historical evidence
+
+The branch `rg-001-realization-geometry` independently froze a 12-bit parity calibration and used the original internal identifiers `RG-001` and `RG-002`. Because those identifiers collide with the active main-line `RG-001`, the branch artifacts are archived byte-for-byte under `archive/rg_parity_calibration/` rather than renumbered retroactively.
+
+The first branch-local assay terminated `NOT_EVALUABLE` when its preregistered opcode tracer failed to count the construction region. The repaired branch-local assay was explicitly not an independent replication and terminated:
+
+```text
+COST_ROBUSTNESS_TRADEOFF
+```
+
+with:
+
+\[
+V_0=V_1=1,\qquad C_1<C_0,\qquad B_1\subsetneq B_0.
+\]
+
+Exact bounded values:
+
+```text
+C0 total opcodes      634886
+C1 total opcodes      104141
+Lambda_C              6.0964077548708
+B0 preserved faults   512 / 512
+B1 preserved faults   448 / 512
+```
+
+Therefore the calibration establishes only that, under one exact function/substrate/fault contract, lower counted cost need not imply a larger robustness region:
+
+\[
+C\downarrow\;\not\Rightarrow\;B\uparrow.
+\]
+
+The robustness separation was deliberately constructed. No universal geometry, autonomy, biological internalization, or RIL-003 claim follows.
+
+## RG-002+ — main-line numbering
 
 Not opened.
 
-Possible later questions — third realizers, autonomy, broader function classes, biological realizers, or theory induction — remain outside RG-001 and receive no authority from the current freeze.
+This statement refers only to the active `F_LCC` RG numbering. It does not erase or rename the archived parity branch's original `RG-002` result.
+
+Possible later questions — third realizers, autonomy, broader function classes, biological realizers, or theory induction — remain outside main-line RG-001 and receive no authority from either the current F_LCC freeze or the archived parity calibration.
 
 ## Working maxims
 
 > **RIL:** First show leverage. Then transfer. Then separate provenance. Only after that ask what happens at the hardware boundary.
 
 > **RG:** Freeze the function and challenge geometry first. Adapt the realizer to the function; never adapt the function to the realizer.
+
+> **Calibration:** Same function. Different realizer. Different geometry.
