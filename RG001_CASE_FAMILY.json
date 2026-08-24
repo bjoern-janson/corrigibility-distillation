@@ -1,0 +1,311 @@
+{
+  "cases": [
+    {
+      "case_id": "RG001-C01",
+      "challenge": {
+        "counterevidence_id": "e_minus",
+        "invalidated_warrant": "w_g",
+        "standing": "s_g"
+      },
+      "initial_active_warrants": [
+        "w_g"
+      ],
+      "primitive_warrants": [
+        "w_g"
+      ],
+      "replacement": null,
+      "standings": [
+        "s_g"
+      ],
+      "support_sets": {
+        "s_g": [
+          [
+            "w_g"
+          ]
+        ]
+      },
+      "title": "direct contraction"
+    },
+    {
+      "case_id": "RG001-C02",
+      "challenge": {
+        "counterevidence_id": "e_minus",
+        "invalidated_warrant": "w_g",
+        "standing": "s_g"
+      },
+      "initial_active_warrants": [
+        "w_g"
+      ],
+      "primitive_warrants": [
+        "w_g"
+      ],
+      "replacement": null,
+      "standings": [
+        "s_g",
+        "s_h"
+      ],
+      "support_sets": {
+        "s_g": [
+          [
+            "w_g"
+          ]
+        ],
+        "s_h": [
+          [
+            "s_g"
+          ]
+        ]
+      },
+      "title": "single dependent descendant"
+    },
+    {
+      "case_id": "RG001-C03",
+      "challenge": {
+        "counterevidence_id": "e_minus",
+        "invalidated_warrant": "w_g",
+        "standing": "s_g"
+      },
+      "initial_active_warrants": [
+        "w_g",
+        "w_u"
+      ],
+      "primitive_warrants": [
+        "w_g",
+        "w_u"
+      ],
+      "replacement": null,
+      "standings": [
+        "s_g",
+        "s_h",
+        "s_u"
+      ],
+      "support_sets": {
+        "s_g": [
+          [
+            "w_g"
+          ]
+        ],
+        "s_h": [
+          [
+            "s_g"
+          ]
+        ],
+        "s_u": [
+          [
+            "w_u"
+          ]
+        ]
+      },
+      "title": "independent preservation"
+    },
+    {
+      "case_id": "RG001-C04",
+      "challenge": {
+        "counterevidence_id": "e_minus",
+        "invalidated_warrant": "w_g",
+        "standing": "s_g"
+      },
+      "initial_active_warrants": [
+        "w_g",
+        "w_a"
+      ],
+      "matched_pair": "RG001-C05",
+      "primitive_warrants": [
+        "w_g",
+        "w_a"
+      ],
+      "replacement": null,
+      "standings": [
+        "s_g",
+        "s_h"
+      ],
+      "support_sets": {
+        "s_g": [
+          [
+            "w_g"
+          ]
+        ],
+        "s_h": [
+          [
+            "s_g",
+            "w_a"
+          ]
+        ]
+      },
+      "title": "conjunctive support matched-pair A"
+    },
+    {
+      "case_id": "RG001-C05",
+      "challenge": {
+        "counterevidence_id": "e_minus",
+        "invalidated_warrant": "w_g",
+        "standing": "s_g"
+      },
+      "initial_active_warrants": [
+        "w_g",
+        "w_a"
+      ],
+      "matched_pair": "RG001-C04",
+      "primitive_warrants": [
+        "w_g",
+        "w_a"
+      ],
+      "replacement": null,
+      "standings": [
+        "s_g",
+        "s_h"
+      ],
+      "support_sets": {
+        "s_g": [
+          [
+            "w_g"
+          ]
+        ],
+        "s_h": [
+          [
+            "s_g"
+          ],
+          [
+            "w_a"
+          ]
+        ]
+      },
+      "title": "alternative sufficient support matched-pair B"
+    },
+    {
+      "case_id": "RG001-C06",
+      "challenge": {
+        "counterevidence_id": "e_minus",
+        "invalidated_warrant": "w_g",
+        "standing": "s_g"
+      },
+      "initial_active_warrants": [
+        "w_g"
+      ],
+      "primitive_warrants": [
+        "w_g"
+      ],
+      "replacement": null,
+      "standings": [
+        "s_g",
+        "s_h",
+        "s_j"
+      ],
+      "support_sets": {
+        "s_g": [
+          [
+            "w_g"
+          ]
+        ],
+        "s_h": [
+          [
+            "s_g"
+          ]
+        ],
+        "s_j": [
+          [
+            "s_h"
+          ]
+        ]
+      },
+      "title": "multi-hop contraction"
+    },
+    {
+      "case_id": "RG001-C07",
+      "challenge": {
+        "counterevidence_id": "e_minus",
+        "invalidated_warrant": "w_g",
+        "standing": "s_g"
+      },
+      "initial_active_warrants": [
+        "w_g",
+        "w_2",
+        "w_u"
+      ],
+      "primitive_warrants": [
+        "w_g",
+        "w_2",
+        "w_u"
+      ],
+      "replacement": null,
+      "standings": [
+        "s_g",
+        "s_h1",
+        "s_h2",
+        "s_u"
+      ],
+      "support_sets": {
+        "s_g": [
+          [
+            "w_g"
+          ]
+        ],
+        "s_h1": [
+          [
+            "s_g"
+          ]
+        ],
+        "s_h2": [
+          [
+            "s_g"
+          ],
+          [
+            "w_2"
+          ]
+        ],
+        "s_u": [
+          [
+            "w_u"
+          ]
+        ]
+      },
+      "title": "branch-selective mixed survival"
+    },
+    {
+      "case_id": "RG001-C08",
+      "challenge": {
+        "counterevidence_id": "e_minus",
+        "invalidated_warrant": "w_g",
+        "standing": "s_g"
+      },
+      "initial_active_warrants": [
+        "w_g"
+      ],
+      "primitive_warrants": [
+        "w_g",
+        "w_gp"
+      ],
+      "replacement": {
+        "standing": "s_gp",
+        "successor_evidence_id": "e_plus",
+        "successor_warrant": "w_gp"
+      },
+      "standings": [
+        "s_g",
+        "s_gp"
+      ],
+      "support_sets": {
+        "s_g": [
+          [
+            "w_g"
+          ]
+        ],
+        "s_gp": [
+          [
+            "w_gp"
+          ]
+        ]
+      },
+      "title": "replacement firewall and independent re-entry"
+    }
+  ],
+  "rules": {
+    "acyclic_support_required": true,
+    "expected_outputs_hand_authored": false,
+    "permutation_audit_required": true,
+    "realizer_specific_fields_forbidden": true
+  },
+  "schema_version": "RG001_CASE_FAMILY_V0.1",
+  "semantic_contract": "F_LCC_SEMANTIC_CONSTITUTION_V0.1",
+  "status": "FROZEN_CASE_FAMILY_REALIZERS_NOT_ADMITTED"
+}
