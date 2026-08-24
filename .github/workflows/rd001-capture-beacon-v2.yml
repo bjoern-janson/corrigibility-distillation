@@ -1,0 +1,42 @@
+name: RD001 Capture Beacon V2
+
+on:
+  push:
+    paths:
+      - '.github/workflows/rd001-capture-beacon-v2.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch preselected immutable drand round
+        shell: bash
+        run: |
+          set -euo pipefail
+          PRIMARY='https://api.drand.sh/8990e7a9aaed2ffed73dbd7092123d6f289930540d7651336225dc172e51b2ce/public/6405789'
+          SECONDARY='https://drand.cloudflare.com/8990e7a9aaed2ffed73dbd7092123d6f289930540d7651336225dc172e51b2ce/public/6405789'
+          curl --fail --silent --show-error "$PRIMARY" -o primary.json
+          curl --fail --silent --show-error "$SECONDARY" -o secondary.json
+          python3 - <<'PY'
+          import base64, hashlib, json
+          p_raw=open('primary.json','rb').read()
+          s_raw=open('secondary.json','rb').read()
+          p=json.loads(p_raw)
+          s=json.loads(s_raw)
+          assert p['round']==6405789, p['round']
+          assert s['round']==6405789, s['round']
+          assert p==s, 'relay JSON objects differ'
+          calc=hashlib.sha256(bytes.fromhex(p['signature'])).hexdigest()
+          assert calc==p['randomness'], (calc,p['randomness'])
+          print('RD001_BEACON_ROUND=6405789')
+          print('RD001_RELAY_OBJECT_AGREEMENT=PASS')
+          print('RD001_RANDOMNESS_SIGNATURE_HASH=PASS')
+          print('RD001_PRIMARY_RAW_SHA256='+hashlib.sha256(p_raw).hexdigest())
+          print('RD001_SECONDARY_RAW_SHA256='+hashlib.sha256(s_raw).hexdigest())
+          print('RD001_PRIMARY_RAW_BASE64='+base64.b64encode(p_raw).decode())
+          print('RD001_SECONDARY_RAW_BASE64='+base64.b64encode(s_raw).decode())
+          print('RD001_CANONICAL_JSON='+json.dumps(p,sort_keys=True,separators=(',',':')))
+          PY
