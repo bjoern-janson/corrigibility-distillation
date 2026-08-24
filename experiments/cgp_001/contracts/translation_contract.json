@@ -1,0 +1,231 @@
+{
+  "contract_id": "CGP-001-T-FROZEN",
+  "schema_version": 1,
+  "status": "FROZEN_PRE_EXECUTION",
+  "preregistration_anchor": "669a94aac6c07484323dde3b0fb64df5b9ec4bca",
+  "parent_sources": {
+    "negative_space_search": {
+      "repository": "bjoern-janson/negative-space-search",
+      "commit": "307c24576ebea951be04d187c61e7428f4f0e184",
+      "files": {
+        "src/negative_space_search/operator_discovery_v0_7.py": "f0814d8b9a68446e49d50117a127e91ab1cabfd9ccc4dcf8f4bba6949099d62e",
+        "src/negative_space_search/language_boundary_v0_6.py": "18a7f29861018a4a7171494851e4d9b5158ed4064f2f28d792118424943f5ae4",
+        "src/negative_space_search/basis_v0_5.py": "e792665fad4d2c5791fa91be9845c413902e06384c19c1196c4aae596ed54db1",
+        "src/negative_space_search/representation_v0_4.py": "7f337bc7336688dbd871fe475c7e2d13e640180d84269745b181eae80d52183a"
+      },
+      "symbols": [
+        "negative_space_search.language_boundary_v0_6.LanguageEpisode",
+        "negative_space_search.language_boundary_v0_6.current_language_signature",
+        "negative_space_search.operator_discovery_v0_7.BoundaryGatedGenericSynthesizer"
+      ],
+      "current_language_expression_count": 78
+    },
+    "future_sufficiency": {
+      "repository": "bjoern-janson/future-sufficiency",
+      "commit": "2f4ca824e02b89df0c23d64de312c4f93a4c8a41",
+      "files": {
+        "experiments/meta_language_repair.py": "f23a48e06802a08441eed492752fa5223e564587ec78b2f447ba464737aa37db",
+        "experiments/meta_language_repair.md": "7f6ad9e3bdf0c89d3233f518f79603b20a2b722e148323bcd8c4bb20de76e804"
+      },
+      "read_once_program_count": 94,
+      "fanout_program_count": 127
+    }
+  },
+  "input_contract": {
+    "type": "nonempty_sequence_of_released_fs_probe_records",
+    "record": {
+      "source_type": "Example(bits, Task(args), hidden, raw_id)",
+      "fixture_serialization": {
+        "bits": {
+          "type": "array",
+          "length": 18,
+          "allowed_values": [0, 1]
+        },
+        "task_args": {
+          "type": "array",
+          "length": 3,
+          "unique": true,
+          "minimum": 0,
+          "maximum": 17
+        },
+        "hidden": {
+          "allowed_values": [0, 1]
+        },
+        "raw_id": {
+          "type": "integer",
+          "unique_across_sequence": true
+        }
+      }
+    },
+    "forbidden_inputs_and_globals": [
+      "condition_identifier",
+      "Family",
+      "target_function_object",
+      "repair_cost",
+      "future_horizon",
+      "M0_result",
+      "M0_accuracy",
+      "M1_result",
+      "heldout_data",
+      "exact_ceiling",
+      "persistence_state",
+      "terminal_assertions"
+    ],
+    "validation_context_not_translator_input": [
+      "parent_commits",
+      "parent_file_hashes",
+      "frozen_library_identity"
+    ]
+  },
+  "canonicalization": {
+    "local_values": "tuple(bits[index] for index in task_args)",
+    "sort_key": [
+      "local_values",
+      "hidden",
+      "raw_id"
+    ],
+    "deduplicate": false,
+    "episode_index_origin": 1,
+    "canonical_serialization": {
+      "json_sort_keys": true,
+      "json_separators": [",", ":"],
+      "encoding": "utf-8"
+    }
+  },
+  "field_mapping": {
+    "episode_id": "cgp001_e{one_based_sorted_index:04d}",
+    "paired_measurements": {
+      "source": "local_values=(x,y,z)",
+      "per_bit": {
+        "0": [0.0, 0.0],
+        "1": [0.0, 1.0]
+      },
+      "order": ["x", "y", "z"]
+    },
+    "surface_hint": {
+      "value": 0.0,
+      "role": "partition_neutral_constant",
+      "signature_fact": "hint_near_zero is uniformly true"
+    },
+    "ordered_trace": {
+      "mapping": ["float(x)", "float(y)", "float(z)", 0.0],
+      "role": "ignored_by_current_language_gate_but_consumed_by_exact_synthesis_after_collision",
+      "inert": false
+    },
+    "prediction": {
+      "value": 0.0,
+      "inert_for_signature_label_grouping_allocation_and_synthesis": true
+    },
+    "outcome": {
+      "value": 0.0,
+      "inert_for_signature_label_grouping_allocation_and_synthesis": true
+    },
+    "selected_action": {
+      "value": "fs_probe_record",
+      "inert_for_signature_label_grouping_allocation_and_synthesis": true
+    },
+    "timestamp": {
+      "value": "one_based_sorted_index",
+      "inert_for_signature_label_grouping_allocation_and_synthesis": true
+    },
+    "cost": {
+      "value": 0.0,
+      "inert_for_signature_label_grouping_allocation_and_synthesis": true
+    },
+    "resolving_probe": {
+      "mapping": {
+        "0": "fs_output_0",
+        "1": "fs_output_1"
+      },
+      "role": "injective_rename_of_released_fs_scoring_label"
+    }
+  },
+  "required_equivalence": {
+    "statement": "NSS current_language_signature equality iff local_values equality iff equality under every frozen M0/read-once program",
+    "exhaustive_domain": "all_eight_boolean_local_value_patterns"
+  },
+  "translator_prohibitions": [
+    "compute_collisions",
+    "count_labels_per_signature",
+    "declare_adequacy",
+    "calculate_value",
+    "emit_INVOKE",
+    "emit_SKIP",
+    "mutate_FS_state",
+    "authorize_FS_state"
+  ],
+  "parent_gate": {
+    "class": "BoundaryGatedGenericSynthesizer",
+    "instance_policy": "fresh_instance_per_condition_and_arm",
+    "group_by": "complete_78_expression_current_language_signature",
+    "collision_rule": "len(distinct_resolving_probe_labels) > 1",
+    "should_expand_rule": "is_collision",
+    "internal_synthesis": "unchanged"
+  },
+  "allocation_projection": {
+    "resource_unit": "one_indivisible_FS_M1_search_opportunity",
+    "rules": [
+      {
+        "when": "expanded_signature_count == 0",
+        "m1_opportunities": 0,
+        "allocation": "SKIP"
+      },
+      {
+        "when": "expanded_signature_count > 0",
+        "m1_opportunities": 1,
+        "allocation": "INVOKE"
+      }
+    ],
+    "audit_status": "must_be_found_role_preserving_and_nonconstitutive_by_A_trans",
+    "ambiguity": "FAIL_CLOSED"
+  },
+  "pure_translator_fail_closed": {
+    "exception": "TranslationContractError",
+    "emits_allocation_or_adequacy_status": false,
+    "conditions": [
+      "empty_sequence",
+      "duplicate_raw_id",
+      "non_boolean_bit",
+      "non_boolean_hidden",
+      "task_arity_not_three",
+      "repeated_task_index",
+      "out_of_range_task_index",
+      "bit_vector_length_not_18",
+      "malformed_record"
+    ]
+  },
+  "apparatus_source_verifier": {
+    "runs_before_translation": true,
+    "verifies": [
+      "parent_commits",
+      "parent_file_hashes",
+      "parent_imports",
+      "78_current_language_expressions",
+      "94_read_once_programs",
+      "127_fanout_programs",
+      "eight_pattern_signature_M0_equivalence"
+    ],
+    "failure": {
+      "emits_allocation_or_adequacy_status": false,
+      "terminates_A_trans": true,
+      "fallback": false
+    }
+  },
+  "translation_audit_criteria": [
+    "identical source multisets map byte-identically after canonical serialization",
+    "every translated value derives only from declared input or an explicitly frozen literal with its documented role",
+    "no family, target function, future result, adequacy label, M1 result, value, or persistence state is read",
+    "the adapter cannot mutate or authorize FS state",
+    "output role remains search allocation",
+    "the exact 78-expression signature equivalence equals full-M0 equivalence on all eight patterns",
+    "the exact BoundaryGatedGenericSynthesizer makes every per-signature expansion decision",
+    "hidden-to-resolving_probe is only an injective rename into the resolved-class slot",
+    "the existential projection is only a resource-unit conversion",
+    "malformed, hash-mismatched, stale-instance, and unmapped cases fail closed"
+  ],
+  "terminal_rule": {
+    "any_constitutive_audit_failure": "A_trans=FAIL -> CGP-001=NOT_EVALUABLE -> STOP",
+    "pass": "authorizes_execution_only_and_contributes_zero_evidence_for_H_CG",
+    "repair_under_CGP_001": false
+  }
+}

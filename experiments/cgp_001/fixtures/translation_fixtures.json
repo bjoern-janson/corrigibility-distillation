@@ -1,0 +1,316 @@
+{
+  "fixture_set_id": "CGP-001-TRANSLATION-FIXTURES-FROZEN",
+  "schema_version": 1,
+  "status": "FROZEN_PRE_EXECUTION",
+  "preregistration_anchor": "669a94aac6c07484323dde3b0fb64df5b9ec4bca",
+  "scope": "TRANSLATION_AND_NSS_ALLOCATION_ONLY",
+  "contains_CGP_arm_outcomes": false,
+  "valid_fixtures": [
+    {
+      "id": "canonical_sort_projection_and_skip",
+      "source_records": [
+        {
+          "bits": [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "task_args": [0, 1, 2],
+          "hidden": 1,
+          "raw_id": 103
+        },
+        {
+          "bits": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "task_args": [0, 1, 2],
+          "hidden": 0,
+          "raw_id": 101
+        },
+        {
+          "bits": [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "task_args": [0, 1, 2],
+          "hidden": 1,
+          "raw_id": 102
+        }
+      ],
+      "expected_episodes": [
+        {
+          "episode_id": "cgp001_e0001",
+          "paired_measurements": [[0.0, 0.0], [0.0, 1.0], [0.0, 0.0]],
+          "surface_hint": 0.0,
+          "ordered_trace": [0.0, 1.0, 0.0, 0.0],
+          "prediction": 0.0,
+          "outcome": 0.0,
+          "selected_action": "fs_probe_record",
+          "timestamp": 1,
+          "cost": 0.0,
+          "resolving_probe": "fs_output_0"
+        },
+        {
+          "episode_id": "cgp001_e0002",
+          "paired_measurements": [[0.0, 1.0], [0.0, 0.0], [0.0, 1.0]],
+          "surface_hint": 0.0,
+          "ordered_trace": [1.0, 0.0, 1.0, 0.0],
+          "prediction": 0.0,
+          "outcome": 0.0,
+          "selected_action": "fs_probe_record",
+          "timestamp": 2,
+          "cost": 0.0,
+          "resolving_probe": "fs_output_1"
+        },
+        {
+          "episode_id": "cgp001_e0003",
+          "paired_measurements": [[0.0, 1.0], [0.0, 0.0], [0.0, 1.0]],
+          "surface_hint": 0.0,
+          "ordered_trace": [1.0, 0.0, 1.0, 0.0],
+          "prediction": 0.0,
+          "outcome": 0.0,
+          "selected_action": "fs_probe_record",
+          "timestamp": 3,
+          "cost": 0.0,
+          "resolving_probe": "fs_output_1"
+        }
+      ],
+      "expected_signature_partition_by_episode_id": [
+        ["cgp001_e0001"],
+        ["cgp001_e0002", "cgp001_e0003"]
+      ],
+      "expected_distinct_signature_count": 2,
+      "expected_collision_signature_count": 0,
+      "expected_expanded_signature_count": 0,
+      "expected_allocation": "SKIP"
+    },
+    {
+      "id": "resolved_class_collision_and_invoke",
+      "source_records": [
+        {
+          "bits": [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "task_args": [0, 1, 2],
+          "hidden": 1,
+          "raw_id": 202
+        },
+        {
+          "bits": [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "task_args": [0, 1, 2],
+          "hidden": 0,
+          "raw_id": 201
+        }
+      ],
+      "expected_episodes": [
+        {
+          "episode_id": "cgp001_e0001",
+          "paired_measurements": [[0.0, 1.0], [0.0, 0.0], [0.0, 1.0]],
+          "surface_hint": 0.0,
+          "ordered_trace": [1.0, 0.0, 1.0, 0.0],
+          "prediction": 0.0,
+          "outcome": 0.0,
+          "selected_action": "fs_probe_record",
+          "timestamp": 1,
+          "cost": 0.0,
+          "resolving_probe": "fs_output_0"
+        },
+        {
+          "episode_id": "cgp001_e0002",
+          "paired_measurements": [[0.0, 1.0], [0.0, 0.0], [0.0, 1.0]],
+          "surface_hint": 0.0,
+          "ordered_trace": [1.0, 0.0, 1.0, 0.0],
+          "prediction": 0.0,
+          "outcome": 0.0,
+          "selected_action": "fs_probe_record",
+          "timestamp": 2,
+          "cost": 0.0,
+          "resolving_probe": "fs_output_1"
+        }
+      ],
+      "expected_signature_partition_by_episode_id": [
+        ["cgp001_e0001", "cgp001_e0002"]
+      ],
+      "expected_distinct_signature_count": 1,
+      "expected_collision_signature_count": 1,
+      "expected_expanded_signature_count": 1,
+      "expected_allocation": "INVOKE"
+    }
+  ],
+  "determinism_checks": [
+    {
+      "id": "source_multiset_permutation_invariance",
+      "base_fixture_id": "canonical_sort_projection_and_skip",
+      "source_index_permutations": [
+        [0, 1, 2],
+        [2, 0, 1],
+        [1, 2, 0],
+        [2, 1, 0]
+      ],
+      "expected_canonical_serialization_equal": true,
+      "expected_allocation": "SKIP"
+    }
+  ],
+  "post_translation_inert_field_checks": [
+    {
+      "id": "inert_schema_fields_do_not_change_gate",
+      "base_fixture_id": "canonical_sort_projection_and_skip",
+      "episode_mutations": [
+        {
+          "episode_index": 0,
+          "prediction": -7.5,
+          "outcome": 2.25,
+          "selected_action": "fixture_mutation_a",
+          "timestamp": 901,
+          "cost": 3.5
+        },
+        {
+          "episode_index": 1,
+          "prediction": 11.0,
+          "outcome": -4.0,
+          "selected_action": "fixture_mutation_b",
+          "timestamp": 902,
+          "cost": 8.0
+        },
+        {
+          "episode_index": 2,
+          "prediction": 0.5,
+          "outcome": 0.75,
+          "selected_action": "fixture_mutation_c",
+          "timestamp": 903,
+          "cost": 0.125
+        }
+      ],
+      "expected_signature_partition_equal": true,
+      "expected_label_groups_equal": true,
+      "expected_expanded_signature_count": 0,
+      "expected_allocation": "SKIP"
+    }
+  ],
+  "uniform_surface_hint_checks": [
+    {
+      "id": "uniform_high_hint_preserves_partition",
+      "base_fixture_id": "canonical_sort_projection_and_skip",
+      "uniform_surface_hint": 0.75,
+      "expected_signature_values_equal": false,
+      "expected_signature_partition_equal": true,
+      "expected_label_groups_equal": true,
+      "expected_allocation": "SKIP"
+    },
+    {
+      "id": "uniform_low_hint_preserves_partition",
+      "base_fixture_id": "canonical_sort_projection_and_skip",
+      "uniform_surface_hint": -0.75,
+      "expected_signature_values_equal": false,
+      "expected_signature_partition_equal": true,
+      "expected_label_groups_equal": true,
+      "expected_allocation": "SKIP"
+    }
+  ],
+  "fail_closed_fixtures": [
+    {
+      "id": "empty_sequence",
+      "source_records": [],
+      "expected_exception": "TranslationContractError",
+      "expected_status_emitted": false
+    },
+    {
+      "id": "duplicate_raw_id",
+      "source_records": [
+        {
+          "bits": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "task_args": [0, 1, 2],
+          "hidden": 0,
+          "raw_id": 301
+        },
+        {
+          "bits": [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "task_args": [0, 1, 2],
+          "hidden": 1,
+          "raw_id": 301
+        }
+      ],
+      "expected_exception": "TranslationContractError",
+      "expected_status_emitted": false
+    },
+    {
+      "id": "non_boolean_bit",
+      "source_records": [
+        {
+          "bits": [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "task_args": [0, 1, 2],
+          "hidden": 0,
+          "raw_id": 302
+        }
+      ],
+      "expected_exception": "TranslationContractError",
+      "expected_status_emitted": false
+    },
+    {
+      "id": "non_boolean_hidden",
+      "source_records": [
+        {
+          "bits": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "task_args": [0, 1, 2],
+          "hidden": 2,
+          "raw_id": 303
+        }
+      ],
+      "expected_exception": "TranslationContractError",
+      "expected_status_emitted": false
+    },
+    {
+      "id": "task_arity_not_three",
+      "source_records": [
+        {
+          "bits": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "task_args": [0, 1],
+          "hidden": 0,
+          "raw_id": 304
+        }
+      ],
+      "expected_exception": "TranslationContractError",
+      "expected_status_emitted": false
+    },
+    {
+      "id": "repeated_task_index",
+      "source_records": [
+        {
+          "bits": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "task_args": [0, 0, 2],
+          "hidden": 0,
+          "raw_id": 305
+        }
+      ],
+      "expected_exception": "TranslationContractError",
+      "expected_status_emitted": false
+    },
+    {
+      "id": "out_of_range_task_index",
+      "source_records": [
+        {
+          "bits": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "task_args": [0, 1, 18],
+          "hidden": 0,
+          "raw_id": 306
+        }
+      ],
+      "expected_exception": "TranslationContractError",
+      "expected_status_emitted": false
+    },
+    {
+      "id": "bit_vector_length_not_18",
+      "source_records": [
+        {
+          "bits": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "task_args": [0, 1, 2],
+          "hidden": 0,
+          "raw_id": 307
+        }
+      ],
+      "expected_exception": "TranslationContractError",
+      "expected_status_emitted": false
+    },
+    {
+      "id": "malformed_missing_raw_id",
+      "source_records": [
+        {
+          "bits": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "task_args": [0, 1, 2],
+          "hidden": 0
+        }
+      ],
+      "expected_exception": "TranslationContractError",
+      "expected_status_emitted": false
+    }
+  ]
+}

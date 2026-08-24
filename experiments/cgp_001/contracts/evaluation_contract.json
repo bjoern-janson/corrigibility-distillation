@@ -1,0 +1,466 @@
+{
+  "contract_id": "CGP-001-EVAL-FROZEN",
+  "schema_version": 1,
+  "status": "FROZEN_PRE_EXECUTION",
+  "preregistration_anchor": "669a94aac6c07484323dde3b0fb64df5b9ec4bca",
+  "execution_api": {
+    "module": "experiments.cgp_001.cgp_001",
+    "callable": "run_arm",
+    "logical_inputs": [
+      "arm",
+      "negative_space_search_checkout",
+      "future_sufficiency_checkout",
+      "phase_context",
+      "single_use_execution_capability"
+    ],
+    "return_stage": "completed_substantive_in_memory_arm_record_before_runner_cost_envelope_and_serialization",
+    "outcome_execution_count_per_arm": 1,
+    "execution_authorization": "run_arm requires a module-private single-use capability bound to arm, both source roots, and preregistration, implementation, audit, and execution anchors; only the frozen runner may issue it after all pre-execution checks"
+  },
+  "parent_sources": {
+    "negative_space_search": {
+      "repository": "bjoern-janson/negative-space-search",
+      "commit": "307c24576ebea951be04d187c61e7428f4f0e184",
+      "python_files": {
+        "src/negative_space_search/operator_discovery_v0_7.py": "f0814d8b9a68446e49d50117a127e91ab1cabfd9ccc4dcf8f4bba6949099d62e",
+        "src/negative_space_search/language_boundary_v0_6.py": "18a7f29861018a4a7171494851e4d9b5158ed4064f2f28d792118424943f5ae4",
+        "src/negative_space_search/basis_v0_5.py": "e792665fad4d2c5791fa91be9845c413902e06384c19c1196c4aae596ed54db1",
+        "src/negative_space_search/representation_v0_4.py": "7f337bc7336688dbd871fe475c7e2d13e640180d84269745b181eae80d52183a"
+      }
+    },
+    "future_sufficiency": {
+      "repository": "bjoern-janson/future-sufficiency",
+      "commit": "2f4ca824e02b89df0c23d64de312c4f93a4c8a41",
+      "python_files": {
+        "experiments/meta_language_repair.py": "f23a48e06802a08441eed492752fa5223e564587ec78b2f447ba464737aa37db"
+      },
+      "contract_files": {
+        "experiments/meta_language_repair.md": "7f6ad9e3bdf0c89d3233f518f79603b20a2b722e148323bcd8c4bb20de76e804"
+      }
+    }
+  },
+  "constants": {
+    "N_BITS": 18,
+    "TRAIN_TASKS": 50,
+    "TEST_TASKS": 25,
+    "PROBE_PATTERNS_PER_TASK": 4,
+    "HELDOUT_EXAMPLES": 3000,
+    "FUTURE_HORIZON": 100,
+    "MAX_FANOUT_NODES": 9,
+    "READ_ONCE_PROGRAMS": 94,
+    "FANOUT_PROGRAMS": 127
+  },
+  "allocation_conditions": [
+    {
+      "index": 0,
+      "name": "INSUFFICIENT_LOW",
+      "family": "NEEDS_FANOUT",
+      "repair_cost": 5.0,
+      "task_split_seed": 7,
+      "probe_seed": 17,
+      "heldout_seed": 31
+    },
+    {
+      "index": 1,
+      "name": "INSUFFICIENT_HIGH",
+      "family": "NEEDS_FANOUT",
+      "repair_cost": 20.0,
+      "task_split_seed": 7,
+      "probe_seed": 17,
+      "heldout_seed": 31
+    },
+    {
+      "index": 2,
+      "name": "SUFFICIENT_LOW",
+      "family": "BASE_SUFFICIENT",
+      "repair_cost": 5.0,
+      "task_split_seed": 7,
+      "probe_seed": 17,
+      "heldout_seed": 31
+    },
+    {
+      "index": 3,
+      "name": "NOVEL_REUSE_REPAIR",
+      "family": "NEEDS_FANOUT",
+      "repair_cost": 5.0,
+      "task_split_seed": 13,
+      "probe_seed": 41,
+      "heldout_seed": null
+    }
+  ],
+  "later_family_reuse": {
+    "after_condition_index": 3,
+    "same_learner_and_generator": true,
+    "family": "NOVEL_XOR",
+    "probe_seed": 43,
+    "heldout_seed": 47,
+    "separately_gated": false
+  },
+  "randomness": {
+    "negative_space_search_rng": false,
+    "PYTHONHASHSEED": "0"
+  },
+  "arms": {
+    "names": [
+      "FS_ONLY",
+      "NSS_ONLY",
+      "NSS_TO_FS",
+      "SHUFFLED_NSS_TO_FS"
+    ],
+    "FS_ONLY": {
+      "m0": "RUN",
+      "m1": "RUN_UNCONDITIONALLY_IN_ALL_FOUR_CONDITIONS",
+      "fs_value_and_adoption": "NATIVE"
+    },
+    "NSS_ONLY": {
+      "m0": "RUN",
+      "translation_and_nss": "RUN",
+      "m1": "NOT_EVALUATED",
+      "may_mutate_fanout_enabled": false
+    },
+    "NSS_TO_FS": {
+      "m0": "RUN",
+      "translation_and_nss": "RUN",
+      "m1": "RUN_ONLY_ON_INVOKE",
+      "fs_value_and_adoption": "NATIVE"
+    },
+    "SHUFFLED_NSS_TO_FS": {
+      "m0": "RUN",
+      "translation_and_nss": "RUN",
+      "m1": "RUN_ONLY_ON_RIGHT_ROTATED_DECISION",
+      "fs_value_and_adoption": "NATIVE"
+    }
+  },
+  "arm_isolation": {
+    "fresh_child_interpreter_per_arm": true,
+    "fresh_nss_instance_per_condition": true,
+    "fresh_fs_learner_per_allocation_condition": true,
+    "only_stateful_continuation": "condition_3_learner_to_NOVEL_XOR",
+    "cross_arm_state_consumption": false,
+    "nss_arms_recompute_translation_and_unrotated_vector": true,
+    "materialize_vector_before_downstream_m1_branches": true,
+    "each_nss_arm_pays_own_translation_and_nss_cost": true
+  },
+  "allocation_forecasts": {
+    "geometry": ["INVOKE", "INVOKE", "SKIP", "INVOKE"],
+    "local_only": ["SKIP", "SKIP", "SKIP", "SKIP"],
+    "local_corridor_success": "FAIL_QUALITY_PARITY"
+  },
+  "shuffle_control": {
+    "operation": "RIGHT_ROTATE_ONCE",
+    "index_mapping": "[d0,d1,d2,d3] -> [d3,d0,d1,d2]",
+    "geometry_input_vector": ["INVOKE", "INVOKE", "SKIP", "INVOKE"],
+    "geometry_rotated_vector": ["INVOKE", "INVOKE", "INVOKE", "SKIP"],
+    "requires_unrotated_vector_equal_primary": true,
+    "requires_multiset_preservation": true,
+    "valid_misallocations": [
+      "SKIP_CONDITION_0",
+      "SKIP_CONDITION_3",
+      "INVOKE_CONDITION_2"
+    ],
+    "all_identical_vector_is_discriminating": false,
+    "vector_or_multiset_inequality": "INVALID_CONTROL"
+  },
+  "state_schemas": {
+    "condition_result_required_fields": [
+      "condition_name",
+      "base_result",
+      "fanout_result",
+      "estimated_repair_value",
+      "m1_status",
+      "fanout_enabled",
+      "selected_result",
+      "score_calls"
+    ],
+    "skip": {
+      "fanout_result": null,
+      "estimated_repair_value": null,
+      "m1_status": "NOT_EVALUATED",
+      "fanout_enabled": false,
+      "selected_result": "COMPLETED_M0_RESULT",
+      "score_calls": 94,
+      "semantic_status": "NEITHER_REPAIR_REJECTION_NOR_EVIDENCE_OF_M0_SUFFICIENCY"
+    },
+    "wrapped_native_skip_state": {
+      "base_result": "COMPLETED_M0_RESULT",
+      "selected_result": "COMPLETED_M0_RESULT",
+      "score_calls": 94,
+      "native_estimated_repair_value_internal": 0.0,
+      "native_estimated_repair_value_is_observation": false,
+      "fanout_result": null,
+      "fanout_enabled": false,
+      "wrapper_estimated_repair_value": null
+    },
+    "nss_only_invoke": {
+      "m1_status": "NOT_EVALUATED",
+      "fanout_result": null,
+      "fanout_enabled": false
+    },
+    "arm_record_required_fields": [
+      "arm",
+      "source_verification",
+      "conditions",
+      "later_family_reuse",
+      "operation_diagnostics",
+      "generator_state",
+      "stages"
+    ],
+    "nss_arm_additional_fields": [
+      "unrotated_allocation_vector",
+      "applied_allocation_vector"
+    ],
+    "post_trace_runner_envelope_required_fields": [
+      "schema_version",
+      "preregistration_anchor",
+      "implementation_anchor",
+      "translation_audit_anchor",
+      "translation_audit_sha256",
+      "execution_anchor",
+      "execution_manifest_path",
+      "execution_manifest_sha256",
+      "attempt_path",
+      "arm",
+      "arm_result",
+      "opcode_cost",
+      "wall_clock_ns"
+    ]
+  },
+  "runtime": {
+    "os": "Windows 10.0.26200.0",
+    "python": "3.12.13",
+    "powershell": "7.6.5",
+    "dependencies": "PYTHON_STANDARD_LIBRARY_ONLY"
+  },
+  "fresh_child_schedule": [
+    "BOOTSTRAP",
+    "START_TRACING",
+    "VERIFY_FROZEN_SOURCES_AND_CONTRACTS",
+    "IMPORT_SAME_FS_NSS_AND_CGP_MODULES",
+    "BUILD_SAME_FOUR_ALLOCATION_DATASETS_AND_XOR_DATASET",
+    "RUN_M0_FOR_ALL_FOUR_CONDITIONS",
+    "RUN_ONLY_ARM_SPECIFIED_TRANSLATION_NSS_M1_BRANCHES",
+    "EVALUATE_SAME_THREE_PRIMARY_HELDOUT_SETS_AND_XOR_REUSE_SET",
+    "COMPLETE_IN_MEMORY_RECORD",
+    "STOP_TRACING",
+    "VALIDATE_FROZEN_RESULT_SCHEMA",
+    "SERIALIZE"
+  ],
+  "schedule_constraints": {
+    "common_imports_and_calls_may_be_padded": false,
+    "common_imports_and_calls_may_be_omitted": false,
+    "common_imports_and_calls_may_be_reordered": false
+  },
+  "cost_accounting": {
+    "unit": "EXECUTED_PYTHON_BYTECODE_OPCODE_EVENT",
+    "total_definition": "all opcode events in SHA-bound project-owned frames from traced cold import through completed in-memory arm record",
+    "trace_start": "before source and contract verification and before any parent or CGP import",
+    "trace_stop": "immediately after the in-memory arm record is complete",
+    "included_project_file_roles": [
+      "frozen_negative_space_search_python_files",
+      "frozen_future_sufficiency_implementation_file",
+      "frozen_CGP_python_files"
+    ],
+    "excluded": [
+      "interpreter_startup",
+      "parsing_arm_and_checkout_paths",
+      "parsing_the_fixed_manifest_only_to_obtain_its_allowed_path_list",
+      "constructing_the_trace_callback",
+      "trace_callback_own_code_object",
+      "python_and_stdlib_frames",
+      "serialization"
+    ],
+    "phase_counts": [
+      "C_generator_construct",
+      "C_case_generation",
+      "C_M0_search",
+      "C_translation",
+      "C_NSS_gate",
+      "C_M1_search",
+      "C_FS_value_authority",
+      "C_heldout_reuse",
+      "C_control"
+    ],
+    "phase_counts_must_sum_exactly_to_total": true,
+    "unclassified_project_opcodes": "FAIL_VALIDATION",
+    "weights": false,
+    "fresh_interpreter_eager_M0_M1_library_construction_charged_to_every_arm": true,
+    "aggregate_scope": "all_four_allocation_conditions_plus_XOR_reuse",
+    "required_unscalarized_diagnostics": [
+      "M0_candidates_scored",
+      "M1_candidates_scored",
+      "program_example_evaluations",
+      "program_node_evaluations",
+      "source_records",
+      "emitted_records",
+      "signature_calls",
+      "hash_group_insertions",
+      "label_set_insertions",
+      "collision_decisions",
+      "expanded_signatures",
+      "NSS_generated_predicate_evaluations",
+      "heldout_reuse_examples",
+      "FS_value_adoption_decisions",
+      "selected_node_count",
+      "generator_state",
+      "stages",
+      "wall_clock_ns"
+    ]
+  },
+  "opcode_manifest_schema": {
+    "freeze_after_A_trans_PASS_and_before_execution": true,
+    "required_top_level_fields": [
+      "preregistration_anchor",
+      "implementation_anchor",
+      "translation_audit_status",
+      "translation_audit_anchor",
+      "translation_audit_path",
+      "translation_audit_sha256",
+      "arm_output_paths",
+      "arm_attempt_paths",
+      "allowed_files"
+    ],
+    "preregistration_anchor_value": "669a94aac6c07484323dde3b0fb64df5b9ec4bca",
+    "implementation_anchor": "nonempty_40_character_lowercase_hex_commit",
+    "translation_audit_status": "must equal PASS",
+    "translation_audit_anchor": "nonempty_40_character_lowercase_hex commit containing the frozen independent audit verdict and having implementation_anchor as its sole direct parent",
+    "translation_audit_path": "absolute path to repository-root CGP_001_TRANSLATION_AUDIT.md",
+    "translation_audit_sha256": "lowercase SHA256 of the independent audit artifact",
+    "fixed_manifest_path": "experiments/cgp_001/execution_manifest.json",
+    "arm_output_paths": "exact four-arm absolute path map to experiments/cgp_001/results/raw/<frozen-arm-slug>.json",
+    "arm_attempt_paths": "exact four-arm absolute path map to experiments/cgp_001/results/attempts/<frozen-arm-slug>.attempt.json",
+    "allowed_files": {
+      "type": "object",
+      "key": "absolute_resolved_path",
+      "value": "lowercase_SHA256"
+    },
+    "translation_audit_path_constraint": "translation_audit_path must appear in allowed_files, its mapped digest must equal translation_audit_sha256, its working content must match the blob at translation_audit_anchor, and its first four nonempty lines must be the frozen PASS authority header",
+    "translation_audit_authority_header": [
+      "# CGP-001 Translation Audit",
+      "A_TRANS=PASS",
+      "PREREGISTRATION_ANCHOR=<exact frozen preregistration commit>",
+      "IMPLEMENTATION_ANCHOR=<exact frozen implementation commit>"
+    ],
+    "lineage_rule": "implementation_anchor has preregistration_anchor as sole direct parent and changes exactly the six apparatus files; translation_audit_anchor has implementation_anchor as sole direct parent and changes exactly CGP_001_TRANSLATION_AUDIT.md; execution HEAD has translation_audit_anchor as sole direct parent and changes exactly the fixed execution manifest",
+    "execution_checkout_rule": "execution HEAD is the execution-manifest freeze commit, and its fixed manifest working file must be byte-equivalent under Git clean-filter semantics to the HEAD blob",
+    "implementation_binding": "the six required CGP files must be byte-equivalent under Git clean-filter semantics to implementation_anchor",
+    "allowed_file_set_rule": "allowed_files must equal exactly the six required CGP files, six frozen parent files, and the independently frozen translation-audit artifact",
+    "optional_file_roles": {
+      "type": "object",
+      "key": "absolute_resolved_path",
+      "value": "descriptive_role_string"
+    },
+    "required_files_by_root_role": {
+      "negative_space_search_checkout": [
+        "src/negative_space_search/operator_discovery_v0_7.py",
+        "src/negative_space_search/language_boundary_v0_6.py",
+        "src/negative_space_search/basis_v0_5.py",
+        "src/negative_space_search/representation_v0_4.py"
+      ],
+      "future_sufficiency_checkout": [
+        "experiments/meta_language_repair.py",
+        "experiments/meta_language_repair.md"
+      ],
+      "corrigibility_distillation_checkout": [
+        "experiments/cgp_001/cgp_001.py",
+        "experiments/cgp_001/opcode_runner.py",
+        "experiments/cgp_001/test_translation.py",
+        "experiments/cgp_001/contracts/translation_contract.json",
+        "experiments/cgp_001/contracts/evaluation_contract.json",
+        "experiments/cgp_001/fixtures/translation_fixtures.json"
+      ]
+    },
+    "count_rule": "count only frames whose absolute resolved path is an allowed_files key and whose SHA-256 equals its mapped value",
+    "source_and_contract_verification": "after tracing starts, re-read and validate all authority-bearing manifest fields, hash-verify every allowed file, verify commit/blob bindings, and load the CGP implementation from its exact verified file path",
+    "post_install_runner_frames_included": true,
+    "unexpected_project_frame_rule": "raise immediately on entry before any unapproved project opcode can affect the arm",
+    "one_shot_rule": "before run_arm, exclusive-create and fsync the manifest-bound attempt marker; any existing marker or output refuses execution, and a failed/crashed attempt remains consumed",
+    "output_validation": "after the frozen trace stop and before snapshot/envelope serialization, require exact top-level schema, arm and source bindings, four ordered condition records, arm-correct allocation vectors, required diagnostics, finite JSON-safe values, and no container cycles; validation opcodes are excluded from C_total"
+  },
+  "quality_contract": {
+    "floating_accuracy": {
+      "exact_when_exactly_representable": true,
+      "absolute_tolerance_otherwise": 1e-12
+    },
+    "reference_arm": "FS_ONLY",
+    "subject_arm": "NSS_TO_FS",
+    "obligations": [
+      "selected-program semantics equal in all four allocation conditions",
+      "held-out accuracy equal in conditions 0, 1, and 2",
+      "fanout_enabled is true in conditions 0 and 3",
+      "fanout_enabled is false in conditions 1 and 2",
+      "held-out accuracy is greater than 0.99 in conditions 0 and 2",
+      "XOR reuse accuracy is greater than 0.99 from condition 3's generator",
+      "only native FS result fields, fanout_enabled, and selected program may change",
+      "adapter and NSS do not write repair cost, horizon, target, objective, selected program, value, adoption, or persistence"
+    ],
+    "parent_marker_strings_are_evidence": false,
+    "authority_evidence": [
+      "code_path_audit",
+      "before_after_state_diffs"
+    ]
+  },
+  "success_predicates": {
+    "QUALITY": "every quality_contract obligation passes",
+    "COST": "C_total(NSS_TO_FS) < C_total(FS_ONLY)",
+    "ALLOCATION": "NSS_TO_FS applied vector equals [INVOKE,INVOKE,SKIP,INVOKE]",
+    "SHUFFLE_VALID": "shuffled unrotated vector equals primary vector and exact right rotation preserves the multiset",
+    "CONTROL_DISCRIMINATING": "primary vector is not all identical",
+    "MISALLOCATION": "shuffled SKIPs condition 0 or 3 or INVOKEs condition 2",
+    "LOCALIZATION": "SHUFFLE_VALID and CONTROL_DISCRIMINATING and ((QUALITY_primary and not QUALITY_shuffled) or (QUALITY_primary and QUALITY_shuffled and C_total_primary < C_total_shuffled) or MISALLOCATION)",
+    "ROLE": "NSS_ONLY performs no repair and Psi_NSS performs no U_FS operation",
+    "LEAKAGE": "no forbidden source, adapter, hash, state, objective, or authority leakage",
+    "COARSE": "valid pinned execution and QUALITY and COST",
+    "TYPED": "COARSE and ALLOCATION and LOCALIZATION and ROLE and LEAKAGE",
+    "noncompensatory": true
+  },
+  "score_contract": {
+    "A_trans_FAIL": "UNSCORED_NOT_EVALUABLE",
+    "A_trans_PASS_COARSE_false": "L0",
+    "A_trans_PASS_COARSE_true_TYPED_false": "L1",
+    "A_trans_PASS_TYPED_true_exact_G_provenance_false": "L2",
+    "A_trans_PASS_TYPED_true_exact_G_provenance_true": "L3",
+    "typed_implies_coarse": true,
+    "typed_without_coarse": "AUDIT_INCONSISTENCY_FAIL_CLOSED_TO_L0",
+    "exact_G_provenance_available_in_CGP_001": false,
+    "maximum_score": "L2"
+  },
+  "terminal_rules": {
+    "A_trans_FAIL": "CGP-001=NOT_EVALUABLE",
+    "A_trans_PASS_and_L3_less_than_1": "H_CG_UNSUPPORTED_ON_CGP-001",
+    "A_trans_PASS_and_L3_equal_1": "PROSPECTIVE_EVIDENCE_FOR_PREDICTIVE_CONSTRAINT_GEOMETRY_ON_CGP-001",
+    "CGP_001_can_reach_L3": false
+  },
+  "failure_localization": {
+    "countertrace_order": [
+      "SOURCE_VERIFY",
+      "CASE_GENERATE",
+      "M0_SEARCH",
+      "TRANSLATE",
+      "NSS_SIGNATURE",
+      "NSS_ALLOCATE",
+      "FS_M1_SEARCH",
+      "FS_VALUE",
+      "FS_MUTATION",
+      "HELDOUT_REUSE",
+      "COST_CONTROL_COMPARE"
+    ],
+    "codes": {
+      "B0": "NO_KNOWN_OBSTRUCTION",
+      "B1": "INTERFACE_OR_SIGNATURE_MISMATCH",
+      "B2": "DEPENDENCY_MISMATCH",
+      "B3": "EVIDENCE_OR_AUTHORITY_MISMATCH",
+      "B4": "COMPLEMENTARY_STAGE_MISMATCH",
+      "B5": "LOCAL_INVARIANT_VIOLATION",
+      "BU": "UNCLASSIFIED"
+    },
+    "A_trans_failure_gets_B_code": false,
+    "assignment": "exactly one earliest directly evidenced violation",
+    "B4_rule": "only after excluding B1 B2 B3 and B5",
+    "BU_includes": [
+      "no_frozen_category_fits",
+      "pure_overhead_failure",
+      "simultaneous_ambiguity_at_earliest_event"
+    ]
+  },
+  "no_retrospective_rescue": true
+}
