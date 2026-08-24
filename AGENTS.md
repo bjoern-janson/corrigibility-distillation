@@ -1,8 +1,6 @@
 # Research Execution Instructions
 
-## Purpose
-
-Scientific history in this repository is append-only at the level of frozen claims. Later positive results do not rewrite earlier nulls, and later conjectures do not become historical evidence.
+Scientific history is append-only at the level of frozen claims. Later positives do not rewrite earlier nulls, and later conjectures do not become historical evidence.
 
 ## Current lane state
 
@@ -11,12 +9,13 @@ Corpus Distillation  CLOSED
 CGP-001              CLOSED / NOT EVALUABLE
 RIL-001              CLOSED / REPRESENTATION_INDUCED_LEVERAGE
 RIL-002              CLOSED / FAMILY_WIDE_LEVERAGE
-RIL-3                NOT OPENED
+RIL-003              PREREGISTERED / TARGETS UNREVEALED / NOT IMPLEMENTED
+RIL-4+               NOT OPENED
 ```
 
 ## Immutable scientific records
 
-Treat as frozen records:
+Treat as frozen:
 
 ```text
 CORPUS.md
@@ -26,135 +25,137 @@ CGP_001_TRANSLATION_AUDIT.md
 experiments/cgp_001/*
 RIL_001_PREREGISTRATION.md
 RIL_001_PRE_EXECUTION_AUDIT.md
-experiments/ril_001/* at implementation freeze a0f8f795...
-RIL_001_RESULT.md
-RIL_001_RESULT.json
+experiments/ril_001/* at a0f8f795...
+RIL_001_RESULT.*
 RIL_001_FINAL_AUDIT.md
 RIL_002_PREREGISTRATION.md
 RIL_002_FAMILY.json
 RIL_002_PRE_EXECUTION_AUDIT.md
-experiments/ril_002/* at implementation freeze d46dffe2...
-RIL_002_RESULT.md
-RIL_002_RESULT.json
+experiments/ril_002/* at d46dffe2...
+RIL_002_RESULT.*
 RIL_002_FINAL_AUDIT.md
+RIL_003_PREREGISTRATION.md
+RIL_003_GENERATOR_CONTRACT.json
 ```
 
-Mutable narrative files (`README.md`, `STATUS.md`, `ROADMAP.md`, `AGENTS.md`) may summarize later state but may not silently strengthen frozen evidence.
+Mutable narrative files may summarize later state but may not silently strengthen these records.
 
-## Evidence distinctions
+## RIL-003 preregistration boundary
 
-Preserve:
+RIL-003 is open **only** at the preregistration layer.
 
-```text
-mechanism != function != invariant
-recurrence != necessity
-local necessity != universal necessity
-same abstract lesson != shared semantic type
-serialization compatibility != interface compatibility
-possibility != authority
-cheapness != semantic preservation
-single-function leverage != family transfer
-family transfer != provenance-separated generalization
-held-out name difference != selection-information separation
-resource speedup != resource-boundary amplification
-```
-
-On failure or contradiction, revise the shallowest supported layer and preserve unaffected records.
-
-## Closed CGP-001
-
-Do not repair, rerun, score, or reinterpret CGP-001. Its terminal state is:
+Frozen now:
 
 ```text
-A_trans          FAIL
-failed criteria  [8, 9]
-primary arms     NOT RUN
-H_CG             NOT TESTED
-```
-
-Any repaired cross-mechanism corridor needs a new prospective identifier.
-
-## Closed RIL-001
-
-RIL-001 established one bounded existence witness:
-
-```text
-same frozen correction
-same algorithm
-same scope / authority
-R0_AST -> R1_SEM8
-C_op 9,825,003 -> 4,094,613
-Lambda_F^op = 2.399495
-memory non-regression PASS
-```
-
-Do not optimize or rerun the frozen apparatus under `RIL-001`.
-
-## Closed RIL-002
-
-RIL-002 tested **transfer**, not new representation design. It inherited the exact RIL-001 pair and froze an exhaustive 24-member family before any new leverage results.
-
-Terminal result:
-
-```text
-P_i                              PASS 24/24
-A_fixed dynamic equality         PASS 24/24
-Lambda_i^op > 1                  PASS 24/24
-memory non-regression            PASS 24/24
-held-out transfer = 1.0          PASS 24/24
-family status                    FAMILY_WIDE_LEVERAGE
-kappa_F^op                       1.0
-full_RIL_coverage                1.0
-```
-
-The claim ceiling is bounded family transfer. Do not relabel it as `representation-induced generality` or `RIL-3`.
-
-No member may be removed after the fact and no new member may be added to strengthen or weaken the closed RIL-002 claim.
-
-## RIL-3 is not opened
-
-A future provenance-separated generalization experiment must receive a new prospective identifier and freeze an information firewall before any held-out result.
-
-At minimum it must define:
-
-```text
-I_select(R)     all information allowed to influence representation selection/construction
-I_test          held-out correction information
-selection rule  g such that R = g(I_select)
-freeze point    R becomes immutable before I_test is revealed to the selection process
-F_train / F_test or equivalent test objects
-preservation predicate per test object
-cost / memory accounting
-null and terminal taxonomy
+Q_test
+I_shared whitelist
+I_target_test forbidden set
+R0 = R0_AST
+R1 = R1_SEM8
+future public entropy rule
+held-out family size n=24
+member gate G_i=(A_fixed_i,P_i,Lambda_i)
 claim ceiling
 ```
 
-The intended firewall is stronger than different function names:
+Not present now:
 
 ```text
-I_select(R) ∩ I_test = empty
+held-out target IDs
+held-out truth tables
+implementation
+target reveal manifest
+preservation output
+opcode/memory/timing output
+Lambda vector
+scientific verdict
 ```
 
-or an operationally equivalent causal/provenance separation established prospectively.
+Do not instantiate or infer target identities before the target-reveal phase.
 
-Do not use RIL-002 member outcomes to redesign a representation and then call the same family held out.
+## Q_test discipline
 
-## Larger roadmap
+Eligible targets are all 3-input Boolean truth tables for which x,y,z are all essential, excluding exactly the 25 previously tested RIL-001/RIL-002 truth tables.
 
-RIL-4 and RIL-5 remain conjectural. Objects such as:
+Expected counts:
 
 ```text
-A(R) = (Omega_R, tau_R, c_R, C_R)
-Omega_eff(R;B)
-representation payback horizon n*
+all-essential targets  218
+excluded prior targets  25
+eligible universe       193
+future sample            24
 ```
 
-are research notation, not established universal theory.
+Eligibility must not use M0/M1 membership, canonical program size, exact ceilings, prior leverage, or predicted representation cost.
 
-## No currently authorized experiment
+The later target sample is determined only by the preregistered future NIST Randomness Beacon 2.0 pulse and frozen SHA-256 ranking rule. No redraw, substitution, balancing, or post-reveal family shaping is permitted.
 
-There is no automatically authorized `RIL-3`, `RIL-003`, `CGP-002`, resource-boundary assay, or theory-expansion task. New work begins only by explicit prospective instruction.
+## Shared-information whitelist
+
+Shared schema/interface information is allowed because the test must remain well-typed. The exact whitelist is in `RIL_003_PREREGISTRATION.md` and `RIL_003_GENERATOR_CONTRACT.json`.
+
+Held-out target-specific information is forbidden from representation selection/construction, including:
+
+```text
+actual target IDs/truth tables
+target labels
+target M0/M1 status
+exact target ceilings
+best/canonical target programs
+repair outcomes
+expected or observed target costs
+target-derived features/clusters/similarity
+any target-specific cache/index/compilation/code path
+```
+
+## Representation freeze
+
+RIL-003 performs no new representation search.
+
+```text
+R0_AST:
+    candidate payload = frozen canonical Program AST
+    prediction = program.evaluate_local((x,y,z))
+
+R1_SEM8:
+    candidate payload = frozen exact 8-pattern semantic tuple
+    prediction = semantic_tuple[4*x + 2*y + z]
+```
+
+No tuning, new features, indexing changes, target-specific lookup/cache, JIT, vectorization, batching asymmetry, pruning, early stopping, candidate reordering, tie-break change, or “minor adaptation” is permitted after this freeze.
+
+## Next legal phase — not yet authorized by this file
+
+A later explicit instruction may begin **generic implementation without target reveal**.
+
+If opened, the intended order is:
+
+```text
+implement generic frozen apparatus
+-> implementation freeze
+-> pre-reveal source/A_fixed/instrumentation audit
+-> wait until frozen future Beacon pulse exists
+-> instantiate F_test exactly once
+-> freeze target reveal manifest
+-> execute member preservation gates
+-> interpret Lambda only where P_i=1
+-> publish ordered Lambda vector
+-> final audit
+-> STOP
+```
+
+No target execution may precede the reveal-manifest freeze.
+
+## Claim ceiling
+
+A positive RIL-003 result can earn only:
+
+```text
+PROVENANCE_SEPARATED_REPRESENTATION_INDUCED_TRANSFER
+```
+
+It cannot by itself establish representation-induced generality, resource-boundary amplification, broad constrained-hardware generality, or universal affordance geometry.
 
 ## Final rule
 
-**Change the coordinates only when the experiment says coordinates may change. Hold the scientific object fixed. Count every cost. Preserve every null. Never promote transfer into generalization without a provenance firewall.**
+**Freeze the territory generator. Whitelist shared information. Freeze the coordinates. Do not let held-out target-specific information exist before the protocol says it may exist.**

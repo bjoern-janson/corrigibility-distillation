@@ -1,159 +1,98 @@
 # Corrigibility Distillation
 
-A provenance-preserving research repository for extracting bounded claims about corrective systems, preserving nulls, and opening new experiments only after the prior evidence ceiling has been frozen.
+A provenance-preserving research repository for bounded claims about corrective systems, strict null preservation, and prospective experiments opened only after prior evidence ceilings are frozen.
 
 ## Current state
 
-| Lane | Status | Strongest earned result |
+| Lane | Status | Strongest earned / frozen state |
 |---|---|---|
 | Corpus Distillation | **CLOSED** | Recurring corrective constraints and three local necessities; no common reducible core, substitutability, or full cross-repository mechanism interface was demonstrated. |
-| CGP-001 | **CLOSED / NOT EVALUABLE** | The attempted NSS→FS corridor failed before composition because the bridge was not semantically well-typed. `H_CG` was not tested. |
-| RIL-001 | **CLOSED / REPRESENTATION_INDUCED_LEVERAGE** | For one frozen FS007 correction, AST→SEM8 reduced counted computational work while preserving semantic identity, scope, authority, required operations, and memory. |
-| RIL-002 | **CLOSED / FAMILY_WIDE_LEVERAGE** | The unchanged RIL-001 representation pair transferred full leverage across every member of a prospectively frozen 24-member family. |
-| RIL-3 | **NOT OPENED** | Provenance-separated generalization remains untested. |
+| CGP-001 | **CLOSED / NOT EVALUABLE** | Attempted NSS→FS composition failed semantic/interface typing before primary execution. `H_CG` was not tested. |
+| RIL-001 | **CLOSED / REPRESENTATION_INDUCED_LEVERAGE** | One frozen FS007 correction became cheaper under AST→SEM8 with preservation, fixed search/update work, and memory non-regression. |
+| RIL-002 | **CLOSED / FAMILY_WIDE_LEVERAGE** | The unchanged AST→SEM8 pair transferred leverage across all 24 members of a prospectively frozen related family. |
+| RIL-003 | **PREREGISTERED / TARGETS UNREVEALED / NOT IMPLEMENTED** | `Q_test`, the shared-information whitelist, the forbidden target-information boundary, the future entropy rule, and the inherited AST/SEM8 pair are frozen. No held-out target instance exists yet. |
+| RIL-4+ | **NOT OPENED** | Resource-boundary amplification and broader generality remain conjectural. |
 
-See [`STATUS.md`](STATUS.md) for the exact ledger, [`ROADMAP.md`](ROADMAP.md) for unearned future rungs, and [`AGENTS.md`](AGENTS.md) for execution discipline.
+See [`STATUS.md`](STATUS.md) for the exact ledger, [`RIL_003_PREREGISTRATION.md`](RIL_003_PREREGISTRATION.md) for the current scientific contract, and [`AGENTS.md`](AGENTS.md) for execution discipline.
 
-## Frozen corpus result
-
-The canonical 14-repository boundary is [`CORPUS.md`](CORPUS.md). The closed distillation lane established:
+## Closed empirical ladder so far
 
 ```text
-Phase 1 inventory                 COMPLETE
-Phase 2 substitutability          0 / 182 YES or PARTIAL
-L4 full mechanism interfaces      0
-L4' bounded evidence transport    1
-local necessity                   3 NECESSARY
-                                  5 NOT DEMONSTRATED
-                                  1 DISCONFIRMED
-necessity relations               0 DEPENDENT
-                                  0 INDEPENDENT
-                                  2 NOT COMPARABLE
-                                  1 NOT DEMONSTRATED
-common reducible core             NOT EARNED
-global minimization               CLOSED
-L5 / L6                           CLOSED
+RIL-001  one-function representation-induced leverage
+RIL-002  bounded family-wide transfer of the same frozen representation pair
+RIL-003  provenance-separated transfer preregistered; no targets revealed or executed
 ```
 
-Nothing downstream rewrites this record.
+RIL-002 does not become representation-induced generality by repetition inside its native structural family. RIL-003 exists specifically to test target transfer under a provenance firewall.
 
-## CGP-001 — pre-composition null
+## RIL-003 — provenance experiment
 
-CGP-001 attempted a prospective NSS→FS corridor. The independent translation audit found:
+The frozen order is:
 
 ```text
-A_trans = FAIL
-failed criteria = [8, 9]
-CGP-001 = NOT EVALUABLE
-primary arms = NOT RUN
-H_CG = NOT TESTED
+Q_test
+-> I_shared whitelist
+-> R0/R1 frozen
+-> STOP
+-> later generic implementation / implementation freeze
+-> pre-reveal audit
+-> future entropy pulse
+-> F_test reveal + target-manifest freeze
+-> execution
 ```
 
-The two failures were semantic-role mismatch and search-scope mismatch. The attempted corridor was never faithfully constituted. See [`CGP_001_PREREGISTRATION.md`](CGP_001_PREREGISTRATION.md) and [`CGP_001_TRANSLATION_AUDIT.md`](CGP_001_TRANSLATION_AUDIT.md).
-
-## RIL-001 — single-function leverage
-
-RIL-001 held fixed the correction, algorithm, scope, required operations, and authority while varying only representation:
+The held-out target schema remains well-typed:
 
 ```text
-R0 = canonical Program AST
-R1 = existing exact 8-pattern semantic tuple (SEM8)
+f : {0,1}^3 -> {0,1}
+canonical 8-pattern order
+all x,y,z essential
 ```
 
-All preservation gates passed. Counted work fell from `9,825,003` to `4,094,613` instruction events:
+But target eligibility deliberately does **not** use:
 
 ```text
-Lambda_F^op = 2.399495
+M0/M1 membership
+canonical program size
+exact M0/M1 ceiling
+prior leverage
+predicted AST/SEM8 cost
 ```
 
-with equal search/update work and no peak-memory increase. See [`RIL_001_RESULT.md`](RIL_001_RESULT.md).
+The exact 25 RIL-001/RIL-002 targets are excluded only to prevent literal target reuse. This leaves a frozen eligible universe of 193 all-essential Boolean targets.
 
-## RIL-002 — family transfer
+The later 24-member held-out set will be selected without replacement using one preregistered future NIST Randomness Beacon 2.0 pulse and a deterministic SHA-256 ranking rule. The target identities therefore do not exist at the preregistration freeze.
 
-RIL-002 did **not** redesign the representation. It inherited the exact RIL-001 AST/SEM8 pair and prospectively froze the family before any new leverage results.
+## Shared-information firewall
 
-The inclusion rule selected every full-support 3-input Boolean target that:
+RIL-003 allows shared schema/interface information required for semantic typing, including the 3-input Boolean coordinate system, frozen candidate languages/control flow, resource contract, and exact inherited representations:
 
 ```text
-is exactly representable in frozen M1/fanout
-is not exactly representable in frozen M0/read-once
-uses x, y, and z essentially
-is not the RIL-001 majority target
+R0 = R0_AST
+R1 = R1_SEM8
 ```
 
-This yields exactly 24 members. See [`RIL_002_PREREGISTRATION.md`](RIL_002_PREREGISTRATION.md) and [`RIL_002_FAMILY.json`](RIL_002_FAMILY.json).
+Held-out target-specific identities, truth tables, labels, M0/M1 status, best programs, repair outcomes, costs, derived features, and target-specific caches are forbidden from representation selection/construction.
 
-Terminal result:
+The claim ceiling of a positive RIL-003 result is only:
 
 ```text
-P_i                                  PASS 24/24
-A_fixed dynamic equality             PASS 24/24
-Lambda_i^op > 1                      PASS 24/24
-memory non-regression                PASS 24/24
-held-out transfer accuracy = 1.0     PASS 24/24
-family status                        FAMILY_WIDE_LEVERAGE
-kappa_F^op                           1.0
-full_RIL_coverage                    1.0
-Lambda range                         2.376157 .. 2.393112
+PROVENANCE_SEPARATED_REPRESENTATION_INDUCED_TRANSFER
 ```
 
-See [`RIL_002_RESULT.md`](RIL_002_RESULT.md) and [`RIL_002_FINAL_AUDIT.md`](RIL_002_FINAL_AUDIT.md).
+Repeated success across independently constituted held-out regimes would still be required before promoting to `representation-induced generality`.
 
-The earned claim is **bounded family transfer of representation-induced computational leverage**. It is not provenance-separated generalization.
+## Frozen history remains intact
 
-## Current empirical separation
-
-The downstream assays now supply one bounded example on each side of an important distinction:
+Nothing in RIL-003 rewrites:
 
 ```text
-Constraint / existence question:
-    can the proposed transformation be constituted with valid semantic typing?
-    CGP-001: attempted corridor failed here.
-
-Affordance / cost question:
-    once a transformation is already valid, can representation change its cost?
-    RIL-001: yes for one function.
-    RIL-002: yes across the frozen related family.
-```
-
-This is an empirical program structure, not a universal theory.
-
-## Claim ceiling
-
-RIL-002 does **not** establish:
-
-```text
-provenance-separated representation-induced generalization
-resource-boundary amplification
-broad effective generality on constrained hardware
-universal affordance geometry
-intelligence = representation
-a common corrigibility architecture
-```
-
-Those require new prospective experiments.
-
-## Repository map
-
-```text
-CORPUS.md                         frozen corpus boundary
-NECESSITY_AUDIT.md                frozen local-necessity record
-CGP_001_*                         closed CGP-001 preregistration/null/provenance
-RIL_001_PREREGISTRATION.md        frozen single-function contract
-RIL_001_PRE_EXECUTION_AUDIT.md    frozen pre-cost audit
-RIL_001_RESULT.*                  terminal RIL-001 result
-RIL_001_FINAL_AUDIT.md            terminal RIL-001 audit
-RIL_002_PREREGISTRATION.md        frozen family-transfer contract
-RIL_002_FAMILY.json               frozen 24-member family
-RIL_002_PRE_EXECUTION_AUDIT.md    frozen pre-execution audit
-RIL_002_RESULT.*                  terminal family-transfer result
-RIL_002_FINAL_AUDIT.md            terminal RIL-002 audit
-experiments/                      frozen apparatus
-STATUS.md                         mutable current ledger
-ROADMAP.md                        conjectural future ladder
-AGENTS.md                         execution rules
+Corpus Distillation  CLOSED
+CGP-001              NOT EVALUABLE / CLOSED
+RIL-001              POSITIVE / CLOSED
+RIL-002              FAMILY_WIDE_LEVERAGE / CLOSED
 ```
 
 ## Governing rule
 
-> **Preserve the scientific identity of the transformation before claiming anything about making it cheaper. Preserve every null and every claim ceiling.**
+> **Freeze the territory generator, freeze what the representation may know, freeze the coordinates, and only then let the territory exist.**
