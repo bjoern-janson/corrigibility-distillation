@@ -1,0 +1,4771 @@
+{
+  "aggregate": {
+    "R0_all_correct": true,
+    "R_STAR_all_correct": true,
+    "R_STAR_all_traps_preserved": true,
+    "aggregate_lambda_fresh": 1.844296550976693,
+    "available_leverage_gate": true,
+    "delta_C_fresh": 958193,
+    "sum_C_fresh_R0": 2093094,
+    "sum_C_fresh_R_STAR": 1134901,
+    "verdict": "AVAILABLE_LEVERAGE_DEMONSTRATED"
+  },
+  "count": 24,
+  "experiment": "RD-001",
+  "manifest_sha256": "01f0211272291ad9c553a5cd7ff31128f981cd0e5892a97dc18484549b562d86",
+  "phase": "PRE_LEARNER_AVAILABLE_LEVERAGE_CALIBRATION",
+  "rows": [
+    {
+      "J": [
+        0,
+        1
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            7,
+            6
+          ],
+          [
+            0,
+            6,
+            5
+          ],
+          [
+            1,
+            3,
+            7
+          ],
+          [
+            1,
+            7,
+            6
+          ],
+          [
+            2,
+            8,
+            1
+          ],
+          [
+            4,
+            0,
+            2
+          ],
+          [
+            3,
+            4,
+            0
+          ]
+        ],
+        "c_fresh": 370882,
+        "c_instantiate": 5,
+        "c_search": 370753,
+        "c_verify": 124,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 5
+        },
+        "n_duplicates": 3507,
+        "n_expanded": 800,
+        "n_generated": 5149,
+        "n_states": 1643,
+        "search_counts": {
+          "descriptor_read": 445,
+          "duplicate_detect": 3507,
+          "gate_check": 445,
+          "goal_compare": 4000,
+          "goal_position_read": 4000,
+          "goal_set_build": 4000,
+          "hash_mix": 77250,
+          "key_atom_emit": 77250,
+          "key_descriptor_read": 25750,
+          "key_identity_read": 25750,
+          "key_position_read": 25750,
+          "occupancy_scan": 52370,
+          "path_parent_lookup": 7,
+          "path_reverse": 7,
+          "position_read": 10474,
+          "queue_pop": 800,
+          "queue_push": 1643,
+          "state_copy_atom": 25745,
+          "state_write": 5149,
+          "successor_attempt": 10474,
+          "successor_generated": 5149,
+          "token_position_read": 3995,
+          "visited_insert": 1643,
+          "visited_lookup": 5150
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 5,
+          "goal_position_read": 5,
+          "goal_set_build": 5,
+          "occupancy_scan": 35,
+          "position_read": 7,
+          "successor_attempt": 7,
+          "verify_action": 7,
+          "verify_edge_scan": 10,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 35,
+          "verify_state_write": 7
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            7,
+            6
+          ],
+          [
+            0,
+            6,
+            5
+          ],
+          [
+            1,
+            3,
+            7
+          ],
+          [
+            1,
+            7,
+            6
+          ],
+          [
+            2,
+            8,
+            1
+          ],
+          [
+            4,
+            0,
+            2
+          ],
+          [
+            3,
+            4,
+            0
+          ]
+        ],
+        "c_fresh": 254802,
+        "c_instantiate": 17,
+        "c_search": 254661,
+        "c_verify": 124,
+        "instantiate_counts": {
+          "instantiate_class_assign": 5,
+          "instantiate_class_label_sort_compare": 2,
+          "instantiate_descriptor_read": 10
+        },
+        "n_duplicates": 2966,
+        "n_expanded": 624,
+        "n_generated": 4031,
+        "n_states": 1066,
+        "search_counts": {
+          "bucket_insert": 20160,
+          "canonical_compare": 8064,
+          "canonical_move": 5017,
+          "canonical_write": 8064,
+          "descriptor_read": 346,
+          "duplicate_detect": 2966,
+          "gate_check": 346,
+          "goal_compare": 3120,
+          "goal_position_read": 3120,
+          "goal_set_build": 3120,
+          "hash_mix": 32256,
+          "key_atom_emit": 20160,
+          "key_class_label_emit": 12096,
+          "key_class_read": 20160,
+          "key_position_read": 20160,
+          "occupancy_scan": 40980,
+          "path_parent_lookup": 7,
+          "path_reverse": 7,
+          "position_read": 8196,
+          "queue_pop": 624,
+          "queue_push": 1066,
+          "state_copy_atom": 20155,
+          "state_write": 4031,
+          "successor_attempt": 8196,
+          "successor_generated": 4031,
+          "token_position_read": 3115,
+          "visited_insert": 1066,
+          "visited_lookup": 4032
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 5,
+          "goal_position_read": 5,
+          "goal_set_build": 5,
+          "occupancy_scan": 35,
+          "position_read": 7,
+          "successor_attempt": 7,
+          "verify_action": 7,
+          "verify_edge_scan": 10,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 35,
+          "verify_state_write": 7
+        }
+      },
+      "delta_fresh": 116080,
+      "delta_search": 116092,
+      "instance": 0,
+      "k": 5,
+      "lambda_fresh": 1.4555694225320053,
+      "layout_hash": "cc61f223f85277fd12044d6053ca682198ecc56ee1a9143fad1e2ad8a1be8226",
+      "n": 9,
+      "state_R0": 15120,
+      "state_R_STAR": 3780,
+      "state_ratio": 4.0
+    },
+    {
+      "J": [
+        0,
+        3
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            0,
+            4,
+            8
+          ],
+          [
+            1,
+            5,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            4
+          ],
+          [
+            3,
+            6,
+            3
+          ],
+          [
+            2,
+            0,
+            6
+          ],
+          [
+            3,
+            3,
+            7
+          ],
+          [
+            2,
+            6,
+            3
+          ]
+        ],
+        "c_fresh": 323977,
+        "c_instantiate": 4,
+        "c_search": 323818,
+        "c_verify": 155,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 4
+        },
+        "n_duplicates": 4291,
+        "n_expanded": 939,
+        "n_generated": 5669,
+        "n_states": 1379,
+        "search_counts": {
+          "descriptor_read": 386,
+          "duplicate_detect": 4291,
+          "gate_check": 386,
+          "goal_compare": 3756,
+          "goal_position_read": 3756,
+          "goal_set_build": 3756,
+          "hash_mix": 68040,
+          "key_atom_emit": 68040,
+          "key_descriptor_read": 22680,
+          "key_identity_read": 22680,
+          "key_position_read": 22680,
+          "occupancy_scan": 37476,
+          "path_parent_lookup": 10,
+          "path_reverse": 10,
+          "position_read": 9369,
+          "queue_pop": 939,
+          "queue_push": 1379,
+          "state_copy_atom": 22676,
+          "state_write": 5669,
+          "successor_attempt": 9369,
+          "successor_generated": 5669,
+          "token_position_read": 3752,
+          "visited_insert": 1379,
+          "visited_lookup": 5670
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 4,
+          "goal_position_read": 4,
+          "goal_set_build": 4,
+          "occupancy_scan": 40,
+          "position_read": 10,
+          "successor_attempt": 10,
+          "verify_action": 10,
+          "verify_edge_scan": 22,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 40,
+          "verify_state_write": 10
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            0,
+            4,
+            8
+          ],
+          [
+            1,
+            5,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            4
+          ],
+          [
+            3,
+            6,
+            3
+          ],
+          [
+            2,
+            0,
+            6
+          ],
+          [
+            3,
+            3,
+            7
+          ],
+          [
+            2,
+            6,
+            3
+          ]
+        ],
+        "c_fresh": 115795,
+        "c_instantiate": 13,
+        "c_search": 115627,
+        "c_verify": 155,
+        "instantiate_counts": {
+          "instantiate_class_assign": 4,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 8
+        },
+        "n_duplicates": 1863,
+        "n_expanded": 366,
+        "n_generated": 2284,
+        "n_states": 422,
+        "search_counts": {
+          "bucket_insert": 9140,
+          "canonical_compare": 5768,
+          "canonical_move": 3033,
+          "canonical_write": 4570,
+          "descriptor_read": 177,
+          "duplicate_detect": 1863,
+          "gate_check": 177,
+          "goal_compare": 1464,
+          "goal_position_read": 1464,
+          "goal_set_build": 1464,
+          "hash_mix": 13710,
+          "key_atom_emit": 9140,
+          "key_class_label_emit": 4570,
+          "key_class_read": 9140,
+          "key_position_read": 9140,
+          "occupancy_scan": 14752,
+          "path_parent_lookup": 10,
+          "path_reverse": 10,
+          "position_read": 3688,
+          "queue_pop": 366,
+          "queue_push": 422,
+          "state_copy_atom": 9136,
+          "state_write": 2284,
+          "successor_attempt": 3688,
+          "successor_generated": 2284,
+          "token_position_read": 1460,
+          "visited_insert": 422,
+          "visited_lookup": 2285
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 4,
+          "goal_position_read": 4,
+          "goal_set_build": 4,
+          "occupancy_scan": 40,
+          "position_read": 10,
+          "successor_attempt": 10,
+          "verify_action": 10,
+          "verify_edge_scan": 22,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 40,
+          "verify_state_write": 10
+        }
+      },
+      "delta_fresh": 208182,
+      "delta_search": 208191,
+      "instance": 1,
+      "k": 4,
+      "lambda_fresh": 2.797849648084978,
+      "layout_hash": "e1c4c9a802c4d75af444b9adcd0b7c99adcc648026ebfcb995bff6a091204efc",
+      "n": 9,
+      "state_R0": 3024,
+      "state_R_STAR": 504,
+      "state_ratio": 6.0
+    },
+    {
+      "J": [
+        3
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            1,
+            7,
+            1
+          ],
+          [
+            1,
+            1,
+            8
+          ],
+          [
+            1,
+            8,
+            3
+          ],
+          [
+            2,
+            6,
+            5
+          ],
+          [
+            2,
+            5,
+            0
+          ]
+        ],
+        "c_fresh": 73144,
+        "c_instantiate": 3,
+        "c_search": 73052,
+        "c_verify": 89,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 3
+        },
+        "n_duplicates": 1245,
+        "n_expanded": 318,
+        "n_generated": 1678,
+        "n_states": 434,
+        "search_counts": {
+          "descriptor_read": 86,
+          "duplicate_detect": 1245,
+          "gate_check": 86,
+          "goal_compare": 954,
+          "goal_position_read": 954,
+          "goal_set_build": 954,
+          "hash_mix": 15111,
+          "key_atom_emit": 15111,
+          "key_descriptor_read": 5037,
+          "key_identity_read": 5037,
+          "key_position_read": 5037,
+          "occupancy_scan": 6732,
+          "path_parent_lookup": 7,
+          "path_reverse": 7,
+          "position_read": 2244,
+          "queue_pop": 318,
+          "queue_push": 434,
+          "state_copy_atom": 5034,
+          "state_write": 1678,
+          "successor_attempt": 2244,
+          "successor_generated": 1678,
+          "token_position_read": 951,
+          "visited_insert": 434,
+          "visited_lookup": 1679
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 21,
+          "position_read": 7,
+          "successor_attempt": 7,
+          "verify_action": 7,
+          "verify_edge_scan": 9,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 21,
+          "verify_state_write": 7
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            1,
+            7,
+            1
+          ],
+          [
+            1,
+            1,
+            8
+          ],
+          [
+            1,
+            8,
+            3
+          ],
+          [
+            2,
+            6,
+            5
+          ],
+          [
+            2,
+            5,
+            0
+          ]
+        ],
+        "c_fresh": 38683,
+        "c_instantiate": 7,
+        "c_search": 38587,
+        "c_verify": 89,
+        "instantiate_counts": {
+          "instantiate_class_assign": 3,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 3
+        },
+        "n_duplicates": 780,
+        "n_expanded": 194,
+        "n_generated": 1017,
+        "n_states": 238,
+        "search_counts": {
+          "bucket_insert": 3054,
+          "canonical_compare": 1018,
+          "canonical_move": 407,
+          "canonical_write": 1018,
+          "descriptor_read": 50,
+          "duplicate_detect": 780,
+          "gate_check": 50,
+          "goal_compare": 582,
+          "goal_position_read": 582,
+          "goal_set_build": 582,
+          "hash_mix": 5090,
+          "key_atom_emit": 3054,
+          "key_class_label_emit": 2036,
+          "key_class_read": 3054,
+          "key_position_read": 3054,
+          "occupancy_scan": 4086,
+          "path_parent_lookup": 7,
+          "path_reverse": 7,
+          "position_read": 1362,
+          "queue_pop": 194,
+          "queue_push": 238,
+          "state_copy_atom": 3051,
+          "state_write": 1017,
+          "successor_attempt": 1362,
+          "successor_generated": 1017,
+          "token_position_read": 579,
+          "visited_insert": 238,
+          "visited_lookup": 1018
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 21,
+          "position_read": 7,
+          "successor_attempt": 7,
+          "verify_action": 7,
+          "verify_edge_scan": 9,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 21,
+          "verify_state_write": 7
+        }
+      },
+      "delta_fresh": 34461,
+      "delta_search": 34465,
+      "instance": 2,
+      "k": 3,
+      "lambda_fresh": 1.8908564485691388,
+      "layout_hash": "17c5fb03dafc3a93011298811f519be5b194a3b68d49ca2b7d902234cf866490",
+      "n": 9,
+      "state_R0": 504,
+      "state_R_STAR": 252,
+      "state_ratio": 2.0
+    },
+    {
+      "J": [
+        3
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            6,
+            2
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            2,
+            7,
+            3
+          ],
+          [
+            1,
+            5,
+            7
+          ],
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            1,
+            7,
+            3
+          ],
+          [
+            3,
+            1,
+            8
+          ]
+        ],
+        "c_fresh": 226485,
+        "c_instantiate": 4,
+        "c_search": 226371,
+        "c_verify": 110,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 4
+        },
+        "n_duplicates": 2843,
+        "n_expanded": 638,
+        "n_generated": 3981,
+        "n_states": 1139,
+        "search_counts": {
+          "descriptor_read": 153,
+          "duplicate_detect": 2843,
+          "gate_check": 153,
+          "goal_compare": 2552,
+          "goal_position_read": 2552,
+          "goal_set_build": 2552,
+          "hash_mix": 47784,
+          "key_atom_emit": 47784,
+          "key_descriptor_read": 15928,
+          "key_identity_read": 15928,
+          "key_position_read": 15928,
+          "occupancy_scan": 25912,
+          "path_parent_lookup": 7,
+          "path_reverse": 7,
+          "position_read": 6478,
+          "queue_pop": 638,
+          "queue_push": 1139,
+          "state_copy_atom": 15924,
+          "state_write": 3981,
+          "successor_attempt": 6478,
+          "successor_generated": 3981,
+          "token_position_read": 2548,
+          "visited_insert": 1139,
+          "visited_lookup": 3982
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 4,
+          "goal_position_read": 4,
+          "goal_set_build": 4,
+          "occupancy_scan": 28,
+          "position_read": 7,
+          "successor_attempt": 7,
+          "verify_action": 7,
+          "verify_edge_scan": 13,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 28,
+          "verify_state_write": 7
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            6,
+            2
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            2,
+            7,
+            3
+          ],
+          [
+            1,
+            5,
+            7
+          ],
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            1,
+            7,
+            3
+          ],
+          [
+            3,
+            1,
+            8
+          ]
+        ],
+        "c_fresh": 121502,
+        "c_instantiate": 9,
+        "c_search": 121383,
+        "c_verify": 110,
+        "instantiate_counts": {
+          "instantiate_class_assign": 4,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 4
+        },
+        "n_duplicates": 1958,
+        "n_expanded": 384,
+        "n_generated": 2419,
+        "n_states": 462,
+        "search_counts": {
+          "bucket_insert": 9680,
+          "canonical_compare": 6122,
+          "canonical_move": 2521,
+          "canonical_write": 4840,
+          "descriptor_read": 93,
+          "duplicate_detect": 1958,
+          "gate_check": 93,
+          "goal_compare": 1536,
+          "goal_position_read": 1536,
+          "goal_set_build": 1536,
+          "hash_mix": 14520,
+          "key_atom_emit": 9680,
+          "key_class_label_emit": 4840,
+          "key_class_read": 9680,
+          "key_position_read": 9680,
+          "occupancy_scan": 15520,
+          "path_parent_lookup": 7,
+          "path_reverse": 7,
+          "position_read": 3880,
+          "queue_pop": 384,
+          "queue_push": 462,
+          "state_copy_atom": 9676,
+          "state_write": 2419,
+          "successor_attempt": 3880,
+          "successor_generated": 2419,
+          "token_position_read": 1532,
+          "visited_insert": 462,
+          "visited_lookup": 2420
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 4,
+          "goal_position_read": 4,
+          "goal_set_build": 4,
+          "occupancy_scan": 28,
+          "position_read": 7,
+          "successor_attempt": 7,
+          "verify_action": 7,
+          "verify_edge_scan": 13,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 28,
+          "verify_state_write": 7
+        }
+      },
+      "delta_fresh": 104983,
+      "delta_search": 104988,
+      "instance": 3,
+      "k": 4,
+      "lambda_fresh": 1.8640433902322595,
+      "layout_hash": "0726e61c510da9a41589689030759d03e3e6ca5e980987b583fdb5977f1c57d7",
+      "n": 9,
+      "state_R0": 3024,
+      "state_R_STAR": 504,
+      "state_ratio": 6.0
+    },
+    {
+      "J": [
+        1,
+        2
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            3,
+            6
+          ],
+          [
+            0,
+            6,
+            4
+          ],
+          [
+            1,
+            0,
+            3
+          ],
+          [
+            1,
+            3,
+            6
+          ],
+          [
+            1,
+            6,
+            5
+          ],
+          [
+            2,
+            2,
+            7
+          ]
+        ],
+        "c_fresh": 36839,
+        "c_instantiate": 3,
+        "c_search": 36750,
+        "c_verify": 86,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 3
+        },
+        "n_duplicates": 594,
+        "n_expanded": 157,
+        "n_generated": 836,
+        "n_states": 243,
+        "search_counts": {
+          "descriptor_read": 77,
+          "duplicate_detect": 594,
+          "gate_check": 77,
+          "goal_compare": 471,
+          "goal_position_read": 471,
+          "goal_set_build": 471,
+          "hash_mix": 7533,
+          "key_atom_emit": 7533,
+          "key_descriptor_read": 2511,
+          "key_identity_read": 2511,
+          "key_position_read": 2511,
+          "occupancy_scan": 3510,
+          "path_parent_lookup": 6,
+          "path_reverse": 6,
+          "position_read": 1170,
+          "queue_pop": 157,
+          "queue_push": 243,
+          "state_copy_atom": 2508,
+          "state_write": 836,
+          "successor_attempt": 1170,
+          "successor_generated": 836,
+          "token_position_read": 468,
+          "visited_insert": 243,
+          "visited_lookup": 837
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "descriptor_read": 1,
+          "gate_check": 1,
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 18,
+          "position_read": 6,
+          "successor_attempt": 6,
+          "verify_action": 6,
+          "verify_edge_scan": 14,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 18,
+          "verify_state_write": 6
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            3,
+            6
+          ],
+          [
+            0,
+            6,
+            4
+          ],
+          [
+            1,
+            0,
+            3
+          ],
+          [
+            1,
+            3,
+            6
+          ],
+          [
+            1,
+            6,
+            5
+          ],
+          [
+            2,
+            2,
+            7
+          ]
+        ],
+        "c_fresh": 23378,
+        "c_instantiate": 10,
+        "c_search": 23282,
+        "c_verify": 86,
+        "instantiate_counts": {
+          "instantiate_class_assign": 3,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 6
+        },
+        "n_duplicates": 454,
+        "n_expanded": 114,
+        "n_generated": 601,
+        "n_states": 148,
+        "search_counts": {
+          "bucket_insert": 1806,
+          "canonical_compare": 602,
+          "canonical_move": 427,
+          "canonical_write": 602,
+          "descriptor_read": 60,
+          "duplicate_detect": 454,
+          "gate_check": 60,
+          "goal_compare": 342,
+          "goal_position_read": 342,
+          "goal_set_build": 342,
+          "hash_mix": 3010,
+          "key_atom_emit": 1806,
+          "key_class_label_emit": 1204,
+          "key_class_read": 1806,
+          "key_position_read": 1806,
+          "occupancy_scan": 2547,
+          "path_parent_lookup": 6,
+          "path_reverse": 6,
+          "position_read": 849,
+          "queue_pop": 114,
+          "queue_push": 148,
+          "state_copy_atom": 1803,
+          "state_write": 601,
+          "successor_attempt": 849,
+          "successor_generated": 601,
+          "token_position_read": 339,
+          "visited_insert": 148,
+          "visited_lookup": 602
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "descriptor_read": 1,
+          "gate_check": 1,
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 18,
+          "position_read": 6,
+          "successor_attempt": 6,
+          "verify_action": 6,
+          "verify_edge_scan": 14,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 18,
+          "verify_state_write": 6
+        }
+      },
+      "delta_fresh": 13461,
+      "delta_search": 13468,
+      "instance": 4,
+      "k": 3,
+      "lambda_fresh": 1.5757977585764393,
+      "layout_hash": "687300879ef9e026c0772e086f72eadcb5cf58a358ec338e0142ef1aaa6ef834",
+      "n": 8,
+      "state_R0": 336,
+      "state_R_STAR": 168,
+      "state_ratio": 2.0
+    },
+    {
+      "J": [
+        1
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            7,
+            5
+          ],
+          [
+            0,
+            5,
+            2
+          ],
+          [
+            2,
+            4,
+            1
+          ],
+          [
+            1,
+            0,
+            4
+          ],
+          [
+            1,
+            4,
+            3
+          ],
+          [
+            2,
+            1,
+            6
+          ]
+        ],
+        "c_fresh": 37772,
+        "c_instantiate": 3,
+        "c_search": 37685,
+        "c_verify": 84,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 3
+        },
+        "n_duplicates": 622,
+        "n_expanded": 156,
+        "n_generated": 860,
+        "n_states": 239,
+        "search_counts": {
+          "descriptor_read": 35,
+          "duplicate_detect": 622,
+          "gate_check": 35,
+          "goal_compare": 468,
+          "goal_position_read": 468,
+          "goal_set_build": 468,
+          "hash_mix": 7749,
+          "key_atom_emit": 7749,
+          "key_descriptor_read": 2583,
+          "key_identity_read": 2583,
+          "key_position_read": 2583,
+          "occupancy_scan": 3642,
+          "path_parent_lookup": 6,
+          "path_reverse": 6,
+          "position_read": 1214,
+          "queue_pop": 156,
+          "queue_push": 239,
+          "state_copy_atom": 2580,
+          "state_write": 860,
+          "successor_attempt": 1214,
+          "successor_generated": 860,
+          "token_position_read": 465,
+          "visited_insert": 239,
+          "visited_lookup": 861
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 18,
+          "position_read": 6,
+          "successor_attempt": 6,
+          "verify_action": 6,
+          "verify_edge_scan": 14,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 18,
+          "verify_state_write": 6
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            7,
+            5
+          ],
+          [
+            0,
+            5,
+            2
+          ],
+          [
+            2,
+            4,
+            1
+          ],
+          [
+            1,
+            0,
+            4
+          ],
+          [
+            1,
+            4,
+            3
+          ],
+          [
+            2,
+            1,
+            6
+          ]
+        ],
+        "c_fresh": 23599,
+        "c_instantiate": 7,
+        "c_search": 23508,
+        "c_verify": 84,
+        "instantiate_counts": {
+          "instantiate_class_assign": 3,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 3
+        },
+        "n_duplicates": 472,
+        "n_expanded": 113,
+        "n_generated": 612,
+        "n_states": 141,
+        "search_counts": {
+          "bucket_insert": 1839,
+          "canonical_compare": 613,
+          "canonical_move": 340,
+          "canonical_write": 613,
+          "descriptor_read": 25,
+          "duplicate_detect": 472,
+          "gate_check": 25,
+          "goal_compare": 339,
+          "goal_position_read": 339,
+          "goal_set_build": 339,
+          "hash_mix": 3065,
+          "key_atom_emit": 1839,
+          "key_class_label_emit": 1226,
+          "key_class_read": 1839,
+          "key_position_read": 1839,
+          "occupancy_scan": 2604,
+          "path_parent_lookup": 6,
+          "path_reverse": 6,
+          "position_read": 868,
+          "queue_pop": 113,
+          "queue_push": 141,
+          "state_copy_atom": 1836,
+          "state_write": 612,
+          "successor_attempt": 868,
+          "successor_generated": 612,
+          "token_position_read": 336,
+          "visited_insert": 141,
+          "visited_lookup": 613
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 18,
+          "position_read": 6,
+          "successor_attempt": 6,
+          "verify_action": 6,
+          "verify_edge_scan": 14,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 18,
+          "verify_state_write": 6
+        }
+      },
+      "delta_fresh": 14173,
+      "delta_search": 14177,
+      "instance": 5,
+      "k": 3,
+      "lambda_fresh": 1.600576295605746,
+      "layout_hash": "a334eb43628985a43fc6366c476252e853de7248f36eb0be7b8da955f12c7ac6",
+      "n": 8,
+      "state_R0": 336,
+      "state_R_STAR": 168,
+      "state_ratio": 2.0
+    },
+    {
+      "J": [
+        1,
+        3
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            6
+          ],
+          [
+            1,
+            5,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            2,
+            2,
+            3
+          ]
+        ],
+        "c_fresh": 30207,
+        "c_instantiate": 3,
+        "c_search": 30135,
+        "c_verify": 69,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 3
+        },
+        "n_duplicates": 489,
+        "n_expanded": 122,
+        "n_generated": 677,
+        "n_states": 189,
+        "search_counts": {
+          "descriptor_read": 48,
+          "duplicate_detect": 489,
+          "gate_check": 48,
+          "goal_compare": 366,
+          "goal_position_read": 366,
+          "goal_set_build": 366,
+          "hash_mix": 6102,
+          "key_atom_emit": 6102,
+          "key_descriptor_read": 2034,
+          "key_identity_read": 2034,
+          "key_position_read": 2034,
+          "occupancy_scan": 3126,
+          "path_parent_lookup": 5,
+          "path_reverse": 5,
+          "position_read": 1042,
+          "queue_pop": 122,
+          "queue_push": 189,
+          "state_copy_atom": 2031,
+          "state_write": 677,
+          "successor_attempt": 1042,
+          "successor_generated": 677,
+          "token_position_read": 363,
+          "visited_insert": 189,
+          "visited_lookup": 678
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 15,
+          "position_read": 5,
+          "successor_attempt": 5,
+          "verify_action": 5,
+          "verify_edge_scan": 9,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 15,
+          "verify_state_write": 5
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            6
+          ],
+          [
+            1,
+            5,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            2,
+            2,
+            3
+          ]
+        ],
+        "c_fresh": 18792,
+        "c_instantiate": 10,
+        "c_search": 18713,
+        "c_verify": 69,
+        "instantiate_counts": {
+          "instantiate_class_assign": 3,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 6
+        },
+        "n_duplicates": 377,
+        "n_expanded": 86,
+        "n_generated": 480,
+        "n_states": 104,
+        "search_counts": {
+          "bucket_insert": 1443,
+          "canonical_compare": 481,
+          "canonical_move": 242,
+          "canonical_write": 481,
+          "descriptor_read": 37,
+          "duplicate_detect": 377,
+          "gate_check": 37,
+          "goal_compare": 258,
+          "goal_position_read": 258,
+          "goal_set_build": 258,
+          "hash_mix": 2405,
+          "key_atom_emit": 1443,
+          "key_class_label_emit": 962,
+          "key_class_read": 1443,
+          "key_position_read": 1443,
+          "occupancy_scan": 2223,
+          "path_parent_lookup": 5,
+          "path_reverse": 5,
+          "position_read": 741,
+          "queue_pop": 86,
+          "queue_push": 104,
+          "state_copy_atom": 1440,
+          "state_write": 480,
+          "successor_attempt": 741,
+          "successor_generated": 480,
+          "token_position_read": 255,
+          "visited_insert": 104,
+          "visited_lookup": 481
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 15,
+          "position_read": 5,
+          "successor_attempt": 5,
+          "verify_action": 5,
+          "verify_edge_scan": 9,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 15,
+          "verify_state_write": 5
+        }
+      },
+      "delta_fresh": 11415,
+      "delta_search": 11422,
+      "instance": 6,
+      "k": 3,
+      "lambda_fresh": 1.6074393358876118,
+      "layout_hash": "175869f6f9869ff5aea6810469d21d6a2d09b0f369bd911acc82f0d769c574ef",
+      "n": 7,
+      "state_R0": 210,
+      "state_R_STAR": 105,
+      "state_ratio": 2.0
+    },
+    {
+      "J": [
+        0,
+        3
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            4,
+            7
+          ],
+          [
+            1,
+            1,
+            5
+          ],
+          [
+            1,
+            5,
+            6
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            5
+          ],
+          [
+            2,
+            5,
+            2
+          ],
+          [
+            3,
+            3,
+            5
+          ]
+        ],
+        "c_fresh": 128995,
+        "c_instantiate": 4,
+        "c_search": 128875,
+        "c_verify": 116,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 4
+        },
+        "n_duplicates": 1582,
+        "n_expanded": 405,
+        "n_generated": 2193,
+        "n_states": 612,
+        "search_counts": {
+          "descriptor_read": 251,
+          "duplicate_detect": 1582,
+          "gate_check": 251,
+          "goal_compare": 1620,
+          "goal_position_read": 1620,
+          "goal_set_build": 1620,
+          "hash_mix": 26328,
+          "key_atom_emit": 26328,
+          "key_descriptor_read": 8776,
+          "key_identity_read": 8776,
+          "key_position_read": 8776,
+          "occupancy_scan": 16224,
+          "path_parent_lookup": 7,
+          "path_reverse": 7,
+          "position_read": 4056,
+          "queue_pop": 405,
+          "queue_push": 612,
+          "state_copy_atom": 8772,
+          "state_write": 2193,
+          "successor_attempt": 4056,
+          "successor_generated": 2193,
+          "token_position_read": 1616,
+          "visited_insert": 612,
+          "visited_lookup": 2194
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "descriptor_read": 1,
+          "gate_check": 1,
+          "goal_compare": 4,
+          "goal_position_read": 4,
+          "goal_set_build": 4,
+          "occupancy_scan": 28,
+          "position_read": 7,
+          "successor_attempt": 7,
+          "verify_action": 7,
+          "verify_edge_scan": 17,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 28,
+          "verify_state_write": 7
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            4,
+            7
+          ],
+          [
+            1,
+            1,
+            5
+          ],
+          [
+            1,
+            5,
+            6
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            5
+          ],
+          [
+            2,
+            5,
+            2
+          ],
+          [
+            3,
+            3,
+            5
+          ]
+        ],
+        "c_fresh": 62927,
+        "c_instantiate": 13,
+        "c_search": 62798,
+        "c_verify": 116,
+        "instantiate_counts": {
+          "instantiate_class_assign": 4,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 8
+        },
+        "n_duplicates": 925,
+        "n_expanded": 222,
+        "n_generated": 1215,
+        "n_states": 291,
+        "search_counts": {
+          "bucket_insert": 4864,
+          "canonical_compare": 2432,
+          "canonical_move": 1399,
+          "canonical_write": 2432,
+          "descriptor_read": 129,
+          "duplicate_detect": 925,
+          "gate_check": 129,
+          "goal_compare": 888,
+          "goal_position_read": 888,
+          "goal_set_build": 888,
+          "hash_mix": 7296,
+          "key_atom_emit": 4864,
+          "key_class_label_emit": 2432,
+          "key_class_read": 4864,
+          "key_position_read": 4864,
+          "occupancy_scan": 8864,
+          "path_parent_lookup": 7,
+          "path_reverse": 7,
+          "position_read": 2216,
+          "queue_pop": 222,
+          "queue_push": 291,
+          "state_copy_atom": 4860,
+          "state_write": 1215,
+          "successor_attempt": 2216,
+          "successor_generated": 1215,
+          "token_position_read": 884,
+          "visited_insert": 291,
+          "visited_lookup": 1216
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "descriptor_read": 1,
+          "gate_check": 1,
+          "goal_compare": 4,
+          "goal_position_read": 4,
+          "goal_set_build": 4,
+          "occupancy_scan": 28,
+          "position_read": 7,
+          "successor_attempt": 7,
+          "verify_action": 7,
+          "verify_edge_scan": 17,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 28,
+          "verify_state_write": 7
+        }
+      },
+      "delta_fresh": 66068,
+      "delta_search": 66077,
+      "instance": 7,
+      "k": 4,
+      "lambda_fresh": 2.049914980850827,
+      "layout_hash": "d3bada3f7b62f4a5dfcf843089ac48081bf3ad043d61f0dc7723dfff806976ed",
+      "n": 8,
+      "state_R0": 1680,
+      "state_R_STAR": 420,
+      "state_ratio": 4.0
+    },
+    {
+      "J": [
+        2,
+        3
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            2,
+            5
+          ],
+          [
+            0,
+            5,
+            0
+          ],
+          [
+            1,
+            4,
+            2
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            2,
+            3,
+            6
+          ],
+          [
+            2,
+            6,
+            1
+          ],
+          [
+            3,
+            7,
+            6
+          ]
+        ],
+        "c_fresh": 95685,
+        "c_instantiate": 4,
+        "c_search": 95573,
+        "c_verify": 108,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 4
+        },
+        "n_duplicates": 1144,
+        "n_expanded": 301,
+        "n_generated": 1631,
+        "n_states": 488,
+        "search_counts": {
+          "descriptor_read": 159,
+          "duplicate_detect": 1144,
+          "gate_check": 159,
+          "goal_compare": 1204,
+          "goal_position_read": 1204,
+          "goal_set_build": 1204,
+          "hash_mix": 19584,
+          "key_atom_emit": 19584,
+          "key_descriptor_read": 6528,
+          "key_identity_read": 6528,
+          "key_position_read": 6528,
+          "occupancy_scan": 11892,
+          "path_parent_lookup": 7,
+          "path_reverse": 7,
+          "position_read": 2973,
+          "queue_pop": 301,
+          "queue_push": 488,
+          "state_copy_atom": 6524,
+          "state_write": 1631,
+          "successor_attempt": 2973,
+          "successor_generated": 1631,
+          "token_position_read": 1200,
+          "visited_insert": 488,
+          "visited_lookup": 1632
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 4,
+          "goal_position_read": 4,
+          "goal_set_build": 4,
+          "occupancy_scan": 28,
+          "position_read": 7,
+          "successor_attempt": 7,
+          "verify_action": 7,
+          "verify_edge_scan": 11,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 28,
+          "verify_state_write": 7
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            2,
+            5
+          ],
+          [
+            0,
+            5,
+            0
+          ],
+          [
+            1,
+            4,
+            2
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            2,
+            3,
+            6
+          ],
+          [
+            2,
+            6,
+            1
+          ],
+          [
+            3,
+            7,
+            6
+          ]
+        ],
+        "c_fresh": 44300,
+        "c_instantiate": 13,
+        "c_search": 44179,
+        "c_verify": 108,
+        "instantiate_counts": {
+          "instantiate_class_assign": 4,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 8
+        },
+        "n_duplicates": 652,
+        "n_expanded": 158,
+        "n_generated": 866,
+        "n_states": 215,
+        "search_counts": {
+          "bucket_insert": 3468,
+          "canonical_compare": 1734,
+          "canonical_move": 584,
+          "canonical_write": 1734,
+          "descriptor_read": 83,
+          "duplicate_detect": 652,
+          "gate_check": 83,
+          "goal_compare": 632,
+          "goal_position_read": 632,
+          "goal_set_build": 632,
+          "hash_mix": 5202,
+          "key_atom_emit": 3468,
+          "key_class_label_emit": 1734,
+          "key_class_read": 3468,
+          "key_position_read": 3468,
+          "occupancy_scan": 6208,
+          "path_parent_lookup": 7,
+          "path_reverse": 7,
+          "position_read": 1552,
+          "queue_pop": 158,
+          "queue_push": 215,
+          "state_copy_atom": 3464,
+          "state_write": 866,
+          "successor_attempt": 1552,
+          "successor_generated": 866,
+          "token_position_read": 628,
+          "visited_insert": 215,
+          "visited_lookup": 867
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 4,
+          "goal_position_read": 4,
+          "goal_set_build": 4,
+          "occupancy_scan": 28,
+          "position_read": 7,
+          "successor_attempt": 7,
+          "verify_action": 7,
+          "verify_edge_scan": 11,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 28,
+          "verify_state_write": 7
+        }
+      },
+      "delta_fresh": 51385,
+      "delta_search": 51394,
+      "instance": 8,
+      "k": 4,
+      "lambda_fresh": 2.1599322799097065,
+      "layout_hash": "d051cc79e0df526c50fb876d3d0aa620a8834cb72f92ff8d40ef6b07ef9c1f61",
+      "n": 8,
+      "state_R0": 1680,
+      "state_R_STAR": 420,
+      "state_ratio": 4.0
+    },
+    {
+      "J": [
+        0,
+        1
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            7,
+            2
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            6
+          ],
+          [
+            2,
+            4,
+            0
+          ],
+          [
+            1,
+            5,
+            4
+          ],
+          [
+            1,
+            4,
+            1
+          ],
+          [
+            1,
+            1,
+            3
+          ]
+        ],
+        "c_fresh": 57055,
+        "c_instantiate": 3,
+        "c_search": 56962,
+        "c_verify": 90,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 3
+        },
+        "n_duplicates": 987,
+        "n_expanded": 249,
+        "n_generated": 1289,
+        "n_states": 303,
+        "search_counts": {
+          "descriptor_read": 123,
+          "duplicate_detect": 987,
+          "gate_check": 123,
+          "goal_compare": 747,
+          "goal_position_read": 747,
+          "goal_set_build": 747,
+          "hash_mix": 11610,
+          "key_atom_emit": 11610,
+          "key_descriptor_read": 3870,
+          "key_identity_read": 3870,
+          "key_position_read": 3870,
+          "occupancy_scan": 5586,
+          "path_parent_lookup": 7,
+          "path_reverse": 7,
+          "position_read": 1862,
+          "queue_pop": 249,
+          "queue_push": 303,
+          "state_copy_atom": 3867,
+          "state_write": 1289,
+          "successor_attempt": 1862,
+          "successor_generated": 1289,
+          "token_position_read": 744,
+          "visited_insert": 303,
+          "visited_lookup": 1290
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 21,
+          "position_read": 7,
+          "successor_attempt": 7,
+          "verify_action": 7,
+          "verify_edge_scan": 10,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 21,
+          "verify_state_write": 7
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            7,
+            2
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            6
+          ],
+          [
+            2,
+            4,
+            0
+          ],
+          [
+            1,
+            5,
+            4
+          ],
+          [
+            1,
+            4,
+            1
+          ],
+          [
+            1,
+            1,
+            3
+          ]
+        ],
+        "c_fresh": 27955,
+        "c_instantiate": 10,
+        "c_search": 27855,
+        "c_verify": 90,
+        "instantiate_counts": {
+          "instantiate_class_assign": 3,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 6
+        },
+        "n_duplicates": 562,
+        "n_expanded": 139,
+        "n_generated": 721,
+        "n_states": 160,
+        "search_counts": {
+          "bucket_insert": 2166,
+          "canonical_compare": 722,
+          "canonical_move": 338,
+          "canonical_write": 722,
+          "descriptor_read": 69,
+          "duplicate_detect": 562,
+          "gate_check": 69,
+          "goal_compare": 417,
+          "goal_position_read": 417,
+          "goal_set_build": 417,
+          "hash_mix": 3610,
+          "key_atom_emit": 2166,
+          "key_class_label_emit": 1444,
+          "key_class_read": 2166,
+          "key_position_read": 2166,
+          "occupancy_scan": 3114,
+          "path_parent_lookup": 7,
+          "path_reverse": 7,
+          "position_read": 1038,
+          "queue_pop": 139,
+          "queue_push": 160,
+          "state_copy_atom": 2163,
+          "state_write": 721,
+          "successor_attempt": 1038,
+          "successor_generated": 721,
+          "token_position_read": 414,
+          "visited_insert": 160,
+          "visited_lookup": 722
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 21,
+          "position_read": 7,
+          "successor_attempt": 7,
+          "verify_action": 7,
+          "verify_edge_scan": 10,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 21,
+          "verify_state_write": 7
+        }
+      },
+      "delta_fresh": 29100,
+      "delta_search": 29107,
+      "instance": 9,
+      "k": 3,
+      "lambda_fresh": 2.0409586835986406,
+      "layout_hash": "cf89e5c060fbaafb6d46d686cc9281d25bc2ddf04711e5a05cd3b10ec5c810ee",
+      "n": 8,
+      "state_R0": 336,
+      "state_R_STAR": 168,
+      "state_ratio": 2.0
+    },
+    {
+      "J": [
+        2
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            2,
+            5
+          ],
+          [
+            1,
+            1,
+            6
+          ],
+          [
+            1,
+            6,
+            4
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            2,
+            1,
+            6
+          ]
+        ],
+        "c_fresh": 37298,
+        "c_instantiate": 4,
+        "c_search": 37208,
+        "c_verify": 86,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 4
+        },
+        "n_duplicates": 395,
+        "n_expanded": 120,
+        "n_generated": 626,
+        "n_states": 232,
+        "search_counts": {
+          "descriptor_read": 23,
+          "duplicate_detect": 395,
+          "gate_check": 23,
+          "goal_compare": 480,
+          "goal_position_read": 480,
+          "goal_set_build": 480,
+          "hash_mix": 7524,
+          "key_atom_emit": 7524,
+          "key_descriptor_read": 2508,
+          "key_identity_read": 2508,
+          "key_position_read": 2508,
+          "occupancy_scan": 4868,
+          "path_parent_lookup": 5,
+          "path_reverse": 5,
+          "position_read": 1217,
+          "queue_pop": 120,
+          "queue_push": 232,
+          "state_copy_atom": 2504,
+          "state_write": 626,
+          "successor_attempt": 1217,
+          "successor_generated": 626,
+          "token_position_read": 476,
+          "visited_insert": 232,
+          "visited_lookup": 627
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 4,
+          "goal_position_read": 4,
+          "goal_set_build": 4,
+          "occupancy_scan": 20,
+          "position_read": 5,
+          "successor_attempt": 5,
+          "verify_action": 5,
+          "verify_edge_scan": 13,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 20,
+          "verify_state_write": 5
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            2,
+            5
+          ],
+          [
+            1,
+            1,
+            6
+          ],
+          [
+            1,
+            6,
+            4
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            2,
+            1,
+            6
+          ]
+        ],
+        "c_fresh": 17615,
+        "c_instantiate": 9,
+        "c_search": 17520,
+        "c_verify": 86,
+        "instantiate_counts": {
+          "instantiate_class_assign": 4,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 4
+        },
+        "n_duplicates": 230,
+        "n_expanded": 63,
+        "n_generated": 324,
+        "n_states": 95,
+        "search_counts": {
+          "bucket_insert": 1300,
+          "canonical_compare": 863,
+          "canonical_move": 565,
+          "canonical_write": 650,
+          "descriptor_read": 15,
+          "duplicate_detect": 230,
+          "gate_check": 15,
+          "goal_compare": 252,
+          "goal_position_read": 252,
+          "goal_set_build": 252,
+          "hash_mix": 1950,
+          "key_atom_emit": 1300,
+          "key_class_label_emit": 650,
+          "key_class_read": 1300,
+          "key_position_read": 1300,
+          "occupancy_scan": 2564,
+          "path_parent_lookup": 5,
+          "path_reverse": 5,
+          "position_read": 641,
+          "queue_pop": 63,
+          "queue_push": 95,
+          "state_copy_atom": 1296,
+          "state_write": 324,
+          "successor_attempt": 641,
+          "successor_generated": 324,
+          "token_position_read": 248,
+          "visited_insert": 95,
+          "visited_lookup": 325
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 4,
+          "goal_position_read": 4,
+          "goal_set_build": 4,
+          "occupancy_scan": 20,
+          "position_read": 5,
+          "successor_attempt": 5,
+          "verify_action": 5,
+          "verify_edge_scan": 13,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 20,
+          "verify_state_write": 5
+        }
+      },
+      "delta_fresh": 19683,
+      "delta_search": 19688,
+      "instance": 10,
+      "k": 4,
+      "lambda_fresh": 2.1173999432302018,
+      "layout_hash": "0d874b99e23db17a7ebc3e1a2103d6b737d683dd3aed02a234e03b14b122ba82",
+      "n": 7,
+      "state_R0": 840,
+      "state_R_STAR": 140,
+      "state_ratio": 6.0
+    },
+    {
+      "J": [
+        1
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            6,
+            3
+          ],
+          [
+            0,
+            3,
+            1
+          ],
+          [
+            1,
+            5,
+            6
+          ],
+          [
+            1,
+            6,
+            3
+          ],
+          [
+            2,
+            2,
+            7
+          ],
+          [
+            2,
+            7,
+            8
+          ]
+        ],
+        "c_fresh": 70478,
+        "c_instantiate": 3,
+        "c_search": 70394,
+        "c_verify": 81,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 3
+        },
+        "n_duplicates": 1215,
+        "n_expanded": 282,
+        "n_generated": 1629,
+        "n_states": 415,
+        "search_counts": {
+          "descriptor_read": 67,
+          "duplicate_detect": 1215,
+          "gate_check": 67,
+          "goal_compare": 846,
+          "goal_position_read": 846,
+          "goal_set_build": 846,
+          "hash_mix": 14670,
+          "key_atom_emit": 14670,
+          "key_descriptor_read": 4890,
+          "key_identity_read": 4890,
+          "key_position_read": 4890,
+          "occupancy_scan": 6453,
+          "path_parent_lookup": 6,
+          "path_reverse": 6,
+          "position_read": 2151,
+          "queue_pop": 282,
+          "queue_push": 415,
+          "state_copy_atom": 4887,
+          "state_write": 1629,
+          "successor_attempt": 2151,
+          "successor_generated": 1629,
+          "token_position_read": 843,
+          "visited_insert": 415,
+          "visited_lookup": 1630
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 18,
+          "position_read": 6,
+          "successor_attempt": 6,
+          "verify_action": 6,
+          "verify_edge_scan": 11,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 18,
+          "verify_state_write": 6
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            6,
+            3
+          ],
+          [
+            0,
+            3,
+            1
+          ],
+          [
+            1,
+            5,
+            6
+          ],
+          [
+            1,
+            6,
+            3
+          ],
+          [
+            2,
+            2,
+            7
+          ],
+          [
+            2,
+            7,
+            8
+          ]
+        ],
+        "c_fresh": 41912,
+        "c_instantiate": 7,
+        "c_search": 41824,
+        "c_verify": 81,
+        "instantiate_counts": {
+          "instantiate_class_assign": 3,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 3
+        },
+        "n_duplicates": 867,
+        "n_expanded": 195,
+        "n_generated": 1106,
+        "n_states": 240,
+        "search_counts": {
+          "bucket_insert": 3321,
+          "canonical_compare": 1107,
+          "canonical_move": 542,
+          "canonical_write": 1107,
+          "descriptor_read": 46,
+          "duplicate_detect": 867,
+          "gate_check": 46,
+          "goal_compare": 585,
+          "goal_position_read": 585,
+          "goal_set_build": 585,
+          "hash_mix": 5535,
+          "key_atom_emit": 3321,
+          "key_class_label_emit": 2214,
+          "key_class_read": 3321,
+          "key_position_read": 3321,
+          "occupancy_scan": 4449,
+          "path_parent_lookup": 6,
+          "path_reverse": 6,
+          "position_read": 1483,
+          "queue_pop": 195,
+          "queue_push": 240,
+          "state_copy_atom": 3318,
+          "state_write": 1106,
+          "successor_attempt": 1483,
+          "successor_generated": 1106,
+          "token_position_read": 582,
+          "visited_insert": 240,
+          "visited_lookup": 1107
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 18,
+          "position_read": 6,
+          "successor_attempt": 6,
+          "verify_action": 6,
+          "verify_edge_scan": 11,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 18,
+          "verify_state_write": 6
+        }
+      },
+      "delta_fresh": 28566,
+      "delta_search": 28570,
+      "instance": 11,
+      "k": 3,
+      "lambda_fresh": 1.681570910479099,
+      "layout_hash": "ff0bcf70cd89e16c24ce9bd967bb3878b94cd287f20bf0d052255f8ec19062a7",
+      "n": 9,
+      "state_R0": 504,
+      "state_R_STAR": 252,
+      "state_ratio": 2.0
+    },
+    {
+      "J": [
+        0,
+        3
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            6
+          ],
+          [
+            1,
+            5,
+            3
+          ],
+          [
+            1,
+            3,
+            0
+          ],
+          [
+            3,
+            2,
+            1
+          ],
+          [
+            2,
+            4,
+            2
+          ]
+        ],
+        "c_fresh": 25478,
+        "c_instantiate": 4,
+        "c_search": 25381,
+        "c_verify": 93,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 4
+        },
+        "n_duplicates": 264,
+        "n_expanded": 87,
+        "n_generated": 415,
+        "n_states": 152,
+        "search_counts": {
+          "descriptor_read": 31,
+          "duplicate_detect": 264,
+          "gate_check": 31,
+          "goal_compare": 348,
+          "goal_position_read": 348,
+          "goal_set_build": 348,
+          "hash_mix": 4992,
+          "key_atom_emit": 4992,
+          "key_descriptor_read": 1664,
+          "key_identity_read": 1664,
+          "key_position_read": 1664,
+          "occupancy_scan": 3588,
+          "path_parent_lookup": 6,
+          "path_reverse": 6,
+          "position_read": 897,
+          "queue_pop": 87,
+          "queue_push": 152,
+          "state_copy_atom": 1660,
+          "state_write": 415,
+          "successor_attempt": 897,
+          "successor_generated": 415,
+          "token_position_read": 344,
+          "visited_insert": 152,
+          "visited_lookup": 416
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 4,
+          "goal_position_read": 4,
+          "goal_set_build": 4,
+          "occupancy_scan": 24,
+          "position_read": 6,
+          "successor_attempt": 6,
+          "verify_action": 6,
+          "verify_edge_scan": 8,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 24,
+          "verify_state_write": 6
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            6
+          ],
+          [
+            1,
+            5,
+            3
+          ],
+          [
+            1,
+            3,
+            0
+          ],
+          [
+            3,
+            2,
+            1
+          ],
+          [
+            2,
+            4,
+            2
+          ]
+        ],
+        "c_fresh": 20272,
+        "c_instantiate": 14,
+        "c_search": 20165,
+        "c_verify": 93,
+        "instantiate_counts": {
+          "instantiate_class_assign": 4,
+          "instantiate_class_label_sort_compare": 2,
+          "instantiate_descriptor_read": 8
+        },
+        "n_duplicates": 253,
+        "n_expanded": 78,
+        "n_generated": 378,
+        "n_states": 126,
+        "search_counts": {
+          "bucket_insert": 1516,
+          "canonical_compare": 379,
+          "canonical_move": 153,
+          "canonical_write": 379,
+          "descriptor_read": 30,
+          "duplicate_detect": 253,
+          "gate_check": 30,
+          "goal_compare": 312,
+          "goal_position_read": 312,
+          "goal_set_build": 312,
+          "hash_mix": 2653,
+          "key_atom_emit": 1516,
+          "key_class_label_emit": 1137,
+          "key_class_read": 1516,
+          "key_position_read": 1516,
+          "occupancy_scan": 3236,
+          "path_parent_lookup": 6,
+          "path_reverse": 6,
+          "position_read": 809,
+          "queue_pop": 78,
+          "queue_push": 126,
+          "state_copy_atom": 1512,
+          "state_write": 378,
+          "successor_attempt": 809,
+          "successor_generated": 378,
+          "token_position_read": 308,
+          "visited_insert": 126,
+          "visited_lookup": 379
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 4,
+          "goal_position_read": 4,
+          "goal_set_build": 4,
+          "occupancy_scan": 24,
+          "position_read": 6,
+          "successor_attempt": 6,
+          "verify_action": 6,
+          "verify_edge_scan": 8,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 24,
+          "verify_state_write": 6
+        }
+      },
+      "delta_fresh": 5206,
+      "delta_search": 5216,
+      "instance": 12,
+      "k": 4,
+      "lambda_fresh": 1.2568074191002367,
+      "layout_hash": "a72f4b646bb831885b82b5cd72902b1f4d94c70b95614bc500e910dd5c9dde73",
+      "n": 7,
+      "state_R0": 840,
+      "state_R_STAR": 420,
+      "state_ratio": 2.0
+    },
+    {
+      "J": [
+        0,
+        1
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            6,
+            1
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            2,
+            4,
+            3
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            2,
+            3,
+            0
+          ],
+          [
+            1,
+            4,
+            3
+          ]
+        ],
+        "c_fresh": 23179,
+        "c_instantiate": 3,
+        "c_search": 23097,
+        "c_verify": 79,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 3
+        },
+        "n_duplicates": 360,
+        "n_expanded": 98,
+        "n_generated": 516,
+        "n_states": 157,
+        "search_counts": {
+          "descriptor_read": 47,
+          "duplicate_detect": 360,
+          "gate_check": 47,
+          "goal_compare": 294,
+          "goal_position_read": 294,
+          "goal_set_build": 294,
+          "hash_mix": 4653,
+          "key_atom_emit": 4653,
+          "key_descriptor_read": 1551,
+          "key_identity_read": 1551,
+          "key_position_read": 1551,
+          "occupancy_scan": 2394,
+          "path_parent_lookup": 6,
+          "path_reverse": 6,
+          "position_read": 798,
+          "queue_pop": 98,
+          "queue_push": 157,
+          "state_copy_atom": 1548,
+          "state_write": 516,
+          "successor_attempt": 798,
+          "successor_generated": 516,
+          "token_position_read": 291,
+          "visited_insert": 157,
+          "visited_lookup": 517
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 18,
+          "position_read": 6,
+          "successor_attempt": 6,
+          "verify_action": 6,
+          "verify_edge_scan": 9,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 18,
+          "verify_state_write": 6
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            6,
+            1
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            2,
+            4,
+            3
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            2,
+            3,
+            0
+          ],
+          [
+            1,
+            4,
+            3
+          ]
+        ],
+        "c_fresh": 16245,
+        "c_instantiate": 10,
+        "c_search": 16156,
+        "c_verify": 79,
+        "instantiate_counts": {
+          "instantiate_class_assign": 3,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 6
+        },
+        "n_duplicates": 317,
+        "n_expanded": 78,
+        "n_generated": 413,
+        "n_states": 97,
+        "search_counts": {
+          "bucket_insert": 1242,
+          "canonical_compare": 414,
+          "canonical_move": 193,
+          "canonical_write": 414,
+          "descriptor_read": 38,
+          "duplicate_detect": 317,
+          "gate_check": 38,
+          "goal_compare": 234,
+          "goal_position_read": 234,
+          "goal_set_build": 234,
+          "hash_mix": 2070,
+          "key_atom_emit": 1242,
+          "key_class_label_emit": 828,
+          "key_class_read": 1242,
+          "key_position_read": 1242,
+          "occupancy_scan": 1908,
+          "path_parent_lookup": 6,
+          "path_reverse": 6,
+          "position_read": 636,
+          "queue_pop": 78,
+          "queue_push": 97,
+          "state_copy_atom": 1239,
+          "state_write": 413,
+          "successor_attempt": 636,
+          "successor_generated": 413,
+          "token_position_read": 231,
+          "visited_insert": 97,
+          "visited_lookup": 414
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 18,
+          "position_read": 6,
+          "successor_attempt": 6,
+          "verify_action": 6,
+          "verify_edge_scan": 9,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 18,
+          "verify_state_write": 6
+        }
+      },
+      "delta_fresh": 6934,
+      "delta_search": 6941,
+      "instance": 13,
+      "k": 3,
+      "lambda_fresh": 1.426839027393044,
+      "layout_hash": "7647c484f3d958e897d9090f4b663984f338452800631d27d0f684dbb2116f2b",
+      "n": 7,
+      "state_R0": 210,
+      "state_R_STAR": 105,
+      "state_ratio": 2.0
+    },
+    {
+      "J": [
+        2
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            8,
+            6
+          ],
+          [
+            1,
+            4,
+            2
+          ],
+          [
+            3,
+            5,
+            3
+          ],
+          [
+            2,
+            0,
+            5
+          ],
+          [
+            3,
+            3,
+            1
+          ],
+          [
+            2,
+            5,
+            3
+          ]
+        ],
+        "c_fresh": 123219,
+        "c_instantiate": 4,
+        "c_search": 123119,
+        "c_verify": 96,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 4
+        },
+        "n_duplicates": 1568,
+        "n_expanded": 341,
+        "n_generated": 2181,
+        "n_states": 614,
+        "search_counts": {
+          "descriptor_read": 56,
+          "duplicate_detect": 1568,
+          "gate_check": 56,
+          "goal_compare": 1364,
+          "goal_position_read": 1364,
+          "goal_set_build": 1364,
+          "hash_mix": 26184,
+          "key_atom_emit": 26184,
+          "key_descriptor_read": 8728,
+          "key_identity_read": 8728,
+          "key_position_read": 8728,
+          "occupancy_scan": 13724,
+          "path_parent_lookup": 6,
+          "path_reverse": 6,
+          "position_read": 3431,
+          "queue_pop": 341,
+          "queue_push": 614,
+          "state_copy_atom": 8724,
+          "state_write": 2181,
+          "successor_attempt": 3431,
+          "successor_generated": 2181,
+          "token_position_read": 1360,
+          "visited_insert": 614,
+          "visited_lookup": 2182
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 4,
+          "goal_position_read": 4,
+          "goal_set_build": 4,
+          "occupancy_scan": 24,
+          "position_read": 6,
+          "successor_attempt": 6,
+          "verify_action": 6,
+          "verify_edge_scan": 11,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 24,
+          "verify_state_write": 6
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            8,
+            6
+          ],
+          [
+            1,
+            4,
+            2
+          ],
+          [
+            3,
+            5,
+            3
+          ],
+          [
+            2,
+            0,
+            5
+          ],
+          [
+            3,
+            3,
+            1
+          ],
+          [
+            2,
+            5,
+            3
+          ]
+        ],
+        "c_fresh": 67988,
+        "c_instantiate": 9,
+        "c_search": 67883,
+        "c_verify": 96,
+        "instantiate_counts": {
+          "instantiate_class_assign": 4,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 4
+        },
+        "n_duplicates": 1005,
+        "n_expanded": 206,
+        "n_generated": 1329,
+        "n_states": 325,
+        "search_counts": {
+          "bucket_insert": 5320,
+          "canonical_compare": 3836,
+          "canonical_move": 2452,
+          "canonical_write": 2660,
+          "descriptor_read": 36,
+          "duplicate_detect": 1005,
+          "gate_check": 36,
+          "goal_compare": 824,
+          "goal_position_read": 824,
+          "goal_set_build": 824,
+          "hash_mix": 7980,
+          "key_atom_emit": 5320,
+          "key_class_label_emit": 2660,
+          "key_class_read": 5320,
+          "key_position_read": 5320,
+          "occupancy_scan": 8316,
+          "path_parent_lookup": 6,
+          "path_reverse": 6,
+          "position_read": 2079,
+          "queue_pop": 206,
+          "queue_push": 325,
+          "state_copy_atom": 5316,
+          "state_write": 1329,
+          "successor_attempt": 2079,
+          "successor_generated": 1329,
+          "token_position_read": 820,
+          "visited_insert": 325,
+          "visited_lookup": 1330
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 4,
+          "goal_position_read": 4,
+          "goal_set_build": 4,
+          "occupancy_scan": 24,
+          "position_read": 6,
+          "successor_attempt": 6,
+          "verify_action": 6,
+          "verify_edge_scan": 11,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 24,
+          "verify_state_write": 6
+        }
+      },
+      "delta_fresh": 55231,
+      "delta_search": 55236,
+      "instance": 14,
+      "k": 4,
+      "lambda_fresh": 1.812363946578808,
+      "layout_hash": "8aa0f227dca2716fbcd089de3bb4bc41e8929152ce2c292de7f9c45cee0c05f5",
+      "n": 9,
+      "state_R0": 3024,
+      "state_R_STAR": 504,
+      "state_ratio": 6.0
+    },
+    {
+      "J": [
+        1,
+        3
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            6,
+            0
+          ],
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            1,
+            2,
+            6
+          ],
+          [
+            1,
+            6,
+            0
+          ],
+          [
+            3,
+            3,
+            1
+          ],
+          [
+            2,
+            5,
+            3
+          ]
+        ],
+        "c_fresh": 27147,
+        "c_instantiate": 4,
+        "c_search": 27048,
+        "c_verify": 95,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 4
+        },
+        "n_duplicates": 290,
+        "n_expanded": 92,
+        "n_generated": 443,
+        "n_states": 154,
+        "search_counts": {
+          "descriptor_read": 37,
+          "duplicate_detect": 290,
+          "gate_check": 37,
+          "goal_compare": 368,
+          "goal_position_read": 368,
+          "goal_set_build": 368,
+          "hash_mix": 5328,
+          "key_atom_emit": 5328,
+          "key_descriptor_read": 1776,
+          "key_identity_read": 1776,
+          "key_position_read": 1776,
+          "occupancy_scan": 3812,
+          "path_parent_lookup": 6,
+          "path_reverse": 6,
+          "position_read": 953,
+          "queue_pop": 92,
+          "queue_push": 154,
+          "state_copy_atom": 1772,
+          "state_write": 443,
+          "successor_attempt": 953,
+          "successor_generated": 443,
+          "token_position_read": 364,
+          "visited_insert": 154,
+          "visited_lookup": 444
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 4,
+          "goal_position_read": 4,
+          "goal_set_build": 4,
+          "occupancy_scan": 24,
+          "position_read": 6,
+          "successor_attempt": 6,
+          "verify_action": 6,
+          "verify_edge_scan": 10,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 24,
+          "verify_state_write": 6
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            6,
+            0
+          ],
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            1,
+            2,
+            6
+          ],
+          [
+            1,
+            6,
+            0
+          ],
+          [
+            3,
+            3,
+            1
+          ],
+          [
+            2,
+            5,
+            3
+          ]
+        ],
+        "c_fresh": 20453,
+        "c_instantiate": 13,
+        "c_search": 20345,
+        "c_verify": 95,
+        "instantiate_counts": {
+          "instantiate_class_assign": 4,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 8
+        },
+        "n_duplicates": 267,
+        "n_expanded": 77,
+        "n_generated": 378,
+        "n_states": 112,
+        "search_counts": {
+          "bucket_insert": 1516,
+          "canonical_compare": 758,
+          "canonical_move": 410,
+          "canonical_write": 758,
+          "descriptor_read": 31,
+          "duplicate_detect": 267,
+          "gate_check": 31,
+          "goal_compare": 308,
+          "goal_position_read": 308,
+          "goal_set_build": 308,
+          "hash_mix": 2274,
+          "key_atom_emit": 1516,
+          "key_class_label_emit": 758,
+          "key_class_read": 1516,
+          "key_position_read": 1516,
+          "occupancy_scan": 3204,
+          "path_parent_lookup": 6,
+          "path_reverse": 6,
+          "position_read": 801,
+          "queue_pop": 77,
+          "queue_push": 112,
+          "state_copy_atom": 1512,
+          "state_write": 378,
+          "successor_attempt": 801,
+          "successor_generated": 378,
+          "token_position_read": 304,
+          "visited_insert": 112,
+          "visited_lookup": 379
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 4,
+          "goal_position_read": 4,
+          "goal_set_build": 4,
+          "occupancy_scan": 24,
+          "position_read": 6,
+          "successor_attempt": 6,
+          "verify_action": 6,
+          "verify_edge_scan": 10,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 24,
+          "verify_state_write": 6
+        }
+      },
+      "delta_fresh": 6694,
+      "delta_search": 6703,
+      "instance": 15,
+      "k": 4,
+      "lambda_fresh": 1.3272869505695986,
+      "layout_hash": "58dab0d86fc654d38b21e79b43ee6281af3aaedb27c2c9981727fd0cdd927ab8",
+      "n": 7,
+      "state_R0": 840,
+      "state_R_STAR": 210,
+      "state_ratio": 4.0
+    },
+    {
+      "J": [
+        0,
+        1
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            3,
+            4
+          ],
+          [
+            2,
+            1,
+            5
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            5,
+            6
+          ],
+          [
+            1,
+            1,
+            5
+          ]
+        ],
+        "c_fresh": 22919,
+        "c_instantiate": 3,
+        "c_search": 22831,
+        "c_verify": 85,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 3
+        },
+        "n_duplicates": 352,
+        "n_expanded": 100,
+        "n_generated": 508,
+        "n_states": 157,
+        "search_counts": {
+          "descriptor_read": 57,
+          "duplicate_detect": 352,
+          "gate_check": 57,
+          "goal_compare": 300,
+          "goal_position_read": 300,
+          "goal_set_build": 300,
+          "hash_mix": 4581,
+          "key_atom_emit": 4581,
+          "key_descriptor_read": 1527,
+          "key_identity_read": 1527,
+          "key_position_read": 1527,
+          "occupancy_scan": 2370,
+          "path_parent_lookup": 6,
+          "path_reverse": 6,
+          "position_read": 790,
+          "queue_pop": 100,
+          "queue_push": 157,
+          "state_copy_atom": 1524,
+          "state_write": 508,
+          "successor_attempt": 790,
+          "successor_generated": 508,
+          "token_position_read": 297,
+          "visited_insert": 157,
+          "visited_lookup": 509
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 18,
+          "position_read": 6,
+          "successor_attempt": 6,
+          "verify_action": 6,
+          "verify_edge_scan": 15,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 18,
+          "verify_state_write": 6
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            3,
+            4
+          ],
+          [
+            2,
+            1,
+            5
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            5,
+            6
+          ],
+          [
+            1,
+            1,
+            5
+          ]
+        ],
+        "c_fresh": 16833,
+        "c_instantiate": 10,
+        "c_search": 16738,
+        "c_verify": 85,
+        "instantiate_counts": {
+          "instantiate_class_assign": 3,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 6
+        },
+        "n_duplicates": 326,
+        "n_expanded": 82,
+        "n_generated": 425,
+        "n_states": 100,
+        "search_counts": {
+          "bucket_insert": 1278,
+          "canonical_compare": 426,
+          "canonical_move": 314,
+          "canonical_write": 426,
+          "descriptor_read": 43,
+          "duplicate_detect": 326,
+          "gate_check": 43,
+          "goal_compare": 246,
+          "goal_position_read": 246,
+          "goal_set_build": 246,
+          "hash_mix": 2130,
+          "key_atom_emit": 1278,
+          "key_class_label_emit": 852,
+          "key_class_read": 1278,
+          "key_position_read": 1278,
+          "occupancy_scan": 1944,
+          "path_parent_lookup": 6,
+          "path_reverse": 6,
+          "position_read": 648,
+          "queue_pop": 82,
+          "queue_push": 100,
+          "state_copy_atom": 1275,
+          "state_write": 425,
+          "successor_attempt": 648,
+          "successor_generated": 425,
+          "token_position_read": 243,
+          "visited_insert": 100,
+          "visited_lookup": 426
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 18,
+          "position_read": 6,
+          "successor_attempt": 6,
+          "verify_action": 6,
+          "verify_edge_scan": 15,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 18,
+          "verify_state_write": 6
+        }
+      },
+      "delta_fresh": 6086,
+      "delta_search": 6093,
+      "instance": 16,
+      "k": 3,
+      "lambda_fresh": 1.3615517138953246,
+      "layout_hash": "8c2e45f5bec3b11a6e12fbf06e6c742b87d6d4b88b106608cb4271577384fac1",
+      "n": 7,
+      "state_R0": 210,
+      "state_R_STAR": 105,
+      "state_ratio": 2.0
+    },
+    {
+      "J": [
+        1
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            4,
+            3
+          ],
+          [
+            0,
+            3,
+            1
+          ],
+          [
+            2,
+            0,
+            5
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            6
+          ]
+        ],
+        "c_fresh": 18084,
+        "c_instantiate": 3,
+        "c_search": 18012,
+        "c_verify": 69,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 3
+        },
+        "n_duplicates": 279,
+        "n_expanded": 76,
+        "n_generated": 406,
+        "n_states": 128,
+        "search_counts": {
+          "descriptor_read": 23,
+          "duplicate_detect": 279,
+          "gate_check": 23,
+          "goal_compare": 228,
+          "goal_position_read": 228,
+          "goal_set_build": 228,
+          "hash_mix": 3663,
+          "key_atom_emit": 3663,
+          "key_descriptor_read": 1221,
+          "key_identity_read": 1221,
+          "key_position_read": 1221,
+          "occupancy_scan": 1806,
+          "path_parent_lookup": 5,
+          "path_reverse": 5,
+          "position_read": 602,
+          "queue_pop": 76,
+          "queue_push": 128,
+          "state_copy_atom": 1218,
+          "state_write": 406,
+          "successor_attempt": 602,
+          "successor_generated": 406,
+          "token_position_read": 225,
+          "visited_insert": 128,
+          "visited_lookup": 407
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 15,
+          "position_read": 5,
+          "successor_attempt": 5,
+          "verify_action": 5,
+          "verify_edge_scan": 9,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 15,
+          "verify_state_write": 5
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            4,
+            3
+          ],
+          [
+            0,
+            3,
+            1
+          ],
+          [
+            2,
+            0,
+            5
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            6
+          ]
+        ],
+        "c_fresh": 13726,
+        "c_instantiate": 7,
+        "c_search": 13650,
+        "c_verify": 69,
+        "instantiate_counts": {
+          "instantiate_class_assign": 3,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 3
+        },
+        "n_duplicates": 265,
+        "n_expanded": 66,
+        "n_generated": 350,
+        "n_states": 86,
+        "search_counts": {
+          "bucket_insert": 1053,
+          "canonical_compare": 351,
+          "canonical_move": 209,
+          "canonical_write": 351,
+          "descriptor_read": 21,
+          "duplicate_detect": 265,
+          "gate_check": 21,
+          "goal_compare": 198,
+          "goal_position_read": 198,
+          "goal_set_build": 198,
+          "hash_mix": 1755,
+          "key_atom_emit": 1053,
+          "key_class_label_emit": 702,
+          "key_class_read": 1053,
+          "key_position_read": 1053,
+          "occupancy_scan": 1575,
+          "path_parent_lookup": 5,
+          "path_reverse": 5,
+          "position_read": 525,
+          "queue_pop": 66,
+          "queue_push": 86,
+          "state_copy_atom": 1050,
+          "state_write": 350,
+          "successor_attempt": 525,
+          "successor_generated": 350,
+          "token_position_read": 195,
+          "visited_insert": 86,
+          "visited_lookup": 351
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 15,
+          "position_read": 5,
+          "successor_attempt": 5,
+          "verify_action": 5,
+          "verify_edge_scan": 9,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 15,
+          "verify_state_write": 5
+        }
+      },
+      "delta_fresh": 4358,
+      "delta_search": 4362,
+      "instance": 17,
+      "k": 3,
+      "lambda_fresh": 1.317499635727816,
+      "layout_hash": "38e001be0460a75cd9de3a0396d90c666fa9c7efeabe507626664807614aac44",
+      "n": 7,
+      "state_R0": 210,
+      "state_R_STAR": 105,
+      "state_ratio": 2.0
+    },
+    {
+      "J": [
+        1,
+        2
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            8,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            2,
+            3,
+            2
+          ],
+          [
+            1,
+            5,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ]
+        ],
+        "c_fresh": 46433,
+        "c_instantiate": 3,
+        "c_search": 46351,
+        "c_verify": 79,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 3
+        },
+        "n_duplicates": 786,
+        "n_expanded": 183,
+        "n_generated": 1070,
+        "n_states": 285,
+        "search_counts": {
+          "descriptor_read": 72,
+          "duplicate_detect": 786,
+          "gate_check": 72,
+          "goal_compare": 549,
+          "goal_position_read": 549,
+          "goal_set_build": 549,
+          "hash_mix": 9639,
+          "key_atom_emit": 9639,
+          "key_descriptor_read": 3213,
+          "key_identity_read": 3213,
+          "key_position_read": 3213,
+          "occupancy_scan": 4275,
+          "path_parent_lookup": 6,
+          "path_reverse": 6,
+          "position_read": 1425,
+          "queue_pop": 183,
+          "queue_push": 285,
+          "state_copy_atom": 3210,
+          "state_write": 1070,
+          "successor_attempt": 1425,
+          "successor_generated": 1070,
+          "token_position_read": 546,
+          "visited_insert": 285,
+          "visited_lookup": 1071
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "descriptor_read": 1,
+          "gate_check": 1,
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 18,
+          "position_read": 6,
+          "successor_attempt": 6,
+          "verify_action": 6,
+          "verify_edge_scan": 7,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 18,
+          "verify_state_write": 6
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            8,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            2,
+            3,
+            2
+          ],
+          [
+            1,
+            5,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ]
+        ],
+        "c_fresh": 30112,
+        "c_instantiate": 10,
+        "c_search": 30023,
+        "c_verify": 79,
+        "instantiate_counts": {
+          "instantiate_class_assign": 3,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 6
+        },
+        "n_duplicates": 619,
+        "n_expanded": 135,
+        "n_generated": 796,
+        "n_states": 178,
+        "search_counts": {
+          "bucket_insert": 2391,
+          "canonical_compare": 797,
+          "canonical_move": 346,
+          "canonical_write": 797,
+          "descriptor_read": 57,
+          "duplicate_detect": 619,
+          "gate_check": 57,
+          "goal_compare": 405,
+          "goal_position_read": 405,
+          "goal_set_build": 405,
+          "hash_mix": 3985,
+          "key_atom_emit": 2391,
+          "key_class_label_emit": 1594,
+          "key_class_read": 2391,
+          "key_position_read": 2391,
+          "occupancy_scan": 3186,
+          "path_parent_lookup": 6,
+          "path_reverse": 6,
+          "position_read": 1062,
+          "queue_pop": 135,
+          "queue_push": 178,
+          "state_copy_atom": 2388,
+          "state_write": 796,
+          "successor_attempt": 1062,
+          "successor_generated": 796,
+          "token_position_read": 402,
+          "visited_insert": 178,
+          "visited_lookup": 797
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "descriptor_read": 1,
+          "gate_check": 1,
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 18,
+          "position_read": 6,
+          "successor_attempt": 6,
+          "verify_action": 6,
+          "verify_edge_scan": 7,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 18,
+          "verify_state_write": 6
+        }
+      },
+      "delta_fresh": 16321,
+      "delta_search": 16328,
+      "instance": 18,
+      "k": 3,
+      "lambda_fresh": 1.542009829968119,
+      "layout_hash": "bf7f73c0fffbc1001886fd0841dcf4d7dae4bda75c45836f650a67f741a73e07",
+      "n": 9,
+      "state_R0": 504,
+      "state_R_STAR": 252,
+      "state_ratio": 2.0
+    },
+    {
+      "J": [
+        2
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            3,
+            2
+          ],
+          [
+            1,
+            1,
+            3
+          ],
+          [
+            1,
+            3,
+            6
+          ],
+          [
+            3,
+            5,
+            0
+          ],
+          [
+            2,
+            4,
+            5
+          ]
+        ],
+        "c_fresh": 34219,
+        "c_instantiate": 4,
+        "c_search": 34133,
+        "c_verify": 82,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 4
+        },
+        "n_duplicates": 352,
+        "n_expanded": 113,
+        "n_generated": 569,
+        "n_states": 218,
+        "search_counts": {
+          "descriptor_read": 25,
+          "duplicate_detect": 352,
+          "gate_check": 25,
+          "goal_compare": 452,
+          "goal_position_read": 452,
+          "goal_set_build": 452,
+          "hash_mix": 6840,
+          "key_atom_emit": 6840,
+          "key_descriptor_read": 2280,
+          "key_identity_read": 2280,
+          "key_position_read": 2280,
+          "occupancy_scan": 4576,
+          "path_parent_lookup": 5,
+          "path_reverse": 5,
+          "position_read": 1144,
+          "queue_pop": 113,
+          "queue_push": 218,
+          "state_copy_atom": 2276,
+          "state_write": 569,
+          "successor_attempt": 1144,
+          "successor_generated": 569,
+          "token_position_read": 448,
+          "visited_insert": 218,
+          "visited_lookup": 570
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 4,
+          "goal_position_read": 4,
+          "goal_set_build": 4,
+          "occupancy_scan": 20,
+          "position_read": 5,
+          "successor_attempt": 5,
+          "verify_action": 5,
+          "verify_edge_scan": 9,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 20,
+          "verify_state_write": 5
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            3,
+            2
+          ],
+          [
+            1,
+            1,
+            3
+          ],
+          [
+            1,
+            3,
+            6
+          ],
+          [
+            3,
+            5,
+            0
+          ],
+          [
+            2,
+            4,
+            5
+          ]
+        ],
+        "c_fresh": 19137,
+        "c_instantiate": 9,
+        "c_search": 19046,
+        "c_verify": 82,
+        "instantiate_counts": {
+          "instantiate_class_assign": 4,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 4
+        },
+        "n_duplicates": 253,
+        "n_expanded": 70,
+        "n_generated": 353,
+        "n_states": 101,
+        "search_counts": {
+          "bucket_insert": 1416,
+          "canonical_compare": 914,
+          "canonical_move": 507,
+          "canonical_write": 708,
+          "descriptor_read": 19,
+          "duplicate_detect": 253,
+          "gate_check": 19,
+          "goal_compare": 280,
+          "goal_position_read": 280,
+          "goal_set_build": 280,
+          "hash_mix": 2124,
+          "key_atom_emit": 1416,
+          "key_class_label_emit": 708,
+          "key_class_read": 1416,
+          "key_position_read": 1416,
+          "occupancy_scan": 2840,
+          "path_parent_lookup": 5,
+          "path_reverse": 5,
+          "position_read": 710,
+          "queue_pop": 70,
+          "queue_push": 101,
+          "state_copy_atom": 1412,
+          "state_write": 353,
+          "successor_attempt": 710,
+          "successor_generated": 353,
+          "token_position_read": 276,
+          "visited_insert": 101,
+          "visited_lookup": 354
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 4,
+          "goal_position_read": 4,
+          "goal_set_build": 4,
+          "occupancy_scan": 20,
+          "position_read": 5,
+          "successor_attempt": 5,
+          "verify_action": 5,
+          "verify_edge_scan": 9,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 20,
+          "verify_state_write": 5
+        }
+      },
+      "delta_fresh": 15082,
+      "delta_search": 15087,
+      "instance": 19,
+      "k": 4,
+      "lambda_fresh": 1.7881068087997074,
+      "layout_hash": "0875dd411bc2044bc31e50b5df9b6f837127e9023b4251a846fa420e4f02cd0b",
+      "n": 7,
+      "state_R0": 840,
+      "state_R_STAR": 140,
+      "state_ratio": 6.0
+    },
+    {
+      "J": [
+        1,
+        2
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            6,
+            3
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            2,
+            7,
+            0
+          ],
+          [
+            2,
+            0,
+            2
+          ]
+        ],
+        "c_fresh": 31515,
+        "c_instantiate": 3,
+        "c_search": 31445,
+        "c_verify": 67,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 3
+        },
+        "n_duplicates": 516,
+        "n_expanded": 128,
+        "n_generated": 714,
+        "n_states": 199,
+        "search_counts": {
+          "descriptor_read": 85,
+          "duplicate_detect": 516,
+          "gate_check": 85,
+          "goal_compare": 384,
+          "goal_position_read": 384,
+          "goal_set_build": 384,
+          "hash_mix": 6435,
+          "key_atom_emit": 6435,
+          "key_descriptor_read": 2145,
+          "key_identity_read": 2145,
+          "key_position_read": 2145,
+          "occupancy_scan": 3060,
+          "path_parent_lookup": 5,
+          "path_reverse": 5,
+          "position_read": 1020,
+          "queue_pop": 128,
+          "queue_push": 199,
+          "state_copy_atom": 2142,
+          "state_write": 714,
+          "successor_attempt": 1020,
+          "successor_generated": 714,
+          "token_position_read": 381,
+          "visited_insert": 199,
+          "visited_lookup": 715
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 15,
+          "position_read": 5,
+          "successor_attempt": 5,
+          "verify_action": 5,
+          "verify_edge_scan": 7,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 15,
+          "verify_state_write": 5
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            6,
+            3
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            2,
+            7,
+            0
+          ],
+          [
+            2,
+            0,
+            2
+          ]
+        ],
+        "c_fresh": 18570,
+        "c_instantiate": 10,
+        "c_search": 18493,
+        "c_verify": 67,
+        "instantiate_counts": {
+          "instantiate_class_assign": 3,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 6
+        },
+        "n_duplicates": 355,
+        "n_expanded": 87,
+        "n_generated": 478,
+        "n_states": 124,
+        "search_counts": {
+          "bucket_insert": 1437,
+          "canonical_compare": 479,
+          "canonical_move": 267,
+          "canonical_write": 479,
+          "descriptor_read": 56,
+          "duplicate_detect": 355,
+          "gate_check": 56,
+          "goal_compare": 261,
+          "goal_position_read": 261,
+          "goal_set_build": 261,
+          "hash_mix": 2395,
+          "key_atom_emit": 1437,
+          "key_class_label_emit": 958,
+          "key_class_read": 1437,
+          "key_position_read": 1437,
+          "occupancy_scan": 2067,
+          "path_parent_lookup": 5,
+          "path_reverse": 5,
+          "position_read": 689,
+          "queue_pop": 87,
+          "queue_push": 124,
+          "state_copy_atom": 1434,
+          "state_write": 478,
+          "successor_attempt": 689,
+          "successor_generated": 478,
+          "token_position_read": 258,
+          "visited_insert": 124,
+          "visited_lookup": 479
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 15,
+          "position_read": 5,
+          "successor_attempt": 5,
+          "verify_action": 5,
+          "verify_edge_scan": 7,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 15,
+          "verify_state_write": 5
+        }
+      },
+      "delta_fresh": 12945,
+      "delta_search": 12952,
+      "instance": 20,
+      "k": 3,
+      "lambda_fresh": 1.697092084006462,
+      "layout_hash": "4594991d9a4793f1fa409195da945ecbac631134e23b55be14d3c2f31fddc968",
+      "n": 8,
+      "state_R0": 336,
+      "state_R_STAR": 168,
+      "state_ratio": 2.0
+    },
+    {
+      "J": [
+        1,
+        2
+      ],
+      "R0": {
+        "actions": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            2,
+            5,
+            2
+          ],
+          [
+            2,
+            2,
+            4
+          ]
+        ],
+        "c_fresh": 10168,
+        "c_instantiate": 5,
+        "c_search": 10099,
+        "c_verify": 64,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 5
+        },
+        "n_duplicates": 72,
+        "n_expanded": 28,
+        "n_generated": 126,
+        "n_states": 55,
+        "search_counts": {
+          "descriptor_read": 7,
+          "duplicate_detect": 72,
+          "gate_check": 7,
+          "goal_compare": 140,
+          "goal_position_read": 140,
+          "goal_set_build": 140,
+          "hash_mix": 1905,
+          "key_atom_emit": 1905,
+          "key_descriptor_read": 635,
+          "key_identity_read": 635,
+          "key_position_read": 635,
+          "occupancy_scan": 1850,
+          "path_parent_lookup": 3,
+          "path_reverse": 3,
+          "position_read": 370,
+          "queue_pop": 28,
+          "queue_push": 55,
+          "state_copy_atom": 630,
+          "state_write": 126,
+          "successor_attempt": 370,
+          "successor_generated": 126,
+          "token_position_read": 135,
+          "visited_insert": 55,
+          "visited_lookup": 127
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 5,
+          "goal_position_read": 5,
+          "goal_set_build": 5,
+          "occupancy_scan": 15,
+          "position_read": 3,
+          "successor_attempt": 3,
+          "verify_action": 3,
+          "verify_edge_scan": 6,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 15,
+          "verify_state_write": 3
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            2,
+            5,
+            2
+          ],
+          [
+            2,
+            2,
+            4
+          ]
+        ],
+        "c_fresh": 5477,
+        "c_instantiate": 16,
+        "c_search": 5397,
+        "c_verify": 64,
+        "instantiate_counts": {
+          "instantiate_class_assign": 5,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 10
+        },
+        "n_duplicates": 44,
+        "n_expanded": 17,
+        "n_generated": 75,
+        "n_states": 32,
+        "search_counts": {
+          "bucket_insert": 380,
+          "canonical_compare": 240,
+          "canonical_move": 110,
+          "canonical_write": 228,
+          "descriptor_read": 4,
+          "duplicate_detect": 44,
+          "gate_check": 4,
+          "goal_compare": 85,
+          "goal_position_read": 85,
+          "goal_set_build": 85,
+          "hash_mix": 532,
+          "key_atom_emit": 380,
+          "key_class_label_emit": 152,
+          "key_class_read": 380,
+          "key_position_read": 380,
+          "occupancy_scan": 1100,
+          "path_parent_lookup": 3,
+          "path_reverse": 3,
+          "position_read": 220,
+          "queue_pop": 17,
+          "queue_push": 32,
+          "state_copy_atom": 375,
+          "state_write": 75,
+          "successor_attempt": 220,
+          "successor_generated": 75,
+          "token_position_read": 80,
+          "visited_insert": 32,
+          "visited_lookup": 76
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 5,
+          "goal_position_read": 5,
+          "goal_set_build": 5,
+          "occupancy_scan": 15,
+          "position_read": 3,
+          "successor_attempt": 3,
+          "verify_action": 3,
+          "verify_edge_scan": 6,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 15,
+          "verify_state_write": 3
+        }
+      },
+      "delta_fresh": 4691,
+      "delta_search": 4702,
+      "instance": 21,
+      "k": 5,
+      "lambda_fresh": 1.8564907796238816,
+      "layout_hash": "4f432f280a0ec8200dc04980b9e3c8188db99f1498573dd4eff9fce3bf260b95",
+      "n": 7,
+      "state_R0": 2520,
+      "state_R_STAR": 210,
+      "state_ratio": 12.0
+    },
+    {
+      "J": [
+        3
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            4,
+            2
+          ],
+          [
+            0,
+            2,
+            6
+          ],
+          [
+            0,
+            6,
+            3
+          ],
+          [
+            2,
+            8,
+            2
+          ],
+          [
+            1,
+            1,
+            8
+          ],
+          [
+            1,
+            8,
+            5
+          ],
+          [
+            1,
+            5,
+            7
+          ],
+          [
+            2,
+            2,
+            6
+          ]
+        ],
+        "c_fresh": 96004,
+        "c_instantiate": 3,
+        "c_search": 95882,
+        "c_verify": 119,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 3
+        },
+        "n_duplicates": 1718,
+        "n_expanded": 426,
+        "n_generated": 2199,
+        "n_states": 482,
+        "search_counts": {
+          "descriptor_read": 96,
+          "duplicate_detect": 1718,
+          "gate_check": 96,
+          "goal_compare": 1278,
+          "goal_position_read": 1278,
+          "goal_set_build": 1278,
+          "hash_mix": 19800,
+          "key_atom_emit": 19800,
+          "key_descriptor_read": 6600,
+          "key_identity_read": 6600,
+          "key_position_read": 6600,
+          "occupancy_scan": 8916,
+          "path_parent_lookup": 9,
+          "path_reverse": 9,
+          "position_read": 2972,
+          "queue_pop": 426,
+          "queue_push": 482,
+          "state_copy_atom": 6597,
+          "state_write": 2199,
+          "successor_attempt": 2972,
+          "successor_generated": 2199,
+          "token_position_read": 1275,
+          "visited_insert": 482,
+          "visited_lookup": 2200
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 27,
+          "position_read": 9,
+          "successor_attempt": 9,
+          "verify_action": 9,
+          "verify_edge_scan": 19,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 27,
+          "verify_state_write": 9
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            4,
+            2
+          ],
+          [
+            0,
+            2,
+            6
+          ],
+          [
+            0,
+            6,
+            3
+          ],
+          [
+            2,
+            8,
+            2
+          ],
+          [
+            1,
+            1,
+            8
+          ],
+          [
+            1,
+            8,
+            5
+          ],
+          [
+            1,
+            5,
+            7
+          ],
+          [
+            2,
+            2,
+            6
+          ]
+        ],
+        "c_fresh": 45503,
+        "c_instantiate": 7,
+        "c_search": 45377,
+        "c_verify": 119,
+        "instantiate_counts": {
+          "instantiate_class_assign": 3,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 3
+        },
+        "n_duplicates": 945,
+        "n_expanded": 231,
+        "n_generated": 1193,
+        "n_states": 249,
+        "search_counts": {
+          "bucket_insert": 3582,
+          "canonical_compare": 1194,
+          "canonical_move": 525,
+          "canonical_write": 1194,
+          "descriptor_read": 54,
+          "duplicate_detect": 945,
+          "gate_check": 54,
+          "goal_compare": 693,
+          "goal_position_read": 693,
+          "goal_set_build": 693,
+          "hash_mix": 5970,
+          "key_atom_emit": 3582,
+          "key_class_label_emit": 2388,
+          "key_class_read": 3582,
+          "key_position_read": 3582,
+          "occupancy_scan": 4830,
+          "path_parent_lookup": 9,
+          "path_reverse": 9,
+          "position_read": 1610,
+          "queue_pop": 231,
+          "queue_push": 249,
+          "state_copy_atom": 3579,
+          "state_write": 1193,
+          "successor_attempt": 1610,
+          "successor_generated": 1193,
+          "token_position_read": 690,
+          "visited_insert": 249,
+          "visited_lookup": 1194
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 3,
+          "goal_position_read": 3,
+          "goal_set_build": 3,
+          "occupancy_scan": 27,
+          "position_read": 9,
+          "successor_attempt": 9,
+          "verify_action": 9,
+          "verify_edge_scan": 19,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 27,
+          "verify_state_write": 9
+        }
+      },
+      "delta_fresh": 50501,
+      "delta_search": 50505,
+      "instance": 22,
+      "k": 3,
+      "lambda_fresh": 2.1098389117201064,
+      "layout_hash": "5c4ae6a19719d366c9e3898c7694a69484b6c767ecb0934f4f1474c0c216796e",
+      "n": 9,
+      "state_R0": 504,
+      "state_R_STAR": 252,
+      "state_ratio": 2.0
+    },
+    {
+      "J": [
+        2
+      ],
+      "R0": {
+        "actions": [
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            4,
+            6
+          ],
+          [
+            1,
+            3,
+            0
+          ],
+          [
+            1,
+            0,
+            4
+          ],
+          [
+            2,
+            7,
+            3
+          ],
+          [
+            2,
+            3,
+            0
+          ],
+          [
+            4,
+            2,
+            5
+          ],
+          [
+            3,
+            1,
+            2
+          ]
+        ],
+        "c_fresh": 145912,
+        "c_instantiate": 5,
+        "c_search": 145765,
+        "c_verify": 142,
+        "instantiate_counts": {
+          "instantiate_native_token_record": 5
+        },
+        "n_duplicates": 1280,
+        "n_expanded": 397,
+        "n_generated": 1934,
+        "n_states": 655,
+        "search_counts": {
+          "descriptor_read": 71,
+          "duplicate_detect": 1280,
+          "gate_check": 71,
+          "goal_compare": 1985,
+          "goal_position_read": 1985,
+          "goal_set_build": 1985,
+          "hash_mix": 29025,
+          "key_atom_emit": 29025,
+          "key_descriptor_read": 9675,
+          "key_identity_read": 9675,
+          "key_position_read": 9675,
+          "occupancy_scan": 22955,
+          "path_parent_lookup": 8,
+          "path_reverse": 8,
+          "position_read": 4591,
+          "queue_pop": 397,
+          "queue_push": 655,
+          "state_copy_atom": 9670,
+          "state_write": 1934,
+          "successor_attempt": 4591,
+          "successor_generated": 1934,
+          "token_position_read": 1980,
+          "visited_insert": 655,
+          "visited_lookup": 1935
+        },
+        "solved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 5,
+          "goal_position_read": 5,
+          "goal_set_build": 5,
+          "occupancy_scan": 40,
+          "position_read": 8,
+          "successor_attempt": 8,
+          "verify_action": 8,
+          "verify_edge_scan": 14,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 40,
+          "verify_state_write": 8
+        }
+      },
+      "R_STAR": {
+        "actions": [
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            4,
+            6
+          ],
+          [
+            1,
+            3,
+            0
+          ],
+          [
+            1,
+            0,
+            4
+          ],
+          [
+            2,
+            7,
+            3
+          ],
+          [
+            2,
+            3,
+            0
+          ],
+          [
+            4,
+            2,
+            5
+          ],
+          [
+            3,
+            1,
+            2
+          ]
+        ],
+        "c_fresh": 69325,
+        "c_instantiate": 11,
+        "c_search": 69172,
+        "c_verify": 142,
+        "instantiate_counts": {
+          "instantiate_class_assign": 5,
+          "instantiate_class_label_sort_compare": 1,
+          "instantiate_descriptor_read": 5
+        },
+        "n_duplicates": 750,
+        "n_expanded": 206,
+        "n_generated": 1021,
+        "n_states": 272,
+        "search_counts": {
+          "bucket_insert": 5110,
+          "canonical_compare": 3709,
+          "canonical_move": 2012,
+          "canonical_write": 3066,
+          "descriptor_read": 49,
+          "duplicate_detect": 750,
+          "gate_check": 49,
+          "goal_compare": 1030,
+          "goal_position_read": 1030,
+          "goal_set_build": 1030,
+          "hash_mix": 7154,
+          "key_atom_emit": 5110,
+          "key_class_label_emit": 2044,
+          "key_class_read": 5110,
+          "key_position_read": 5110,
+          "occupancy_scan": 12035,
+          "path_parent_lookup": 8,
+          "path_reverse": 8,
+          "position_read": 2407,
+          "queue_pop": 206,
+          "queue_push": 272,
+          "state_copy_atom": 5105,
+          "state_write": 1021,
+          "successor_attempt": 2407,
+          "successor_generated": 1021,
+          "token_position_read": 1025,
+          "visited_insert": 272,
+          "visited_lookup": 1022
+        },
+        "solved": true,
+        "trap_preserved": true,
+        "verified": true,
+        "verify_counts": {
+          "goal_compare": 5,
+          "goal_position_read": 5,
+          "goal_set_build": 5,
+          "occupancy_scan": 40,
+          "position_read": 8,
+          "successor_attempt": 8,
+          "verify_action": 8,
+          "verify_edge_scan": 14,
+          "verify_goal_call": 1,
+          "verify_state_copy_atom": 40,
+          "verify_state_write": 8
+        }
+      },
+      "delta_fresh": 76587,
+      "delta_search": 76593,
+      "instance": 23,
+      "k": 5,
+      "lambda_fresh": 2.1047529751172016,
+      "layout_hash": "33229185b4234f7e048d31819fb8e227f56d76d3979a2b523fc61a8b21b368c5",
+      "n": 8,
+      "state_R0": 6720,
+      "state_R_STAR": 560,
+      "state_ratio": 12.0
+    }
+  ]
+}
