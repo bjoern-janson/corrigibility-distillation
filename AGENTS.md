@@ -2,328 +2,784 @@
 
 ## Purpose
 
-Phase 1 inventory, Phase 2 substitutability, L4 interface audit, and the L2 lineage audit are complete.
+The corpus-distillation lane is closed.
 
-Current state:
+Frozen prior state:
 
-L2 lineage = COMPLETE  
-L2 necessity = ACTIVE  
-L3 = 0/182 substitutions  
-L4 = 0 full mechanism interfaces  
-L4' = 1 bounded evidence/provenance transport  
-L5 = CLOSED  
-L6 = CLOSED  
-MINIMIZATION = CLOSED
+- L2 lineage = COMPLETE
+- local necessity = 3 `NECESSARY`, 5 `NOT DEMONSTRATED`, 1 `DISCONFIRMED`
+- necessity-relation audit = 0 `DEPENDENT`, 0 `INDEPENDENT`, 2 `NOT COMPARABLE`, 1 `NOT DEMONSTRATED`
+- L3 substitutability = 0/182
+- L4 = 0 full mechanism interfaces
+- L4' = 1 bounded evidence/provenance transport
+- L5 = CLOSED
+- L6 = CLOSED
+- COMMON CORE = NOT EARNED
+- GLOBAL MINIMIZATION = CLOSED
+- CORPUS DISTILLATION LANE = CLOSED
 
-The active phase is:
+Do not reopen, reinterpret, optimize, or further compress the frozen corpus.
 
-## NECESSITY AUDIT
+The active research lane is new and prospective:
 
-The only question is:
+# CGP-001 — Constraint-Geometry Prediction
 
-> Does violating a recurring distinction actually break the demonstrated function under the same stated conditions?
+The sole scientific question is:
 
-The tested object is:
+> Can a separation pattern extracted from the frozen corpus prospectively predict a previously untested cross-repository relation that mechanism-local evidence alone does not license?
 
-\[
-N(I,F,D)
-\]
+The first assay tests a predicted **corridor**, not another predicted wall.
 
-where:
-
-- \(I\) = the exact recurring function/invariant distinction being tested;
-- \(F\) = the exact demonstrated function whose success is at issue;
-- \(D\) = the exact conditions, dependencies, scope, oracle assumptions, interfaces, budgets, horizons, or other restrictions under which \(F\) was demonstrated.
-
-Do not perform minimization, ranking, architecture design, composition, mechanism deletion, or universalization.
-
-## Frozen evidence base
-
-Use only the completed Phase-1 inventory and already-recorded Phase-2, L4, and L2-lineage records.
-
-Treat those records as authoritative only for facts they explicitly contain.
-
-Do not reread source repositories to add, repair, strengthen, or reinterpret evidence during this audit.
-
-Source repositories may be consulted only to verify an already-recorded citation or reference. They do not become a new evidence stream.
-
-Do not construct new experiments, ablations, adapters, interfaces, formal results, or counterexamples.
-
-If the frozen record does not decide a necessity claim, record `NOT DEMONSTRATED`.
-
-## Candidate set
-
-Begin only with these strongest recurring L2 families:
-
-1. **Evidence / authority / adoption remain distinct.**
-2. **Diagnosis / localization precedes adaptation.**
-3. **Endpoint or local effect evidence does not establish path / composition / repertoire.**
-4. **Information exists does not imply represented, accessible, exploitable, or adopted.**
-5. **Preserve history or null standing without manufacturing authority.**
-6. **Equivalence is relative to the required future-operation signature.**
-
-Do **not** assume all six qualify for a necessity verdict.
-
-First filter each family by the admissible evidence routes below.
-
-A family with recurrence alone is not enough.
-
-## Eligibility filter
-
-A candidate may proceed to a local necessity judgment only when the frozen evidence contains at least one of:
-
-- an ablation that violates the relevant \(I\);
-- a counterexample that violates the relevant \(I\);
-- a formal necessity result linking \(I\) to \(F\);
-- a demonstrated failure specifically attributable to violation of \(I\).
-
-Independent recurrence, failure-forced lineage status, or formal derivation makes a family eligible for inspection, but does not itself establish necessity.
-
-If no admissible violation evidence is present, record the candidate as:
-
-`NOT DEMONSTRATED`
-
-and do not invent a violation test.
-
-## Deliverable
-
-Use:
-
-| Function / Invariant | Demonstrated Function | Violation Condition | Necessity Evidence | Failure When Violated? | Earned Status |
-|---|---|---|---|---|---|
-
-Keep each row local to one exact \(N(I,F,D)\) claim.
-
-If the same recurring family has multiple distinct demonstrated functions or scopes, use separate rows rather than merging them.
-
-Do not produce a global verdict for a family by averaging or combining local rows.
-
-## Status values
-
-`Earned Status` must be exactly one of:
-
-- `NECESSARY`
-- `NOT DEMONSTRATED`
-- `DISCONFIRMED`
-
-### NECESSARY
-
-Mark `NECESSARY` only when the frozen evidence establishes:
+The candidate relation is:
 
 \[
-\neg I \Rightarrow F\text{ fails under }D.
-\]
-
-The violation and failure must concern the same \(I\), the same demonstrated \(F\), and the same relevant \(D\).
-
-The evidence must establish that the failure follows from the violation, not merely that the two co-occurred.
-
-### NOT DEMONSTRATED
-
-Mark `NOT DEMONSTRATED` when the frozen evidence does not decide the necessity relation.
-
-This includes cases where:
-
-- \(I\) recurs independently but was never violated;
-- a failure exists but is not specifically attributable to \(\neg I\);
-- the evidence concerns a different function;
-- the evidence concerns a different scope or dependency regime;
-- a formal result derives \(I\) but does not prove \(I\) necessary for \(F\);
-- the relevant success/failure measurement is absent.
-
-`NOT DEMONSTRATED` is not evidence that \(I\) is unnecessary.
-
-### DISCONFIRMED
-
-Mark `DISCONFIRMED` only when the frozen evidence establishes:
-
-\[
-\neg I \land F\text{ still demonstrably succeeds under }D.
-\]
-
-A missing observed failure is insufficient.
-
-There must be a positive witness that the specified function succeeds despite the relevant violation under the matched conditions.
-
-## Function- and scope-matching rule
-
-Necessity is typed and local.
-
-Do not transfer necessity across:
-
-- different functions;
-- different mechanisms;
-- different repositories;
-- different operation families;
-- different oracle assumptions;
-- different interfaces;
-- different budgets or horizons;
-- different evidence standards;
-- different claim ceilings.
-
-A result of the form:
-
-\[
-N(I,F,D)
-\]
-
-never automatically establishes:
-
-\[
-N(I,F',D')
-\]
-
-for any broader or adjacent \(F'\) or \(D'\).
-
-## Formal-evidence discipline
-
-Preserve:
-
-\[
-\text{formal derivation of }I
-\neq
-\text{formal necessity of }I\text{ for }F.
-\]
-
-A formal counterexample or theorem may support `NECESSARY` only for the exact formal property, function, and scope it actually establishes.
-
-Do not translate a formal result into an empirical or architectural necessity claim.
-
-For example, an SRE counterexample may establish a necessity relation for a declared quotient or future-operation property. It does not establish a general necessity result for corrigibility.
-
-## Failure-evidence discipline
-
-A failure-forced lineage result is not automatically a necessity result.
-
-A failure supports `NECESSARY` only when the frozen evidence specifically links violation of \(I\) to failure of the same \(F\) under \(D\).
-
-Do not use:
-
-- post-hoc thematic explanations;
-- adjacent-stage failures;
-- generic null results;
-- broader architecture failures;
-- inherited failures from another mechanism;
-
-as necessity evidence unless the exact \(N(I,F,D)\) relation is already supported.
-
-## Anti-inflation rules
-
-Do not treat:
-
-- recurrence as necessity;
-- independent rediscovery as necessity;
-- failure-forcing as universal necessity;
-- formal derivation as formal necessity;
-- usefulness as indispensability;
-- design intent as necessity evidence;
-- absence of a failure as `DISCONFIRMED`;
-- necessity in one bounded architecture as universal necessity.
-
-Preserve:
-
-\[
-\text{recurs independently}
-\not\Rightarrow
-\text{necessary}
-\]
-
-and:
-
-\[
-\text{necessary under }D
-\not\Rightarrow
-\text{necessary outside }D.
-\]
-
-## Candidate filtering discipline
-
-Do not force all six candidate families into positive audit rows.
-
-For each candidate:
-
-1. identify the exact demonstrated \(F\), if any;
-2. identify the exact \(D\);
-3. identify an admissible violation condition \(\neg I\), if already evidenced;
-4. identify the admissible evidence route;
-5. assign the status conservatively.
-
-If any required element is absent, use `NOT DEMONSTRATED`.
-
-Do not fill missing fields by analogy to another repository.
-
-## What this phase must NOT answer
-
-Do not:
-
-- rank invariants;
-- construct a “core set”;
-- call any invariant universal or fundamental;
-- infer a common substrate;
-- drop or replace mechanisms;
-- reopen substitutability;
-- reopen interface compatibility;
-- test composition;
-- infer cumulative gain;
-- optimize complexity;
-- construct \(S^\star\);
-- open minimization.
-
-A local necessity result is only a preservation requirement for the exact function and conditions tested.
-
-## Output discipline
-
-The primary output is the necessity table.
-
-After the table, provide only a compact aggregate:
-
-1. number of `NECESSARY` local relations;
-2. number of `NOT DEMONSTRATED` local relations;
-3. number of `DISCONFIRMED` local relations;
-4. the exact \(N(I,F,D)\) claims, if any, that earned `NECESSARY`.
-
-Do not rank or combine necessary relations into a proposed architecture.
-
-## Positive result
-
-The strongest admissible positive conclusion is:
-
-> Under the specified conditions, this recurring distinction is demonstrably indispensable to this demonstrated function.
-
-Formally:
-
-\[
-\exists(I,F,D):N(I,F,D).
-\]
-
-Nothing universal follows.
-
-## Null result
-
-The following is fully admissible:
-
-> Recurrence exists, but no recurring distinction has yet earned necessity under the frozen evidence.
-
-Do not manufacture a necessity result merely to advance Corrigibility Distillation.
-
-## Governing sequence
-
-\[
-\text{strongest L2 candidates}
+\text{Negative-Space Search search allocation}
 \rightarrow
-\text{admissible-evidence filter}
+\text{Future Sufficiency Experiment 007 repair search}
+\]
+
+while preserving:
+
+\[
+\boxed{\Psi_{\mathrm{NSS}} \neq U_{\mathrm{FS}}}
+\]
+
+NSS may affect **whether repair search effort is spent**.
+
+NSS may not decide:
+
+- which repair is correct;
+- whether a repair has positive value;
+- repair cost;
+- whether a repair is admitted;
+- whether a repair persists;
+- epistemic or decision authority;
+- the objective / reward semantics.
+
+Future Sufficiency retains its own evidence/value-conditioned persistence decision.
+
+---
+
+## Scientific hypothesis
+
+Treat the following qualitatively in CGP-001; do not estimate statistical mutual information from one assay:
+
+\[
+H_{\mathrm{CG}}:
+I(Y_{\mathrm{new}};G^-_{\mathrm{obs}}\mid X_{\mathrm{local}})>0.
+\]
+
+Interpretation:
+
+> The frozen cross-corpus separation morphology contains prospective discriminating information about the new relation that is not licensed by the two mechanisms' local records alone.
+
+Null:
+
+\[
+H_0:
+G^-_{\mathrm{obs}}
+\text{ adds no prospective information beyond }X_{\mathrm{local}}.
+\]
+
+A single positive CGP-001 result does **not** establish a universal constraint geometry, growth law, architecture, snowflake theory, common core, or general composition principle.
+
+---
+
+## Frozen source anchors
+
+Use these repositories read-only at the frozen corpus commits:
+
+- `bjoern-janson/negative-space-search@307c245`
+- `bjoern-janson/future-sufficiency@2f4ca82`
+
+The relevant parent mechanisms are:
+
+### NSS parent
+
+Use the frozen v0.7 search-governance mechanism whose supported function is conditional allocation of representational search effort.
+
+The parent firewall is:
+
+```text
+Psi proposes / allocates search effort.
+Evidence authorizes.
+possibility != authority
+candidate != claim
+Psi != U
+```
+
+Do not strengthen the NSS claim beyond its frozen finite synthetic scope.
+
+### Future Sufficiency parent
+
+Use **Experiment 007 — Primitive / Meta-Language Repair** as the repair mechanism.
+
+Its demonstrated bounded function includes:
+
+```text
+residual defect
+-> certify construction-rule insufficiency
+-> value-sensitive repair search
+-> M0 -> M1 when warranted
+-> persistent generator change
+-> held-out / later-family reuse
+```
+
+The supplied repair remains `allow fan-out`; CGP-001 is not a test of unrestricted meta-language invention.
+
+Do not silently substitute a later Future Sufficiency mechanism for Experiment 007.
+
+---
+
+# Required research sequence
+
+CGP-001 must execute in this order:
+
+\[
+\boxed{
+\text{PREREGISTER}
 \rightarrow
-\text{identify }(I,F,D)
+\text{FREEZE}
 \rightarrow
-\text{evaluate violation evidence}
+A_{\mathrm{trans}}
 \rightarrow
-\text{local necessity verdict}
+\text{EXECUTE CGP}
 \rightarrow
-\boxed{\text{STOP}}
+\text{AUDIT}
+\rightarrow
+\text{STOP}
+}
 \]
 
 Never reverse this order.
 
+Do not inspect CGP outcome-bearing results before all preregistration inputs are frozen.
+
+---
+
+# 1. Create the preregistration first
+
+Create:
+
+`CGP_001_PREREGISTRATION.md`
+
+before creating or executing any outcome-bearing CGP run.
+
+The preregistration must freeze exactly these objects:
+
+\[
+G^-_{\mathrm{obs}},
+\quad
+X_*,
+\quad
+T_{\mathrm{frozen}},
+\quad
+f_G,
+\quad
+\hat y_G,
+\quad
+f_L,
+\quad
+\text{scoring rule}.
+\]
+
+Also record exact source commit SHAs, exact implementation paths used, fixed random seeds if any, environment/runtime version, case generator definition, resource/cost accounting definition, and all terminal rules.
+
+After the preregistration is committed, do not alter its scientific contents in response to execution results.
+
+Administrative typo fixes after execution must not change semantics and must be separately identified.
+
+---
+
+# 2. Freeze `G^-_obs` as an observed separation object
+
+`G^-_obs` is not a theory document.
+
+It is a compact empirical coding of already-observed separation/failure relations from the closed corpus-distillation lane.
+
+Use only already-earned observations. Do not create a new boundary because it seems theoretically useful.
+
+The prospective boundary vocabulary for CGP-001 is:
+
+```text
+B0  NO_KNOWN_OBSTRUCTION
+B1  INTERFACE_OR_SIGNATURE_MISMATCH
+B2  DEPENDENCY_MISMATCH
+B3  EVIDENCE_OR_AUTHORITY_MISMATCH
+B4  COMPLEMENTARY_STAGE_MISMATCH
+B5  LOCAL_INVARIANT_VIOLATION
+BU  UNCLASSIFIED
+```
+
+For every non-null boundary code included in `G^-_obs`, record the exact frozen evidence source that justifies using that code.
+
+If the old record does not support one of B1-B5, omit it from the observed geometry rather than retrofitting evidence.
+
+`BU = UNCLASSIFIED` must always remain available prospectively.
+
+Do not rename a novel observed failure into an existing category after execution merely to rescue the prediction.
+
+The old historical results remain unchanged:
+
+```text
+L3 substitution = 0/182
+L4 full interfaces = 0
+L4' bounded evidence/provenance transport = 1
+local necessities = 3
+common reducible core = NOT EARNED
+```
+
+CGP-001 does not retroactively create an interface in L4.
+
+---
+
+# 3. Freeze `X_local`
+
+`X_local` contains only mechanism-local information available from the two frozen parent repositories.
+
+It may include:
+
+- NSS v0.7 input/output contract;
+- NSS v0.7 demonstrated function and dependency limits;
+- Future Sufficiency Experiment 007 input/output contract;
+- FS007 demonstrated function and dependency limits;
+- the newly proposed transformation specification itself.
+
+It must exclude:
+
+- cross-repository substitutability results;
+- cross-repository interface-audit results;
+- corpus-wide lineage recurrence;
+- corpus-wide necessity relations;
+- corpus-wide separation coding;
+- any CGP outcome.
+
+The purpose of `X_local` is not to pretend the local mechanisms know nothing. It is to delimit what their own frozen evidence licenses without the global morphology.
+
+---
+
+# 4. Freeze the new transformation `X_*`
+
+The intended prospective architecture is:
+
+\[
+\boxed{
+\text{FS-visible history/state}
+\xrightarrow{T_{\mathrm{frozen}}}
+\text{NSS-compatible input}
+\xrightarrow{\Psi_{\mathrm{NSS}}}
+\text{invoke / skip FS repair search}
+\xrightarrow{}
+\text{FS007 search + evaluation}
+\xrightarrow{U_{\mathrm{FS}}}
+\text{persist / reject}
+}
+\]
+
+The coupling is deliberately asymmetric.
+
+NSS controls only the allocation of repair-search effort.
+
+FS007 retains control over repair evaluation, value gating, and persistence.
+
+The adapter/translation may not itself become the adequacy detector or repair evaluator.
+
+---
+
+# 5. Translation `T_frozen` is a separate experimental object
+
+The critical firewall is:
+
+\[
+\boxed{
+\text{new adapter correctness}
+\neq
+\text{evidence for the predicted corridor}
+}
+\]
+
+The translation is part of the new experimental apparatus.
+
+A successful adapter does not count as CGP evidence.
+
+The preregistration must define the translation completely before outcome-bearing execution.
+
+## Translation constraints
+
+`T_frozen` must be:
+
+- deterministic;
+- stateless except for state explicitly present in the source-visible FS record;
+- documented field-by-field;
+- free of hidden evaluator state;
+- free of destination outcome information;
+- free of target/repair oracle labels not available to the source mechanism;
+- free of Future Sufficiency's final persistence decision;
+- free of repair candidate identity except where literally required by the frozen NSS input contract;
+- free of post-execution information.
+
+The translation may expose only information required to instantiate the frozen NSS decision mechanism.
+
+It may not directly output:
+
+```text
+ADEQUATE
+INADEQUATE
+UNKNOWN
+persist
+reject
+repair identity
+VOI
+future test outcome
+```
+
+unless the literal frozen NSS mechanism itself produces the adequacy classification from the translated source-visible inputs.
+
+In other words:
+
+```text
+translation != diagnosis
+translation != oracle
+translation != authority update
+```
+
+## Literal-mechanism rule
+
+First determine whether the frozen NSS decision mechanism can be instantiated on FS007 source-visible data through a faithful translation **without changing the NSS decision rule into a new algorithm**.
+
+If not, do not keep redesigning the adapter until the experiment works.
+
+Record:
+
+`A_trans = FAIL`
+
+and terminate CGP-001 as:
+
+`NOT EVALUABLE`.
+
+A translation failure does not falsify `H_CG`; it means the intended transformation was not successfully instantiated.
+
+---
+
+# 6. Independent translation audit `A_trans`
+
+Create a translation audit before CGP outcome scoring.
+
+Recommended artifact:
+
+`CGP_001_TRANSLATION_AUDIT.md`
+
+The translation audit must evaluate only whether the intended source semantics/input contract were faithfully instantiated for NSS.
+
+It must not score whether the geometry prediction was correct.
+
+At minimum verify:
+
+1. **Determinism** — identical source-visible FS records map identically.
+2. **Source boundedness** — every translated field is derivable from the declared FS-visible input record.
+3. **No oracle leakage** — no hidden insufficiency label, future outcome, final repair correctness, persistence decision, or evaluator-owned target enters the adapter.
+4. **No authority leakage** — translation cannot cause persistence or rejection directly.
+5. **Role preservation** — the NSS output retains the role `search allocation`, not `repair authorization`.
+6. **Mechanism preservation** — the NSS gate/decision rule is the frozen mechanism or a semantically exact implementation of it, not a newly tuned classifier.
+7. **Fail closed** — malformed or semantically unmapped inputs do not receive a fabricated adequacy status.
+
+If any constitutive translation criterion fails:
+
+\[
+A_{\mathrm{trans}}=0
+\Rightarrow
+\boxed{\texttt{CGP-001 = NOT EVALUABLE}}
+\]
+
+Then STOP. Do not execute an outcome-bearing CGP test under a repaired translation unless a new prospective experiment identifier is opened.
+
+If:
+
+\[
+A_{\mathrm{trans}}=1,
+\]
+
+this only authorizes the CGP execution. It contributes **zero positive evidence** for `H_CG` by itself.
+
+---
+
+# 7. Freeze the geometry forecast `f_G`
+
+CGP-001 is a **corridor prediction**.
+
+The preregistered geometry forecast is:
+
+\[
+\boxed{\hat y_G = B0 = \texttt{NO_KNOWN_OBSTRUCTION}}
+\]
+
+conditional on `A_trans = PASS`.
+
+The typed forecast is:
+
+```text
+insufficient + low repair cost
+    -> NSS opens repair search
+    -> FS007 evaluates
+    -> FS007 persists repair when its own value rule warrants it
+
+insufficient + high repair cost
+    -> NSS may open repair search
+    -> FS007 retains authority
+    -> FS007 does not persist when its own value rule does not warrant persistence
+
+already sufficient
+    -> NSS suppresses unnecessary repair-search invocation
+    -> FS performance / sufficiency is preserved
+    -> no repair is persisted merely because richer search is possible
+```
+
+The core predicted legal corridor is:
+
+\[
+\boxed{
+\text{search allocation may cross the boundary}
+\quad\land\quad
+\text{repair-adoption authority may not}
+}
+\]
+
+The geometry prediction is not simply `success`.
+
+It predicts a typed division of labor.
+
+---
+
+# 8. Freeze the local-only forecast `f_L`
+
+The local-only baseline is an evidence-licensing baseline, not a straw-man performance model.
+
+Using only `X_local`, record whether the frozen local evidence licenses a specific prospective composition prediction.
+
+For CGP-001, the default expected local-only status is:
+
+`UNRESOLVED`
+
+because neither frozen parent result demonstrates this cross-repository coupling.
+
+However, Codex must verify this from the local records before freezing the preregistration.
+
+If the local records actually contain a specific supported prediction about the exact transformation, record it instead. Do not force abstention to make CGP look stronger.
+
+Do not say that geometry “beats” the local baseline merely because the local baseline abstains.
+
+The correct interpretation is:
+
+> Geometry made a specific prospective forecast; the local evidence did or did not independently license the same forecast.
+
+---
+
+# 9. Experimental arms
+
+Use a matched design with at least these four arms:
+
+| Arm | Role |
+|---|---|
+| `FS_ONLY` | FS007 repair mechanism without NSS gating; establishes the matched parent repair performance/cost surface. |
+| `NSS_ONLY` | NSS gate without access to FS repair authority; verifies the gate itself cannot perform the repair function. |
+| `NSS_TO_FS` | Primary prospective corridor: NSS allocates invocation of FS repair search; FS retains evaluation/persistence authority. |
+| `SHUFFLED_NSS_TO_FS` | Matched gate-frequency / allocation control using incorrect or permuted allocation; tests correct localization rather than merely less search. |
+
+The preregistration must specify exactly how shuffled gating is generated and how gate frequency/resource exposure is matched.
+
+Do not tune the shuffled control after seeing results.
+
+---
+
+# 10. Matched-resource discipline
+
+Predefine all cost accounting before execution.
+
+At minimum separate:
+
+```text
+search candidate evaluations
+NSS gate cost
+translation cost
+FS repair-evaluation cost
+representation / generator cost
+latency or step count if meaningful
+```
+
+Do not report only downstream search savings while hiding NSS or translation overhead.
+
+Define total experimental cost prospectively:
+
+\[
+C_{\mathrm{total}}
+=
+C_{\mathrm{translation}}
++
+C_{\mathrm{NSS}}
++
+C_{\mathrm{FS-search}}
++
+C_{\mathrm{FS-eval}}
+\]
+
+or an equally explicit frozen decomposition justified by the implementation.
+
+Quality and cost must remain separate outcomes. Do not scalarize them post hoc.
+
+---
+
+# 11. Primary outcome contract
+
+The exact numerical/equivalence tolerances must be frozen in `CGP_001_PREREGISTRATION.md` before execution.
+
+A successful corridor requires all of the following:
+
+1. `A_trans = PASS`.
+2. `NSS_TO_FS` preserves the preregistered FS007 repair-quality / held-out-reuse obligations relative to the matched FS-only reference within the frozen equivalence criterion.
+3. `NSS_TO_FS` reduces preregistered total search/resource cost relative to `FS_ONLY`, after charging NSS + translation overhead.
+4. Correct gating matters: the primary arm must outperform `SHUFFLED_NSS_TO_FS` on the preregistered quality/cost allocation criterion, or the shuffled arm must exhibit the predicted misallocation signature.
+5. No authority leakage occurs: NSS output never directly determines FS persistence/admission.
+6. No forbidden adapter leakage occurs.
+
+If quality is preserved but total cost is not reduced, the predicted efficiency gain fails.
+
+Do not convert that into a positive result merely because the coupling executes.
+
+If coupling executes but violates `Psi != U`, the corridor prediction fails even if task performance improves.
+
+---
+
+# 12. Outcome and boundary scoring
+
+Use this hierarchy only after `A_trans = PASS`:
+
+```text
+L0  geometry forecast contradicted
+L1  coarse outcome correct, typed locus/division-of-labor forecast wrong
+L2  prospective corridor and typed boundary forecast correct
+L3  L2 + the specific correct forecast required information from G^-_obs that X_local alone did not license
+```
+
+## L3 discipline
+
+L3 is the scientific target.
+
+Do not award L3 merely because `f_L = UNRESOLVED`.
+
+To award L3, the final audit must identify:
+
+1. the exact element(s) of `G^-_obs` used by `f_G`;
+2. the exact specific forecast those elements licensed;
+3. why that information was excluded from `X_local` by the preregistered information firewall;
+4. that the forecast was prospectively correct;
+5. that the local-only evidence did not independently license the same specific forecast.
+
+If this provenance cannot be demonstrated, cap the result at L2 even if the corridor succeeds.
+
+---
+
+# 13. Failure localization
+
+If CGP execution fails, localize the first supported failure to the frozen vocabulary:
+
+```text
+B1  INTERFACE_OR_SIGNATURE_MISMATCH
+B2  DEPENDENCY_MISMATCH
+B3  EVIDENCE_OR_AUTHORITY_MISMATCH
+B4  COMPLEMENTARY_STAGE_MISMATCH
+B5  LOCAL_INVARIANT_VIOLATION
+BU  UNCLASSIFIED
+```
+
+Do not force a failure into B1-B5.
+
+If the observed locus is not prospectively represented, record:
+
+`BU = UNCLASSIFIED`.
+
+A novel failure may motivate CGP-002 later, but it may not modify CGP-001's frozen geometry after the fact.
+
+---
+
+# 14. Terminal logic
+
+Use exactly:
+
+\[
+A_{\mathrm{trans}}=0
+\Rightarrow
+\boxed{\texttt{NOT EVALUABLE}}
+\]
+
+\[
+A_{\mathrm{trans}}=1
+\land
+L3<1
+\Rightarrow
+\boxed{H_{\mathrm{CG}}\text{ unsupported on CGP-001}}
+\]
+
+\[
+A_{\mathrm{trans}}=1
+\land
+L3=1
+\Rightarrow
+\boxed{\text{prospective evidence for predictive constraint geometry on CGP-001}}
+\]
+
+Do not promote a positive result beyond:
+
+> The frozen morphology contained prospective information about this new relation that was not licensed by the two mechanism-local records alone.
+
+Do not write:
+
+- `constraint geometry is true`;
+- `snowflake theory is true`;
+- `a universal growth law exists`;
+- `the corpus has a common architecture`;
+- `NSS and FS generally compose`;
+- `search allocation and repair authority are universally separable`;
+- `L5/L6 are solved`.
+
+---
+
+# 15. Required artifacts
+
+Before outcome-bearing execution:
+
+1. `CGP_001_PREREGISTRATION.md`
+2. implementation under a clearly isolated path such as `experiments/cgp_001/`
+3. frozen translation contract / fixtures
+4. frozen evaluation + cost-accounting contract
+
+Then:
+
+5. `CGP_001_TRANSLATION_AUDIT.md`
+
+Only if `A_trans = PASS`:
+
+6. execute the outcome-bearing experiment
+7. preserve raw result records / seeds / manifests
+8. create `CGP_001_RESULT.md`
+9. create `CGP_001_AUDIT.md` with L0-L3 scoring and the exact terminal conclusion
+
+Do not overwrite preregistered artifacts with result-bearing content.
+
+Preserve provenance between each stage.
+
+---
+
+# 16. No retrospective rescue
+
+After first outcome-bearing execution, do not:
+
+- change the adapter;
+- change the NSS gate;
+- change FS007;
+- change case composition;
+- change the shuffled control;
+- change cost accounting;
+- change success thresholds;
+- change the boundary vocabulary;
+- change `f_G`;
+- change `f_L`;
+- reinterpret an adapter failure as a geometry failure;
+- reinterpret a geometry failure as an adapter failure without preregistered evidence.
+
+Any scientifically meaningful repair becomes a new prospective object, e.g. `CGP-002`, with CGP-001 preserved unchanged.
+
+---
+
+# 17. What remains closed
+
+CGP-001 does not reopen the old distillation lane.
+
+Do not perform:
+
+- corpus minimization;
+- mechanism ranking;
+- common-core search;
+- global architecture induction;
+- substitution retesting;
+- retrospective L4 rewriting;
+- universal invariant claims;
+- generalized composition claims;
+- snowflake mathematics;
+- graph fitting across many unseen pairs;
+- statistical mutual-information estimation from this single assay.
+
+Those require new evidence after CGP-001.
+
+---
+
+# Positive result
+
+The strongest admissible positive statement is:
+
+> The previously frozen separation morphology correctly predicted that NSS-style search allocation could couple prospectively to FS007 repair search without transferring repair-adoption authority, and that specific prediction was not licensed by the two mechanism-local evidence records alone.
+
+This is local prospective evidence for predictive constraint geometry.
+
+Nothing universal follows.
+
+---
+
+# Null / negative results
+
+All of the following are valid scientific outcomes:
+
+### Translation null
+
+> The intended cross-repository transformation could not be faithfully instantiated without changing the parent mechanism or leaking forbidden information.
+
+Status:
+
+`NOT EVALUABLE`.
+
+### Geometry null
+
+> The translation was valid, but the frozen morphology did not correctly predict the new corridor.
+
+Status:
+
+`H_CG unsupported on CGP-001`.
+
+### Descriptive-only morphology
+
+> The corridor may have executed, but the global geometry did not add a specific correct forecast beyond what mechanism-local evidence licensed.
+
+Status:
+
+No L3 evidence.
+
+These are results, not reasons to redesign CGP-001 after execution.
+
+---
+
+# Governing sequence
+
+\[
+\boxed{
+\text{freeze morphology}
+\rightarrow
+\text{freeze local evidence}
+\rightarrow
+\text{freeze translation}
+\rightarrow
+\text{freeze forecasts}
+\rightarrow
+\text{freeze score}
+\rightarrow
+\text{translation audit}
+\rightarrow
+\text{execute}
+\rightarrow
+\text{score}
+\rightarrow
+\textbf{STOP}
+}
+\]
+
 ## Final rule
 
-**Test indispensability locally. Infer nothing universally.**
+**The snowflake must predict a corridor before it is allowed to become a theory.**
