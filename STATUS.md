@@ -55,9 +55,7 @@ full_RIL_coverage              1.0
 family status                  FAMILY_WIDE_LEVERAGE
 ```
 
-Earned claim: bounded family-wide transfer of the unchanged AST→SEM8 representation pair across the exact prospectively frozen 24-member family.
-
-This is not provenance-separated generalization.
+Earned claim: bounded family-wide transfer of the unchanged AST→SEM8 representation pair across the exact prospectively frozen 24-member family. This is not provenance-separated generalization.
 
 ## RIL-003 — IMPLEMENTATION FROZEN / PRE-REVEAL AUDIT PASS / TARGETS UNREVEALED
 
@@ -68,15 +66,6 @@ preregistration freeze   c5acae018aec09afc9ceece152bb9cdc7a39e112
 implementation freeze    f54d9e1a4d8ef35404824d2172ace173af387a96
 pre-reveal audit         013435145d7d93985cd056926cfad710dd63e662
 entropy target time      2026-08-26T12:00:00.000Z
-```
-
-Frozen scientific artifacts now include:
-
-```text
-RIL_003_PREREGISTRATION.md
-RIL_003_GENERATOR_CONTRACT.json
-experiments/ril_003/* at implementation freeze f54d9e1a...
-RIL_003_PRE_REVEAL_AUDIT.md
 ```
 
 Current state:
@@ -98,9 +87,7 @@ scientific verdict        NONE
 RIL-4                     NOT OPENED
 ```
 
-### Q_test
-
-Held-out targets are deterministic Boolean functions `{0,1}^3 -> {0,1}` over the canonical eight-pattern order. Eligibility requires all three variables to be essential and excludes exactly the 25 RIL-001/RIL-002 targets. Eligibility does **not** use M0/M1 membership, canonical program size, prior leverage, or predicted AST/SEM8 cost.
+Eligible targets remain all-essential 3-input Boolean functions excluding exactly the 25 RIL-001/RIL-002 targets:
 
 ```text
 all-three-essential functions  218
@@ -109,144 +96,156 @@ eligible universe               193
 future sample size              24
 ```
 
-### Pre-reveal apparatus firewall
+Before the frozen entropy boundary, no target-specific RIL-003 operation is authorized.
 
-The frozen apparatus:
+## Main-line RG-001 — CLOSED AT REALIZER ADMISSION / FUNCTION EQUIVALENCE NOT CONSTITUTED
 
-```text
-inherits exact frozen RIL-001 AST/SEM8 code blobs
-contains no Beacon network-fetch client
-requires an externally captured Beacon pulse package
-hard-rejects target reveal before 2026-08-26T12:00:00.000Z
-recomputes any later target manifest from the recorded 64-byte outputValue
-contains no target manifest or RIL-003 result artifact
-```
+RG-001 is a parallel `F_LCC` stream and does not modify or consume RIL-003.
 
-The pre-reveal tests passed without instantiating a 24-target family.
-
-### Claim ceiling
-
-The maximum possible RIL-003 positive claim remains:
+### Frozen semantic boundary
 
 ```text
-PROVENANCE_SEPARATED_REPRESENTATION_INDUCED_TRANSFER
+F_LCC semantic constitution       FROZEN
+case family                       FROZEN: 8 cases
+expected semantic labels          NOT HAND-AUTHORED
+reference evaluator               IMPLEMENTED
+matched C04/C05 death test        PASS
+permutation checks                256 / 256 PASS
+reference unit tests              6 / 6 PASS
 ```
 
-It cannot by itself establish representation-induced generality.
+The decisive frozen matched pair is:
 
-## RG-001 — F_LCC + CASE FAMILY FROZEN / REFERENCE AUDIT PASS / NOT PREREGISTERED
+\[
+C04:\mathcal Q(H)=\{\{G,w_a\}\}
+\qquad\text{vs}\qquad
+C05:\mathcal Q(H)=\{\{G\},\{w_a\}\}.
+\]
 
-RG-001 is a new parallel experimental lane. It does not reopen the closed Corpus Distillation or CGP lanes and does not modify or wait on RIL-003.
+After withdrawal of `G`'s warrant, `H` contracts in C04 and survives in C05. Pairwise incidence alone aliases the pair.
 
-Frozen semantic object:
+### Admission anchors
 
 ```text
-F_LCC = localized corrective contraction
-LCC-1 implicated contraction
-LCC-2 dependency-selective contraction
-LCC-3 independent preservation
-LCC-4 refutation cannot authorize replacement
-LCC-5 independent successor evidence can re-enter
+realizer-admission contract freeze  426062c5baa32ea192b99b9a1c8de574eff6eb1e
+realizer-admission result freeze    049a2e088c4ab55bf42668607e84f13235e15e18
 ```
 
-Support semantics are externally constituted as finite acyclic sufficient-support sets. Structural dependency is not identified with effective contraction.
-
-Frozen case-family state:
+Frozen candidate surfaces:
 
 ```text
-semantic constitution       FROZEN
-case family                 FROZEN: 8 cases
-expected semantic labels    NOT HAND-AUTHORED
-reference evaluator         IMPLEMENTED
-matched C04/C05 death test  PASS
-permutation checks          256 / 256 PASS
-reference unit tests        6 / 6 PASS at authoring-time audit
-candidate realizers         NOT YET ADAPTED
-RG-001 preregistration      NOT YET FROZEN
-A_trans^RG                  NOT RUN
-V_F                         NOT MEASURED
-C_F                         NOT MEASURED
-B_F                         NOT MEASURED
-A_F                         NA for RG-001
+SSI-CALC v0.1
+  repo/commit  bjoern-janson/ssi@362594d4337a1c72556b501b6477ff624db919e1
+  checker blob 293d373d13bd68b40ed2e5b0f8754146638981d6
+
+OpenCore Nano V0
+  repo/commit  bjoern-janson/opencore@d85aac9fa35ea4ba21afebc73b9cb8970c2a1dbf
+  nano.py blob d31dacaf893a58a8280c01704fe666a404c1f56c
 ```
 
-The matched C04/C05 pair has identical flattened pairwise support incidence but different sufficient-support grouping and therefore different post-challenge semantics. An adapter that collapses support-set grouping is inadmissible by construction.
+The admission contract forbids reference-oracle access, adapter-side closure, route rescue, successor authorization, case-specific expected behavior, coordinate measurement, and native-kernel extension.
 
-Current RG-001 ceiling:
+### Admission result
+
+Both candidates reach the same shallow failure locus for different native reasons:
 
 ```text
-F_LCC constituted           YES
-external challenge geometry YES
-cross-realizer equivalence  NOT ESTABLISHED
-realization geometry theory NOT ESTABLISHED
+SSI-CALC v0.1
+  A_trans^RG                 FAIL
+  first failed gate          A6_NATIVE_DEPENDENCY_CONSEQUENCE
+  specific witness           A8_ALTERNATIVE_ROUTE_NON_ALIASING
+  semantic-repair gate       A14_NO_SEMANTIC_INVENTION FAIL
+  terminal                   FUNCTION_EQUIVALENCE_NOT_CONSTITUTED
+
+OpenCore Nano V0
+  A_trans^RG                 FAIL
+  first failed gate          A6_NATIVE_DEPENDENCY_CONSEQUENCE
+  specific witness           A8_ALTERNATIVE_ROUTE_NON_ALIASING
+  semantic-repair gate       A14_NO_SEMANTIC_INVENTION FAIL
+  terminal                   FUNCTION_EQUIVALENCE_NOT_CONSTITUTED
 ```
+
+SSI-CALC is a one-request/one-certificate authority-transfer adjudicator; recovering C05 standing validity from multiple support-route certificates would require decoder-side OR/closure or a new rule. Nano natively supports conjunctive precondition ancestry, but one current standing has one current producing receipt; it has no native multi-provenance/OR-of-receipts standing semantics or automatic alternative-route failover.
+
+Therefore:
+
+\[
+\boxed{
+A_{trans}^{RG}(SSI\!\mbox{-}CALC)=FAIL,
+\qquad
+A_{trans}^{RG}(Nano)=FAIL.
+}
+\]
+
+and the preregistration gate is not met:
+
+```text
+RG-001 preregistration      NOT OPENED
+V_F                         NOT RUN
+C_F                         NOT RUN
+B_F                         NOT RUN
+A_F                         NA
+adapter repair in RG-001    FORBIDDEN
+```
+
+This is a translation/admission null. It is not a negative `V_F` result, not a claim that either system generally lacks corrective capability, and not evidence for a common core or realization-geometry theory.
+
+Any future assay that changes the native surfaces, adds a closure layer, weakens `F_LCC`, or changes the adapter ceiling requires a new assay identifier.
 
 ## Archived parity RG calibration — TERMINAL / DISAMBIGUATED
 
 A separate branch, `rg-001-realization-geometry`, independently used `RG-001`/`RG-002` for a 12-bit parity calibration. Its frozen artifacts are preserved byte-for-byte under `archive/rg_parity_calibration/`; see `RG_NAMESPACE_NOTE.md`.
 
-Original branch terminal states:
-
 ```text
-RG-001  CLOSED / NOT_EVALUABLE
-RG-002  CLOSED / COST_ROBUSTNESS_TRADEOFF
+parity RG-001  CLOSED / NOT_EVALUABLE
+parity RG-002  CLOSED / COST_ROBUSTNESS_TRADEOFF
+V0=V1          1
+C0             634886
+C1             104141
+Lambda_C       6.0964077548708
+B0             512 / 512
+B1             448 / 512
+B1 subset B0   proper
 ```
 
-Bounded repaired-assay result:
-
-```text
-V0                              1
-V1                              1
-C0 total opcodes                634886
-C1 total opcodes                104141
-Lambda_C                        6.0964077548708
-B0 preserved faults             512 / 512
-B1 preserved faults             448 / 512
-B1 proper subset B0             PASS
-```
-
-Thus, for that exact calibration assay only:
+For that exact calibration only:
 
 \[
 C\downarrow\;\not\Rightarrow\;B\uparrow.
 \]
 
-The first branch-local assay was a measurement null, not a scientific negative. The repaired assay was not an independent replication. The result does not establish universal realization geometry, environmental autonomy, natural evolutionary tradeoffs, or any RIL-003 claim.
+It remains calibration evidence only and does not modify main-line RG-001 or RIL-003.
 
 ## Next legal scientific actions
 
-The lanes proceed independently.
-
 ### RIL-003
 
-Before the frozen entropy boundary, no target-specific operation is authorized.
-
-After the first admissible NIST Beacon 2.0 pulse at or after the frozen timestamp is captured, the exact next sequence is:
+After the first admissible NIST Beacon 2.0 pulse at or after the frozen timestamp is captured:
 
 ```text
-validate pulse package
+capture/freeze raw pulse custody artifact
+-> validate pulse package
 -> materialize Q_test exactly once
 -> commit RIL_003_TARGET_MANIFEST.json
 -> audit target manifest / entropy provenance
 -> only then run member preservation
--> interpret cost only for preservation-valid members
 ```
 
-No apparatus change, representation adaptation, target redraw, or pre-manifest execution is permitted under RIL-003.
+No apparatus change, representation adaptation, target redraw, or pre-manifest execution is permitted.
 
-### Main-line RG-001
+### Main-line RG
 
-The next legal scientific object is realizer admission and adapter constitution under the already frozen function and case family.
+RG-001 v0.1 is terminal at admission. Do not repair it in place and do not open its preregistration retroactively.
 
 ```text
-admit candidate realizers
--> freeze realizer-specific adapters
--> audit adapter information noninterference
--> run A_trans^RG
--> only if both pass, test V_F
--> only if common validity is established, measure C_F
--> derive B_F only from the frozen RG001 challenge family
--> STOP
+F_LCC                        FROZEN
+CASE FAMILY                  FROZEN
+REFERENCE ORACLE             PASS / FROZEN
+REALIZER ADMISSION CONTRACT  FROZEN
+A_trans^RG SSI-CALC          FAIL
+A_trans^RG Nano              FAIL
+RG-001 PREREGISTRATION       NEVER OPENED
+RG-002 main-line             NOT OPENED
 ```
 
-No RG case, support relation, or semantic obligation may be changed to accommodate a realizer under RG-001 v0.1. The archived parity calibration does not modify this sequence.
+A new main-line RG assay may be opened only by an explicit future decision with a new identifier and a frozen statement of what changes.
