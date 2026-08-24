@@ -213,7 +213,7 @@ def candidate(r,role,idx,cand):
     for j in J:
         for _ in range(100):
             u=r.choice(non);v=r.below(n)
-            if u==v or Edge(u,v) in E:continue
+            if u==v or any(z.u==u and z.v==v for z in E):continue
             e=Edge(u,v,j,bit(base,j));E.add(e);gates.append(e);break
         else:raise RuntimeError('gate placement failed')
     g=gates[0];sp=r.choice([v for v in range(n) if v not in (g.u,g.v)]);A,B=trapstates(k,n,0,2,g.u,g.v,sp)
@@ -221,6 +221,7 @@ def candidate(r,role,idx,cand):
     return Inst(role,idx,cand,n,k,ids,tuple(desc),J,tuple(sorted(E)),initial,goals,T,lh)
 
 def valid(I):
+    if len({(e.u,e.v) for e in I.edges}) != len(I.edges):return False
     if proj(I.desc[0],I.J)!=proj(I.desc[1],I.J) or I.desc[0]==I.desc[1]:return False
     for j in range(P):
         if j not in I.J and bit(I.desc[0],j)==bit(I.desc[1],j):return False
@@ -267,6 +268,7 @@ def derive(randomness,prereg,tag):
 def selftest():
     seed=sha256(b'RD001 NONSCIENTIFIC SELFTEST').digest();S=suite(seed,'DEV',5);assert len({x.layout_hash for x in S})==5
     for I in S:
+        assert len({(e.u,e.v) for e in I.edges})==len(I.edges)
         assert proj(I.desc[0],I.J)==proj(I.desc[1],I.J);assert trap_ok(I,RStar());assert bfs(I,R0()).verified;assert bfs(I,RStar()).verified;assert structural(I)[1]<structural(I)[0]
     A=calibrate(S);B=calibrate(suite(seed,'DEV',5));assert A==B
     assert derive('11'*32,'22'*20,'RD001/CAL')==sha256(bytes.fromhex('11'*32)+bytes.fromhex('22'*20)+b'RD001/CAL').digest()
