@@ -4,262 +4,340 @@
 
 This repository is for **Corrigibility Distillation**.
 
-Phase 1 is complete.
+Phase 1 inventory is complete.
 
-Phase 2 is **comparison only** over the fixed 14-row Phase-1 inventory.
+Phase 2 substitutability analysis is complete.
 
-The active question is:
+Current status:
 
-> Which existing things can actually replace other existing things?
+\[
+\text{L2: shared functions/invariants}\quad\checkmark
+\]
 
-Do not design a final system.
+\[
+\text{L3: substitutability}\quad 0/182
+\]
 
-## Phase 2 input
+\[
+\text{L4: interface compatibility}\quad\textbf{ACTIVE}
+\]
 
-Use only the completed Phase-1 inventory:
+\[
+\text{L5: composition}\quad\textbf{CLOSED}
+\]
 
-| Repo | Mechanisms | Functions | Invariants | Claim Ceiling | Dependency Limit |
-|---|---|---|---|---|---|
+\[
+\text{L6: cumulative gain}\quad\textbf{CLOSED}
+\]
 
-Treat those 14 rows as the complete and immutable Phase-2 evidence base.
+L4 is a **pure interface audit**.
 
-Do not add new mechanisms, functions, invariants, claims, dependencies, repositories, or theoretical objects during comparison.
+The only active question is:
 
-Do **not** reread source repositories to add, correct, strengthen, or reinterpret Phase-1 entries. If an inventory row appears incomplete or ambiguous, record the limitation rather than repairing it from source material during Phase 2.
+> Does an output already produced by one existing mechanism already satisfy an input required by another existing mechanism?
 
-Source repositories may be consulted only to verify an existing citation or reference. They do not become a new Phase-2 evidence stream.
+Do not design a common interface.
 
-## Phase 2 deliverable
+## Frozen evidence base
+
+Use only the completed Phase-1 inventory and completed Phase-2 comparison as the evidence base.
+
+Treat Phase-1 and Phase-2 records as authoritative only for the facts they explicitly contain. Do not infer an output/input role from a descriptive phrase unless that role is explicitly present in the frozen record.
+
+Do not reread source repositories to:
+
+- add evidence
+- repair inventory rows
+- strengthen claims
+- reinterpret mechanisms
+- infer new interfaces
+- introduce missing semantics
+
+If the frozen evidence base is insufficient, record the limitation.
+
+Do not repair it during L4.
+
+## L4 deliverable
 
 Use:
 
-| Repo A | Repo B | Mechanism overlap | Function overlap | Invariant overlap | Claim/dependency conflict | Substitutability |
-|---|---|---|---|---|---|---|
+| Mechanism A | Output type/function | Mechanism B | Required input/function | Existing interface evidence | Compatible? |
+|---|---|---|---|---|---|
 
-`Substitutability` must be one of:
+`Compatible?` must be one of:
 
 - `YES`
 - `NO`
 - `PARTIAL`
 
+## Interface relation
+
+Treat interface compatibility as directional.
+
+\[
+M_A\leadsto M_B
+\]
+
+means an output already produced by \(M_A\) is already admissible as an input required by \(M_B\).
+
+Formally, compatibility requires an already-supported mapping:
+
+\[
+\phi_{AB}:Y_A\rightarrow X_B.
+\]
+
+The mapping must already be supported by the frozen corpus.
+
+Do not invent it.
+
 ## Hard boundary
 
-Phase 2 may relate existing inventory entries.
+L4 may discover existing interface edges.
 
-It may not create new corpus elements.
+It may not create them.
 
 Do not introduce:
 
-- candidate architectures
-- distilled substrates
-- missing components
+- adapters
+- translation layers
+- bridge mechanisms
+- common schemas
+- shared buses
+- common handles
+- new semantic mappings
+- new authority mappings
+- new operation signatures
+- hidden state
 - new mechanisms
 - new functions
 - new invariants
-- new operation signatures
-- new theories
-- optimization targets
-- proposed final systems
+- proposed architectures
 
-Do not reinterpret comparison as synthesis.
+If compatibility would require any such construction, record:
 
-## Comparison rules
+> Interface gap: no existing supported mapping.
+
+That is `NO`, not a design task.
+
+## Compatibility criteria
+
+Mark `YES` only when the frozen evidence already establishes that:
+
+1. \(M_A\) produces the relevant output;
+2. \(M_B\) requires or accepts the relevant input;
+3. the output and input have matching meaning, not merely matching representation;
+4. any required authority or admissibility conditions are already satisfied;
+5. no new adapter, oracle, interpretation, state, or transformation is required.
+
+The compatibility must be evidenced as an actual relation in the frozen record, not merely reconstructed by interpreting two descriptions as semantically equivalent.
+
+Otherwise mark `NO` or `PARTIAL`.
+
+## PARTIAL
+
+`PARTIAL` means:
+
+> A specific, explicitly identified, bounded output/input relation is already supported, while broader mechanism-to-mechanism compatibility is not demonstrated.
+
+Always state the exact bounded relation.
+
+Do not use `PARTIAL` for:
+
+- thematic similarity
+- adjacent stages
+- shared vocabulary
+- plausible future integration
+- same datatype
+- inferred compatibility
+
+## Anti-collapse rules
 
 Preserve:
 
 \[
-\text{mechanism overlap}
+\text{datatype match}
 \neq
-\text{mechanism equivalence}
+\text{semantic match}
 \]
 
 \[
-\text{function overlap}
+\text{semantic compatibility}
 \neq
-\text{substitutability}
+\text{authority compatibility}
 \]
 
 \[
-\text{invariant overlap}
+M_A\leadsto M_B
 \neq
-\text{shared mechanism}
+M_B\leadsto M_A
 \]
 
 \[
-\text{shared vocabulary}
+M_A\leadsto M_B
 \neq
-\text{shared evidence}
+M_B\circ M_A
 \]
 
-Similarity of language is not evidence of substitutability.
-
-## Substitutability rule
-
-Treat substitutability as **directional**.
+\[
+\text{pairwise compatible edges}
+\neq
+\text{common interface}
+\]
 
 \[
-R_A \rightsquigarrow R_B
+\text{adjacent functions}
+\neq
+\text{demonstrated interface}
+\]
+
+Do not collapse these distinctions.
+
+## No composition
+
+L4 does not test whether compatible mechanisms work correctly when composed.
+
+A demonstrated interface edge establishes only:
+
+\[
+M_A\leadsto M_B.
+\]
+
+It does not establish:
+
+\[
+M_B\circ M_A.
+\]
+
+Do not:
+
+- execute compositions
+- infer path behavior
+- infer end-to-end correction
+- infer invariant preservation across a chain
+- infer cumulative performance gain
+
+Those belong to later phases.
+
+## No common handle
+
+Multiple interface edges do not establish a universal interface.
+
+For example:
+
+\[
+M_1\leadsto M_2
+\]
+
+and:
+
+\[
+M_3\leadsto M_4
+\]
+
+do not imply the existence of a shared interface \(\mathcal I\).
+
+Do not synthesize a common socket, handle, protocol, schema, or substrate from pairwise similarities.
+
+L4 discovers sockets that already exist.
+
+It does not design the handle.
+
+## Evidence discipline
+
+Preserve all existing claim ceilings and dependency limits.
+
+Do not transfer evidence between repositories.
+
+Do not promote:
+
+- proposed to implemented
+- implemented to demonstrated
+- formal to empirical
+- local compatibility to general compatibility
+- interface compatibility to composition
+
+A missing mapping is evidence of an interface gap under the frozen corpus, not evidence that no mapping could ever exist.
+
+## Directionality
+
+Check directions independently.
+
+\[
+M_A\leadsto M_B
 \]
 
 does not imply:
 
 \[
-R_B \rightsquigarrow R_A.
+M_B\leadsto M_A.
 \]
-
-If the two directions differ, record them separately.
-
-A substitution may be marked `YES` only when the relevant demonstrated functions and invariants of the replaced item survive under the replacement without requiring a stronger unavailable dependency or exceeding the replacement's earned claim ceiling.
-
-`PARTIAL` means a specific, explicitly identified function, invariant, or scope is substitutable, while the repository or mechanism as a whole is not shown substitutable.
-
-Otherwise mark it `NO`.
-
-Do not infer repository-level substitution from a local substitution.
-
-## Typed substitution
-
-Every substitution judgment is implicitly relative to:
-
-\[
-(F_R,I_R,\Omega,D)
-\]
-
-where applicable.
-
-Do not generalize a substitution beyond the exact function, invariant, operation family, scope, and dependency conditions supported by the inventory.
 
 Do not infer transitivity.
 
 \[
-R_A\rightsquigarrow R_B
+M_A\leadsto M_B
 \quad\land\quad
-R_B\rightsquigarrow R_C
+M_B\leadsto M_C
 \]
 
 does not establish:
 
 \[
-R_A\rightsquigarrow R_C.
+M_A\leadsto M_C.
 \]
 
-Check each relation directly.
-
-## Claim and dependency discipline
-
-A replacement is not valid merely because it appears more capable.
-
-Check both:
-
-**Claim Ceiling**  
-Does the replacement's earned evidence justify the exact function or invariant being substituted?
-
-For a valid directional substitution:
-
-\[
-R_A\rightsquigarrow R_B
-\Rightarrow
-C_B \succeq C_A
-\]
-
-only for the substituted claim and under the same stated conditions.
-
-The replacement does **not** need a globally stronger evidence record. It needs an earned claim ceiling sufficient for the exact thing being replaced.
-
-**Dependency Limit**  
-Does the replacement require assumptions, oracles, interfaces, fixed families, budgets, horizons, supplied structures, or other conditions that make the proposed substitution invalid?
-
-Do not silently strengthen either repository's claim.
-
-Do not erase dependency differences to manufacture equivalence.
-
-## Evidence discipline
-
-Preserve the Phase-1 distinctions between:
-
-- proposed vs implemented
-- implemented vs demonstrated
-- formal vs empirical
-- positive vs negative/null evidence
-- apparatus result vs scientific result
-- inherited distinction vs independently earned result
-
-A proposed mechanism cannot substitute for an empirically demonstrated mechanism merely because their descriptions align.
-
-A formal result cannot automatically substitute for an empirical mechanism.
-
-A negative result cannot be converted into a positive capability claim.
-
-## Overlap discipline
-
-Record overlap only when the Phase-1 inventory actually supports it.
-
-Prefer narrow descriptions.
-
-For example:
-
-> both perform bounded candidate filtering
-
-is preferable to:
-
-> both implement corrective search
-
-unless the broader relation is explicitly earned.
-
-Do not normalize terminology merely to increase apparent overlap.
-
-## Redundancy boundary
-
-Do not call anything redundant merely because overlap exists.
-
-Redundancy is not earned until substitutability is demonstrated.
-
-\[
-\text{overlap}
-\not\Rightarrow
-\text{redundancy}.
-\]
-
-A `NO` result is fully admissible.
-
-A corpus with recurring functions or invariants but no valid substitutions is a valid Phase-2 outcome.
-
-## Minimization remains closed
-
-Do not:
-
-- minimize the corpus
-- choose preferred mechanisms
-- remove repositories
-- propose a minimal faithful realization
-- optimize complexity
-- design the student
-- infer the final corrigibility substrate
-
-Those operations occur only after Phase 2 is complete and redundancy has been earned.
-
-## Phase 2 sequence
-
-\[
-\text{existing inventory}
-\rightarrow
-\text{overlap}
-\rightarrow
-\text{substitutability}
-\rightarrow
-\text{earned redundancy}
-\]
-
-Do not reverse this order.
+Each edge must be directly supported.
 
 ## Null result
 
-The following is a valid Phase-2 conclusion:
+The following is a valid L4 result:
 
-> Shared functions and recurring invariants were observed, but no meaningful mechanism-level substitutability was demonstrated.
+> Shared functions and invariants exist, but no existing mechanism output is demonstrated to satisfy another mechanism's required input.
 
-Do not force substitutions merely to make later distillation possible.
+If so:
+
+\[
+\boxed{
+\text{L4 compatible edges}=0
+}
+\]
+
+and L5 remains closed.
+
+Do not manufacture compatibility to preserve the modular-tool hypothesis.
+
+## Positive result
+
+If one or more compatible edges are demonstrated, record only those exact edges.
+
+A positive L4 result earns the statement:
+
+> The frozen corpus contains specific complementary mechanisms with demonstrated interface compatibility.
+
+It does not earn:
+
+- a common architecture
+- a universal interface
+- valid composition
+- cumulative gain
+- minimization
+
+## Governing sequence
+
+\[
+\text{existing frozen corpus}
+\rightarrow
+\text{output/input audit}
+\rightarrow
+\text{existing interface evidence}
+\rightarrow
+\text{compatibility judgment}
+\rightarrow
+\boxed{\text{STOP}}
+\]
+
+Never reverse this order.
 
 ## Final rule
 
-**Compare what already exists. Replace only what the evidence permits. Minimize nothing yet.**
+**Audit the sockets. Do not invent the handle.**
