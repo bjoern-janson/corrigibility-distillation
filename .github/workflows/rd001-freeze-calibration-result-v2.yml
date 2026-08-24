@@ -1,0 +1,47 @@
+name: RD001 Freeze Calibration Result V2
+
+on:
+  push:
+    paths:
+      - '.github/workflows/rd001-freeze-calibration-result-v2.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  freeze-result:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Reproduce and commit complete frozen calibration result
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git clone "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" repo
+          cd repo
+          SOURCE='experiments/rd_001/rd001.py'
+          MANIFEST='RD001_CALIBRATION_MANIFEST_V2.json'
+          EXPECTED_SOURCE_SHA='08cc82e528b400617c72e768811748b936315e3195c0658e374d3262799c95e2'
+          EXPECTED_MANIFEST_SHA='01f0211272291ad9c553a5cd7ff31128f981cd0e5892a97dc18484549b562d86'
+          EXPECTED_RESULT_SHA='fb8b76a4a8519b6dd4f73020586a9d58ccfd7b41986409bd24f6f98e038dd2e4'
+          test "$(sha256sum "$SOURCE" | awk '{print $1}')" = "$EXPECTED_SOURCE_SHA"
+          test "$(sha256sum "$MANIFEST" | awk '{print $1}')" = "$EXPECTED_MANIFEST_SHA"
+          python "$SOURCE" calibrate --manifest "$MANIFEST" --out RD001_CALIBRATION_RESULT_V2.json
+          ACTUAL_RESULT_SHA="$(sha256sum RD001_CALIBRATION_RESULT_V2.json | awk '{print $1}')"
+          test "$ACTUAL_RESULT_SHA" = "$EXPECTED_RESULT_SHA"
+          python - <<'PY'
+          import json
+          d=json.load(open('RD001_CALIBRATION_RESULT_V2.json'))
+          assert d['experiment']=='RD-001'
+          assert d['phase']=='PRE_LEARNER_AVAILABLE_LEVERAGE_CALIBRATION'
+          assert d['count']==24
+          assert len(d['rows'])==24
+          print('RD001_RESULT_ROWS=24')
+          print('RD001_RESULT_SHA256=fb8b76a4a8519b6dd4f73020586a9d58ccfd7b41986409bd24f6f98e038dd2e4')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add RD001_CALIBRATION_RESULT_V2.json
+          git commit -m 'Freeze RD-001 v2 calibration raw result'
+          git push origin HEAD:main
