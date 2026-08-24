@@ -1,0 +1,80 @@
+{
+  "object": "RG001_REALIZER_ADMISSION_CONTRACT_V0.1",
+  "status": "FROZEN_ADMISSION_CONTRACT_ADAPTERS_NOT_YET_CONSTITUTED",
+  "semantic_parent": {
+    "file": "RG001_F_LCC_SEMANTIC_CONSTITUTION.md",
+    "blob": "cf0b85057ab8d5e839c09d5673bdfeb929d9c645"
+  },
+  "case_family": {
+    "file": "RG001_CASE_FAMILY.json",
+    "blob": "5299a5c283a4555bab29ed7d3bc6f104080df600",
+    "case_count": 8,
+    "matched_pair": {
+      "C04": "Q(H)={{G,w_a}}",
+      "C05": "Q(H)={{G},{w_a}}"
+    }
+  },
+  "reference_oracle": {
+    "file": "experiments/rg_001/reference_evaluator.py",
+    "blob": "673b37f8280dbe944a094e1b13597fbfa64d7b72",
+    "tests_blob": "28c16ac48cb1a7a9856bf2714be60406a951ed8e",
+    "admission_access": "FORBIDDEN"
+  },
+  "candidates": {
+    "SSI_CALC_V0_1": {
+      "repository": "bjoern-janson/ssi",
+      "commit": "362594d4337a1c72556b501b6477ff624db919e1",
+      "spec_path": "research/ssi_calc/v0_1/SPEC.md",
+      "spec_blob": "ac443b2f616817977613bd32e1ba8fe5db7b3194",
+      "native_path": "research/ssi_calc/v0_1/checker.py",
+      "native_blob": "293d373d13bd68b40ed2e5b0f8754146638981d6"
+    },
+    "OPENCORE_NANO_V0": {
+      "repository": "bjoern-janson/opencore",
+      "commit": "d85aac9fa35ea4ba21afebc73b9cb8970c2a1dbf",
+      "spec_path": "crank/NANO_V0.md",
+      "spec_blob": "3a6becedc054ce474f1baee80510aa08ef9dac20",
+      "native_path": "crank/nano.py",
+      "native_blob": "d31dacaf893a58a8280c01704fe666a404c1f56c"
+    }
+  },
+  "gates": [
+    "A1_SOURCE_IDENTITY",
+    "A2_TOTAL_TYPED_TRANSPORT",
+    "A3_NO_SEMANTIC_MUTATION",
+    "A4_HYPEREDGE_PRESERVATION",
+    "A5_CHALLENGE_LOCALITY",
+    "A6_NATIVE_DEPENDENCY_CONSEQUENCE",
+    "A7_INDEPENDENT_PRESERVATION",
+    "A8_ALTERNATIVE_ROUTE_NON_ALIASING",
+    "A9_REPLACEMENT_FIREWALL",
+    "A10_DECODER_PURITY",
+    "A11_ORACLE_NONINTERFERENCE",
+    "A12_OPAQUE_LABEL_EQUIVARIANCE",
+    "A13_NO_COORDINATE_MEASUREMENT",
+    "A14_NO_SEMANTIC_INVENTION"
+  ],
+  "failure_terminal": "FUNCTION_EQUIVALENCE_NOT_CONSTITUTED",
+  "preregistration_gate": "BOTH_CANDIDATES_A_TRANS_PASS",
+  "later_sequence_if_gate_passes": [
+    "A_TRANS",
+    "V_F",
+    "C_F",
+    "B_F",
+    "STOP"
+  ],
+  "A_F": "NA",
+  "forbidden_at_admission": [
+    "reference_oracle_access",
+    "expected_output_lookup",
+    "adapter_side_closure",
+    "adapter_side_descendant_computation",
+    "adapter_side_route_rescue",
+    "adapter_side_successor_authorization",
+    "case_specific_expected_behavior",
+    "cost_measurement",
+    "robustness_measurement",
+    "cross_realizer_comparison",
+    "native_kernel_extension"
+  ]
+}
