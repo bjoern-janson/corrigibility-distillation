@@ -1,0 +1,20 @@
+{
+  "assay": "RIL-001",
+  "preregistration_commit": "204fe919159145ac9c29f1becfb92b0c511af02b",
+  "parent": {
+    "repository": "bjoern-janson/future-sufficiency",
+    "commit": "2f4ca824e02b89df0c23d64de312c4f93a4c8a41",
+    "source_path": "experiments/meta_language_repair.py",
+    "source_git_blob": "f74d85f5f9d0c7842dc50e34ae2718699108fff6",
+    "method_git_blob": "9ac2883c797e99af27fd092b262f5cb6ce8ece70"
+  },
+  "representations": ["R0_AST", "R1_SEM8"],
+  "primary_cost": "CPython sys.monitoring INSTRUCTION events",
+  "memory_gate": "peak incremental tracemalloc bytes; R1 <= R0",
+  "wall_clock": {
+    "role": "confirmatory only",
+    "repetitions": 15,
+    "warmup": "none; every measured arm runs in a fresh process",
+    "order": "alternating by repetition: even R0_AST->R1_SEM8; odd R1_SEM8->R0_AST"
+  }
+}
