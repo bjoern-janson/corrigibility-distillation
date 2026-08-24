@@ -59,22 +59,27 @@ Earned claim: bounded family-wide transfer of the unchanged AST→SEM8 represent
 
 This is not provenance-separated generalization.
 
-## RIL-003 — PREREGISTERED / TARGETS UNREVEALED / NOT IMPLEMENTED
+## RIL-003 — IMPLEMENTATION FROZEN / PRE-REVEAL AUDIT PASS / TARGETS UNREVEALED
 
-Scientific freeze anchor:
+Scientific anchors:
 
 ```text
-c5acae018aec09afc9ceece152bb9cdc7a39e112
+preregistration freeze   c5acae018aec09afc9ceece152bb9cdc7a39e112
+implementation freeze    f54d9e1a4d8ef35404824d2172ace173af387a96
+pre-reveal audit         013435145d7d93985cd056926cfad710dd63e662
+entropy target time      2026-08-26T12:00:00.000Z
 ```
 
-Frozen artifacts:
+Frozen scientific artifacts now include:
 
 ```text
 RIL_003_PREREGISTRATION.md
 RIL_003_GENERATOR_CONTRACT.json
+experiments/ril_003/* at implementation freeze f54d9e1a...
+RIL_003_PRE_REVEAL_AUDIT.md
 ```
 
-Current frozen state:
+Current state:
 
 ```text
 Q_test                    FROZEN
@@ -82,10 +87,12 @@ I_shared whitelist        FROZEN
 forbidden target info     FROZEN
 R0/R1                     FROZEN: inherited R0_AST / R1_SEM8
 future entropy rule       FROZEN
+implementation            FROZEN
+pre-reveal audit          PASS
 held-out target instances DO NOT EXIST / NOT REVEALED
-implementation            DOES NOT EXIST
 target reveal manifest    DOES NOT EXIST
-execution                 NOT RUN
+member preservation       NOT RUN
+member opcode/memory      NOT RUN
 Lambda vector             DOES NOT EXIST
 scientific verdict        NONE
 RIL-4                     NOT OPENED
@@ -102,35 +109,44 @@ eligible universe               193
 future sample size              24
 ```
 
-The actual 24 targets remain unavailable until the preregistered future NIST Randomness Beacon pulse is available and the deterministic ranking rule is applied. The target-reveal manifest must be frozen before execution.
+### Pre-reveal apparatus firewall
 
-### Shared-information boundary
-
-Shared schema/type information is whitelisted so the test remains well-typed. Held-out target-specific identities, truth tables, labels, M0/M1 status, best programs, repair outcomes, costs, and derived features are forbidden from representation selection/construction.
-
-The exact representation-selection rule is constant and already frozen:
+The frozen apparatus:
 
 ```text
-R0 = R0_AST
-R1 = R1_SEM8
+inherits exact frozen RIL-001 AST/SEM8 code blobs
+contains no Beacon network-fetch client
+requires an externally captured Beacon pulse package
+hard-rejects target reveal before 2026-08-26T12:00:00.000Z
+recomputes any later target manifest from the recorded 64-byte outputValue
+contains no target manifest or RIL-003 result artifact
 ```
 
-No post-reveal tuning, cache, feature, compilation, pruning, batching change, or other representation adaptation is permitted under RIL-003.
+The pre-reveal tests passed without instantiating a 24-target family.
 
 ### Claim ceiling
 
-The maximum possible RIL-003 positive claim is:
+The maximum possible RIL-003 positive claim remains:
 
 ```text
 PROVENANCE_SEPARATED_REPRESENTATION_INDUCED_TRANSFER
 ```
 
-It cannot by itself establish representation-induced generality. That requires repeated positive evidence across independently constituted held-out regimes.
+It cannot by itself establish representation-induced generality.
 
 ## Next legal scientific action
 
-RIL-003 stops at the preregistration boundary.
+Before the frozen entropy boundary, no target-specific operation is authorized.
 
-No held-out targets are to be generated now and no implementation exists.
+After the first admissible NIST Beacon 2.0 pulse at or after the frozen timestamp is captured, the exact next sequence is:
 
-A later explicitly authorized phase may implement the generic frozen apparatus without target revelation, freeze that implementation, audit the pre-reveal firewall, and only after the frozen future entropy pulse exists instantiate and freeze the target manifest.
+```text
+validate pulse package
+-> materialize Q_test exactly once
+-> commit RIL_003_TARGET_MANIFEST.json
+-> audit target manifest / entropy provenance
+-> only then run member preservation
+-> interpret cost only for preservation-valid members
+```
+
+No apparatus change, representation adaptation, target redraw, or pre-manifest execution is permitted under RIL-003.
