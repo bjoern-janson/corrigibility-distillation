@@ -1,61 +1,20 @@
 # Research Execution Instructions
 
-## Purpose
+Scientific history is append-only at the level of frozen claims.
 
-This repository preserves a closed corpus-distillation program and completed downstream prospective assays. Scientific history is append-only at the level of frozen claims.
-
-## Current lane state
-
-### Corpus Distillation
-
-`CLOSED`.
-
-Do not alter the frozen corpus, necessity counts, L3/L4/L5/L6 record, common-core conclusion, or minimization closure through later experiments.
-
-### CGP-001
-
-`CLOSED / NOT EVALUABLE`.
+## Lane state
 
 ```text
-A_trans           FAIL
-failed criteria   [8,9]
-primary execution NOT RUN
-H_CG              NOT TESTED
+Corpus Distillation   CLOSED
+CGP-001               CLOSED / NOT EVALUABLE
+RIL-001               CLOSED / REPRESENTATION_INDUCED_LEVERAGE
+RIL-002               FAMILY FROZEN / NOT IMPLEMENTED / NOT EXECUTED
+RIL-3+                NOT OPENED
 ```
 
-Do not repair, rerun, score, or reinterpret CGP-001. Any new corridor requires a new preregistration.
+## Frozen records
 
-### RIL-001
-
-`CLOSED / REPRESENTATION_INDUCED_LEVERAGE`.
-
-Anchors:
-
-```text
-preregistration       204fe919159145ac9c29f1becfb92b0c511af02b
-implementation freeze a0f8f795a805e8f579fd608fbcaa83dcfa6ef60f
-pre-execution audit   6b3b865f3fce07fe835e169d80ec8f72f192f4bf
-```
-
-Terminal bounded result:
-
-```text
-P1-P9                  PASS
-c_search equality      PASS
-c_update equality      PASS
-C_op R0                9,825,003
-C_op R1                4,094,613
-Lambda_F^op            2.399494897320
-peak memory R0         206,757 bytes
-peak memory R1         206,757 bytes
-terminal status        REPRESENTATION_INDUCED_LEVERAGE
-```
-
-Do not optimize, repair, rerun as a primary assay, change instrumentation, or strengthen its claim under `RIL-001`.
-
-## Frozen scientific records
-
-Treat these as immutable scientific records:
+Do not rewrite:
 
 ```text
 CORPUS.md
@@ -65,72 +24,140 @@ CGP_001_TRANSLATION_AUDIT.md
 experiments/cgp_001/*
 RIL_001_PREREGISTRATION.md
 RIL_001_PRE_EXECUTION_AUDIT.md
-experiments/ril_001/ implementation files at a0f8f795...
 RIL_001_RESULT.md
 RIL_001_RESULT.json
 RIL_001_FINAL_AUDIT.md
+experiments/ril_001/* at implementation freeze a0f8f795...
+RIL_002_PREREGISTRATION.md
+RIL_002_FAMILY.json
 ```
 
-Mutable narrative files (`README.md`, `STATUS.md`, `ROADMAP.md`, `AGENTS.md`) may summarize later state but may not change frozen evidence.
+Mutable narrative files may summarize later state but may not silently strengthen frozen evidence.
 
-## Governing evidence distinctions
+## RIL-001 ceiling
 
-Preserve:
+RIL-001 earned one bounded existence witness:
 
 ```text
-mechanism != function != invariant
-recurrence != necessity
-local necessity != universal necessity
-same abstract lesson != shared semantic type
-serialization compatibility != interface compatibility
-candidate != oracle != evaluator
-possibility != authority
-search allocation != repair/adoption authority
-adapter correctness != corridor evidence
-cheapness != semantic preservation
-formal possibility != empirical leverage
-single-function leverage != family leverage
-family leverage != held-out generality
+P1-P9              PASS
+C_op R0            9,825,003
+C_op R1            4,094,613
+Lambda_F^op        2.399494897320
+memory R0/R1       206,757 / 206,757 bytes
+status              REPRESENTATION_INDUCED_LEVERAGE
 ```
 
-On failure or contradiction, revise the shallowest supported layer and preserve every unaffected null or positive result.
+It does not establish family leverage or generality.
 
-## RIL-001 claim ceiling
+## RIL-002 scientific object
 
-The earned claim is exactly bounded to the frozen FS007 low-cost `NEEDS_FANOUT` function, condition, candidate languages, CPython 3.13.5 implementation, and AST-vs-existing-SEM8 representation pair.
+RIL-002 is a **family-transfer** assay.
 
-RIL-001 does not establish:
+The representation pair is inherited and immutable:
 
 ```text
-representation-induced family leverage
-held-out representation-induced generality
+R0 = R0_AST
+R1 = R1_SEM8
+```
+
+The family-freeze anchor is:
+
+```text
+d35d998eea7e9b06ae0516dbcb9019955052ef6f
+```
+
+The family is exactly the 24 members in `RIL_002_FAMILY.json`.
+
+Inclusion rule:
+
+```text
+K1  in frozen FANOUT_PROGRAMS semantics
+K2  not in frozen READ_ONCE_PROGRAMS semantics
+K3  x,y,z all essential
+K4  exclude RIL-001 target 0x17
+```
+
+No member may be added, removed, replaced, or selected based on expected/observed leverage.
+
+## RIL-002 implementation firewall
+
+Do not implement unless explicitly instructed.
+
+If opened, the implementation must:
+
+1. reuse the frozen RIL-001 representation pair without redesign;
+2. preserve one shared algorithm for both arms;
+3. use the same task split, probe seed, held-out seed, repair cost, horizon, candidate languages, tie-break, precision, authority, and cost regions;
+4. instantiate family labels only as `truth_table[4*x + 2*y + z]`;
+5. freeze implementation before any RIL-002 leverage result is read;
+6. audit source integrity / `A_fixed` / instrumentation before primary execution;
+7. execute all 24 members without replacement;
+8. adjudicate each `P_i` before interpreting `Lambda_i`;
+9. publish the ordered leverage vector and member statuses before any aggregate;
+10. stop after the final audit.
+
+Any representation change motivated by this family requires a new assay identifier.
+
+## RIL-002 member adjudication
+
+For every member:
+
+```text
+G_i = (A_fixed^(i), P_i, Lambda_i)
+```
+
+Preservation is noncompensatory. A cheaper member with `P_i=0` is not leverage.
+
+Inherited member classes:
+
+```text
+NOT_EVALUABLE
+PRESERVATION_FAILURE
+NO_DEMONSTRATED_LEVERAGE
+COMPUTE_FOR_MEMORY_TRADEOFF
+REPRESENTATION_INDUCED_LEVERAGE
+```
+
+Family summaries may not erase these member records.
+
+## Aggregation discipline
+
+The primary object is:
+
+```text
+Lambda_vector = (Lambda_1, ..., Lambda_24)
+```
+
+Do not replace it by a mean.
+
+Finite-family coverage may be reported descriptively, but:
+
+```text
+coverage != population probability
+family members != independent statistical samples
+RIL-2 transfer != RIL-3 provenance-separated generality
+```
+
+## Claim ceiling
+
+Even a family-wide positive result can establish only transfer of this already-selected representation pair across this exact bounded family under the frozen FS007-derived setup.
+
+It cannot establish:
+
+```text
+provenance-separated representation-induced generality
 resource-boundary amplification
 universal affordance geometry
+broad constrained-hardware generality
 intelligence = representation
-general hardware-capability amplification
-common corrigibility architecture
 ```
 
-## Future RIL work
+## Current next legal action
 
-`ROADMAP.md` contains conjectural rungs RIL-2 through RIL-5. They are **not opened by default**.
+There is no remaining family-selection work under RIL-002.
 
-Any future experiment must:
-
-1. receive a new identifier and prospective preregistration;
-2. state exactly which RIL-001 fact is used as prior evidence;
-3. freeze its own `F`, `D`, representation choice/learning procedure, preservation predicate, budget/cost vector, and null;
-4. prevent training/representation selection from seeing held-out transformation outcomes where held-out generality is tested;
-5. count representation construction/learning cost where applicable;
-6. preserve authority/scope identity before interpreting cost;
-7. stop at its own claim ceiling.
-
-Do not turn the roadmap objects `A(R)`, `Omega_eff(R;B)`, or payback horizon `n*` into established theory merely because RIL-001 is positive.
-
-## No currently authorized experiment
-
-At the present repository state there is no automatically authorized RIL-002, RIL-2, CGP-002, composition study, or theory-expansion task. A new lane begins only by explicit prospective instruction.
+The next legal scientific event, only if explicitly opened, is implementation against the frozen family.
 
 ## Final rule
 
-**Change the coordinates. Hold the correction fixed. Count every cost. Preserve every null.**
+**Freeze the species before counting the rabbits.**
