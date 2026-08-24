@@ -11,7 +11,10 @@ RIL-001              CLOSED / REPRESENTATION_INDUCED_LEVERAGE
 RIL-002              CLOSED / FAMILY_WIDE_LEVERAGE
 RIL-003              IMPLEMENTATION FROZEN / PRE-REVEAL AUDIT PASS / TARGETS UNREVEALED
 RIL-4+               NOT OPENED
+RG-001               F_LCC + CASE FAMILY FROZEN / REFERENCE AUDIT PASS / REALIZER ADMISSION NEXT / NOT PREREGISTERED
 ```
+
+RIL and RG are parallel lanes. RG-001 does not reopen, modify, consume, or weaken the frozen RIL-003 boundary.
 
 ## Immutable scientific records
 
@@ -38,6 +41,11 @@ RIL_003_PREREGISTRATION.md
 RIL_003_GENERATOR_CONTRACT.json
 experiments/ril_003/* at f54d9e1a...
 RIL_003_PRE_REVEAL_AUDIT.md
+RG001_F_LCC_SEMANTIC_CONSTITUTION.md
+RG001_CASE_FAMILY.json
+RG001_CASE_FAMILY_AUDIT.md
+experiments/rg_001/reference_evaluator.py
+experiments/rg_001/test_reference_evaluator.py
 ```
 
 Mutable narrative files may summarize later state but may not silently strengthen these records.
@@ -120,7 +128,46 @@ Shared schema/interface information is allowed because the test must remain well
 
 Held-out target-specific information remains forbidden from representation selection/construction, including target IDs/truth tables, labels, M0/M1 status, exact ceilings, best programs, repair outcomes, expected/observed costs, target-derived features, and target-specific caches or compilation.
 
-## Next legal transition
+## RG-001 frozen semantic boundary
+
+RG-001 is a new parallel lane motivated by the closed corpus and later representation results. It is not a continuation of RIL-003 and must not borrow target information, apparatus state, or result authority from RIL.
+
+Frozen now:
+
+```text
+F_LCC semantic constitution
+five LCC obligations
+externally supplied sufficient-support semantics
+8-case realizer-blind family
+C04/C05 conjunctive-vs-alternative matched death test
+reference closure evaluator
+256 registered permutation checks
+case-family audit PASS
+```
+
+Still absent:
+
+```text
+RG-001 preregistration
+SSI-CALC adapter
+OpenCore Nano adapter
+adapter noninterference audit
+A_trans^RG result
+V_F result
+C_F measurement
+B_F realization region
+A_F comparison
+```
+
+The RG-001 governing rule is:
+
+> **Adapt the realizer to F. Never adapt F to the realizer.**
+
+Do not change `F_LCC`, the support semantics, or `RG001_CASE_FAMILY.json` in response to a candidate realizer's limitations. A changed scientific object requires a new assay identifier.
+
+## Next legal transitions
+
+### RIL-003
 
 Before the frozen entropy boundary, do not perform any target-specific operation.
 
@@ -140,7 +187,24 @@ validate pulse package
 
 No target execution may precede the reveal-manifest freeze.
 
-## Claim ceiling
+### RG-001
+
+The next legal object is realizer admission and adapter constitution.
+
+```text
+admit candidate realizers without changing F_LCC or the case family
+-> freeze one adapter contract per realizer
+-> prove/test adapter information noninterference
+-> run A_trans^RG
+-> only if both translation gates pass, test V_F
+-> only if common validity is established, measure C_F
+-> derive B_F only from the frozen RG001 challenge family
+-> STOP
+```
+
+No cost result may rescue translation or validity failure. `A_F=NA` for RG-001.
+
+## Claim ceilings
 
 A positive RIL-003 result can earn only:
 
@@ -150,6 +214,10 @@ PROVENANCE_SEPARATED_REPRESENTATION_INDUCED_TRANSFER
 
 It cannot by itself establish representation-induced generality, resource-boundary amplification, broad constrained-hardware generality, or universal affordance geometry.
 
-## Final rule
+A maximal positive RG-001 result can earn only a bounded cross-realizer existence claim: two structurally distinct realizers satisfied the same frozen function while differing on one or more registered realization coordinates. It cannot establish a universal realization geometry theory or completeness of `Gamma_F`.
 
-**Freeze the territory generator. Whitelist shared information. Freeze the coordinates and apparatus. Do not let held-out target-specific information enter until the protocol says it may exist.**
+## Final rules
+
+**RIL-003:** Freeze the territory generator. Whitelist shared information. Freeze the coordinates and apparatus. Do not let held-out target-specific information enter until the protocol says it may exist.
+
+**RG-001:** Freeze the function and external semantic geometry first. Adapt the realizer to the function; never adapt the function to the realizer.
