@@ -12,8 +12,9 @@ A provenance-preserving research repository for bounded claims about corrective 
 | RIL-002 | **CLOSED / FAMILY_WIDE_LEVERAGE** | The unchanged AST→SEM8 pair transferred leverage across all 24 members of a prospectively frozen related family. |
 | RIL-003 | **IMPLEMENTATION FROZEN / PRE-REVEAL AUDIT PASS / TARGETS UNREVEALED** | `Q_test`, information firewall, AST/SEM8 pair, generic apparatus, and pre-reveal audit are frozen. The future 24-target manifest does not exist yet. |
 | RIL-4+ | **NOT OPENED** | Resource-boundary amplification and broader generality remain conjectural. |
+| RG-001 | **F_LCC + CASE FAMILY FROZEN / REFERENCE AUDIT PASS / NOT PREREGISTERED** | A realizer-neutral localized-corrective-contraction function and finite support-hypergraph challenge family are frozen. Candidate realizers have not yet been adapted or tested. |
 
-See [`STATUS.md`](STATUS.md) for the exact ledger, [`RIL_003_PREREGISTRATION.md`](RIL_003_PREREGISTRATION.md) for the scientific contract, [`RIL_003_PRE_REVEAL_AUDIT.md`](RIL_003_PRE_REVEAL_AUDIT.md) for the current gate, and [`AGENTS.md`](AGENTS.md) for execution discipline.
+See [`STATUS.md`](STATUS.md) for the exact ledger, [`AGENTS.md`](AGENTS.md) for execution discipline, and the RG-001 semantic artifacts [`RG001_F_LCC_SEMANTIC_CONSTITUTION.md`](RG001_F_LCC_SEMANTIC_CONSTITUTION.md), [`RG001_CASE_FAMILY.json`](RG001_CASE_FAMILY.json), and [`RG001_CASE_FAMILY_AUDIT.md`](RG001_CASE_FAMILY_AUDIT.md) for the new parallel lane.
 
 ## Closed empirical ladder so far
 
@@ -100,9 +101,62 @@ PROVENANCE_SEPARATED_REPRESENTATION_INDUCED_TRANSFER
 
 Repeated success across independently constituted held-out regimes would still be required before promoting to `representation-induced generality`.
 
+## RG-001 — cross-realizer localized corrective contraction
+
+RG-001 is a separate successor lane motivated by the corpus-level recurrence of corrective constraints and by the later representation-leverage results. It does not reopen the closed distillation or CGP lanes and it does not depend on RIL-003 completing first.
+
+The frozen scientific function is:
+
+\[
+\boxed{
+F_{\mathrm{LCC}}
+=
+\text{implicated contraction}
++
+\text{dependency-selective contraction}
++
+\text{independent preservation}
++
+\text{replacement firewall}
++
+\text{independent successor re-entry}.
+}
+\]
+
+Its dependency semantics are supplied externally as finite acyclic families of sufficient support sets. The distinction
+
+\[
+\boxed{
+\text{structural dependency}\neq\text{effective contraction}
+}
+\]
+
+is therefore part of the assay rather than inferred from either candidate implementation.
+
+The frozen family contains eight cases. The central C04/C05 pair has identical flattened pairwise incidence but different AND-vs-OR sufficient-support grouping, forcing any later adapter to preserve the hypergraph distinction. The independent reference evaluator passed 6 authoring-time unit tests and 256 deterministic permutation checks. No candidate realizer has yet been adapted or executed under RG-001.
+
+Current order:
+
+```text
+F_LCC semantic constitution  FROZEN
+-> RG001 case family         FROZEN
+-> reference audit           PASS
+-> realizer admission        NEXT
+-> adapter freeze
+-> A_trans^RG
+-> V_F
+-> C_F only under common validity
+-> B_F from frozen challenge family
+-> STOP
+```
+
+For RG-001, `A_F = NA`.
+
+> **Adapt the realizer to F. Never adapt F to the realizer.**
+
 ## Frozen history remains intact
 
-Nothing in RIL-003 rewrites:
+Nothing in RIL-003 or RG-001 rewrites:
 
 ```text
 Corpus Distillation  CLOSED
@@ -111,6 +165,8 @@ RIL-001              POSITIVE / CLOSED
 RIL-002              FAMILY_WIDE_LEVERAGE / CLOSED
 ```
 
-## Governing rule
+## Governing rules
 
-> **Freeze the territory generator, freeze what the representation may know, freeze the coordinates and apparatus, and only then let the territory exist.**
+> **RIL-003:** Freeze the territory generator, freeze what the representation may know, freeze the coordinates and apparatus, and only then let the territory exist.
+
+> **RG-001:** Freeze the function and external semantic geometry first. Adapt the realizer to the function; never adapt the function to the realizer.
