@@ -1,6 +1,6 @@
 # Research Execution Instructions
 
-Scientific history is append-only at the level of frozen claims. Later positives do not rewrite earlier nulls, and later conjectures do not become historical evidence.
+Scientific history is append-only at the level of frozen claims. Later positives do not rewrite earlier nulls, later nulls do not erase earlier bounded positives, and later conjectures do not become historical evidence.
 
 ## Current lane state
 
@@ -9,39 +9,65 @@ Corpus Distillation  CLOSED
 CGP-001              CLOSED / NOT EVALUABLE
 RIL-001              CLOSED / REPRESENTATION_INDUCED_LEVERAGE
 RIL-002              CLOSED / FAMILY_WIDE_LEVERAGE
-RIL-003              IMPLEMENTATION FROZEN / PRE-REVEAL AUDIT PASS / TARGETS UNREVEALED
+RIL-003              TARGET MANIFEST FROZEN / MEMBER EXECUTION NOT YET AUTHORIZED
 RIL-4+               NOT OPENED
+RD-001               TERMINAL / AVAILABLE LEVERAGE DEMONSTRATED / TRAINING NOT OPENED
+RD-002+              NOT OPENED
 main-line RG-001     CLOSED AT ADMISSION / FUNCTION_EQUIVALENCE_NOT_CONSTITUTED
 main-line RG-002+    NOT OPENED
 ```
 
-RIL and RG are separate evidence lanes. RG results do not alter the frozen RIL-003 boundary.
+RIL, RD, and RG are separate evidence lanes. Results in one lane do not alter another lane's frozen boundary unless a later prospective artifact explicitly constitutes such a dependency.
 
 ## Immutable scientific records
 
-Treat as frozen:
+Treat frozen scientific artifacts as append-only. In particular:
 
 ```text
 CORPUS.md
 NECESSITY_AUDIT.md
+
 CGP_001_PREREGISTRATION.md
 CGP_001_TRANSLATION_AUDIT.md
+CGP_001_RECOVERY_NOTE.md
 experiments/cgp_001/*
+
 RIL_001_PREREGISTRATION.md
 RIL_001_PRE_EXECUTION_AUDIT.md
 experiments/ril_001/* at a0f8f795...
 RIL_001_RESULT.*
 RIL_001_FINAL_AUDIT.md
+
 RIL_002_PREREGISTRATION.md
 RIL_002_FAMILY.json
 RIL_002_PRE_EXECUTION_AUDIT.md
 experiments/ril_002/* at d46dffe2...
 RIL_002_RESULT.*
 RIL_002_FINAL_AUDIT.md
+
 RIL_003_PREREGISTRATION.md
 RIL_003_GENERATOR_CONTRACT.json
 experiments/ril_003/* at f54d9e1a...
 RIL_003_PRE_REVEAL_AUDIT.md
+RIL_003_CRYPTO_PROVENANCE_AUDIT.md
+RIL_003_TARGET_DERIVATION_AUDIT.md
+RIL_003_TARGET_MANIFEST.json
+experiments/ril_003/custody/*
+
+REPRESENTATION_DISCOVERY_001_PREREGISTRATION.md
+RD001_IMPLEMENTATION_CONTRACT.md
+RD001_IMPLEMENTATION_REFREEZE_V2.md
+RD001_PRE_CALIBRATION_AUDIT_V1.md
+RD001_PRE_CALIBRATION_AUDIT_V2.md
+RD001_CALIBRATION_BEACON_REQUEST*.md
+RD001_CALIBRATION_BEACON_RAW_V2.json
+RD001_CALIBRATION_SEED_V2.md
+RD001_CALIBRATION_MANIFEST_V2.json
+RD001_CALIBRATION_RESULT_V2.json
+RD001_LEARNER_TARGET_COMPATIBILITY_AUDIT.md
+RD001_TERMINAL_LESSON.md
+experiments/rd_001/*
+
 RG001_F_LCC_SEMANTIC_CONSTITUTION.md
 RG001_CASE_FAMILY.json
 RG001_CASE_FAMILY_AUDIT.md
@@ -51,17 +77,41 @@ RG001_REALIZER_ADMISSION_CONTRACT.md
 RG001_REALIZER_ADMISSION_CONTRACT.json
 RG001_REALIZER_ADMISSION_AUDIT.md
 RG001_REALIZER_ADMISSION_AUDIT.json
+RG001_TERMINAL_LESSON.md
 RG_NAMESPACE_NOTE.md
 archive/rg_parity_calibration/*
+
+ADMISSIBILITY_FAILURE_ATLAS.md
+ADMISSIBILITY_FAILURE_ATLAS.json
+COMPRESSION_REVOCABILITY_PRINCIPLE.md
+REVISION_PROPAGATION_PRINCIPLE.md
 ```
 
-Mutable narrative files may summarize later state but may not silently strengthen these records.
+Mutable narrative files (`README.md`, `STATUS.md`, `ROADMAP.md`, this file) may summarize later state but may not silently strengthen frozen records.
+
+## General execution discipline
+
+Before any new scientific operation, identify the shallowest still-unearned transition. Do not use later measurements to backfill an earlier missing object.
+
+Preferred order:
+
+```text
+constitute scientific object
+-> constitute admissible implementation / transport / target
+-> freeze it
+-> audit the freeze
+-> execute only what the audit authorizes
+-> preserve nulls and uninterpretable outcomes
+-> stop at the registered ceiling
+```
+
+A structural encoding is not automatically semantic equivalence. An oracle advantage is not automatically a reusable or learnable target. A revision is not automatically propagated into operative descendants. Compression is not automatically safely revocable.
 
 ## RG identifier discipline
 
 Two independent lineages used `RG-001`. `RG_NAMESPACE_NOTE.md` is authoritative.
 
-- **main-line RG-001** = `F_LCC` realizer-admission assay, now terminal at admission.
+- **main-line RG-001** = `F_LCC` realizer-admission assay, terminal at admission.
 - **parity calibration RG-001/RG-002** = archived historical calibration under `archive/rg_parity_calibration/`.
 
 Do not merge their claims, numbering, or evidence.
@@ -75,9 +125,10 @@ preregistration freeze   c5acae018aec09afc9ceece152bb9cdc7a39e112
 implementation freeze    f54d9e1a4d8ef35404824d2172ace173af387a96
 pre-reveal audit         013435145d7d93985cd056926cfad710dd63e662
 entropy target time      2026-08-26T12:00:00.000Z
+target-manifest freeze   236763606dc43a31cf99362857c8ae10b1f72c6d
 ```
 
-Frozen now:
+Frozen scientific inputs now include:
 
 ```text
 Q_test
@@ -86,39 +137,86 @@ I_target_test forbidden set
 R0 = R0_AST
 R1 = R1_SEM8
 future public entropy rule
-held-out family size n=24
 generic execution apparatus
 member gate G_i=(A_fixed_i,P_i,Lambda_i)
 claim ceiling
+captured NIST pulse custody package
+ordered 24-member held-out target family
+RIL_003_TARGET_MANIFEST.json
 ```
 
-Still absent:
+Current provenance state:
 
 ```text
-held-out target IDs
-held-out truth tables
-target reveal manifest
-member preservation output
-opcode/memory output
-Lambda vector
-scientific verdict
+NIST pulse custody           FROZEN
+cryptographic source audit   RECORDED
+independent target derivation PASS
+eligible universe            193
+held-out targets             REVEALED / FROZEN: 24
+member preservation output   ABSENT
+opcode/memory output         ABSENT
+Lambda vector                ABSENT
+scientific verdict           NONE
 ```
 
-Before the frozen entropy boundary, do not perform any target-specific RIL-003 operation. Do not modify the apparatus after `f54d9e1a...`.
+### RIL-003 current stop rule
 
-After the first admissible future Beacon pulse is captured:
+The preregistration requires the committed target manifest / entropy provenance to be audited as the execution gate before member execution.
+
+Until that gate is explicitly closed:
 
 ```text
-freeze raw custody artifact
--> validate pulse package
--> materialize F_test exactly once from frozen Q_test
--> commit RIL_003_TARGET_MANIFEST.json
--> audit pulse/manifest provenance
--> only then execute member preservation
--> interpret Lambda only where P_i=1
+DO NOT run member preservation
+DO NOT run member opcode/memory measurements
+DO NOT interpret target-specific leverage
+DO NOT modify the apparatus
+DO NOT redraw, replace, rebalance, or filter targets
+DO NOT add target-specific caches, preprocessing, features, compilation, or code paths
+```
+
+Next legal sequence:
+
+```text
+audit committed target manifest / entropy provenance
+-> if PASS, authorize member preservation
+-> run A_fixed_i / P_i
+-> interpret Lambda_i only where both gates permit it
+-> freeze ordered result vector
 -> final audit
 -> STOP
 ```
+
+A post-reveal representation change requires a new assay identifier.
+
+## RD-001 terminal boundary
+
+RD-001 must preserve both terminal facts:
+
+```text
+AVAILABLE_LEVERAGE_DEMONSTRATED
+LEARNER_TARGET_CLASS_MISMATCH / TRAINING_NOT_OPENED
+```
+
+The positive calibration is instance-conditioned:
+
+\[
+R_\star(X_i)=R_{J_i}(X_i),
+\]
+
+with `J_i` varying across realized instances. The frozen learner target language permits one reusable global schema; therefore the oracle family is not automatically the learner target.
+
+Do not repair RD-001 by:
+
+```text
+replacing varying J_i with one family-wide latent J*
+widening R_L after seeing calibration results
+redefining R_STAR to match the learner class
+consuming Q_train before a compatible learner target is prospectively constituted
+treating oracle leverage as reusable or learned leverage
+calling the compatibility failure a learner-performance failure
+```
+
+No `Q_train` beacon has been consumed, no learner was run, and no RD successor is open. Any new reusable-coordinate or representation-acquisition experiment requires a new assay identifier and prospective freeze.
 
 ## Main-line RG-001 frozen semantic boundary
 
@@ -143,18 +241,6 @@ Do not swap IDs, flatten the hyperedges, or alter the case family.
 
 ## Main-line RG-001 admission contract and terminal null
 
-Admission contract freeze:
-
-```text
-426062c5baa32ea192b99b9a1c8de574eff6eb1e
-```
-
-Admission result freeze:
-
-```text
-049a2e088c4ab55bf42668607e84f13235e15e18
-```
-
 Exact frozen candidates:
 
 ```text
@@ -165,22 +251,6 @@ SSI-CALC v0.1
 OpenCore Nano V0
   bjoern-janson/opencore@d85aac9fa35ea4ba21afebc73b9cb8970c2a1dbf
   nano.py blob d31dacaf893a58a8280c01704fe666a404c1f56c
-```
-
-The admission adapter ceiling forbids:
-
-```text
-reference-oracle access
-expected-output lookup
-adapter-side closure
-adapter-side descendant computation
-adapter-side OR-of-routes rescue
-adapter-side successor authorization
-case-id / canonical-label semantic branching
-cost or robustness measurement
-new SSI-CALC rule
-new Nano primitive
-semantic change to F_LCC or the case family
 ```
 
 Observed terminal admission results:
@@ -210,13 +280,29 @@ B_F                     NOT RUN
 A_F                     NA
 ```
 
-### RG-001 stop rule
+Do **not** repair either adapter under RG-001 v0.1. A future attempt that changes a candidate surface, closure layer, semantic function, case geometry, or adapter ceiling requires a new main-line RG assay identifier.
 
-Do **not** repair either adapter under RG-001 v0.1. Do not add a closure layer, select a challenge-surviving route, OR multiple native outputs in the decoder, extend either native kernel, weaken `F_LCC`, or reopen the preregistration.
+The admission null is not `V_F=0` and does not establish general incapacity of SSI-CALC or Nano.
 
-Any future attempt that changes one of those conditions requires a **new main-line RG assay identifier** and a fresh freeze before implementation.
+## Cross-program principle records
 
-The admission null is not `V_F=0`. It does not establish general incapacity of SSI-CALC or Nano. It establishes only that function equivalence was not constituted under the frozen realizer surfaces and adapter ceiling.
+Treat these as interpretive/future-selection constraints, not as permission to skip assay-specific tests:
+
+```text
+ADMISSIBILITY_FAILURE_ATLAS.md
+COMPRESSION_REVOCABILITY_PRINCIPLE.md
+REVISION_PROPAGATION_PRINCIPLE.md
+```
+
+In particular:
+
+```text
+represented distinction != native consequential semantics
+successful compression   != safe future revocability
+recorded revision         != operative descendant update
+```
+
+Prospective necessity still requires matched evidence or formal proof at the relevant scope.
 
 ## Archived parity calibration
 
@@ -233,11 +319,13 @@ Its bounded result is:
 V_0=V_1=1,\qquad C_1<C_0,\qquad B_1\subsetneq B_0.
 \]
 
-Do not promote it to a universal realization-geometry law or use it as evidence for main-line RG-001 or RIL-003.
+Do not promote it to a universal realization-geometry law or use it as evidence for main-line RG-001, RIL-003, or RD-001.
 
 ## Claim ceilings
 
-A positive RIL-003 result can earn only `PROVENANCE_SEPARATED_REPRESENTATION_INDUCED_TRANSFER`.
+A positive RIL-003 result can earn only `PROVENANCE_SEPARATED_REPRESENTATION_INDUCED_TRANSFER` within its exact frozen schema and runtime contract.
+
+RD-001 earns instance-specific evaluator-supplied available leverage plus a learner-target-class mismatch; it earns no reusable or learned representation claim.
 
 Main-line RG-001 has no positive cross-realizer claim because it terminated before preregistration and validity measurement.
 
@@ -245,8 +333,10 @@ The archived parity calibration earns only its bounded cost/robustness separatio
 
 ## Final rules
 
-**RIL-003:** Freeze the territory generator. Whitelist shared information. Freeze the coordinates and apparatus. Do not let held-out target-specific information enter until the protocol says it may exist.
+**RIL-003:** The held-out territory now exists. Do not touch the representation or targets; close the execution-provenance gate before measuring members.
+
+**RD-001:** Useful oracle geometry is not automatically one reusable learnable object. Stop before training when the target class is mismatched.
 
 **Main-line RG-001:** Constitute the function first; admit realizers second. If admission fails, stop before comparison.
 
-**Parity calibration:** Same function. Different realizer. Different geometry.
+**Program-wide:** Preserve every bounded positive and every null, localize failure at the shallowest evidenced transition, and do not manufacture the missing semantics or authority in an adapter, evaluator, or summary file.
