@@ -1,4 +1,4 @@
-# Roadmap — Representation, Provenance, Resource Boundaries, and Realization Geometry
+# Roadmap — Representation, Provenance, Discovery, Resource Boundaries, and Realization Geometry
 
 Status: **CONJECTURAL ROADMAP EXCEPT WHERE A RUNG IS EXPLICITLY MARKED EARNED, FROZEN, PREREGISTERED, OR CLOSED**
 
@@ -7,9 +7,13 @@ Status: **CONJECTURAL ROADMAP EXCEPT WHERE A RUNG IS EXPLICITLY MARKED EARNED, F
 ```text
 RIL-1  one-function leverage                         EARNED / CLOSED
 RIL-2  frozen-family transfer                        EARNED / CLOSED
-RIL-3  provenance-separated target transfer          PREREGISTERED / APPARATUS FROZEN / TARGETS UNREVEALED
+RIL-3  provenance-separated target transfer          TARGETS FROZEN / PRE-EXECUTION
 RIL-4  resource-boundary amplification               NOT OPENED
 RIL-5  broad effective generality on constrained HW  NOT OPENED
+
+RD-001 instance-specific oracle leverage             EARNED / TERMINAL
+RD-001 reusable/learnable target compatibility       FAIL / TRAINING NOT OPENED
+RD-002+                                               NOT OPENED
 
 main-line RG-001 F_LCC semantic constitution         FROZEN
 main-line RG-001 case geometry + oracle              FROZEN / AUDIT PASS
@@ -18,7 +22,7 @@ main-line RG-001 preregistration                     NEVER OPENED
 main-line RG-002+                                    NOT OPENED
 ```
 
-RIL and RG are parallel lanes. Neither inherits unearned authority from the other.
+RIL, RD, and RG are distinct evidence lanes. None inherits unearned authority from another.
 
 A separate historical parity calibration branch independently used the identifiers `RG-001/RG-002`; see `RG_NAMESPACE_NOTE.md` and `archive/rg_parity_calibration/`. Those identifiers do not alter the main-line numbering above.
 
@@ -26,13 +30,15 @@ A separate historical parity calibration branch independently used the identifie
 
 RIL-001 established one bounded case in which the same correction, algorithm, scope, authority, and required operations were preserved while AST→SEM8 reduced counted computational work with no memory regression.
 
+The primary cost object is the frozen CPython instruction-event model, not an architecture-independent complexity theorem.
+
 ## RIL-2 — earned family transfer
 
 RIL-002 inherited the representation pair unchanged and froze a 24-member related family before any new leverage result. All 24 members passed preservation, dynamic fixed-algorithm equality, compute leverage, and memory non-regression.
 
 This earns bounded family-wide transfer, not provenance-separated generality.
 
-## RIL-3 — preregistered provenance-separated transfer
+## RIL-3 — provenance-separated transfer, post-reveal / pre-execution
 
 The scientific difference is provenance:
 
@@ -42,7 +48,11 @@ Q_test frozen
 -> R0/R1 frozen
 -> generic apparatus frozen
 -> pre-reveal audit PASS
--> held-out targets still do not exist
+-> future NIST entropy captured
+-> entropy provenance audited
+-> target family independently reconstructed
+-> target manifest committed / frozen
+-> member execution NOT YET RUN
 ```
 
 Scientific anchors:
@@ -52,9 +62,21 @@ preregistration freeze   c5acae018aec09afc9ceece152bb9cdc7a39e112
 implementation freeze    f54d9e1a4d8ef35404824d2172ace173af387a96
 pre-reveal audit         013435145d7d93985cd056926cfad710dd63e662
 entropy target time      2026-08-26T12:00:00.000Z
+target-manifest freeze   236763606dc43a31cf99362857c8ae10b1f72c6d
 ```
 
-The future 24 targets will be instantiated exactly once from the frozen 193-target eligible universe using the preregistered future public randomness pulse and deterministic SHA-256 ranking. No target manifest exists yet.
+The 24 held-out targets now exist and are frozen in `RIL_003_TARGET_MANIFEST.json`. The captured NIST package is preserved under `experiments/ril_003/custody/`; source authentication and independent deterministic target derivation are recorded separately.
+
+The next legal transition is not representation work. It is execution authorization:
+
+```text
+close committed-manifest / entropy-provenance execution gate
+-> member preservation
+-> member cost only where A_fixed_i and P_i pass
+-> ordered Lambda vector
+-> result / final audit
+-> STOP
+```
 
 The maximum possible positive claim remains:
 
@@ -63,6 +85,47 @@ PROVENANCE_SEPARATED_REPRESENTATION_INDUCED_TRANSFER
 ```
 
 A single positive RIL-003 regime would still be insufficient to establish representation-induced generality.
+
+## RD-001 — useful geometry found, reusable learner target not constituted
+
+RD-001 asked a different question from RIL: before trying to learn a representation, does useful future-preserving geometry exist at all?
+
+The oracle calibration answered a bounded existence question positively:
+
+```text
+24 / 24 instances preserve native correctness and designated traps
+24 / 24 instances have C_fresh(R_STAR) < C_fresh(R0)
+sum C_fresh(R0)       = 2,093,094
+sum C_fresh(R_STAR)   = 1,134,901
+aggregate leverage    = 1.844296550976693
+```
+
+But the useful oracle object is instance-conditioned:
+
+\[
+R_\star(X_i)=R_{J_i}(X_i),
+\]
+
+with `J_i` varying across realized instances. The frozen learner output language permits one reusable global schema. The compatibility audit therefore stops before learning:
+
+```text
+AVAILABLE_LEVERAGE_DEMONSTRATED
+LEARNER_TARGET_CLASS_MISMATCH
+TRAINING_NOT_OPENED
+```
+
+No `Q_train` beacon was consumed and no learner-performance claim was tested.
+
+A possible future decomposition recorded by the terminal lesson is:
+
+```text
+RD-002  constitute a reusable coordinate system
+RD-003  prospectively learn that reusable object
+RD-004  establish acquisition-cost payback
+RD-005  transfer the learned coordinates to a new family
+```
+
+These are **not opened assays**. A successor must freeze a genuinely new scientific object rather than repair RD-001 in place.
 
 ## Candidate affordance object — still not universal theory
 
@@ -99,24 +162,7 @@ C05:\mathcal Q(H)=\{\{G\},\{w_a\}\}.
 
 It forces preservation of sufficient-support hyperedge grouping rather than pairwise incidence alone.
 
-### Admission freeze
-
-```text
-contract freeze  426062c5baa32ea192b99b9a1c8de574eff6eb1e
-result freeze    049a2e088c4ab55bf42668607e84f13235e15e18
-```
-
-Candidate surfaces were fixed before adjudication:
-
-```text
-SSI-CALC v0.1
-  bjoern-janson/ssi@362594d4337a1c72556b501b6477ff624db919e1
-
-OpenCore Nano V0
-  bjoern-janson/opencore@d85aac9fa35ea4ba21afebc73b9cb8970c2a1dbf
-```
-
-Both fail the first decisive native-semantics gate:
+Both frozen candidate surfaces fail the first decisive native-semantics gate:
 
 ```text
 A6_NATIVE_DEPENDENCY_CONSEQUENCE = FAIL
@@ -124,19 +170,7 @@ A8_ALTERNATIVE_ROUTE_NON_ALIASING = FAIL witness
 A14_NO_SEMANTIC_INVENTION = FAIL if repaired in adapter/kernel
 ```
 
-SSI-CALC's frozen R1-R11 checker is a one-request/one-certificate authority-transfer adjudicator. It has no native arbitrary OR-of-sufficient-support-routes standing-validity operation.
-
-Nano V0 natively supports conjunctive precondition ancestry and recursive revocation, but one current standing has one current producing receipt; it has no native multi-provenance/OR-of-receipts effective standing or automatic alternative-route failover.
-
 Therefore:
-
-\[
-A_{trans}^{RG}(SSI\!\mbox{-}CALC)=FAIL,
-\qquad
-A_{trans}^{RG}(Nano)=FAIL.
-\]
-
-Terminal:
 
 ```text
 FUNCTION_EQUIVALENCE_NOT_CONSTITUTED
@@ -150,6 +184,24 @@ A_F                     NA
 This is not `V_F=0`. The experiment terminated one layer earlier because the common function could not be constituted across the frozen native surfaces without semantic invention in the adapter.
 
 No in-place repair is legal. A future attempt that changes a native surface, adds a closure layer, weakens `F_LCC`, or changes the adapter ceiling requires a new assay identifier and a new freeze.
+
+## Cross-program frontier
+
+The later retrospective and principle artifacts suggest three recurring boundaries worth testing prospectively, without promoting them to universal laws:
+
+1. **Admissible causal path:** represented information or evidence must reach the claimed consequence through a native, independently warranted path rather than through evaluator/adapter invention.
+2. **Compression revocability:** a cheaper/compressed realization must preserve the ability to revoke assumptions it depends on when those assumptions lose standing.
+3. **Revision propagation:** revising an epistemic object must be distinguished from actually changing the deployed descendants whose behavior depended on it.
+
+See:
+
+```text
+ADMISSIBILITY_FAILURE_ATLAS.md
+COMPRESSION_REVOCABILITY_PRINCIPLE.md
+REVISION_PROPAGATION_PRINCIPLE.md
+```
+
+These are research-selection guides, not authority to skip assay-specific constitution.
 
 ## Archived parity calibration — bounded historical evidence
 
@@ -176,17 +228,17 @@ B0 preserved faults   512 / 512
 B1 preserved faults   448 / 512
 ```
 
-This remains a deliberately constructed calibration witness, not evidence for the main-line `F_LCC` assay, autonomy, biology, or RIL-003.
+This remains a deliberately constructed calibration witness, not evidence for the main-line `F_LCC` assay, autonomy, biology, RIL-003, or RD-001.
 
 ## RIL-4 / RIL-5
 
-Remain unopened. Resource-boundary amplification and broad constrained-hardware generality require future explicit experiments and cannot be inferred from RIL-001/002 speedup alone.
+Remain unopened. Resource-boundary amplification and broad constrained-hardware generality require future explicit experiments and cannot be inferred from RIL-001/002 speedup or from any possible RIL-003 result alone.
 
 ## Future main-line RG
 
 No successor is currently open.
 
-A future main-line RG assay would need to state exactly which object changes relative to RG-001 before any implementation:
+A future main-line RG assay would need to state exactly which object changes relative to RG-001 before implementation:
 
 ```text
 candidate realizer surface
@@ -202,6 +254,8 @@ Changing any of these is new science, not repair of RG-001.
 
 > **RIL:** First show leverage. Then transfer. Then separate provenance. Only after that ask what happens at the hardware boundary.
 
+> **RD:** Useful oracle geometry is not automatically one reusable object, and a reusable object is not automatically inside a learner hypothesis class.
+
 > **RG:** Constitute the function first; admit the realizers second. If admission fails, stop before comparison.
 
-> **Calibration:** Same function. Different realizer. Different geometry.
+> **Program-wide:** Do not cross an unearned transition merely because the objects on both sides look related.
