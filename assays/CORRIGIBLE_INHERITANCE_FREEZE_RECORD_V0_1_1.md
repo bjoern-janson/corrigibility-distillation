@@ -28,6 +28,8 @@ reviewer independence: NOT_ESTABLISHED
 independent review gate: NOT_SATISFIED
 ```
 
+Historical v0.1 oracle/constitution/review/freeze record remain frozen unchanged.
+
 Scientific observations: `0`
 
 Implementation: `NOT_OPENED`
