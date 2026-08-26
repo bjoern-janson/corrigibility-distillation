@@ -1,6 +1,6 @@
 # Corrigible Inheritance v0.1 Freeze Record
 
-Status: `FROZEN_HISTORICAL / HOSTILE_REVIEW_FAIL / SUPERSEDED_BY_V0_1_1 / NON_AUTHORIZING`
+Status: `FROZEN / HOSTILE_REVIEW_FAIL / CONSTITUTION_REPAIR_REQUIRED / NON_AUTHORIZING`
 
 Oracle freeze commit: `829b8182831cfb7ff4d5b8c81aea1df9b7ed2f43`
 
@@ -12,18 +12,16 @@ Hostile review artifact:
 
 Hostile review record commit: `1ba9d549fda8a1be37e1118f1415b13f146ef064`
 
-Current repaired successor:
+Scientific observations: `0`
 
-`assays/CORRIGIBLE_INHERITANCE_ASSAY_V0_1_1.md`
+Execution authorized: `false`
 
-Scientific observations under v0.1: `0`
+Implementation: `NOT_OPENED`
 
-Execution authorized under v0.1: `false`
+Scientific execution: `NOT_OPENED`
 
-Implementation under v0.1: `NOT_OPENED`
+Next action: constitution repair followed by independent hostile re-review.
 
-Scientific execution under v0.1: `NOT_OPENED`
-
-This historical failed constitution is superseded for current review purposes by v0.1.1. It grants no implementation or execution authority.
+No implementation or scientific execution is authorized by this record.
 
 **STOP.**
